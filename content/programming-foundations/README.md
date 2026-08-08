@@ -89,11 +89,19 @@ Carried from the platform export. None of these are errors in the plans; each is
 | Gap | Sessions | Handling |
 |---|---|---|
 | **No video and no slide deck** | 2, 9, 10, 11 | Teaching Blocks written from the reading material |
-| **Deck exists but was unreadable** | 3, 7, 14 | Block contents inferred; marked `<!-- placement: inferred -->` |
+| **Deck teaches a different topic than the title** | 7 | *"How to debug your code"* is entirely a walkthrough of the platform's step-through debugger. No tracebacks, no error types. ~half the session is instructor-supplied |
 | **Quiz pool doesn't match session topic** | 8 | Quiz A is slicing, Quiz B is Session 5 reassignment. Conversion questions exist only in MCQ Practice, so the quiz draws 2 + 3 |
 | **Only one quiz pool** | 15 | All five questions from Quiz A |
 | **No classroom quiz pool at all** | 2, 3, 7, 14 | Replaced with a third activity or a live MCQ walkthrough |
 | **Transcripts expired** | all | S3 presigned URLs lapsed 2026-08-05. Reading material and question tags used instead |
+
+### Deck verification
+
+All 11 available decks were read slide by slide and every Slide Block now lists the real slides in order. The four sessions with no deck (2, 9, 10, 11) use board-based Teaching Blocks.
+
+**Recurring pattern worth acting on:** several decks pose a question and never answer it — Session 6 slide 4 (`"*" + 10`), Session 8 slides 5, 8 and 11 (`message[3:6]`, `input() + input()`, `int("5.0")`). These work well *only* if the instructor runs them live; clicking past leaves open questions. Each is flagged in its plan.
+
+**Content the quizzes test but no deck covers:** *code*/*syntax* definitions (S1), concatenation-without-space and `len()`/IndexError (S6), `[:2]` slicing and `str()` entirely (S8), `print("age")` vs `print(age)` and indentation (S5), mis-ordered `elif` chains (S12), stopping an infinite loop (S13). All have scripted verbal or live-typing fixes in their plans.
 
 ### Content issues worth fixing on the platform
 

@@ -81,20 +81,33 @@ Point at the parts, one at a time: file, line number, error type, message.
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred, deck not readable when this plan was written — see Instructor Notes -->
-Covers: what debugging is, reading an error message, the common Python error types, a systematic approach.
+> ⚠️ **This deck is not what the session title suggests.** *"Copy of Python — Debugging Code"* teaches **the platform's built-in step-through debugger tool**, not how to read error messages. There is no slide on tracebacks, NameError, TypeError, IndexError or IndentationError. Plan accordingly: the deck gives students a *tool*, the activities below give them the *reading skill*. Both are needed, and they don't overlap.
+
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1 | Welcome | Skip |
+| 2 | **What is Debugging?** | "Debugging is the process of working through code **step-by-step** to **find** and **correct** errors" |
+| 3 | **Coding Practice — Reverse the digits** | The real platform screen: a list of solved problems with *Reverse the digits* still IN PROGRESS |
+| 4 | **Failed Test Case** | The problem open, Test Case 1 failing — *Your Output* `21` vs *Expected* `12` — with the **DEBUG** button highlighted |
+| 5 | **Execute Code Line by Line** | The debugger open on a 5-line program, Step 1 of 5, with FIRST / PREV / NEXT / LAST controls |
+| 6 | **Value in Variables** | Step 4 of 5 — the **Scopes** panel showing `word "21"`, `first_digit "2"`, `second_digit "1"` |
+| 7 | **Debug** | The fix applied — line 4 changed to `second_digit + first_digit` — output now correct |
+| 8 | **Update Input** | Changing the test input to `43` and re-running to confirm output `12` |
 
 **Beats to emphasise**
 
-- **Read the error bottom-up.** The last line names the error type; the line above gives the location. That's the reading order.
-- **The line number is a starting point, not a verdict.** Sometimes the real problem is the line above. Say this — it saves hours of confusion.
-- **Errors are the good case.** A crash tells you where. A wrong answer tells you nothing.
+- **This is a bug that does not crash.** The program runs perfectly and prints `21` instead of `12`. That is the crash-vs-bug distinction from warm-up Q7, and the deck opens on it. Name it explicitly.
+- **Slide 6 is the payoff.** The Scopes panel shows what every variable actually holds at that moment. Say: *"This is print-statement debugging, except the platform does it for you."*
+- **Walk slides 5–8 on the real platform if you can**, not as static images. Open a failing problem, click DEBUG, step through. It's a tool they own and most will never discover it alone.
+- **Slide 8's move — change the input, re-run** — is the habit that catches edge cases. Thirty seconds, easy to skip, worth keeping.
 
-Keep the tone matter-of-fact. Debugging is a normal, constant part of programming — not evidence of failure.
+> ⚠️ **Nothing in this deck names an error type**, yet the whole session's exit ticket and both Activities 1 and 2 are built on naming them. That content is instructor-supplied. It is still the right content — a debugger doesn't help when the program won't start — but be aware you are adding it, not delivering it.
 
 **Checkpoint (at 22 min)** — cold-call:
-> *"In an error message, where do you look first, and what does it tell you?"*
-> **Answer:** The last line — it names the error type. Then the line number just above it.
+> *"The program ran, nothing went red, and the answer was wrong. What did the debugger let us see that just reading the code didn't?"*
+> **Answer:** What each variable actually held, at each step.
 
 ---
 
@@ -237,20 +250,47 @@ print("Your name is " + "name")
 
 ---
 
-## Slide Block B (36–44 min) — DELIVER SLIDES AS-IS
+## Teaching Block B (36–44 min) — BOARD + LIVE TYPING
 
-<!-- placement: inferred, deck not readable — see Instructor Notes -->
-Covers: the debugging procedure, print-statement debugging, and when to ask for help.
+> **The deck ends at slide 8.** There are no further slides, so this block is yours. It supplies the half the deck omits: what to do when the program won't run at all, and how to debug without the platform's tool.
+
+**Cover three things.**
+
+**1. Print-statement debugging** — the manual version of the Scopes panel they just saw:
+
+```python
+word = input()
+print(word)              # what did I actually get?
+first_digit = word[0]
+print(first_digit)       # is it what I expected?
+```
+
+> *"The debugger showed you a Scopes panel. When you're coding outside the platform there is no panel — so you build one with `print()`. Same idea, five seconds of typing."*
+
+**2. `print()` shows the value, not the type.** `20` and `"20"` print identically. When a TypeError makes no sense:
+
+```python
+print(type(word))        # <class 'str'>
+```
+
+**3. The procedure** — write it on the board and leave it up:
+
+```
+WHEN IT BREAKS
+1. Read the LAST line — that's the error type
+2. Find the LINE NUMBER just above it
+3. print() the variables around that line
+4. Change ONE thing. Run again.
+```
 
 **Beats to emphasise**
 
-- **Print-statement debugging.** Put `print()` between lines to see what variables actually hold. This is the single most useful technique they'll learn all month, and it needs no tools.
+- **The debugger only helps when the program runs.** If it won't start, you're reading an error message — which is steps 1 and 2.
 - **Change one thing at a time.** Students change five things and lose track of which fixed it.
-- **Read the error before doing anything else.** Not after two random edits.
 
 **Checkpoint (at 44 min)** — show hands:
-> *"Your program runs but the answer's wrong. What's your first move?"*
-> **Answer:** Put a `print()` after each line and look at what the variables actually contain.
+> *"Your program runs but the answer's wrong. Two ways to see what's inside your variables — name both."*
+> **Answer:** The platform's DEBUG button, or `print()` after each line.
 
 ---
 
@@ -376,5 +416,7 @@ WHEN IT BREAKS
 - **The hook needs the traceback visible on a real terminal.** A screenshot works but lands softer. Test your setup.
 - **You'll be tempted to teach `int()` and `str()`** — students will ask three times. Don't. They're Session 8, and arriving there having *felt* the TypeError makes the conversion tools land far better. Preview `type()` only, as scripted in Activity 3.
 - **This session has an unusual shape:** four activity-style blocks and only two short slide blocks, because debugging cannot be taught by telling. Exit ticket starts at 52 min rather than 57 to leave room for the procedure.
-- **Slide placement is unverified.** The deck exists on the platform but wasn't readable when this plan was written, so Block A/B contents are inferred from the session title. Confirm against the real deck and adjust — activities can slot between any two blocks.
+- ✅ **Verified against the real deck** (*"Copy of Python — Debugging Code"*, 8 slides).
+- ⚠️ **The deck teaches a tool, not a skill.** It is entirely a walkthrough of the platform's step-through debugger on one worked example (*Reverse the digits*). It never names a single error type, never shows a traceback, and stops after slide 8. **Roughly half this session is instructor-supplied** — Teaching Block B and Activities 1–2. That's a deliberate choice, not an oversight: a debugger is useless when the program won't start. **Worth raising with the content team** that a session titled *"How to debug your code"* omits error messages entirely.
+- **Have a failing coding problem open on the real platform** before class. Slides 3–8 are screenshots of it; doing it live is far better, and it shows students a button most will never find alone.
 - **Data note:** no reading material, no classroom quiz, no MCQ pool exists for this session. Homework points back to Session 6.

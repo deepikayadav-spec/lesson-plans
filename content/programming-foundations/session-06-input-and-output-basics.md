@@ -93,14 +93,23 @@ Tie back to **Q7** — *"Hold on to that. Whatever the user types, Python hands 
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: String Concatenation → Concatenation Errors → String Repetition.
+**Verified against the deck** (*"Copy of 2.1 Input Output Basics"*). Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1–2 | Welcome · **Recap — Order of Operations** | `5 * 2 + 3 * 4` → 22, with the BODMAS badges |
+| 3 | **Adding Strings** | `a = "1" + "2"` → **`12`**. "Adding strings is called **String Concatenation**" |
+| 4 | **String Concatenation** | `a = "*" + 10` → *"What will be the output?"* — posed as a question, no answer on the slide |
+| 5 | **String Concatenation** | `a = "*" * 10` → `**********`. "String will be repeated 10 times. This is called **String Repetition**" |
 
 **Beats to emphasise**
 
-- **`+` between strings joins, it doesn't add.** Run `"Good" + "Morning"` and let them see `GoodMorning` with no space — the missing space surprises people and teaches the point.
-- **`"*" + 10` is a TypeError, `"*" * 10` is fine.** Same two values, different operator, completely different outcome. Show both back to back.
-- Run the pattern example — `("* " * 3) + s + (" *" * 3)` — it's the first time code produces something that looks designed, and it lands well.
+- **Slide 1–2 is a recap your warm-up poll already did.** Twenty seconds.
+- **Slide 3's example is `"1" + "2"` → `12`, not `3`.** That is the strongest possible opening for this session — two things that look like numbers, added, giving a joined string. Take a prediction before revealing.
+- **Slide 4 is deliberately unanswered.** The deck asks *"what will be the output?"* and moves on. **Do not skip past it — run it live.** `"*" + 10` raises a `TypeError`, and that error is Quiz Q3. If you don't run it, the class never sees the answer to a question the deck explicitly asked.
+- **Slides 4 and 5 are the pair:** `"*" + 10` fails, `"*" * 10` works. Same two values, different operator. Show them back to back.
+
+> ⚠️ **The deck never shows concatenation *with a space*** — no `"Good" + "Morning"` → `GoodMorning` example. **Quiz Q1's answer hinges on "without adding space."** Add it verbally: type `print("Good" + "Morning")` and let the missing space land.
 
 **Checkpoint (at 22 min)** — cold-call two students:
 > *"What does `"ab" * 3` give, and what does `"ab" + 3` give?"*
@@ -228,14 +237,24 @@ print(username[10])
 
 ## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: `len()` → Taking input with `input()` → multiple inputs → String Indexing → IndexError.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 6 | **Taking Input From User** | "When we download a software, do we change instructions in it?" → "We take **input** from users through interface" |
+| 7+ | **Reading input** | `input()` examples |
+| 8+ | **Accessing Characters in String** | `username = "Ravi"` → *"Can we access the first character in this string?"* |
+| 9+ | **Indexing** | Position-based access, `username[0]` |
+| last | **Key Takeaways** | Strings (Concatenation · Repetition) · Reading Input · Indexing |
 
 **Beats to emphasise**
 
-- **`input()` always returns a string.** Say it three times across this block. It is the highest-value sentence of the session.
-- **Why `username + " is " + age` works** even though `age` looks like a number — because `input()` already made it a string. The RM flags this explicitly; don't skip it.
+- **Slide 6's framing is good — use it.** Software you download has fixed instructions; what changes is the *input*. That's why programs need `input()`.
+- **`input()` always returns a string.** Say it three times across this block. It is the highest-value sentence of the session and **Quiz Q4** tests it directly.
 - **Indexing starts at 0.** Write `R-a-v-i` on the board with `0-1-2-3` underneath. The picture does more than the explanation.
+- **Close on the Key Takeaways slide** — it names the session's four things and makes a clean handover to homework.
+
+> ⚠️ **Two things the quiz needs that the deck is thin on:** `len()` (Quiz Q5 depends on knowing length vs. highest index) and the **IndexError** itself. Demonstrate both live — `print(len("Zoe"))` → `3`, then `print("Zoe"[10])` → `IndexError` — before the quiz.
 
 **Checkpoint (at 44 min)** — show hands:
 > *"`name = "Ravi"`. What is `name[0]`, and what is `len(name)`?"*
@@ -415,6 +434,9 @@ Then add `str()` and run the working version.
 
 ## Instructor Notes
 
+- ✅ **Verified against the real deck** (*"Copy of 2.1 Input Output Basics"*). Slide Blocks A and B list the actual slides in order.
+- **Deck slide 4 asks a question it never answers** (`"*" + 10` → *"What will be the output?"*). Running it live is not optional — that TypeError is Quiz Q3.
+- ⚠️ **Deck gaps this session's quiz depends on:** concatenation-without-a-space (Q1), `len()` and IndexError (Q5). All three scripted as verbal/live additions above. **Worth raising with the content team.**
 - **The session has one load-bearing fact:** `input()` returns a string. Warm-up Q7 measures readiness, Slide Block B states it three times, Quiz Q4 tests it, Activity 2 makes it bite. Protect that chain over everything else.
 - **You need a terminal where `input()` visibly waits.** If your setup swallows the prompt, students won't understand what "waiting for input" means. Test before class.
 - **Don't teach `int()` or `str()` today.** They're Session 8. Students will ask during Activity 3 — name the session, show the shape of the problem, move on. Feeling the problem first makes Session 8 land much harder.

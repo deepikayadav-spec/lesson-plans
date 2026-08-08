@@ -109,11 +109,23 @@ Tie back to **Q7** — *"You told me *you* update the counter in a while loop. F
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: the `for` statement → iterating over a sequence → the string example.
+**Verified against the deck** (*"Copy of 5.2 For Loop"*). Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1–2 | Welcome · Recap | |
+| 3 | **Introduction to Loops — Loops** | "In Python there are **two primary ways** for looping" → **While Loop** · **For Loop** |
+| 4 | **Daily Challenge — Identify The Mistake** | A `while` loop printing each character, with `while counter < (length_of_a - 1)` — input `Python`, expected output all six letters. The `- 1` is the bug |
+| 5 | **Agenda** | For Loop *(Sequence, Syntax)* → Range *(Sequence of Numbers)* → Code Walkthrough *(Possible Mistakes)* |
+| 6 | **For Loop — Iterate Over Characters** | `word = "Python"` · `for each_char in word:` · `print(each_char)`, with a dashed loop-back arrow and the note **"Initialization, termination condition and updation are not required"** |
+| 7+ | **For Loop** | Stepping through, with a purple **`each_char` box** showing `P`, then `y`, then `t`… and an arrow pointing at the current character in `"Python"`, output building alongside |
 
 **Beats to emphasise**
 
+- **Slide 3 frames the session as a choice between two tools**, which is exactly Activity 3's job. Say it now and call back to it later.
+- **Slide 4 is a `while`-loop bug hunt on the very content of Session 13.** It's a free retrieval-practice beat and a perfect bridge — the off-by-one `- 1` means the last character never prints. Take answers before revealing; it's harder than it looks.
+- **⭐ Slide 6's note is the single most important line in the deck** — *"Initialization, termination condition and updation are not required."* That is the whole reason `for` exists, stated in the deck's own Session 13 vocabulary. Point at it and say it twice.
+- **Slides 7+ animate the `each_char` box** alongside an arrow walking the string. That is Activity 1's Human Compiler, pre-built — ask *"what's in the box now?"* before each click, then hand it to students unaided.
 - **Write the shape on the board and leave it up:**
   ```
   for <variable> in <sequence>:
@@ -277,8 +289,14 @@ for i in range(1, 4):
 
 ## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: `range(n)` → `range(start, end)` → worked examples.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 8+ | **Range** | `range(n)` and `range(start, end)` worked examples |
+| 9+ | **Right Angle Triangular Pattern — Input / Output Format** | Input `3` → output `*` / `* *` / `* * *`, with the input format stated: *"First line will contain a positive integer"* |
+| 10+ | **Code Walkthrough** | Building the pattern program |
+| last | **Daily Challenge — Identify The Mistake** | `a = input()` · `len_of_a = len(a)` · `b = ""` · `for i in range(1, len_of_a):` · `b = b + "-" + a[i]` · `print(b)` — input `Python`, expected `P-y-t-h-o-n`. **Two bugs:** `range(1, …)` skips index 0, and the separator logic puts a leading `-` |
 
 **Beats to emphasise**
 
@@ -482,6 +500,11 @@ Take the wording from the class:
 
 ## Instructor Notes
 
+- ✅ **Verified against the real deck** (*"Copy of 5.2 For Loop"*). Slide Blocks A and B list the actual slides in order.
+- **⭐ Slide 6's note — *"Initialization, termination condition and updation are not required"*** — is the deck's answer to why `for` exists, phrased in Session 13's own vocabulary. It is the highest-value line in the session.
+- **The deck contains two "Identify The Mistake" challenges**, one at each end. The first (slide 4) is a `while`-loop off-by-one — free retrieval practice on Session 13. The last is a `for`/`range` off-by-one producing `P-y-t-h-o-n`. **Both are excellent and neither needs an activity wrapper — run them as posed.** If you're short on time, the closing challenge can replace Activity 2.
+- **The deck's pattern example is a right-angle triangle** (`*` / `* *` / `* * *`) with a stated input/output format — the same shape as Quiz Q5 and most of tonight's 39 coding problems. Point at the input-format line; Session 14 was about exactly that.
+- ⚠️ **The deck never shows `range(4, 1)` producing nothing**, nor `range[3]` as a TypeError. Both are in the Common Misconceptions table and worth 30 seconds live.
 - **This session is a relief after 13.** Say so. Students who struggled with `while` will find `for` genuinely easier, and naming that rebuilds confidence at exactly the right moment.
 - **The excluded end appears for the third time** — string slicing (Session 8), and now `range` twice. Point at the pattern explicitly: Python consistently stops *before* the end value. Students who see it as one rule stop re-learning it.
 - **Activity 3 is the session's real content.** Anyone can write a `for` loop after Block A; choosing between two loops is the actual skill. If time is short, cut Activity 2 — the trace is a rehearsal, Activity 3 is the point.

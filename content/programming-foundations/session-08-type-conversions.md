@@ -92,14 +92,24 @@ print(age + 1)
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: String Slicing → `[start:end]` → slicing to end → slicing from start → `type()`.
+**Verified against the deck** (*"Copy of 2.2 Type Conversion"*). Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1–3 | Welcome · **Recap — String Repetition** | `a = "*" * 10` → `**********` |
+| 4 | **Agenda** | Strings *(Slicing)* → Identifying Data Types *(`type()`)* → Type Conversions *(Changing Data Types)* |
+| 5 | **Slicing** | `message = "Hi Ravi"` · `part = message[3:6]` — **posed without an answer** |
+| 6+ | **Slicing** | `message[3:]` → `Ravi`, with the string shown character-by-character over indices `0 1 2 3 4 5 6` |
+| 7+ | **Slicing** | `message[:]` → the whole string, all indices highlighted |
 
 **Beats to emphasise**
 
-- **The end index is excluded.** `message[3:7]` gives indices 3, 4, 5, 6. Say "up to but not including" every single time. This is the source of nearly every slicing error.
-- **Empty sides mean "all the way."** `[3:]` to the end, `[:2]` from the start, `[:]` the whole thing.
-- **`type()` is a diagnostic tool**, not a topic. Frame it as the thing that would have solved yesterday's confusion: `print(type(age))` shows `<class 'str'>`.
+- **The index strip on slides 6–7 is the best teaching asset in this deck.** `"Hi Ravi"` written out with `0 1 2 3 4 5 6` beneath it and the slice highlighted. Point at it constantly; Activity 1 reuses exactly this.
+- **The end index is excluded.** Say "up to but not including" every single time. It is the source of nearly every slicing error, and of Quiz Q1.
+- **Slide 5 poses `message[3:6]` and doesn't answer it.** Take a prediction from the room before advancing — the deck set the question up for you.
+- **Empty sides mean "all the way."** `[3:]` to the end, `[:]` the whole thing.
+
+> ⚠️ **The deck never shows `[:2]`** — slicing *from* the start with an explicit end. It shows `[3:]` and `[:]` only. **Quiz Q1 (`message[7:12]`) and Activity 1 snippet 3 (`s[:3]`) both need it.** Add it live: `print("Hi Ravi"[:2])` → `Hi`.
 
 **Checkpoint (at 22 min)** — cold-call two students:
 > *"`s = "Python"`. What is `s[0:3]`, and how many characters is that?"*
@@ -251,13 +261,23 @@ print(result)
 
 ## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Type Conversion → `int()` → invalid conversions and `ValueError` → adding two inputs → `str()` → summary of `int()`, `float()`, `str()`, `bool()`.
+**Verified against the deck.** This half is built as a problem → diagnosis → tool sequence. Deliver it in that order.
+
+| # | Slide | Content |
+|---|---|---|
+| 8 | **I/O Basics — Adding Two Numbers** | `a = input()` · `b = input()` · `result = a + b` · input `2` and `3` → *"What will be the output?"* — **unanswered** |
+| 9 | **Printing Data Type** | `print(type(4.2))` beside `print(type("Hi"))` |
+| 10 | **Printing Data Type** | `a = input()` · `print(type(a))` → `<class 'str'>` → *"Can we convert the data type of variables to integer?"* |
+| 11 | **String to Integer** | `a = "5.0"` · `a = int(a)` · `print(type(a))` — **posed without its answer** |
+| 12 | **Type Conversion — Adding Two Numbers** | The fixed version: `a = int(a)` and `b = int(b)` inserted, inputs `2` and `3` |
+| 13 | **Week in Review** | Indexing · Slicing · Type Conversions |
 
 **Beats to emphasise**
 
-- **`int("5")` works, `int("Five")` is a ValueError, `int("5.0")` is *also* a ValueError.** That third one surprises everyone — `"5.0"` looks convertible but isn't, because it isn't a whole number in text form. Show all three.
-- **The `input()` + `int()` combination** is the practical payoff. Write both forms and say they're identical:
+- **Slide 8 is the session's hook, placed mid-deck.** It asks what `input()` + `input()` gives and doesn't say. Take a vote — most will say `5`. Run it: `23`. That failure motivates everything after it.
+- **Slide 10 is the diagnosis.** `type(a)` on an `input()` reveals `<class 'str'>`. Say: *"That's the answer to why we got 23."*
+- **Slide 12 is the fix** — the same program with `int()` inserted. Show slides 8 and 12 back to back at the end.
+- **The `input()` + `int()` combination** is the practical payoff. Both forms are identical:
   ```python
   a = input()
   a = int(a)
@@ -265,7 +285,10 @@ Covers: Type Conversion → `int()` → invalid conversions and `ValueError` →
   ```python
   a = int(input())
   ```
-- **`str()` for printing.** `"Sum: " + str(result)` — this is exactly the bug they hit in Session 6's Activity 3. Call that back explicitly.
+
+> ⚠️ **Slide 11 (`int("5.0")`) is posed and never answered.** This is the hardest idea in the session — it raises a **ValueError**, because `"5.0"` isn't a whole number in text form. **You must run it live**, or Activity 2 has nothing to discuss. The deck sets the question up and walks away.
+
+> ⚠️ **The deck never shows `str()`.** It converts *into* numbers, never back into text. **Quiz Q4/Q5 and Activity 3's second bug both need `str()`** — and it's the exact bug from Session 6's Activity 3. Add it live: `print("Sum: " + str(5))`.
 
 **Checkpoint (at 44 min)** — show hands:
 > *"Which of these fail: `int("7")`, `int("seven")`, `int("7.0")`?"*
@@ -446,6 +469,9 @@ print("Sum: " + str(result))
 
 ## Instructor Notes
 
+- ✅ **Verified against the real deck** (*"Copy of 2.2 Type Conversion"*). Slide Blocks A and B list the actual slides in order.
+- **Three deck slides pose a question and never answer it** — slide 5 (`message[3:6]`), slide 8 (`input() + input()`), slide 11 (`int("5.0")`). That's a deliberate teaching style and it works well **only if you run each one live.** If you click past them the class gets three open questions and no answers. Slide 11 is the critical one.
+- ⚠️ **Deck gaps this session's quiz depends on:** `[:2]`-style slicing (Q1), and `str()` entirely (Q4/Q5, Activity 3). Both scripted as live additions above. **Worth raising with the content team** — a session on type conversion that never shows `str()` is a real omission.
 - **This session pays off Sessions 6 and 7.** Students have already *felt* the TypeError; today they get the tool. Reference that debt explicitly in the hook — it makes the content feel earned rather than arbitrary.
 - **⚠️ The Classroom Quiz pools don't match this session's content.** Quiz A is slicing (which is in today's RM) and Quiz B is variable reassignment from Session 5. Type conversion — the session's actual title topic — appears only in the MCQ Practice pool. The five questions above are drawn accordingly. **Worth raising with the content team:** a session on type conversion with no classroom-quiz coverage of type conversion is a real gap, and any instructor who picks 5 questions at random from Quiz A/B will assess the wrong thing entirely.
 - **Two topics share this session** — slicing (Block A) and conversion (Block B) — and they aren't obviously related. Don't pretend they are. Say plainly: *"Two separate tools today, both about getting at the data you actually want."*

@@ -88,13 +88,26 @@ Wait for **even numbers**.
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred, deck not readable when this plan was written — see Instructor Notes -->
-Covers: the formats coding questions come in, how to read them, and how to extract the technical requirement.
+**Verified against the deck** (*"Copy of Understanding Coding Question Formats"*). Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1 | Welcome | Skip |
+| 2 | **Agenda** | Types of Coding Question Formats → Understanding Scenario/Story Format Questions → Tips for Solving Scenario/Story-Based Questions |
+| 3 | **Example — Coding Questions** | Two boxes side by side: **Example 1** the long Sarah-teaching-division story · **Example 2** the one-liner *"Write a program to print all factors of a given number"* — the same problem, two formats |
+| 4 | **Types of Coding Question Formats** | **Plain Technical Format** · **Scenario/Story Format** · *many more…* |
+| 5 | **Example 1** | The Sarah story shown alone, full width |
+| 6 | **Question** | *"Have you ever practice these type of questions?"* — a prompt to the room |
+| 7 | **Scenario/Story Format Questions** | ⭐ A funnel diagram: **1 Identify Key Information → 2 Convert to Technical Terms → 3 Extract the Core Problem** |
 
 **Beats to emphasise**
 
-- **Every problem has three things: an input, an output, and a rule connecting them.** Write those three words on the board and leave them up. Extract them for the hook's question: input = a range, output = numbers, rule = divisible by 2.
-- **Story words map to technical words.** Build this table on the board *with* the class — ask before you write each right-hand entry:
+- **Slide 3 is the whole session in one picture.** The same problem — find the divisors — written as a five-line story and as a one-line technical statement. Put both on screen and ask *"which would you rather be given, and which will you actually get?"*
+- **⭐ Slide 7's funnel is the deck's method, and it is better than a generic "input/output/rule" frame.** Use its three words verbatim — **Identify Key Information → Convert to Technical Terms → Extract the Core Problem** — throughout the session. Activity 1 and Activity 3 both map onto it directly.
+- **Slide 6 asks the room a question.** Take a genuine show of hands; it tells you how much of the room has met story-format questions before.
+- **Add input/output/rule as a sub-step of funnel stage 1**, not as a competing framework. Write those three words under "Identify Key Information".
+
+**Story words map to technical words.** Build this table on the board *with* the class — ask before you write each right-hand entry:
 
   | Story says | It means |
   |---|---|
@@ -107,9 +120,13 @@ Covers: the formats coding questions come in, how to read them, and how to extra
 
 - **Read the whole question before writing anything.** Students start coding from the first sentence and miss constraints in the last one.
 
-**Checkpoint (at 22 min)** — cold-call two students:
-> *"What three things does every problem statement contain?"*
-> **Answer:** The input, the output, and the rule connecting them.
+**Checkpoint (at 22 min)** — cold-call two students, using the funnel's words:
+> *"Name the three stages of the funnel on slide 7."*
+> **Answer:** Identify key information → convert to technical terms → extract the core problem.
+
+**Later slides** (after Activity 1): worked **Examples** comparing *without Scenario/Story* against *Scenario/Story* for the same task — e.g. *"Find the missing number in an array containing n distinct numbers taken from 0 to n"* beside a classroom story about a student who forgot to return their number. The deck closes on a **Practice** section card.
+
+> ⚠️ **The "Examples" slides use arrays and `n distinct numbers`** — content well beyond Session 14. **Use them for the story-vs-technical contrast only.** Do not attempt to solve them; students have not met lists. Say so out loud, or the room will assume they should be able to.
 
 ---
 
@@ -364,6 +381,9 @@ Clear a section of whiteboard, two markers.
 - **This is a recovery window after Session 13.** Loops are the hardest content in the course and some students will be shaken. There's no new syntax here, so if a chunk of the room is still lost on `while`, spend the practice block on loop tracing instead of this set. Say so honestly — students respect it.
 - **⚠️ No classroom quiz pool exists** for this session, so the usual quiz block is a live walkthrough of 5 MCQ Practice questions. The pool also contains `REARRANGE` items with no correct option in the data — **don't use those in a live vote.**
 - **The MCQ pool is only 23 questions**, the smallest in the first fifteen, and you'll use 5 in class. The practice block needs a second source — Session 13's 112-question loops pool is the natural choice and doubles as revision.
-- **Slide placement is unverified.** The deck exists but wasn't readable when this plan was written, so Block A's content is inferred from the session title and the MCQ pool's subject matter. Confirm against the real deck; the activities slot anywhere between blocks.
+- ✅ **Verified against the real deck** (*"Copy of Understanding Coding Question Formats"*). Slide Block A lists the actual slides in order.
+- **⭐ The deck's funnel (slide 7) is its best asset** — *Identify Key Information → Convert to Technical Terms → Extract the Core Problem.* Use those exact words all session. The plan's original input/output/rule frame is now a sub-step of stage 1 rather than a competing method.
+- **Slide 3 pairs the same problem in both formats** (long Sarah story vs. one-line technical). That single slide justifies the whole session — don't rush it.
+- ⚠️ **The deck's later Examples slides use arrays and `n distinct numbers`**, far beyond Session 14. They work as format contrasts and nothing more. Flagged at the end of Slide Block A.
 - **This session has more discussion than any other in the first fifteen.** If your room is quiet by default, Activity 3's board race is the one that reliably breaks the silence — consider moving it earlier.
 - **Session 15 is `for` loops** and is the last of this batch. It's a lighter session than 13; students who survived `while` will find `for` a relief. Say so at the end — it's genuinely reassuring.

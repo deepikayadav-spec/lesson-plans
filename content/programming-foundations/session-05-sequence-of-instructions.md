@@ -64,35 +64,59 @@ By the end of this session, students will be able to:
 
 ## Hook (7–10 min)
 
-Type this live, exactly as written, and run it:
+> **Don't run the `print(age)` / `age = 10` NameError here.** It is deck slide 7, about eight minutes away, complete with the explanation. Save it.
 
-```python
-print(age)
-age = 10
+Write these four lines on the board — no laptop, no slide:
+
+```
+a = 1
+b = 2
+a = b
+b = a
 ```
 
-Let the `NameError` land.
+> *"Four lines. When Python finishes, what's in `a` and what's in `b`? Thirty seconds, write it down."*
 
-> *"Everything in there is correct. Spelling's right, syntax is right, the variable exists — two lines down. So why did it fail?"*
+Most of the room says `a` is 2 and `b` is 1 — they read it as a swap, because that's what it looks like as a set of equations. The real answer is **both hold 2**: by the time line 4 runs, `a` is already 2, so `b` gets 2 back.
 
-Take a couple of guesses, then:
+Don't resolve it yet. Take a show of hands on each answer, write the counts on the board, and say:
 
-> *"Because Python doesn't read your program. It *executes* it, one line at a time, top to bottom, and it has no idea what's coming next. On line one, `age` genuinely does not exist yet. Today is about order — and order turns out to be most of programming."*
+> *"Half this room is confident and wrong — including some of you who are good at maths. That's not a maths mistake. It's that these aren't equations, they're **instructions**, and they happen in an order. By the end of the hour you'll all get this right, and we'll come back to these four lines."*
 
-Tie back to **Q6** — *"You all knew a variable's value can change. Today you'll find out that when it changes is the whole game."*
+Return to it in Activity 2, where the trace table makes it obvious.
+
+Tie back to **Q6** — *"You all knew a variable's value can change. Today you find out that **when** it changes is the whole game."*
 
 ---
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Program as a sequence → Defining a variable → Printing a variable's value → `print(age)` vs `print("age")` → Order of Instructions → the NameError → Spacing and IndentationError.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1 | Welcome | Skip |
+| 2 | **Recap — Data Types** | String · Integer · Float · Boolean |
+| 3–5 | **Agenda** (build) | Variables *(Printing and Assignment)* → Expressions |
+| 6 | **Program — Sequence of Instructions** | "A program is a **sequence** of instructions to a computer" |
+| 7 | **Common Mistakes — Order of Instructions** | `print(age)` then `age = 10` → **NameError**. Notes: "Python executes the code line-by-line" · "Variable `age` is not created by the time we tried to print" |
+| 8 | **Variable** | "Values in the variables can be changed" — glass changing colour |
+| 9 | **Variable Assignment** | `a = 1` · `print(a)` · `a = 2` · `print(a)` — **animated**, with a box labelled `a` whose contents change 1 → 2 |
+| 10–12 | **Value in Variable** | Three builds with box visuals: `a = b` (both become 2) · `a = b + 1` (a=3, b=2) · `a = a + 1` |
 
 **Beats to emphasise**
 
-- **`print(age)` vs `print("age")`.** The single most confusable pair in the session. Run both, back to back, every time it comes up. Quotes mean *the literal word*; no quotes means *what's in the box*.
-- **Line-by-line execution.** Say it as a rule and write it on the board: *Python does one line, finishes it, then looks at the next.*
-- **IndentationError:** a leading space breaks the line. Show it live — students hit this constantly and don't recognise it.
+- **Slide 2 is a recap your warm-up poll already did.** Twenty seconds.
+- **Slide 7 is the NameError.** This is where the hook's "instructions, not equations" idea gets its formal statement. Read both bullet points aloud — the deck words them well.
+- **Slides 9–12 animate the box.** Let the animation run and ask *"what's in the box now?"* before each click rather than narrating it. The visual is doing your work.
+- **Slide 12 (`a = a + 1`) is the line that breaks maths brains.** It's false as an equation and correct as an instruction. Read it aloud as *"take what's in a, add 1, put the result back in a."*
+
+> ⚠️ **The deck never shows `print(age)` vs `print("age")`.** That distinction is in the reading material and it's the subject of **Quiz Q2**. Add it verbally here — two lines, typed live:
+> ```python
+> age = 25
+> print("age")   # age
+> print(age)     # 25
+> ```
 
 **Checkpoint (at 22 min)** — cold-call two students:
 > *"`name = "Alice"`. What does `print(name)` show, and what does `print("name")` show?"*
@@ -103,6 +127,8 @@ Covers: Program as a sequence → Defining a variable → Printing a variable's 
 ## ⚡ Activity 1 — Human Compiler (22–27 min)
 
 **Format:** Human Compiler · **Exposes:** that students evaluate a program as a whole rather than one line at a time.
+
+> **This is deck slide 9, handed back to the students.** The deck just animated this exact program with a box visual. Say so: *"You watched Python do that. Now you do it, without the animation."* Doing it unaided immediately after seeing it done is the point — recognition is not the same as being able to.
 
 **Setup line:**
 > *"You're Python. I point at a line, you tell me what the machine does and what's in the box afterwards. Not what the program means — that one line only."*
@@ -186,6 +212,12 @@ What is the result of incorrect indentation in a Python code block?
 - The code will execute correctly, but it will be considered poor practice.
 
 > *Explanation (platform):* Incorrect indentation in Python leads to a syntax error because indentation is a part of the Python syntax used to define code blocks.
+> ⚠️ **The deck has no slide on indentation or spacing** — it isn't even in the deck's agenda. This comes from the reading material only. **Demonstrate it before the quiz** or the room will miss this question:
+> ```python
+> a = 10 * 5
+> b = 5 * 0.5
+>  b = a + b        # leading space → IndentationError
+> ```
 > **If they pick "poor practice":** they're carrying over from languages where whitespace is cosmetic. In Python it's grammar.
 
 **Q5** — `5b1004bc-2bd8-4336-84eb-a66893515505` *(Quiz C · APPLYING)*
@@ -203,14 +235,25 @@ What will be the output of `print(10 / 2 + 3)`?
 
 ## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Variable Assignment and reassignment examples → Expressions → BODMAS → worked evaluations.
+**Verified against the deck.** This half is a single well-built argument — don't shortcut it.
+
+| # | Slide | Content |
+|---|---|---|
+| 13 | **Order of Operations** | `5 * 2 + 3 * 4` — *"What are the different possible ways to evaluate this expression?"* |
+| 14 | **Approach 1** | `(5*2) + (3*4)` → 10 + 12 → **22** |
+| 15 | **Approach 2** | `5 * (2+3) * 4` → 5 * 5 * 4 → **100** |
+| 16 | **Approach 3** | `5 * 2 + (3*4)` … → 5 * 14 → **70** |
+| 17 | **BODMAS** | The six badges — B ( ) · O √ · D ÷ · M × · A + · S − — resolving the expression to 22 |
+| 18 | **Order of Operations (BODMAS)** | `print(10 / 2 + 3)` → `8.0`, reduced step by step: `10/2 + 3` → `5.0 + 3` → `8.0` |
+| 19 | **Order of Operations (BODMAS)** | `print(10 / (2 + 3))` → `2.0` |
+| 20 | Tomorrow's Session | *Input and Output Basics* |
 
 **Beats to emphasise**
 
-- **`a = a + 1`.** The line that breaks maths brains — it's false as an equation and correct as an instruction. Read it aloud as *"take what's in a, add 1, put the result back in a."*
-- **BODMAS is not new.** Students know this from school. Frame it as *"Python follows the rule you already know"* — that's reassuring, and it's true.
-- Run `print(10 / 2 + 3)` and `print(10 / (2 + 3))` back to back. Same characters, brackets moved, different answers.
+- **Do not tell students BODMAS is old news.** The deck deliberately produces **three different answers — 22, 100, 70 — to the same expression** *before* naming the rule. That manufactured confusion is the whole point: it makes the rule feel necessary rather than remembered. Take a vote on each approach before revealing slide 17.
+- **Slide 18 is Quiz Q5 verbatim** (`print(10 / 2 + 3)` → `8.0`). The deck even shows the reduction. If the room follows this slide, they will get Q5 right.
+- **Slides 18 and 19 are the bracket pair.** Same characters, brackets moved, `8.0` versus `2.0`.
+- **Flag the `.0` in both answers** — division always returns a decimal. It comes back in Session 8.
 
 **Checkpoint (at 44 min)** — show hands:
 > *"`a = 5`, then `a = a + 3`. What's in `a`?"*
@@ -333,7 +376,11 @@ print("name")
 
 ## Instructor Notes
 
-- **Two big ideas share this session:** execution order (hook, Block A, Activities 1 & 3) and expression evaluation (Block B, Activity 2, Quiz Q5). If you're short on time, protect execution order — BODMAS is revision from school, order is genuinely new.
+- ✅ **Verified against the real deck** (*"Copy of 1.3 Sequence of Instructions"*, ~20 slides). Slide Blocks A and B list the actual slides in order.
+- **Two big ideas share this session:** execution order (hook, Block A, Activities 1 & 3) and expression evaluation (Block B, Activity 2, Quiz Q5). Both are well supported by the deck — don't cut either.
+- ⚠️ **Two things the quiz tests that the deck never shows:** `print("age")` vs `print(age)` (Quiz Q2) and indentation errors (Quiz Q4). Both are in the reading material only. Scripted verbal fixes are in Slide Block A and at Quiz Q4. **Worth raising with the content team** — two of five quiz questions assess material absent from the deck.
+- **The deck's box animation (slides 9–12) is the same mental model as Activity 2's trace table.** Use the deck's vocabulary — "what's in the box" — in both, so students see them as one idea rather than two.
+- **The hook's four-line puzzle resolves in Activity 2.** Come back to it explicitly; students remember being wrong and want the answer.
 - **Warm-up Q3 is a gate.** If the room can't identify `"42"` as a string, `print("age")` vs `print(age)` will not land today. Spend the 30 seconds.
 - **Activity 2 is an investment in Session 13.** Variable-state tracing is exactly the skill loops require. If it lands well here, say so and name it — *"remember this table, you'll need it."*
 - **Pacing risk:** the `a = a + 1` discussion in Block B expands to fill any space you give it. Cap at 3 minutes; Activity 2 reinforces it anyway.

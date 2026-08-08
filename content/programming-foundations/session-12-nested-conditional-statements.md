@@ -97,18 +97,25 @@ Tie back to **Q7** — *"You said indentation decides what's inside a block. Tod
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Nested Conditions → the matches/goals example → Nested Condition in an Else Block.
+**Verified against the deck** (*"Copy of 4.3 Nested Conditional Statements"*). Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1–3 | Welcome · Recap | |
+| 4 | **Agenda** | Nested Conditions *(Indentation)* → Else If Statement *(if-elif-else)* |
+| 5 | **Nested Conditions** — the structure diagram | `if condition A:` → Block 1, `if condition B:` → Block 2, Block 3, then Block 4 outside. **Each block ticked or crossed as the conditions resolve**, with Block 4 labelled *"Will always execute"* |
+| 6+ | **Nested Conditions** | Worked code examples |
+| 7+ | **Possible Mistakes** | `is_a_greatest` / `is_b_greatest` three-number example → **`NameError: name 'is_b_greatest' is not defined`**, with the offending block highlighted in red |
 
 **Beats to emphasise**
 
-- **Each nesting level is four more spaces.** Write the levels on the board as `0 · 4 · 8` and point at them in the code.
-- **`print("Winner")` sits at level 4, not 8** — so it runs whenever the *outer* condition is true, regardless of the inner one. This single line is what makes the example teach anything. Trace it explicitly with both inputs.
-- **Nesting inside `else` works the same way.** The RM's three-way largest-number example is worth showing, but don't dwell — `elif` in Block B does the same job more cleanly.
+- **Slide 5 is a better teaching device than any code.** It's an abstract diagram with dashed boxes showing which block belongs to which condition, and green ticks / red crosses showing what runs. **Use its vocabulary — Block 1, Block 2, Block 3, Block 4 — then map your code onto it.** Students who can read this diagram can read any nesting.
+- **"Block 4 will always execute"** is called out explicitly on the slide. That is the `print("Winner")` idea from the reading material, stated more clearly. Point at it.
+- **Slide 7's `NameError` is subtle and worth real time.** `is_b_greatest` is defined *inside* the `else` block, then used by an `if` at the outer level — so when the `else` doesn't run, the variable never exists. This combines Session 5's NameError with today's indentation. It is the best slide in the deck for showing that indentation has consequences beyond syntax.
 
-**Checkpoint (at 22 min)** — cold-call two students:
-> *"In the matches example, which line runs when `matches_won` is 10 and `goals` is 18 — and why?"*
-> **Answer:** Only `Winner`. The outer condition was true so its block ran; the inner condition was false so `Hurray` was skipped.
+**Checkpoint (at 22 min)** — cold-call two students, using the slide's own labels:
+> *"On the diagram — if condition A is True and condition B is False, which blocks run?"*
+> **Answer:** Block 1, Block 3 and Block 4. Block 2 is skipped.
 
 ---
 
@@ -267,30 +274,28 @@ If multiple `elif` conditions evaluate to true, which block executes?
 
 ## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: `elif` → multiple `elif` statements → ordering.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 8 | **Elif Statement** — the structure diagram | `if condition A:` **False** → Block 1 ✗ · `elif condition B:` **False** → Block 2 ✗ · `else:` → Block 3 ✓. Same tick/cross visual language as slide 5 |
+| 9+ | **Elif** | Worked code examples with `%` divisibility checks |
+| last | Next Session | *Loops* |
 
 **Beats to emphasise**
 
-- **`elif` replaces nested `if`/`else` chains.** Show the same problem both ways and let students see which is readable:
-  ```python
-  if x > 10:
-      print("Greater than 10")
-  elif x > 7:
-      print("Greater than 7")
-  else:
-      print("7 or less")
-  ```
-- **Python stops at the first true condition.** Everything below it is skipped even if also true. Run the `x = 5` example from Quiz Q4 and point at the skipped `elif`.
-- **`else` must be last.** `elif` after `else` is a SyntaxError — show it.
-- **Order changes behaviour.** Type this and run with `x = 100`:
-  ```python
-  if x > 3:
-      print("Above 3")
-  elif x > 50:
-      print("Above 50")
-  ```
-  It prints `Above 3` and never checks the second. No error — just wrong. Say plainly: *"Put your most specific condition first."*
+- **Slide 8 mirrors slide 5 deliberately** — same diagram grammar, same ticks and crosses. Say so: *"Same picture, different construct. Nesting goes inwards; elif goes downwards."* That contrast is the clearest way to explain when to use which.
+- **Exactly one block runs in an `if`/`elif`/`else` chain.** The diagram shows it — two crosses and one tick.
+- **`%` appears in the deck's elif examples** (divisible by 10, divisible by 5). Students met `%` only as a passing mention in Session 11's exit ticket. **Give it one sentence before slide 9:** `%` gives the remainder, `n % 10 == 0` means divisible by 10.
+
+> ⚠️ **Two things the deck does not show, both tested:**
+> - **`elif` ordering going wrong.** No slide demonstrates that a badly ordered chain silently gives the wrong answer. That's **Quiz Q5 and Activity 3's core idea** — the most important thing in the session. Type it live:
+>   ```python
+>   x = 100
+>   if x > 3:      print("Above 3")     # this wins
+>   elif x > 50:   print("Above 50")    # never checked
+>   ```
+> - **`elif` after `else` being a SyntaxError** (Activity 2 snippet 3). Run it.
 
 **Checkpoint (at 44 min)** — show hands:
 > *"Three `elif` conditions are all true. How many blocks run?"*
@@ -505,6 +510,11 @@ if n > 3:
 
 ## Instructor Notes
 
+- ✅ **Verified against the real deck** (*"Copy of 4.3 Nested Conditional Statements"*). Slide Blocks A and B list the actual slides in order.
+- **The deck's two structure diagrams (slides 5 and 8) are its strongest assets.** Both use the same tick/cross grammar, so nesting and `elif` can be contrasted picture-to-picture. Teach from the diagrams and map code onto them, rather than the reverse.
+- **Slide 7's `NameError`** — a variable defined inside an `else` block and used outside it — is the deck's best argument that indentation has real consequences. Don't rush it.
+- ⚠️ **The deck never shows a mis-ordered `elif` chain**, which is Quiz Q5 and the point of Activity 3. Live-typing script is in Slide Block B. **Worth raising with the content team** — it's the highest-value idea in the session and it's absent.
+- **`%` shows up in the deck's elif examples** but has never been formally taught. One sentence before slide 9.
 - **This session is two topics** — nesting (Block A, Activity 1) and `elif` (Block B, Activities 2–3). They solve the same problem, and `elif` is usually the better answer. Say that explicitly; students otherwise nest three levels deep in the homework.
 - **Turn on indent guides in your editor** before this session. Nesting is invisible without them on a projector at the back of the room.
 - **The single most valuable moment is Activity 3 snippets 1 and 2.** Same values, order swapped, different output, no error. If you cut anything, don't cut that pair.

@@ -113,11 +113,22 @@ Then change `5` to `1000`, run it, let it scroll.
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: what loops are for → the `while` loop → the consecutive-numbers example.
+**Verified against the deck** (*"Copy of 5.1 Loops"*). Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1–3 | Welcome · **Recap — Nested Conditions** | The `if` / `elif` / `else` block diagram from Session 12 |
+| 4 | **Introduction — Sequence of Instructions** | "Python executes code in a sequence and each block of code is executed **once**" |
+| 5 | **Introduction to Loops — Code** | `a = int(input())` then `a = a + 1` / `print(a)` **written out three times**, input `5` → output `6 7 8` |
+| 6 | **While Loop** | The same task as a loop, with `condition` **blanked out and highlighted** → *"What should the condition be?"*, and a dashed arrow showing control jumping back from `counter = counter + 1` to the `while` line |
+| 7+ | **While Loop** | `while counter < 3:` filled in, stepping through with **coloured boxes** for `a` (green) and `counter` (purple) updating alongside the output |
 
 **Beats to emphasise**
 
+- **Slide 4 is the setup for your hook.** "Each block is executed *once*" is exactly the assumption loops break. One line, then move.
+- **Slide 5 is the manual version** — the same three lines copy-pasted. Ask *"and if I wanted a thousand?"* before advancing. That's the whole motivation.
+- **Slide 6 leaves the condition blank and asks the room.** Take answers before revealing. The dashed control-flow arrow is worth pointing at explicitly — it shows the jump back, which is the thing students can't see in flat code.
+- **Slides 7+ animate two boxes** — `a` and `counter` — updating each pass, beside the output. This is the deck's version of Activity 1's trace table. Ask *"what's in each box now?"* before each click.
 - **Three parts, and name them every time.** Write them on the board and leave them up:
   ```
   1. INITIALISE   counter = 0        (before the loop)
@@ -302,8 +313,11 @@ while counter < 3:
 
 ## Slide Block B (35–45 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Possible Mistakes — missing initialisation, incorrect termination condition, counter not updated.
+**Verified against the deck.** Remaining slides cover **Common Mistakes and Errors** then a **Code Walkthrough**, closing on a Key Takeaways slide that names the session's structure explicitly:
+
+> Loops · While Loop (**Syntax · Initialization · Termination Condition · Updation**) · Common Mistakes and Errors · Code Walkthrough
+
+**Use the deck's own four words** — Syntax, Initialization, Termination Condition, Updation. They match the three-parts framing from Block A with syntax added, and they're what the Key Takeaways slide will show at the end.
 
 **Beats to emphasise**
 
@@ -533,6 +547,11 @@ It counts *up* forever. Let it run three seconds, Ctrl+C.
 
 ## Instructor Notes
 
+- ✅ **Verified against the real deck** (*"Copy of 5.1 Loops"*). Slide Blocks A and B list the actual slides in order.
+- **The deck's own vocabulary is Syntax / Initialization / Termination Condition / Updation** — it appears on the closing Key Takeaways slide. Use those four words rather than inventing your own; they map onto the three-parts framing with syntax added.
+- **Slide 6 blanks out the loop condition and asks the class** — take answers before revealing. Its dashed arrow showing control jumping back to the `while` line is the single clearest visual in the deck for what a loop actually does.
+- **Slides 7+ animate `a` and `counter` as coloured boxes.** That is Activity 1's trace table, pre-built. Ask what's in each box before each click, then have students do it unaided in the activity.
+- ⚠️ **The deck does not demonstrate an infinite loop running**, and nothing shows how to stop one. **Ctrl+C is entirely instructor-supplied** — and it's the single most important practical thing in this session. Don't skip it.
 - **This is the hardest session in the first fifteen.** Loops are where beginner attrition happens. Everything before this ran once, top to bottom; this breaks that model. Expect the quiz results to be worse than usual and don't read it as failure.
 - **Activity 1 is the load-bearing activity.** A student who can trace a loop can debug one; a student who can't will guess all term. If you're short on time, cut Activity 3 rather than shortening the trace.
 - **You must demonstrate Ctrl+C.** Students who hit an infinite loop at home and don't know how to stop it conclude they've broken something and stop working. Do it live, twice, calmly.
