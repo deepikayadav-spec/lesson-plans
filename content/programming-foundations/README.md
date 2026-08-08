@@ -97,7 +97,7 @@ Carried from the platform export. None of these are errors in the plans; each is
 
 ### Content issues worth fixing on the platform
 
-1. **15 questions have an empty `answer_explanation`.** Explanations are authored in the plans and labelled as such, but this is a systematic gap rather than a handful of oversights. Worth an audit.
+1. **409 of the 1,855 questions across these 15 sessions (22%) have an empty `answer_explanation`.** Ten of them happened to be questions quoted in these plans; explanations for those are authored here and labelled as such. The remaining ~400 are unaddressed. This is a systematic content gap, not a handful of oversights.
 2. **Session 5, question `9ae028e4`** has a wrong answer key — it marks `3` where Python returns `3.0`. Avoided in the plans and flagged.
 3. **Session 11, question `b6cc2147`** has two defensible options; one describes the error, the other describes the fix, and only the first is marked correct. Students will argue. Handled in the plan.
 4. **Session 8's quiz pools** don't cover the session's title topic. An instructor picking five questions at random would assess the wrong thing entirely.

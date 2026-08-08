@@ -58,6 +58,12 @@ def _cells(row):
 
 
 def render(md):
+    # Source notes about unverified slide placement must stay VISIBLE — they warn
+    # the instructor that a block's contents were inferred, not read off the deck.
+    # Promote them to a rendered note before comments are stripped.
+    md = re.sub(r"<!--\s*(placement:.*?)-->",
+                lambda m: "\n\n@@NOTE@@%s\n\n" % m.group(1).strip().rstrip("-").strip(),
+                md, flags=re.S | re.I)
     md = re.sub(r"<!--.*?-->", "", md, flags=re.S)
     lines, out, i = md.split("\n"), [], 0
 
@@ -122,6 +128,10 @@ def render(md):
                   ' class="h-warn"' if txt.startswith("⚠️") else "")
             out.append('<h%d id="%s"%s>%s</h%d>'
                        % (lvl, slugify(txt), cls, inline(txt), lvl))
+            i += 1; continue
+
+        if ln.startswith("@@NOTE@@"):                               # source caveat
+            out.append('<p class="caveat">%s</p>' % inline(ln[8:].strip()))
             i += 1; continue
 
         if ln.strip():                                              # paragraph
@@ -321,6 +331,9 @@ a.item .t{flex:1}
 .doc td{padding:9px 13px;border-bottom:1px solid var(--rule2);vertical-align:top}
 .doc tr:last-child td{border-bottom:0}
 .doc td code{white-space:pre-wrap}
+.doc p.caveat{font-size:12.5px;color:var(--warn);background:var(--act-soft);
+ border:1px dashed var(--warn);border-radius:6px;padding:7px 11px;margin:0 0 14px}
+.doc p.caveat::before{content:"⚠ ";font-weight:700}
 @media (max-width:880px){
   .side{position:fixed;left:0;top:0;z-index:40;transform:translateX(-100%);
    transition:transform .18s;box-shadow:0 0 40px rgba(0,0,0,.2)}
