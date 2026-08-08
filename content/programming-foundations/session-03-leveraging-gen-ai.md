@@ -72,14 +72,25 @@ Take a volunteer. Most rooms cannot answer.
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred, no deck available to confirm — see Instructor Notes -->
-Covers: what Gen AI tools can do for a learner, where they help, where they hurt, how to prompt.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1 | Welcome | Skip |
+| 2–3 | **Agenda** | AI-Powered Learning → Code Explanation → Generation, with callouts *Maximize your learning with AI* and *Code / Quiz / Coding-problem generation* |
+| 4 | **Why Python?** | AI · Data Science · Machine Learning · Supportive Community |
+| 5 | Section card | *AI-Powered Learning* |
+| 6 | **AI-Powered Learning** | "AI tools can help you write code faster, but they **shouldn't replace your understanding**" |
+| 7 | **AI-Powered Learning** | "To truly master Python you need core concepts, logic, and creativity behind problem-solving" |
+| 8 | **Three steps** | 1 Use AI tools like ChatGPT/Gemini → 2 Implement structured prompting → 3 Enhance your learning |
+| 9 | **Think · Reason · Explore** | "Instead of relying on AI to hand you code, use it as a **tutor**" |
+| 10 | **Better prompts** | "Learning to write better prompts is a skill that amplifies your growth with AI" |
 
 **Beats to emphasise**
 
-- **The distinction that matters:** asking for an *answer* versus asking for an *explanation*. Everything else in the session hangs off this.
-- **Verification is not optional.** AI produces confident, wrong code routinely. Running it is the only test.
-- Keep the tone practical, not moralising. Students will use these tools regardless; a lecture about honesty loses the room. Frame it entirely as self-interest — *"this is how you avoid being the person who can't answer in an interview."*
+- **Slide 4 is a recap from Session 1.** Twenty seconds, no more — the room has seen it.
+- **Slides 6 and 9 carry the whole session.** "Shouldn't replace your understanding" and "use it as a tutor, not a vending machine" are the two sentences students should leave with. Everything else is mechanism.
+- **Slide 9's Think / Reason / Explore** is the frame for Activity 1 — name it there and refer back.
 
 **Checkpoint (at 22 min)** — cold-call:
 > *"Give me one question you could ask an AI that would make you smarter, and one that would make you weaker."*
@@ -113,14 +124,27 @@ Covers: what Gen AI tools can do for a learner, where they help, where they hurt
 
 ## Slide Block B (28–42 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred, no deck available to confirm -->
-Covers: prompting technique, verification, and the limits of these tools.
+**Verified against the deck.** This is the practical half — it hands students **three reusable prompt templates.**
+
+| # | Slide | Content |
+|---|---|---|
+| 11 | **Your First Python Program using AI** | "Let's start by using AI to help you write and understand your very first Python program" |
+| 12 | Section card | *Coding Explanation* |
+| 13 | **Coding Explanation** | ⭐ **Prompt template:** *"Explain what the given code does and then simplify/break down the given code in python into steps, and explain each step in simple terms to a school kid in India who has just learned Python"* — shown with a worked code example |
+| 14 | **Generating Code** | "AI can help to generate code from scratch" |
+| 15 | Section card | *Quiz Generation* |
+| 16 | **Quiz Generation** | "Gen AI can create personalized quizzes based on what you've just learned" |
+| 17 | **Quiz follow-up** | ⭐ **Prompt:** *"Now, increase the difficulty of the questions on [concept], and ask questions that are hard and tricky. If I couldn't answer the questions, provide explanations for the questions."* |
+| 18 | **Coding Problem Generation** | ⭐ **Full prompt template** with `[current concept/topic]` and `[List of previous concepts/topics]` placeholders — asks the AI to specify task, input format, output format, sample test cases, edge cases, and to review the student's solution afterwards |
+| 19 | Next Session | Closing |
 
 **Beats to emphasise**
 
-- **Show a wrong answer.** Ask the AI something slightly ambiguous and let it produce confidently incorrect code. Run it. This single demo does more than any warning.
-- **Prompting is a skill, not a trick.** Specific context in, useful answer out.
-- **Never paste code you can't explain.** Make this the session's one hard rule.
+- **The three starred slides are the takeaway.** Tell students explicitly to screenshot or copy slides 13, 17 and 18 — they are reusable for the whole course, not just today.
+- **Slide 18 is the most valuable single slide in this session.** It generates practice problems calibrated to exactly what they've learned so far. Spend real time on the two placeholders and how to fill them.
+- **Slide 17's follow-up move** — asking the AI to make it harder — is the difference between passive quizzing and deliberate practice.
+
+> ⚠️ **Slide 13's code example is far beyond this session.** It uses a `while` loop, `int(input())` and a counter — content from Sessions 8 and 13. At Session 3 students have only seen `print()`. **Do not walk the class through that code.** Show the *prompt*, say the code is a preview of week three, and move on. If you trace it line by line you will lose the room for ten minutes.
 
 **Checkpoint (at 42 min)** — show hands:
 > *"AI gives you five lines of code and it runs correctly. Are you done?"*
@@ -132,25 +156,33 @@ Covers: prompting technique, verification, and the limits of these tools.
 
 **Format:** Write the Question · **Exposes:** whether students can construct a prompt that teaches them something, rather than one that hands them an answer.
 
+> **Use the deck's own templates.** Slides 13, 17 and 18 hand students working prompts. Adapting a real template beats inventing one from scratch — and it means what they write today is something they'll actually reuse.
+
 **Setup line:**
-> *"Everyone writes one prompt. The rule: it must be a prompt that would help you learn, and it must be about something we've actually covered — printing, quotes, arithmetic, errors. You have three minutes."*
+> *"Slide eighteen is on screen. That's a professional-grade prompt with two blanks in it. Your job: fill both blanks for **where you actually are** — you finished Session 1 and 2, you know `print`, quotes and arithmetic. Write the version you'd send tonight. Three minutes."*
 
-**What students do:** Write one prompt on paper or in chat.
+Leave slide 18 projected the whole time.
 
-**How it surfaces:** Collect four. Read them out anonymously. For each, ask the room: *"Does this make the person smarter or weaker?"*
+**What students do:** Fill in `[current concept/topic]` and `[List of previous concepts/topics]` on paper or in chat.
 
-Then **run the best one live** against a real tool and evaluate the answer together — is it correct? Is it clear? Would you have learned from it?
+**How it surfaces:** Collect four. Read them out anonymously. For each ask: *"Would the problem this generates be solvable with what we know today?"*
+
+That question is the whole activity. Students routinely write *"loops"* or *"functions"* into the blank because it sounds impressive, then get a problem they cannot attempt — which is exactly how they end up pasting an AI answer they don't understand.
+
+Then **run the best one live** and read the generated problem together. Ask: *can we actually solve this right now?*
 
 **Debrief line:**
-> *"You just wrote the difference between a student who uses AI and a student who's used by it. Same tool, different question."*
+> *"The template did the hard part. The skill is being honest about what you've actually learned. Overstate it and the AI hands you something you can only copy."*
 
-**Cut rule:** Collect two prompts instead of four; skip the live run.
+**Cut rule:** Collect two instead of four; skip the live run.
 
 ---
 
 ## ⚡ Activity 3 — Real-World Callout (50–57 min)
 
 **Format:** Real-World Callout · **Exposes:** the assumption that AI is a general-purpose oracle rather than a tool with specific failure modes.
+
+> ⚠️ **This activity is instructor-added, not deck-supported.** The deck covers what AI is *good* for and never mentions that it produces confident wrong answers. That's a real gap — students will meet hallucinated code within a week. Keep this activity; it is the only verification content in the session.
 
 **Setup line:**
 > *"Shout out one time an AI tool gave you something confidently wrong. Any subject, not just code."*
@@ -201,6 +233,9 @@ Then **run the best one live** against a real tool and evaluate the answer toget
 - **You need a live AI tool on the projector.** Test it before class. Have a fallback screenshot ready if the network fails — the hook does not work without a live demo.
 - **Tone is everything in this session.** Moralising loses the room in the first two minutes. Every argument here is self-interest: *this is how you avoid looking stupid in an interview.* That lands; "don't cheat" does not.
 - **Warm-up Q7 changes your emphasis.** A room that already uses these tools daily needs the guardrails and the wrong-answer demo. A room that's barely used them needs the capability side first, or the warnings are abstract.
-- **Slide placement is unverified.** The deck exists on the platform but was not readable when this plan was written, so Block A/B contents are inferred from the session title and objectives. Confirm the split against the real deck and adjust the two blocks — the activities can slot anywhere between them.
+- ✅ **Verified against the real deck** (*"Copy of Session 1 — Leveraging Gen AI for Accelerated learning"*, 40 animation steps, ~19 slides). Slide Blocks A and B list the actual slides in order.
+- **The deck's real value is three prompt templates** (slides 13, 17, 18). Tell students to copy them. Most of this session's long-term benefit is those templates being reused across the next fourteen sessions.
+- ⚠️ **Deck gap: nothing about AI being wrong.** There is no slide on hallucination, verification, or checking output. The deck is entirely about what these tools are good for. Activity 3 is the only counterweight — don't cut it. **Worth raising with the content team.**
+- ⚠️ **Deck gap: slide 13's code example is three sessions ahead** (`while`, `int(input())`, counter). Show the prompt, not the code. Flagged in Slide Block B.
 - **Pacing risk:** Activity 2's live run can rabbit-hole. Cap it at 3 minutes and move.
 - **Data note:** no reading material, no classroom quiz, no MCQ pool exists for this session on the platform. Homework points back to Session 1.

@@ -64,39 +64,47 @@ By the end of this session, students will be able to:
 
 ## Hook (7–10 min)
 
-Type this live and run it:
+> **Set up the deck's own device.** Slide 8 is a sports **Application Form**, and that form carries the entire session — every field becomes a variable, every answer becomes a data type. Prime it here rather than introducing a competing analogy.
 
-```python
-print(2495 + 789358)
-```
+Draw four blank lines on the board and say:
 
-> *"Fine. Now imagine I need that number twelve more times in this program. Am I typing 2495 every single time?"*
+> *"You're signing up for a sports trial. Shout out what the form asks you."*
+
+Take answers until you have roughly: **Sport**, **Age**, **Height**, and something yes/no like *have you played before*. Write each as a label with a blank beside it.
 
 Then:
 
-```python
-a = 2495
-b = 789358
-print(a + b)
-```
+> *"Look at what you've built. Every line has two parts — a **name** on the left that never changes, and a **value** on the right that's different for every one of you. That is a variable. And notice the answers aren't all the same kind of thing: one's a word, one's a whole number, one's got a decimal, one's just yes or no. That's a data type. Both ideas, and you invented them before I opened a slide."*
 
-> *"Same answer. But now the numbers have names, and I can use them anywhere. That's a variable — a box with a label on it. Today the whole session is about what you can put in the box, and what happens depending on what you put in."*
-
-Tie back to **Q7** — *"Most of you got the quotes question right. Hold on to it, because today it decides what type your data is."*
+Tie back to **Q7** — *"Most of you got the quotes question right. Hold on to it — today it decides which of those kinds you're actually holding."*
 
 ---
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Variables → Values → Data Type → String → Integer → Float → Boolean.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1 | Welcome | Skip |
+| 2 | **Recap — Hello World Program** | `print("Hello World!")` and its output |
+| 3 | **Recap — Those Who Can't Understand** | "Focus more on Projects" |
+| 4–7 | **Agenda** (build) | Variables *(Containers)* → Data Types *(int, float, string, boolean)* → Assignment Operator |
+| 8 | **Announcement — Application Form** | Blank form: Sport, Age (yrs), Height (ft), *Did you participate anywhere before?* Yes/No |
+| 9–10 | **Names and Values** | Same form filled in — Cricket, 10, 4.2, Yes — then the left column labelled **Variable Names** |
+| 11 | **Variable** | "Values in the variables can be changed" — glass changing colour |
+| 12 | **Data Type** | Sport: Cricket → **String** |
+| 13 | **String** | Stream of characters: capitals, small letters, digits, special characters, **space** — with `"Hello World!"` and the space arrowed |
+| 14 | **2 vs "2" — Mathematical Value vs Character** | `2` → Integer · `"2"` → String |
+| 15–16 | **Data Type** | Yes → **Boolean**, then all four mapped at once: String · Integer · Float · Boolean |
 
 **Beats to emphasise**
 
-- **Container, and the value can change.** Both halves matter — the second half is what Session 5 builds on.
-- **String:** anything in quotes, single or double. Emphasise that `"1234"` is a string. This is the session's central trap and it's better introduced early than sprung later.
-- **Boolean:** `True` and `False`, capital letter, no quotes. Say the capital out loud — students write `true` constantly.
-- **Float:** anything with a decimal point. Connect back to warm-up Q4 — *"that `3.0` you saw earlier? That's a float."*
+- **Slides 2–3 are a recap your warm-up poll already did.** Thirty seconds total. Don't re-teach Hello World.
+- **The Application Form is the spine of this session.** Every subsequent slide returns to it. If you built the form on the board in the hook, say *"this is the same form"* when slide 8 appears — the continuity does a lot of work.
+- **Slide 14 is the session's central trap** and it's given its own slide. `2` versus `"2"`. Slow down, say it twice: quotes turn a number into text. Quiz Q4 and Activity 2 both come back to this.
+- **Slide 13:** note that a **space** counts as a character, and that digits inside quotes are still string characters. That's what makes `"423"` a string.
+- **Boolean:** the deck shows it as a Yes/No tick box. Add verbally that in Python it's written `True` / `False` — **capital letter, no quotes.** The deck never shows the Python spelling, and students write `true` constantly.
 
 **Checkpoint (at 22 min)** — cold-call two students:
 > *"Give me the data type of `"42"` and of `42`."*
@@ -186,18 +194,25 @@ Is `number = "123"` assigning an integer value to `number`?
 
 ## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Assigning Value to Variable → the `=` assignment operator → worked examples.
+**Verified against the deck.** Only two slides — this block is short, so there is room to run examples live.
+
+| # | Slide | Content |
+|---|---|---|
+| 17 | **Python Syntax — Assigning Value to a Variable** | `age = 10`, with all three parts arrowed and labelled: **Variable Name** · **Assignment Operator** · **Value** |
+| 18 | **Summary** | Table — Data type · Definition · Additional Examples (String = stream of characters, `"Book"`, `"423"`; Integer = …-3, -2, -1, 0, +1…) |
+| 19 | Thank You | Closing |
 
 **Beats to emphasise**
 
-- **`=` means "put this in that box."** It is not the equals sign from maths. Say this explicitly — it prevents a misconception that becomes expensive around conditionals.
+- **Use slide 17's three labels as your vocabulary** — Variable Name, Assignment Operator, Value. The deck names all three explicitly; matching its words keeps you consistent with the reading material and the quiz.
+- **`=` means "put this in that box."** It is not the equals sign from maths. The deck doesn't say this — add it. It prevents a misconception that becomes expensive at conditionals.
 - **Reading direction:** right side first, then into the left. `age = 10` is *"take 10, put it in age."*
-- Run every example live. Assign, then print, so students see the value actually come back out.
+- **This block is only two slides.** Don't stretch it — instead type live: assign, then print, so students see the value come back out. Then go to Activity 2 early if you're ahead.
+- **Slide 18's summary table lists `"423"` as a string example** — point at it. It's slide 14's lesson restated, and it's exactly Quiz Q4.
 
 **Checkpoint (at 44 min)** — show hands:
-> *"`score = 100`. What's on the left, what's on the right, and which happens first?"*
-> **Answer:** `score` is the box, `100` is the value, and the right side happens first.
+> *"`score = 100`. Name the three parts, using the slide's words."*
+> **Answer:** `score` is the Variable Name, `=` is the Assignment Operator, `100` is the Value.
 
 ---
 
@@ -315,7 +330,11 @@ The last one is the one that matters. Scan for it on the way out.
 
 ## Instructor Notes
 
-- **The whole session rests on one idea:** quotes decide the type. Warm-up Q7 measures it, Activity 1 contrasts it, Quiz Q4 tests it, Activity 2 makes it bite, Activity 3 shows it failing silently. If you cut anything, keep that chain intact.
+- ✅ **Verified against the real deck** (*"Copy of 1.2 Variables and Datatypes"*, ~19 slides). Slide Blocks A and B list the actual slides in order.
+- **The whole session rests on one idea:** quotes decide the type. Warm-up Q7 measures it, **deck slide 14 states it**, Activity 1 contrasts it, Quiz Q4 tests it, Activity 2 makes it bite, Activity 3 shows it failing silently. If you cut anything, keep that chain intact.
+- **The deck's Application Form is its spine** — slides 8–16 all return to it. The hook now builds that form on the board first, so the slides land as confirmation rather than a new idea.
+- **Block A is nine content slides, Block B is two.** The deck is heavily front-loaded. Expect to be ahead of schedule after slide 18 and use the spare minutes on live typing, not on stretching the summary.
+- ⚠️ **The deck never shows Python's `True` / `False` spelling** — Boolean appears only as a Yes/No tick box. Add it verbally, or students will write `true` all week. Quiz Q5 depends on it.
 - **Don't teach `==` today.** It will come up when someone reads `=` as comparison. Acknowledge it exists, name the session it arrives in, move on. Teaching it early costs you ten minutes and confuses the assignment concept.
 - **Don't teach type conversion today either.** `int()` and `str()` are Session 8. Students will ask after Activity 2's TypeError — tell them it's coming and that they'll appreciate it more having felt the problem first.
 - **Pacing risk:** Slide Block A has four data types and it's tempting to give each equal time. Don't — String and Integer carry the session, Float and Boolean need 90 seconds each.

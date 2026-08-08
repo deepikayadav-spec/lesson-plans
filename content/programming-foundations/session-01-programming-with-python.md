@@ -22,7 +22,7 @@
 
 By the end of this session, students will be able to:
 
-1. Define software, programming, code, and syntax, and state how they relate. *(REMEMBERING)*
+1. Define software as a set of instructions to the hardware, and explain what a programming language is for. *(REMEMBERING)*
 2. Explain why Python is chosen for this course by comparing it against Java for the same task. *(UNDERSTANDING)*
 3. Write and run a `print()` statement that displays a text message. *(APPLYING)*
 4. Predict the output of `print()` with and without quotes, and perform arithmetic inside `print()`. *(APPLYING)*
@@ -68,42 +68,63 @@ Say: *"Seven quick questions. Nobody is graded, nobody is named. I need to know 
 
 ## Hook (7–10 min)
 
-Put both of these on the board side by side, nothing else:
+> **Do not use the Java-vs-Python comparison here.** It is slide 16 of your own deck
+> ("Easy to Learn"), about fifteen minutes away. Showing it twice kills it.
 
-```java
-class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
-}
-```
+Stand at the board with a marker. Ask for one volunteer to stay seated and give you
+instructions.
 
-```python
-print("Hello World")
-```
+> *"I am now a computer. I will do **exactly** what you tell me — nothing more, nothing
+> less. Your job: get me to write your name on that board."*
 
-Ask: *"Both do exactly the same thing. Show of hands — who wants to learn the top one?"*
+Follow every instruction with deliberate literalism. *"Pick up the marker"* — pick it up
+and stop. *"Write my name"* — write the words "my name". *"Go to the board"* — walk into
+it, or walk anywhere but the board. Keep going until the room is laughing and the
+volunteer is exasperated.
 
-Let the laugh happen. Then: *"That's the whole reason this course is in Python. Same result, one line. Today you write that line and make a computer obey you."*
+Then stop and land it:
 
-Tie back to **Q4** of the poll — *"Most of you said software is the apps on your phone. By minute 20 you'll have a sharper answer than that."*
+> *"You knew exactly what you wanted. You just couldn't say it precisely enough. That is
+> the entire job. A computer is fast, obedient, and completely stupid — it does what you
+> said, not what you meant. Today you start learning how to say things precisely."*
+
+Tie back to **Q4** of the poll — *"Most of you said software is the apps on your phone.
+In two minutes you'll have a sharper answer than that."*
+
+This sets up the Software slide directly, and it sets up Activities 1 and 3, where you
+type literally what students say.
 
 ---
 
 ## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Software → Programming → Code → Syntax → Why Python → Applications → Career Opportunities.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 1–2 | Welcome · Title | Skip quickly |
+| 3–8 | **Agenda** (animated build) | Introduction → Programming Language → Using Python as a Calculator, with callouts for Basic Terminology, Why Python?, Arithmetic Operators |
+| 9 | **Software** | "Software is a set of instructions to the hardware" |
+| 10 | **Programming Language** | Give instructions in a language the computer understands |
+| 11 | **Popular Programming Languages** | Logo wall, ~700 languages |
+| 12 | **Why Python? — Versatile Language** | AI/ML, Big Data, IOT, Game Dev, Backend |
+| 13 | **Why Python? — Plenty of Opportunities** | Data Scientist, ML Engineer, Python Developer, DevOps, Software Developer, Data Analyst |
+| 14 | **Huge Salaries** | ~$91,000 / ~₹66,00,000, sourced to PayScale |
+| 15 | **Demand for Python** | Hacker News hiring-trends chart |
+| 16 | **Easy to Learn** | Java vs Python "Hello World" side by side |
 
 **Beats to emphasise**
 
-- **Syntax = grammar.** Use the students' own languages: a sentence with scrambled grammar is still understandable to a human, but a computer rejects it outright. This single analogy prevents most of the frustration in weeks 1–2.
-- **Code is instructions, nothing more.** Deflate the mystique early.
-- Spend real time on **Career Opportunities** — it is the motivation anchor for the entire course and costs you 90 seconds.
+- **Slide 9 is the payoff of your hook.** Land it in one line: software is instructions, and instructions have to be exact — which they just watched fail at the board.
+- **Slides 12–15 are four consecutive motivation slides.** That is a lot of momentum-free time. Move briskly: Versatile and Opportunities get ~1 min each, Salaries and Demand ~30 s each. Don't let this stretch — the energy of this session is in Activities 2 and 3.
+- **Slide 16 (Java vs Python) is the one to slow down on.** Ask *"show of hands — who wants to learn the top one?"* here, not earlier.
+
+> ⚠️ **The deck has no slide for *Code* or *Syntax*** — those terms appear only in the Reading Material. But **Classroom Quiz Q2 asks for the definition of syntax**, and Quiz A contains several more syntax questions. **You must teach both verbally**, or students will be assessed on something they were never shown. Thirty seconds on slide 10 is enough:
+> *"The instructions you write are called **code**. Every language has rules for writing that code — like grammar — and those rules are called **syntax**. Get the syntax wrong and the computer rejects the whole thing."*
 
 **Checkpoint (at 22 min)** — cold-call two students:
-> *"Give me the difference between code and syntax in one sentence each."*
-> **Answer:** Code is the instructions you write. Syntax is the set of rules those instructions must follow.
+> *"What is software, and what is syntax?"*
+> **Answer:** Software is a set of instructions to the hardware. Syntax is the set of rules those instructions must follow.
 
 ---
 
@@ -147,6 +168,7 @@ Which of the following best describes 'syntax' in programming languages?
 - The user interface of a development environment
 
 > *Explanation (platform):* Syntax in programming languages is the set of the rules for writing the code, ensuring that it is correctly formatted and can be understood by the computer.
+> ⚠️ **The deck never defines syntax** — see the note in Slide Block A. If you skipped the verbal 30 seconds there, this question is unanswerable and the whole room will miss it. That's a deck gap, not a student failure.
 > **If they pick "process of compiling":** the grammar analogy didn't land. Re-run it in one sentence before moving on.
 
 **Q3** — `2bb88302-3225-4cf9-86bb-6b49fd71e4fe` *(Quiz A · UNDERSTANDING)*
@@ -183,18 +205,28 @@ What will be the output of `print("2 + 5")`?
 
 ## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
 
-<!-- placement: inferred from RM structure, confirm against deck -->
-Covers: Hello World program → Possible Mistakes → Printing Without Quotes → Calculations with Python (`+`, `-`, `*`, `/`).
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 17 | **Your First Program** | `print("Hello World!")` with its output shown |
+| 18 | **Possible Mistakes** | Table of four: `prnt(…)`, `Print(…)`, missing quotes, missing parenthesis |
+| 19 | **Addition** | `2 + 5` → `print(2 + 5)` → `7` |
+| 20 | **Printing the Result** | `print(2 + 5)` → `7` **beside** `print("2 + 5")` → `2 + 5` |
+| 21 | **Subtraction** | `print(5 - 2)` → `3` |
+| 22 | **Multiplication** | `print(2 * 5)` → `10` |
+| 23 | **Division** | `print(6 / 3)` → `2.0` |
+| 24 | All The Best | Closing card |
 
 **Beats to emphasise**
 
-- Run every snippet live as it appears. Do not describe output — show it.
-- On **Division**: flag that `print(4/2)` gives `2.0`, not `2`. Say "remember this, it comes back in Type Conversions." Don't explain floats yet.
-- The **Possible Mistakes** slides set up Activity 2 — deliver them, but don't over-explain. Let the activity do the work.
+- **Slide 18 (Possible Mistakes) is exactly Activity 2.** Deliver the table briskly — read the four rows, don't explain them. The activity ten minutes later is where they get run and broken. Over-explaining here spends the activity in advance.
+- **Slide 20 is the most important slide in the deck.** The quotes contrast is already side by side. Pause here, take a show of hands on each output before revealing, then move on — Activity 3 drills it properly.
+- **Slide 23 (Division):** the deck's example is `print(6 / 3)` giving **`2.0`**, not `2`. Flag it: *"remember this, it comes back in Type Conversions."* Don't explain floats yet.
 
 **Checkpoint (at 44 min)** — show hands:
-> *"`print(5 / 2)` — who says `2`? Who says `2.5`?"*
-> **Answer:** `2.5`. Python's `/` always gives a decimal result.
+> *"`print(6 / 3)` — who says `2`? Who says `2.0`?"*
+> **Answer:** `2.0`. Python's `/` always gives a decimal result.
 
 ---
 
@@ -238,18 +270,20 @@ print("Hello World!"        # 4
 
 **Format:** Live Coding · **Exposes:** the quotes-vs-arithmetic misconception flagged in poll Q5 and quiz Q5.
 
+> **This is a drill, not a reveal.** Slide 20 already showed `print(2 + 5)` beside `print("2 + 5")`. The value here is that students commit to an answer *before* each run, and watch it typed live rather than pre-rendered. Say so: *"You've seen this on a slide. Now you get to be wrong about it out loud, which is how it sticks."*
+
 **Setup line (say this):**
 > *"Editor is open, I'm typing, you're predicting. Before I hit run, everyone commits to an answer out loud. If you're wrong, that's the useful part."*
 
-Type and run these **one at a time**, taking a prediction before each:
+Type and run these **one at a time**, taking a prediction before each. Values match the deck's own examples:
 
 ```python
-print("Hello World")     # → Hello World
+print("Hello World!")    # → Hello World!
 print(2 + 5)             # → 7
 print("2 + 5")           # → 2 + 5
 print(5 - 2)             # → 3
-print(5 * 0.5)           # → 2.5
-print(10 / 5)            # → 2.0
+print(2 * 5)             # → 10
+print(6 / 3)             # → 2.0
 ```
 
 **The deliberate bug** — after the six above, type this and run it:
@@ -304,7 +338,10 @@ Tell them: *"Next session is a walkthrough of these exact coding problems. Attem
 
 ## Instructor Notes
 
-- **Pacing risk:** Slide Block A's *Applications* and *Career Opportunities* lists are easy to over-talk. Cap the block at 12 minutes — the energy of this session lives in Activities 2 and 3, not the lists.
+- ✅ **Verified against the real deck** (*"Copy of 1.1 Programming with Python"*, 41 animation steps, ~20 distinct slides). Slide Blocks A and B list the actual slides in order — no longer inferred.
+- **The deck is heavily animated.** Many "slides" are builds — the agenda alone takes six clicks. Don't be surprised when a click reveals one more arrow rather than a new slide.
+- ⚠️ **Deck gap: no slide defines *code* or *syntax*,** yet Classroom Quiz A is full of syntax questions and this session's Quiz Q2 asks for the definition outright. The 30-second verbal fix is scripted in Slide Block A. **Worth raising with the content team** — every instructor who follows the deck alone will fail that question.
+- **Pacing risk:** slides 12–15 are four consecutive motivation slides (Versatile, Opportunities, Salaries, Demand). They're easy to over-talk and carry no skill. Cap the whole block at 12 minutes — the energy of this session lives in Activities 2 and 3.
 - **The 60 minutes is tight.** If you overrun, cut activity content per the cut rules. Do not cut slide content, and do not cut the Classroom Quiz — it's your only hard data on whether the class is following.
 - **Have the editor already open** with a blank file before the session starts. Setting up VS Code live burns 4 minutes you don't have.
 - **Day-one dynamic:** students will not volunteer yet. Activity 1 is deliberately the lowest-risk format in the bank (shout out an app name) to break that seal before Activity 2 asks them to reason in front of peers.
