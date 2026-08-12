@@ -153,9 +153,8 @@ def render(md):
 
 def doc_meta(path, md):
     base = os.path.basename(path)
-    m = re.match(r"session-(\d+)([a-z]?)", base)
+    m = re.match(r"session-(\d+)", base)
     num = int(m.group(1)) if m else 0
-    sub = m.group(2) if m else ""
 
     h1 = re.search(r"^#\s+(.*)", md, re.M)
     title = h1.group(1).strip() if h1 else base
@@ -186,7 +185,7 @@ def doc_meta(path, md):
                        "label": short, "id": slugify(h),
                        "act": label.startswith("⚡")})
 
-    return {"num": num, "sub": sub, "title": title, "kind": kind,
+    return {"num": num, "title": title, "kind": kind,
             "noDeck": no_deck, "blocks": blocks}
 
 
@@ -210,7 +209,7 @@ def load_course(folder):
         d = doc_meta(p, md)
         d["html"] = relink(render(md))
         (sessions if d["num"] else guides).append(d)
-    sessions.sort(key=lambda d: (d["num"], d["sub"]))
+    sessions.sort(key=lambda d: d["num"])
     return {"slug": slug, "name": cfg.get("name", slug),
             "subtitle": cfg.get("subtitle", ""), "order": cfg.get("order", 99),
             "docs": sessions + guides, "count": len(sessions)}
@@ -414,9 +413,9 @@ const sessions=DOCS.filter(d=>d.num>0),guides=DOCS.filter(d=>d.num===0);
 function link(d){
   const a=document.createElement('a');
   a.className='item';
-  a.href='#'+(d.num?'session-'+d.num+(d.sub||''):'g'+guides.indexOf(d));
+  a.href='#'+(d.num?'session-'+d.num:'g'+guides.indexOf(d));
   a.dataset.idx=DOCS.indexOf(d);
-  a.innerHTML='<span class="n">'+(d.num?(d.num+(d.sub||'')):'·')+'</span><span class="t">'+d.title+'</span>'
+  a.innerHTML='<span class="n">'+(d.num||'·')+'</span><span class="t">'+d.title+'</span>'
     +(d.kind==='Support'?'<span class="badge sup">Support</span>':'')
     +(d.noDeck?'<span class="badge nd" title="No slide deck">⚠</span>':'');
   return a;
@@ -428,7 +427,7 @@ if(guides.length){section('Guides');guides.forEach(d=>nav.appendChild(link(d)));
 
 function show(idx){
   const d=DOCS[idx];if(!d)return;
-  document.getElementById('ttl').textContent=(d.num?'Session '+d.num+(d.sub||'')+' — ':'')+d.title;
+  document.getElementById('ttl').textContent=(d.num?'Session '+d.num+' — ':'')+d.title;
   const bits=[];
   if(d.num)bits.push('60 min');
   if(d.kind!=='Guide')bits.push(d.kind+' session');
@@ -451,11 +450,7 @@ function show(idx){
 function route(){
   const h=location.hash.slice(1);let idx=0;
   if(h.startsWith('session-')){
-    const m=h.slice(8).match(/^(\\d+)([a-z]?)$/);
-    if(m){
-      const num=+m[1],sub=m[2]||'';
-      const f=DOCS.findIndex(d=>d.num===num&&(d.sub||'')===sub);if(f>-1)idx=f;
-    }
+    const f=DOCS.findIndex(d=>d.num===+h.split('-')[1]);if(f>-1)idx=f;
   }else if(/^g\\d+$/.test(h)){
     const f=DOCS.indexOf(guides[+h.slice(1)]);if(f>-1)idx=f;
   }else if(h){
