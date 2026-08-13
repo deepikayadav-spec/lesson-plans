@@ -185,9 +185,103 @@ True
 
 ---
 
-## Classroom Quiz (23–30 min) · ALS: Individual Answer → Reveal
+## Teaching Block B (23–31 min) — BOARD + LIVE TYPING
 
-> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** This session has three quiz pools — A (`and`), B (`or`), C (`not`) — the only session in the first fifteen with three. The five questions below deliberately take one from each plus two combined; don't substitute all five from one pool.
+<!-- no deck exists; content built from RM `35dfbabb-e989-46fd-8a1f-12f1a158cf84` -->
+
+**Cover three things.**
+
+**1. Combining comparisons with variables** — type and run:
+
+```python
+a = 10
+b = 5
+c = 3
+d = 1
+print(a > b and c > d)      # True
+print(a > b and c < d)      # False
+print(a < b or c > d)       # True
+```
+
+Read each aloud in English first: *"Is a bigger than b, AND is c bigger than d?"* Then run it.
+
+**2. `not` applied to a comparison** — type and run:
+
+```python
+print(not(2 < 3))     # False
+print(not(5 == 6))    # True
+```
+
+Reduce on the board, as in ALS Activity 1:
+```
+not(2 < 3)
+not(True)
+False
+```
+
+**3. Translating English to code.** This is the practical skill. Do three on the board together:
+
+| In English | In Python |
+|---|---|
+| Age is over 18 and under 60 | `age > 18 and age < 60` |
+| Score is 100 or lives are 0 | `score == 100 or lives == 0` |
+| The user is *not* logged in | `not(logged_in)` |
+
+**Beats to emphasise**
+
+- **Say it in English first, always.** Students who translate word by word get it right; students who guess at symbols don't.
+- **Each side of `and`/`or` must be a complete comparison.** `age > 18 and < 60` is a SyntaxError — you can't abbreviate. Show it failing; it's the most common mistake in tonight's homework.
+
+**Checkpoint (at 31 min)** — show hands:
+> *"Write the condition for 'marks are above 40 and attendance is above 75'."*
+> **Answer:** `marks > 40 and attendance > 75`. Both sides complete.
+
+---
+
+## ⚡ ALS Activity 2 — Choral Prediction → Reveal (31–38 min)
+
+**ALS format:** Choral Prediction — the whole room answers out loud together before each run. Chosen because `and`/`or` feel obvious in isolation; a shared, confident wrong guess on the type-mismatch snippet is more memorable corrected as a group than picked apart from one student.
+
+**Setup line:**
+> *"Everyone answers out loud together before I run it. True or False. Say it with confidence even if you're guessing — a wrong guess out loud is worth ten right answers in your head."*
+
+Reveal one snippet at a time:
+
+```python
+print((10 > 5) and (5 > 10))       # 1
+```
+```python
+print((10 > 5) or (5 > 10))        # 2
+```
+```python
+print(not(10 > 5))                 # 3
+```
+```python
+age = input()                       # 4 — type 20
+print(age > 18)
+```
+
+| # | Output | Why |
+|---|---|---|
+| 1 | `False` | `and` needs both; the right side is False |
+| 2 | `True` | `or` needs one; the left side is True |
+| 3 | `False` | `10 > 5` is True, `not` flips it |
+| 4 | **TypeError** | `input()` gave a string; you can't compare a string to a number with `>` |
+
+**Snippet 4 is the point.** It looks like the most natural thing a beginner would write — *"is the age over 18?"* — and it crashes.
+> *"That's the program you were about to write tonight. What's missing?"*
+> **Answer:** `age = int(input())`.
+
+**Debrief line:**
+> *"Equality can compare any two things and just says False. Ordering — `>`, `<` — refuses outright when the types don't match. That's why this one crashes and `10 == "10"` doesn't."*
+
+**Cut rule:** Snippets 1 and 4.
+
+---
+
+## Classroom Quiz (38–45 min) · ALS: Individual Answer → Reveal
+
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Runs last, right before the Exit Ticket. This session has three quiz pools — A (`and`), B (`or`), C (`not`) — the only session in the first fifteen with three. The five questions below deliberately take one from each plus two combined; don't substitute all five from one pool.
 
 Every question below is run ALS-style: **individual silent answer first, then explanation.**
 
@@ -236,100 +330,6 @@ What will be the output of `print((5 == 5) or (3 > 6))`?
 
 > *Explanation (platform):* The first condition (5 == 5) is True, but the second condition (3 > 6) is False. The `or` operator returns True because one of the operands is True.
 > **Run Q4 and Q5 side by side after the vote.** Identical operands, one word different, opposite answers. That contrast teaches more than either question alone — don't let it pass unremarked.
-
----
-
-## Teaching Block B (30–38 min) — BOARD + LIVE TYPING
-
-<!-- no deck exists; content built from RM `35dfbabb-e989-46fd-8a1f-12f1a158cf84` -->
-
-**Cover three things.**
-
-**1. Combining comparisons with variables** — type and run:
-
-```python
-a = 10
-b = 5
-c = 3
-d = 1
-print(a > b and c > d)      # True
-print(a > b and c < d)      # False
-print(a < b or c > d)       # True
-```
-
-Read each aloud in English first: *"Is a bigger than b, AND is c bigger than d?"* Then run it.
-
-**2. `not` applied to a comparison** — type and run:
-
-```python
-print(not(2 < 3))     # False
-print(not(5 == 6))    # True
-```
-
-Reduce on the board, as in ALS Activity 1:
-```
-not(2 < 3)
-not(True)
-False
-```
-
-**3. Translating English to code.** This is the practical skill. Do three on the board together:
-
-| In English | In Python |
-|---|---|
-| Age is over 18 and under 60 | `age > 18 and age < 60` |
-| Score is 100 or lives are 0 | `score == 100 or lives == 0` |
-| The user is *not* logged in | `not(logged_in)` |
-
-**Beats to emphasise**
-
-- **Say it in English first, always.** Students who translate word by word get it right; students who guess at symbols don't.
-- **Each side of `and`/`or` must be a complete comparison.** `age > 18 and < 60` is a SyntaxError — you can't abbreviate. Show it failing; it's the most common mistake in tonight's homework.
-
-**Checkpoint (at 38 min)** — show hands:
-> *"Write the condition for 'marks are above 40 and attendance is above 75'."*
-> **Answer:** `marks > 40 and attendance > 75`. Both sides complete.
-
----
-
-## ⚡ ALS Activity 2 — Choral Prediction → Reveal (38–45 min)
-
-**ALS format:** Choral Prediction — the whole room answers out loud together before each run. Chosen because `and`/`or` feel obvious in isolation; a shared, confident wrong guess on the type-mismatch snippet is more memorable corrected as a group than picked apart from one student.
-
-**Setup line:**
-> *"Everyone answers out loud together before I run it. True or False. Say it with confidence even if you're guessing — a wrong guess out loud is worth ten right answers in your head."*
-
-Reveal one snippet at a time:
-
-```python
-print((10 > 5) and (5 > 10))       # 1
-```
-```python
-print((10 > 5) or (5 > 10))        # 2
-```
-```python
-print(not(10 > 5))                 # 3
-```
-```python
-age = input()                       # 4 — type 20
-print(age > 18)
-```
-
-| # | Output | Why |
-|---|---|---|
-| 1 | `False` | `and` needs both; the right side is False |
-| 2 | `True` | `or` needs one; the left side is True |
-| 3 | `False` | `10 > 5` is True, `not` flips it |
-| 4 | **TypeError** | `input()` gave a string; you can't compare a string to a number with `>` |
-
-**Snippet 4 is the point.** It looks like the most natural thing a beginner would write — *"is the age over 18?"* — and it crashes.
-> *"That's the program you were about to write tonight. What's missing?"*
-> **Answer:** `age = int(input())`.
-
-**Debrief line:**
-> *"Equality can compare any two things and just says False. Ordering — `>`, `<` — refuses outright when the types don't match. That's why this one crashes and `10 == "10"` doesn't."*
-
-**Cut rule:** Snippets 1 and 4.
 
 ---
 

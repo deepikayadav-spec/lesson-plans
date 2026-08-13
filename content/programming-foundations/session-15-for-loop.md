@@ -188,9 +188,82 @@ Press: *"Why no 3?"* — `range(3)` produces 0, 1, 2. Three numbers, starting at
 
 ---
 
-## Classroom Quiz (24–31 min) · ALS: Individual Answer → Reveal
+## Slide Block B (24–31 min) — DELIVER SLIDES AS-IS
 
-> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** This session has only one classroom quiz pool (A) instead of the usual two. Protect these 7 minutes by using the cut rules everywhere else first.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 8+ | **Range** | `range(n)` and `range(start, end)` worked examples |
+| 9+ | **Right Angle Triangular Pattern — Input / Output Format** | Input `3` → output `*` / `* *` / `* * *`, with the input format stated: *"First line will contain a positive integer"* |
+| 10+ | **Code Walkthrough** | Building the pattern program |
+| last | **Daily Challenge — Identify The Mistake** | `a = input()` · `len_of_a = len(a)` · `b = ""` · `for i in range(1, len_of_a):` · `b = b + "-" + a[i]` · `print(b)` — input `Python`, expected `P-y-t-h-o-n`. **Two bugs:** `range(1, …)` skips index 0, and the separator logic puts a leading `-` |
+
+**Beats to emphasise**
+
+- **`range(n)` starts at 0.** Not 1. Say it, write it, then run `range(3)` and count the three numbers on the board.
+- **The end is always excluded** — `range(5, 8)` gives 5, 6, 7. Connect it explicitly to string slicing from Session 8.
+- **Common gotcha — `range(4, 1)` produces nothing.** Run it. No error, no output. Silent, like the `elif` ordering bug in Session 12.
+- **`range[3]` with square brackets is a TypeError.** Round brackets call it; square brackets index.
+
+**Pattern-trace beat (2 min):** put `for i in range(1, 5): print("*" * i)` on screen — *"how many passes, and what prints on each?"* 10 s silent, then reveal: 4 passes, `*` `**` `***` `****`, no pass 5 since `range(1, 5)` stops before 5. Then run the deck's own **closing "Identify the Mistake"** challenge live — the `P-y-t-h-o-n` dash-join with two bugs (`range(1, …)` skips index 0; leading `-`). Take fixes from the room before revealing.
+
+**Checkpoint (at 31 min)** — show hands:
+> *"How many numbers does `range(2, 6)` produce, and what are they?"*
+> **Answer:** Four — 2, 3, 4, 5.
+
+---
+
+## ⚡ ALS Activity 2 — Guided Decision Dictation: Pick the Right Loop (31–38 min)
+
+**ALS format:** Guided Decision Dictation — students commit to a choice (`for` or `while`) *before* any code gets written, then dictate. Different from every other activity this session: the skill being tested isn't syntax, it's judgment about which tool fits. **This is the session's real content** — anyone can write a `for` loop after Slide Block A; choosing between two loops is the actual transferable skill.
+
+**Setup line:**
+> *"Two tasks. Before any code, I want one word from you: `for` or `while`. Then tell me why. Then we write it."*
+
+**Task 1 — print each character of a name**
+> *"Ask the user for their name, then print each letter on its own line."*
+
+**Expected choice: `for`.** We know the sequence — the string itself.
+
+```python
+name = input()
+for letter in name:
+    print(letter)
+```
+
+**Task 2 — keep asking until the user types `stop`**
+> *"Keep asking the user for a word until they type `stop`."*
+
+**Expected choice: `while`.** We have no idea how many times — it depends on the user.
+
+```python
+word = input()
+while word != "stop":
+    print(word)
+    word = input()
+```
+
+**If the room tries `for` here, let them try.** They'll get stuck on what to put after `in` — and that's the lesson. There's no sequence to loop over.
+
+**Build the rule on the board**, taking the wording from the class:
+
+| Use `for` when | Use `while` when |
+|---|---|
+| You know the sequence or how many times | You don't know how many times |
+| Looping over a string or a range | Repeating until something happens |
+| Python manages the counter | You manage the counter |
+
+**Debrief line:**
+> *"The rule only means something because you just felt task 2 resist a `for` loop. That resistance is the actual lesson — everything else today was syntax."*
+
+**Cut rule:** Task 2 and the board rule — the choice matters more than task 1's code.
+
+---
+
+## Classroom Quiz (38–45 min) · ALS: Individual Answer → Reveal
+
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Runs last, right before the Exit Ticket. This session has only one classroom quiz pool (A) instead of the usual two. Protect these 7 minutes by using the cut rules everywhere else first.
 
 Every question below is run ALS-style: **individual silent answer first, then explanation.**
 
@@ -260,79 +333,6 @@ for i in range(1, 4):
 
 > *Explanation:* **[authored — the platform record has an empty explanation field]** `range(1, 4)` gives 1, 2 and 3. On each pass `'*' * i` repeats the star that many times, printing one star, then two, then three.
 > **This combines string repetition from Session 6 with `for` and `range`.** It's the shape of every pattern problem in tonight's homework — worth the full 85 seconds.
-
----
-
-## Slide Block B (31–38 min) — DELIVER SLIDES AS-IS
-
-**Verified against the deck.** Slides, in order:
-
-| # | Slide | Content |
-|---|---|---|
-| 8+ | **Range** | `range(n)` and `range(start, end)` worked examples |
-| 9+ | **Right Angle Triangular Pattern — Input / Output Format** | Input `3` → output `*` / `* *` / `* * *`, with the input format stated: *"First line will contain a positive integer"* |
-| 10+ | **Code Walkthrough** | Building the pattern program |
-| last | **Daily Challenge — Identify The Mistake** | `a = input()` · `len_of_a = len(a)` · `b = ""` · `for i in range(1, len_of_a):` · `b = b + "-" + a[i]` · `print(b)` — input `Python`, expected `P-y-t-h-o-n`. **Two bugs:** `range(1, …)` skips index 0, and the separator logic puts a leading `-` |
-
-**Beats to emphasise**
-
-- **`range(n)` starts at 0.** Not 1. Say it, write it, then run `range(3)` and count the three numbers on the board.
-- **The end is always excluded** — `range(5, 8)` gives 5, 6, 7. Connect it explicitly to string slicing from Session 8.
-- **Common gotcha — `range(4, 1)` produces nothing.** Run it. No error, no output. Silent, like the `elif` ordering bug in Session 12.
-- **`range[3]` with square brackets is a TypeError.** Round brackets call it; square brackets index.
-
-**Pattern-trace beat (2 min):** put `for i in range(1, 5): print("*" * i)` on screen — *"how many passes, and what prints on each?"* 10 s silent, then reveal: 4 passes, `*` `**` `***` `****`, no pass 5 since `range(1, 5)` stops before 5. Then run the deck's own **closing "Identify the Mistake"** challenge live — the `P-y-t-h-o-n` dash-join with two bugs (`range(1, …)` skips index 0; leading `-`). Take fixes from the room before revealing.
-
-**Checkpoint (at 38 min)** — show hands:
-> *"How many numbers does `range(2, 6)` produce, and what are they?"*
-> **Answer:** Four — 2, 3, 4, 5.
-
----
-
-## ⚡ ALS Activity 2 — Guided Decision Dictation: Pick the Right Loop (38–45 min)
-
-**ALS format:** Guided Decision Dictation — students commit to a choice (`for` or `while`) *before* any code gets written, then dictate. Different from every other activity this session: the skill being tested isn't syntax, it's judgment about which tool fits. **This is the session's real content** — anyone can write a `for` loop after Slide Block A; choosing between two loops is the actual transferable skill.
-
-**Setup line:**
-> *"Two tasks. Before any code, I want one word from you: `for` or `while`. Then tell me why. Then we write it."*
-
-**Task 1 — print each character of a name**
-> *"Ask the user for their name, then print each letter on its own line."*
-
-**Expected choice: `for`.** We know the sequence — the string itself.
-
-```python
-name = input()
-for letter in name:
-    print(letter)
-```
-
-**Task 2 — keep asking until the user types `stop`**
-> *"Keep asking the user for a word until they type `stop`."*
-
-**Expected choice: `while`.** We have no idea how many times — it depends on the user.
-
-```python
-word = input()
-while word != "stop":
-    print(word)
-    word = input()
-```
-
-**If the room tries `for` here, let them try.** They'll get stuck on what to put after `in` — and that's the lesson. There's no sequence to loop over.
-
-**Build the rule on the board**, taking the wording from the class:
-
-| Use `for` when | Use `while` when |
-|---|---|
-| You know the sequence or how many times | You don't know how many times |
-| Looping over a string or a range | Repeating until something happens |
-| Python manages the counter | You manage the counter |
-
-**Debrief line:**
-> *"The rule only means something because you just felt task 2 resist a `for` loop. That resistance is the actual lesson — everything else today was syntax."*
-
-**Cut rule:** Task 2 and the board rule — the choice matters more than task 1's code.
 
 ---
 

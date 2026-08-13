@@ -184,9 +184,101 @@ Also press on `Done`: it appears in **every** row. Ask why. **Answer:** it isn't
 
 ---
 
-## Classroom Quiz (24–31 min) · ALS: Individual Answer → Reveal
+## Teaching Block B (24–31 min) — BOARD + LIVE TYPING
 
-> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Protect these 7 minutes by using the cut rules everywhere else first.
+<!-- no deck exists; content built from RM `0697ecbb-4f80-4cc1-ae05-7aa89881abec` -->
+
+**Write the shape on the board beneath the `if` shape from Block A:**
+
+```
+if <condition>:
+    <runs when True>
+else:
+    <runs when False>
+```
+
+**Then type and run**, entering `2` and then `-2`:
+
+```python
+a = int(input())
+if a > 0:
+    print("Positive")
+else:
+    print("Not Positive")
+print("End")
+```
+
+**Three things to draw out:**
+
+1. **Exactly one branch runs.** Never both, never neither. Ask the room to confirm before each run.
+2. **`print("End")` runs every time** — it's outside both blocks. Point at its indentation.
+3. **`else` has no condition.** It's just *"otherwise"*. Students try to write `else a < 0:` — show it failing.
+
+**Then the illegal version.** Type and run:
+
+```python
+if False:
+    print("If Block")
+print("After If")
+else:
+    print("Else Block")
+```
+
+SyntaxError.
+
+> *"`else` isn't its own statement. It's the back half of the `if`. Put anything between them and Python loses track of which `if` the `else` belongs to."*
+
+**Checkpoint (at 31 min)** — show hands:
+> *"In an if-else, how many of the two blocks run?"*
+> **Answer:** Exactly one. Always.
+
+---
+
+## ⚡ ALS Activity 2 — Guided Build + Deliberate Bug: The Gatekeeper (31–38 min)
+
+**ALS format:** Cold-Call Dictation with a Deliberate Bug — students dictate every line of a working program, then watch the instructor deliberately reproduce the exact TypeError from omitting `int()`. Chosen as the closing activity because it assembles everything in the session — `int(input())`, a boundary comparison, `if`/`else` — into the shape of tonight's homework.
+
+**Setup line:**
+> *"You're writing this, I'm the keyboard. Goal: ask for someone's age, then print `Welcome` if they're 18 or over, and `Sorry` if they're not."*
+
+**Target program:**
+
+```python
+age = int(input())
+if age >= 18:
+    print("Welcome")
+else:
+    print("Sorry")
+```
+
+Build it a line at a time. Run with `20`, then `15`, then **`18`** — that last one is the boundary from ALS Activity 1, worth testing out loud.
+
+**The deliberate bug** — type this version and run it with `20`:
+
+```python
+age = input()
+if age >= 18:
+    print("Welcome")
+else:
+    print("Sorry")
+```
+
+**TypeError** — `'>=' not supported between instances of 'str' and 'int'`.
+
+> *"Read it. It's telling you exactly what happened. What's missing?"*
+
+Take the fix — `int()` around `input()`. Sessions 6, 8 and today, in one line.
+
+**Debrief line:**
+> *"Every piece of this session shows up in that one bug: comparisons need matching types, `input()` gives a string, and reading the error tells you exactly where to look."*
+
+**Cut rule:** Skip the boundary tests (`15`, `18`), keep the bug.
+
+---
+
+## Classroom Quiz (38–45 min) · ALS: Individual Answer → Reveal
+
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Runs last, right before the Exit Ticket. Protect these 7 minutes by using the cut rules everywhere else first.
 
 Every question below is run ALS-style: **individual silent answer first, then explanation.**
 
@@ -263,98 +355,6 @@ else:
 
 > *Explanation (platform):* Placing statements between an if and else block in Python will cause a syntax error because the else block must immediately follow the if block without any other instructions in between.
 > **This is the session's hardest question.** `else` is not a standalone statement — it's the second half of one statement that began with `if`.
-
----
-
-## Teaching Block B (31–38 min) — BOARD + LIVE TYPING
-
-<!-- no deck exists; content built from RM `0697ecbb-4f80-4cc1-ae05-7aa89881abec` -->
-
-**Write the shape on the board beneath the `if` shape from Block A:**
-
-```
-if <condition>:
-    <runs when True>
-else:
-    <runs when False>
-```
-
-**Then type and run**, entering `2` and then `-2`:
-
-```python
-a = int(input())
-if a > 0:
-    print("Positive")
-else:
-    print("Not Positive")
-print("End")
-```
-
-**Three things to draw out:**
-
-1. **Exactly one branch runs.** Never both, never neither. Ask the room to confirm before each run.
-2. **`print("End")` runs every time** — it's outside both blocks. Point at its indentation.
-3. **`else` has no condition.** It's just *"otherwise"*. Students try to write `else a < 0:` — show it failing.
-
-**Then the illegal version.** Type and run:
-
-```python
-if False:
-    print("If Block")
-print("After If")
-else:
-    print("Else Block")
-```
-
-SyntaxError.
-
-> *"`else` isn't its own statement. It's the back half of the `if`. Put anything between them and Python loses track of which `if` the `else` belongs to."*
-
-**Checkpoint (at 38 min)** — show hands:
-> *"In an if-else, how many of the two blocks run?"*
-> **Answer:** Exactly one. Always.
-
----
-
-## ⚡ ALS Activity 2 — Guided Build + Deliberate Bug: The Gatekeeper (38–45 min)
-
-**ALS format:** Cold-Call Dictation with a Deliberate Bug — students dictate every line of a working program, then watch the instructor deliberately reproduce the exact TypeError from omitting `int()`. Chosen as the closing activity because it assembles everything in the session — `int(input())`, a boundary comparison, `if`/`else` — into the shape of tonight's homework.
-
-**Setup line:**
-> *"You're writing this, I'm the keyboard. Goal: ask for someone's age, then print `Welcome` if they're 18 or over, and `Sorry` if they're not."*
-
-**Target program:**
-
-```python
-age = int(input())
-if age >= 18:
-    print("Welcome")
-else:
-    print("Sorry")
-```
-
-Build it a line at a time. Run with `20`, then `15`, then **`18`** — that last one is the boundary from ALS Activity 1, worth testing out loud.
-
-**The deliberate bug** — type this version and run it with `20`:
-
-```python
-age = input()
-if age >= 18:
-    print("Welcome")
-else:
-    print("Sorry")
-```
-
-**TypeError** — `'>=' not supported between instances of 'str' and 'int'`.
-
-> *"Read it. It's telling you exactly what happened. What's missing?"*
-
-Take the fix — `int()` around `input()`. Sessions 6, 8 and today, in one line.
-
-**Debrief line:**
-> *"Every piece of this session shows up in that one bug: comparisons need matching types, `input()` gives a string, and reading the error tells you exactly where to look."*
-
-**Cut rule:** Skip the boundary tests (`15`, `18`), keep the bug.
 
 ---
 

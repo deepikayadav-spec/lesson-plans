@@ -200,9 +200,107 @@ Then ask: *"How many times did `print` run?"* — three. *"And what's the highes
 
 ---
 
-## Classroom Quiz (24–31 min) · ALS: Individual Answer → Reveal
+## Slide Block B (24–31 min) — DELIVER SLIDES AS-IS
 
-> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Protect these 7 minutes by using the cut rules everywhere else first.
+**Verified against the deck.** Remaining slides cover **Common Mistakes and Errors** then a **Code Walkthrough**, closing on a Key Takeaways slide that names the session's structure explicitly:
+
+> Loops · While Loop (**Syntax · Initialization · Termination Condition · Updation**) · Common Mistakes and Errors · Code Walkthrough
+
+**Use the deck's own four words** — Syntax, Initialization, Termination Condition, Updation.
+
+**Beats to emphasise**
+
+Map each failure back to the three parts from Block A. **Run all three live** — students need to see an infinite loop happen and be stopped.
+
+**Failure 1 — no initialisation (part 1 missing)**
+```python
+while counter < 3:      # NameError: 'counter' is not defined
+```
+Crashes immediately. The friendly failure — it tells you what's wrong.
+
+**Failure 2 — condition frozen in a variable (part 2 broken)**
+```python
+counter = 0
+condition = (counter < 3)
+while condition:
+    counter = counter + 1
+```
+`condition` was computed **once, before the loop**, and holds `True` forever. Updating `counter` changes nothing. This is subtle and worth real time.
+
+**Failure 3 — no update, and its cousin, the wrong-direction update (part 3 missing or broken)**
+```python
+counter = 0
+while counter < 3:
+    print("Hi")         # counter never changes → infinite
+```
+Run it live and **stop it with Ctrl+C in front of them.** Say: *"This will happen to you tonight. Now you know it isn't broken — it's just waiting, and you know how to stop it."*
+
+Then show the sneakier cousin — an update that exists but moves the wrong way:
+```python
+n = 5
+while n > 0:
+    print(n)
+    n = n + 1        # should be n - 1
+```
+Let it run three seconds, Ctrl+C again. *"Which part is wrong here? Not missing — wrong. An update that moves away from making the condition false is the same as no update at all."*
+
+**Checkpoint (at 31 min)** — show hands:
+> *"Which of the three parts was broken in both versions we just stopped?"*
+> **Answer:** The update — missing in one, pointed the wrong way in the other.
+
+---
+
+## ⚡ ALS Activity 2 — Choral Prediction → Reveal (31–38 min)
+
+**ALS format:** Choral Prediction — the whole room predicts out loud together before each run. Chosen for the closing activity because it's the safest way to get everyone to commit to a prediction on the one snippet that won't stop on its own — group confidence, followed by a calm live Ctrl+C, defuses what would otherwise be an alarming moment for a student hitting it alone at home.
+
+**Setup line:**
+> *"Everyone answers out loud together before I run it. How many lines print, and what are they? One of these doesn't stop — I'll deal with that."*
+
+```python
+i = 1                   # 1
+while i <= 3:
+    print(i)
+    i = i + 1
+```
+```python
+i = 0                   # 2
+while i < 0:
+    print(i)
+    i = i + 1
+```
+```python
+i = 5                   # 3
+while i > 0:
+    print(i)
+    i = i - 2
+```
+```python
+i = 1                   # 4  — will not stop
+while i <= 3:
+    print(i)
+```
+
+| # | Output | Why |
+|---|---|---|
+| 1 | `1 2 3` | Runs while `i` is 1, 2, 3; stops at 4 |
+| 2 | **Nothing** | Condition is False on the first check — the body never runs |
+| 3 | `5 3 1` | Counts *down* by 2; stops when `i` reaches −1 |
+| 4 | `1` forever | No update — infinite |
+
+**Snippet 2 surprises most rooms** — a loop that runs zero times is valid, not an error.
+**Snippet 4** — take the prediction, run it, let it scroll for three seconds, then Ctrl+C in full view.
+
+**Debrief line:**
+> *"Zero passes is valid. Counting down by two is valid. Never stopping is a bug you now know how to interrupt. Loops are more flexible — and more dangerous — than anything you've written so far."*
+
+**Cut rule:** Snippets 2 and 4. Never skip 4 — students must see it stopped, or they'll assume they broke the computer.
+
+---
+
+## Classroom Quiz (38–45 min) · ALS: Individual Answer → Reveal
+
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Runs last, right before the Exit Ticket. Protect these 7 minutes by using the cut rules everywhere else first.
 
 Every question below is run ALS-style: **individual silent answer first, then explanation.**
 
@@ -280,104 +378,6 @@ while counter < 3:
 
 > *Explanation:* **[authored — the platform record has an empty explanation field]** The counter is never updated inside the loop, so `counter < 3` stays True forever and the loop never ends. The program prints continuously until it is stopped manually.
 > **This is failure #3 and the most disorienting one.** No error message ever appears. **Tell them now how to stop it: Ctrl+C in the terminal, or the stop button on the platform.** They will need this within the hour.
-
----
-
-## Slide Block B (31–38 min) — DELIVER SLIDES AS-IS
-
-**Verified against the deck.** Remaining slides cover **Common Mistakes and Errors** then a **Code Walkthrough**, closing on a Key Takeaways slide that names the session's structure explicitly:
-
-> Loops · While Loop (**Syntax · Initialization · Termination Condition · Updation**) · Common Mistakes and Errors · Code Walkthrough
-
-**Use the deck's own four words** — Syntax, Initialization, Termination Condition, Updation.
-
-**Beats to emphasise**
-
-Map each failure back to the three parts from Block A. **Run all three live** — students need to see an infinite loop happen and be stopped.
-
-**Failure 1 — no initialisation (part 1 missing)**
-```python
-while counter < 3:      # NameError: 'counter' is not defined
-```
-Crashes immediately. The friendly failure — it tells you what's wrong.
-
-**Failure 2 — condition frozen in a variable (part 2 broken)**
-```python
-counter = 0
-condition = (counter < 3)
-while condition:
-    counter = counter + 1
-```
-`condition` was computed **once, before the loop**, and holds `True` forever. Updating `counter` changes nothing. This is subtle and worth real time.
-
-**Failure 3 — no update, and its cousin, the wrong-direction update (part 3 missing or broken)**
-```python
-counter = 0
-while counter < 3:
-    print("Hi")         # counter never changes → infinite
-```
-Run it live and **stop it with Ctrl+C in front of them.** Say: *"This will happen to you tonight. Now you know it isn't broken — it's just waiting, and you know how to stop it."*
-
-Then show the sneakier cousin — an update that exists but moves the wrong way:
-```python
-n = 5
-while n > 0:
-    print(n)
-    n = n + 1        # should be n - 1
-```
-Let it run three seconds, Ctrl+C again. *"Which part is wrong here? Not missing — wrong. An update that moves away from making the condition false is the same as no update at all."*
-
-**Checkpoint (at 38 min)** — show hands:
-> *"Which of the three parts was broken in both versions we just stopped?"*
-> **Answer:** The update — missing in one, pointed the wrong way in the other.
-
----
-
-## ⚡ ALS Activity 2 — Choral Prediction → Reveal (38–45 min)
-
-**ALS format:** Choral Prediction — the whole room predicts out loud together before each run. Chosen for the closing activity because it's the safest way to get everyone to commit to a prediction on the one snippet that won't stop on its own — group confidence, followed by a calm live Ctrl+C, defuses what would otherwise be an alarming moment for a student hitting it alone at home.
-
-**Setup line:**
-> *"Everyone answers out loud together before I run it. How many lines print, and what are they? One of these doesn't stop — I'll deal with that."*
-
-```python
-i = 1                   # 1
-while i <= 3:
-    print(i)
-    i = i + 1
-```
-```python
-i = 0                   # 2
-while i < 0:
-    print(i)
-    i = i + 1
-```
-```python
-i = 5                   # 3
-while i > 0:
-    print(i)
-    i = i - 2
-```
-```python
-i = 1                   # 4  — will not stop
-while i <= 3:
-    print(i)
-```
-
-| # | Output | Why |
-|---|---|---|
-| 1 | `1 2 3` | Runs while `i` is 1, 2, 3; stops at 4 |
-| 2 | **Nothing** | Condition is False on the first check — the body never runs |
-| 3 | `5 3 1` | Counts *down* by 2; stops when `i` reaches −1 |
-| 4 | `1` forever | No update — infinite |
-
-**Snippet 2 surprises most rooms** — a loop that runs zero times is valid, not an error.
-**Snippet 4** — take the prediction, run it, let it scroll for three seconds, then Ctrl+C in full view.
-
-**Debrief line:**
-> *"Zero passes is valid. Counting down by two is valid. Never stopping is a bug you now know how to interrupt. Loops are more flexible — and more dangerous — than anything you've written so far."*
-
-**Cut rule:** Snippets 2 and 4. Never skip 4 — students must see it stopped, or they'll assume they broke the computer.
 
 ---
 

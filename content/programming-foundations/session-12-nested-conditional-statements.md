@@ -179,9 +179,84 @@ elif marks > 90:
 
 ---
 
-## Classroom Quiz (24–31 min) · ALS: Individual Answer → Reveal
+## Slide Block B (24–31 min) — DELIVER SLIDES AS-IS
 
-> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Two questions on nesting, three on `elif`. Protect these 7 minutes by using the cut rules everywhere else first.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 8 | **Elif Statement** — the structure diagram | `if condition A:` **False** → Block 1 ✗ · `elif condition B:` **False** → Block 2 ✗ · `else:` → Block 3 ✓. Same tick/cross visual language as slide 5 |
+| 9+ | **Elif** | Worked code examples with `%` divisibility checks |
+| last | Next Session | *Loops* |
+
+**Beats to emphasise**
+
+- **Slide 8 mirrors slide 5 deliberately** — same diagram grammar, same ticks and crosses. Say so: *"Same picture, different construct. Nesting goes inwards; elif goes downwards."*
+- **Exactly one block runs in an `if`/`elif`/`else` chain.** The diagram shows it — two crosses and one tick.
+- **`%` appears in the deck's elif examples.** Students met `%` only as a passing mention in Session 11's exit ticket. **Give it one sentence before slide 9:** `%` gives the remainder, `n % 10 == 0` means divisible by 10.
+
+> ⚠️ **The deck never shows a mis-ordered `elif` chain going silently wrong.** That's **Quiz Q5 and ALS Activity 2's core idea** — the most important thing in the session. Type it live:
+> ```python
+> x = 100
+> if x > 3:      print("Above 3")     # this wins
+> elif x > 50:   print("Above 50")    # never checked
+> ```
+
+**Checkpoint (at 31 min)** — show hands:
+> *"Three `elif` conditions are all true. How many blocks run?"*
+> **Answer:** One. The first.
+
+---
+
+## ⚡ ALS Activity 2 — Choral Prediction → Reveal (31–38 min)
+
+**ALS format:** Choral Prediction — the whole room predicts out loud together before each run. Chosen for the closing activity because the pairing of snippets 1 and 2 (same values, order swapped) lands hardest as a shared "we were all wrong together" moment, not an individual correction.
+
+**Setup line:**
+> *"Everyone answers out loud together before I hit run. Say it with confidence even if you're guessing — a wrong guess out loud is worth ten right answers in your head."*
+
+```python
+x = 100                     # 1
+if x > 3:
+    print("Above 3")
+elif x > 50:
+    print("Above 50")
+```
+```python
+x = 100                     # 2
+if x > 50:
+    print("Above 50")
+elif x > 3:
+    print("Above 3")
+```
+```python
+n = 7                       # 3
+if n > 5:
+    print("A")
+if n > 3:
+    print("B")
+```
+
+| # | Output | Why |
+|---|---|---|
+| 1 | `Above 3` | First true condition wins — the `elif` is never checked |
+| 2 | `Above 50` | Same values, order reversed, different answer |
+| 3 | `A` then `B` | **Two separate `if`s** — both run. Not a chain. |
+
+**Snippets 1 and 2 are the pair that matters** — run them back to back and let the contrast land without commentary first.
+
+**Snippet 3 is the sting.** Students expect one output because it looks like a chain. Two separate `if` statements are independent; only `elif` makes them exclusive.
+
+**Debrief line:**
+> *"Same numbers, different order, different answer — with no error to warn you. That's the single most important thing you'll take from this session."*
+
+**Cut rule:** Snippets 1 and 2 are non-negotiable — they're the pair. Drop 3 first if running late.
+
+---
+
+## Classroom Quiz (38–45 min) · ALS: Individual Answer → Reveal
+
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Runs last, right before the Exit Ticket. Two questions on nesting, three on `elif`. Protect these 7 minutes by using the cut rules everywhere else first.
 
 Every question below is run ALS-style: **individual silent answer first, then explanation.**
 
@@ -259,81 +334,6 @@ If multiple `elif` conditions evaluate to true, which block executes?
 
 > *Explanation (platform):* Python checks each condition in order from top to bottom. As soon as it finds the first condition that evaluates to True, it executes that block and skips all remaining ones.
 > **This is the session's most important idea.** Order matters. A chain written in the wrong order produces silently wrong results — no error, just the wrong branch.
-
----
-
-## Slide Block B (31–38 min) — DELIVER SLIDES AS-IS
-
-**Verified against the deck.** Slides, in order:
-
-| # | Slide | Content |
-|---|---|---|
-| 8 | **Elif Statement** — the structure diagram | `if condition A:` **False** → Block 1 ✗ · `elif condition B:` **False** → Block 2 ✗ · `else:` → Block 3 ✓. Same tick/cross visual language as slide 5 |
-| 9+ | **Elif** | Worked code examples with `%` divisibility checks |
-| last | Next Session | *Loops* |
-
-**Beats to emphasise**
-
-- **Slide 8 mirrors slide 5 deliberately** — same diagram grammar, same ticks and crosses. Say so: *"Same picture, different construct. Nesting goes inwards; elif goes downwards."*
-- **Exactly one block runs in an `if`/`elif`/`else` chain.** The diagram shows it — two crosses and one tick.
-- **`%` appears in the deck's elif examples.** Students met `%` only as a passing mention in Session 11's exit ticket. **Give it one sentence before slide 9:** `%` gives the remainder, `n % 10 == 0` means divisible by 10.
-
-> ⚠️ **The deck never shows a mis-ordered `elif` chain going silently wrong.** That's **Quiz Q5 and ALS Activity 2's core idea** — the most important thing in the session. Type it live:
-> ```python
-> x = 100
-> if x > 3:      print("Above 3")     # this wins
-> elif x > 50:   print("Above 50")    # never checked
-> ```
-
-**Checkpoint (at 38 min)** — show hands:
-> *"Three `elif` conditions are all true. How many blocks run?"*
-> **Answer:** One. The first.
-
----
-
-## ⚡ ALS Activity 2 — Choral Prediction → Reveal (38–45 min)
-
-**ALS format:** Choral Prediction — the whole room predicts out loud together before each run. Chosen for the closing activity because the pairing of snippets 1 and 2 (same values, order swapped) lands hardest as a shared "we were all wrong together" moment, not an individual correction.
-
-**Setup line:**
-> *"Everyone answers out loud together before I hit run. Say it with confidence even if you're guessing — a wrong guess out loud is worth ten right answers in your head."*
-
-```python
-x = 100                     # 1
-if x > 3:
-    print("Above 3")
-elif x > 50:
-    print("Above 50")
-```
-```python
-x = 100                     # 2
-if x > 50:
-    print("Above 50")
-elif x > 3:
-    print("Above 3")
-```
-```python
-n = 7                       # 3
-if n > 5:
-    print("A")
-if n > 3:
-    print("B")
-```
-
-| # | Output | Why |
-|---|---|---|
-| 1 | `Above 3` | First true condition wins — the `elif` is never checked |
-| 2 | `Above 50` | Same values, order reversed, different answer |
-| 3 | `A` then `B` | **Two separate `if`s** — both run. Not a chain. |
-
-**Snippets 1 and 2 are the pair that matters** — run them back to back and let the contrast land without commentary first.
-
-**Snippet 3 is the sting.** Students expect one output because it looks like a chain. Two separate `if` statements are independent; only `elif` makes them exclusive.
-
-**Debrief line:**
-> *"Same numbers, different order, different answer — with no error to warn you. That's the single most important thing you'll take from this session."*
-
-**Cut rule:** Snippets 1 and 2 are non-negotiable — they're the pair. Drop 3 first if running late.
 
 ---
 

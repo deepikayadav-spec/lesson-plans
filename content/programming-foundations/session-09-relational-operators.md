@@ -174,9 +174,93 @@ print(user_age == 18)
 
 ---
 
-## Classroom Quiz (24–31 min) · ALS: Individual Answer → Reveal
+## Teaching Block B (24–32 min) — BOARD + LIVE TYPING
 
-> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Protect these 7 minutes by using the cut rules everywhere else first.
+<!-- no deck exists; content built from RM `e03da18b-8523-445e-81e9-8519b1c16a61` -->
+
+**Cover three things, in this order.**
+
+**1. The two syntax traps** — type both, let both fail:
+
+```python
+print(3 = 3)      # SyntaxError: perhaps you meant "=="?
+print(2 < = 3)    # SyntaxError: invalid syntax
+```
+
+Read the first error aloud — Python literally suggests `==`. Say: *"It's telling you the answer. Read your errors."*
+
+**2. Comparing across number types** — type and run:
+
+```python
+print(2 <= 3)         # True
+print(2.53 >= 2.55)   # False
+print(12 == 12.0)     # True   ← the surprising one
+print(12 == 12.1)     # False
+```
+
+`12 == 12.0` being `True` surprises rooms. Say: *"An integer and a float can be equal, because both are numbers. Same value, different container."*
+
+**3. Comparing strings** — type and run:
+
+```python
+print("Python" == "python")    # False
+print("abc" < "abd")           # True
+print(10 == "10")              # False
+```
+
+- **Case matters.** `"Python"` and `"python"` are different strings.
+- **Strings compare alphabetically.** `"abc" < "abd"` is `True` because `c` comes before `d`.
+- **A number is never equal to a string**, even when they look identical.
+
+**Checkpoint (at 32 min)** — show hands:
+> *"`print(12 == 12.0)` — True or False? And `print(12 == "12")`?"*
+> **Answer:** `True`, then `False`. Both numbers versus a number and a string.
+
+---
+
+## ⚡ ALS Activity 2 — Structured Solo Tracing: Trace the Table (32–38 min)
+
+**ALS format:** Structured Solo Tracing — everyone fills in their own table, silently, as you read code aloud, no pairing or discussion. Chosen because next session combines comparisons with `and`/`or`, which is impossible for students who can't reliably evaluate a single comparison alone yet — the skill has to be individual and automatic before it's combined with anything else.
+
+**Setup line:**
+> *"Paper out, laptops shut. Three columns: `a`, `b`, and `result`. I read a line, you write what's in each after that line. If a line is a comparison, `result` is True or False."*
+
+```python
+a = 5
+b = 5.0
+result = a == b
+a = "5"
+result = a == b
+result = a != b
+```
+
+**The completed table**
+
+| After line | `a` | `b` | `result` |
+|---|---|---|---|
+| `a = 5` | `5` | — | — |
+| `b = 5.0` | `5` | `5.0` | — |
+| `result = a == b` | `5` | `5.0` | **True** |
+| `a = "5"` | `"5"` | `5.0` | True *(unchanged)* |
+| `result = a == b` | `"5"` | `5.0` | **False** |
+| `result = a != b` | `"5"` | `5.0` | **True** |
+
+**The key moment:** row 3 gives `True` and row 5 gives `False` — **same comparison, same-looking values.** Ask:
+> *"Nothing about the comparison changed. Why did the answer flip?"*
+**Answer:** `a` stopped being a number and became a string. The types changed, so the answer changed.
+
+Then row 6: `!=` on the same values gives `True`, because they genuinely are not equal.
+
+**Debrief line:**
+> *"You just tracked a bug you can't see with your eyes — only by knowing what type each variable actually holds. That's the whole session in one table."*
+
+**Cut rule:** Stop after row 5.
+
+---
+
+## Classroom Quiz (38–45 min) · ALS: Individual Answer → Reveal
+
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Runs last, right before the Exit Ticket. Protect these 7 minutes by using the cut rules everywhere else first.
 
 Every question below is run ALS-style: **individual silent answer first, then explanation.**
 
@@ -230,90 +314,6 @@ What will be the output of `print(10 == '10')`?
 
 > *Explanation (platform):* The output will be False because the integer 10 is not equal to the string '10'.
 > **This is the session's hardest question and its most important.** If they expected `True`, they're comparing what things *look like* rather than what they *are*. Python doesn't error here — it just says False, which makes this a silent bug. Ties directly to Session 7's crash-vs-bug distinction.
-
----
-
-## Teaching Block B (31–39 min) — BOARD + LIVE TYPING
-
-<!-- no deck exists; content built from RM `e03da18b-8523-445e-81e9-8519b1c16a61` -->
-
-**Cover three things, in this order.**
-
-**1. The two syntax traps** — type both, let both fail:
-
-```python
-print(3 = 3)      # SyntaxError: perhaps you meant "=="?
-print(2 < = 3)    # SyntaxError: invalid syntax
-```
-
-Read the first error aloud — Python literally suggests `==`. Say: *"It's telling you the answer. Read your errors."*
-
-**2. Comparing across number types** — type and run:
-
-```python
-print(2 <= 3)         # True
-print(2.53 >= 2.55)   # False
-print(12 == 12.0)     # True   ← the surprising one
-print(12 == 12.1)     # False
-```
-
-`12 == 12.0` being `True` surprises rooms. Say: *"An integer and a float can be equal, because both are numbers. Same value, different container."*
-
-**3. Comparing strings** — type and run:
-
-```python
-print("Python" == "python")    # False
-print("abc" < "abd")           # True
-print(10 == "10")              # False
-```
-
-- **Case matters.** `"Python"` and `"python"` are different strings.
-- **Strings compare alphabetically.** `"abc" < "abd"` is `True` because `c` comes before `d`.
-- **A number is never equal to a string**, even when they look identical.
-
-**Checkpoint (at 39 min)** — show hands:
-> *"`print(12 == 12.0)` — True or False? And `print(12 == "12")`?"*
-> **Answer:** `True`, then `False`. Both numbers versus a number and a string.
-
----
-
-## ⚡ ALS Activity 2 — Structured Solo Tracing: Trace the Table (39–45 min)
-
-**ALS format:** Structured Solo Tracing — everyone fills in their own table, silently, as you read code aloud, no pairing or discussion. Chosen because next session combines comparisons with `and`/`or`, which is impossible for students who can't reliably evaluate a single comparison alone yet — the skill has to be individual and automatic before it's combined with anything else.
-
-**Setup line:**
-> *"Paper out, laptops shut. Three columns: `a`, `b`, and `result`. I read a line, you write what's in each after that line. If a line is a comparison, `result` is True or False."*
-
-```python
-a = 5
-b = 5.0
-result = a == b
-a = "5"
-result = a == b
-result = a != b
-```
-
-**The completed table**
-
-| After line | `a` | `b` | `result` |
-|---|---|---|---|
-| `a = 5` | `5` | — | — |
-| `b = 5.0` | `5` | `5.0` | — |
-| `result = a == b` | `5` | `5.0` | **True** |
-| `a = "5"` | `"5"` | `5.0` | True *(unchanged)* |
-| `result = a == b` | `"5"` | `5.0` | **False** |
-| `result = a != b` | `"5"` | `5.0` | **True** |
-
-**The key moment:** row 3 gives `True` and row 5 gives `False` — **same comparison, same-looking values.** Ask:
-> *"Nothing about the comparison changed. Why did the answer flip?"*
-**Answer:** `a` stopped being a number and became a string. The types changed, so the answer changed.
-
-Then row 6: `!=` on the same values gives `True`, because they genuinely are not equal.
-
-**Debrief line:**
-> *"You just tracked a bug you can't see with your eyes — only by knowing what type each variable actually holds. That's the whole session in one table."*
-
-**Cut rule:** Stop after row 5.
 
 ---
 
