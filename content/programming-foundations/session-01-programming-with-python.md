@@ -288,21 +288,27 @@ What will be the output of `print("2 + 5")`?
 
 ---
 
-## Exit Ticket + Homework (45–48 min)
+## Exit Ticket + Quiz Push (45–48 min)
 
-**Exit ticket** — on paper or in chat before anyone leaves:
+**Exit ticket** (~30 s) — on paper or in chat before anyone leaves:
 
 > Write the one line of Python that prints your own name, and next to it write what `print(3 * 4)` outputs.
 > **Answers:** `print("Your Name")` (quotes required) and `12`.
 
 Scan the responses on the way out. Missing quotes is the signal to open Session 2 with a quick recap.
 
-**Homework** (read the list, don't walk through it — time's up):
+**Quiz Push — start it now, not tonight (2 min):** phones/laptops out, right now, still in the room.
+> *"Open MCQ Practice on the platform. Everyone, this room, right now — attempt the first 3 questions before you leave your seat."*
+
+Circulate while they do it. **This is the single biggest lever on completion** — a quiz assigned as homework and never opened gets a 0%; a quiz started in the room with three questions already answered almost always gets finished. Target is 80% platform attempt rate; a verbal reminder alone has been landing around 33%.
+> *"I'll show the completion numbers at the start of Session 2's warm-up."*
+
+**Remaining homework** (read the list, don't walk through it — time's up):
 
 | Task | Unit |
 |---|---|
 | Coding Practice — *Hello World*, *Three Hashes* | `81959e79-ceeb-448c-af0e-7e0e7f5447f0` |
-| MCQ Practice — 56 questions | `3c0cf49d-4c57-4468-83ca-63cb7c63b1dd` |
+| MCQ Practice — 56 questions *(started in class above — finish the rest)* | `3c0cf49d-4c57-4468-83ca-63cb7c63b1dd` |
 | RM — Programming with Python | `e57497b0-cccd-4ec6-bd44-5c791468d4f0` |
 | **RM — Python Setup & Coding in VS Code (compulsory if poll Q3 was weak)** | `292ce498-2b51-44b2-bc2c-65666c09090c` |
 | RM — Algorithms, Flowcharts, and Pseudocode | `7516496f-23c2-4460-9691-b70219d4dc8b` |
@@ -333,6 +339,7 @@ Unscheduled on purpose. Use it for: a slow exit ticket, dismissal, or absorbing 
 
 - ✅ **Verified against the real deck** (*"Copy of 1.1 Programming with Python"*, 41 animation steps, ~20 distinct slides). Slide Blocks A and B list the actual slides in order — no longer inferred.
 - **50-min format, recalibrated from the original 60-min plan: 45 min instruction + 5 min buffer (3 min settling at the start, 2 min flex at the end).** Every section above has a tighter window than before — this is the actual delivery constraint, not a suggestion. If you overrun anywhere, use the cut rules given in each block first; the end buffer is the last resort, not the first one.
+- **Quiz Push (in Exit Ticket block) targets platform attempt rate, not the in-class quiz.** Current MCQ Practice/Classroom Quiz attempt rate across sessions is ~33%; the goal is 80%. Starting it in-room removes the "never opened it" failure mode that a homework reminder alone doesn't fix. Don't skip this even if the session ran long elsewhere — it's 2 minutes, not optional.
 - **The Classroom Quiz runs last, right before the Exit Ticket** — a deliberate cumulative check across everything taught, not a mid-session interruption. It's the one block that never moves: it still gets its full 7 minutes even if the session is running behind. Protect it by trimming earlier blocks (Hook, both Slide Blocks, both ALS activities all have cut rules for exactly this); if you're still short by the time you reach it, dip into the 2-min end buffer or shorten the homework read-out instead. It's the only point in the session where you get real signal on whether the room followed.
 - **Exactly two ALS (Active Learning Strategy) activities this session, deliberately different formats** — not the same strategy twice: Activity 1 is Individual→Pair→Share (error analysis), Activity 2 is Individual-Predict→Verify (a Polling variant). Pick the ALS format per session based on what the content needs — don't default to Think-Pair-Share every time.
 - **The Classroom Quiz is also run ALS-style** — individual answer first, then reveal — not read-question-then-answer. Any question on a slide gets the same treatment: think first, then check.

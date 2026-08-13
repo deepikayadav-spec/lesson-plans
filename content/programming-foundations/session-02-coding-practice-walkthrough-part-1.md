@@ -1,7 +1,7 @@
 # Session 2 — Coding Practice Walkthrough | Part 1
 
-**Duration** 60 min · **Topic** Introduction to Python · **Prerequisite** Session 1
-**Session type** Support session — walkthrough. No classroom quiz, no reading material, **no slide deck.**
+**Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Introduction to Python · **Prerequisite** Session 1
+**Session type** Support session — walkthrough. No classroom quiz, no reading material, **no slide deck.** · **Format** 50-min recalibrated, 2 ALS activities
 
 **Platform units**
 
@@ -10,7 +10,7 @@
 | Video — Coding Practice Walkthrough Part 1 | `f2a6cdec-7135-4db4-9466-d80aa26999fd` |
 | *(Problems walked through belong to Session 1)* | `81959e79-ceeb-448c-af0e-7e0e7f5447f0` |
 
-> ⚠️ **No deck exists for this session.** You are the content. Everything below is a live-typing session — laptop on the projector from minute 10 to minute 57. Have the editor open and the font size at 18pt+ before students arrive.
+> ⚠️ **No deck exists for this session.** You are the content. Everything below is a live-typing session — laptop on the projector for almost the whole hour. Have the editor open and the font size at 18pt+ before students arrive.
 
 ---
 
@@ -25,37 +25,41 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Prior Knowledge Activation (0–7 min)
+## Classroom Settling (0–3 min) · Buffer — not instructional
 
-7 questions on **Session 1**. Newly authored. ~45 s each, project the distribution, never name individuals.
+Projector on, editor open at 18pt+, platform logged in, students seated before the clock starts on anything below. Don't reclaim this time for content if your room settles faster — hold it as extra flex at the end.
 
-**Q1.** What is *syntax* in a programming language?
-`A` The instructions you write · `B` The rules those instructions must follow · `C` The output of a program · `D` A Python library
-→ **B.** *Targets:* Syntax definition. *Misconception:* picking A means they've merged code and syntax into one idea. *If >40% wrong:* one sentence — *"Code is what you write. Syntax is the rulebook it has to obey."*
+---
 
-**Q2.** What does `print(2 + 5)` output?
+## Warm-Up Poll — Prior Knowledge Activation (3–7 min) · ALS: Polling
+
+**Completion check-in (~15 s, before Q1):** project or state the MCQ Practice completion number from Session 1. No shaming, just visibility: *"X% of you finished the MCQ Practice — target is 80%. If you didn't, you're doing it in the room today before you leave."*
+
+5 questions on **Session 1**, the ones that matter for today's walkthrough. ~45 s each, project the distribution, never name individuals.
+
+**Q1.** What does `print(2 + 5)` output?
 `A` `2 + 5` · `B` `7` · `C` `"7"` · `D` Error
 → **B.** *Targets:* Printing without quotes. *Misconception:* A means quotes-vs-no-quotes hasn't landed.
 
-**Q3.** What does `print("2 + 5")` output?
+**Q2.** What does `print("2 + 5")` output?
 `A` `7` · `B` `2 + 5` · `C` `"2 + 5"` · `D` Error
 → **B.** *Targets:* Printing with quotes. *Misconception:* A is the core Session 1 misconception. *If >40% wrong:* type both lines live right now, before the hook. This must be solid before they attempt problems.
 
-**Q4.** Which of these will **fail**? *(MSQ — select all)*
+**Q3.** Which of these will **fail**? *(MSQ — select all)*
 `A` `print("Hi")` · `B` `Print("Hi")` · `C` `prnt("Hi")` · `D` `print(Hi)`
 → **B, C and D.** *Targets:* Possible Mistakes. *Misconception:* missing B means case-sensitivity is still not internalised.
 
-**Q5.** `Print("Hello")` produces which error?
+**Q4.** `Print("Hello")` produces which error?
 `A` SyntaxError · `B` NameError · `C` No error · `D` IndentationError
 → **B.** *Targets:* Error-message recognition. *Misconception:* students guess "SyntaxError" for everything. *If >40% wrong:* they aren't reading error text at all — call it out, it's the whole point of today.
 
-**Q6.** What does `print(10 / 5)` output?
-`A` `2` · `B` `2.0` · `C` `5` · `D` `2.5`
-→ **B.** *Targets:* Division always returns a decimal. *Misconception:* A is school-maths carryover.
-
-**Q7.** You get an error you don't understand. First move?
+**Q5.** You get an error you don't understand. First move?
 `A` Delete the line and retry · `B` Read the error message and find the line number · `C` Ask a friend · `D` Restart the laptop
 → **B.** *Targets:* Debugging habit. No wrong-answer shaming here — this one sets up the session.
+
+**Running it** — poll tool, ~45 s per question. Total ~3.5 min for the 5 questions.
+
+**Explain-the-answer beat (~20 s):** *"A couple of those had you split — that's exactly why today is a full hour of hands-on practice, not more slides."*
 
 ---
 
@@ -80,7 +84,7 @@ Write the four steps on the board and leave them there all session:
 
 ---
 
-## Walkthrough Block A (10–22 min) — *Hello World*
+## Walkthrough Block A (10–19 min) — *Hello World*
 
 You type. Projector on. Narrate every keystroke including the boring parts.
 
@@ -103,15 +107,15 @@ Submit that. Let the failure appear. Read the error aloud, calmly, and fix it.
 
 > *"That's the loop. Write, run, read, fix. You're not supposed to get it right first time — nobody does."*
 
-**Checkpoint (at 22 min):**
+**Checkpoint (at 19 min)** — 10 s silent think, then cold-call:
 > *"What's step 2, and why does it exist?"*
 > **Answer:** Restate it in your own words — because if you can't say what the program should do, you can't write it.
 
 ---
 
-## ⚡ Activity 1 — Fill the Blank Live (22–28 min)
+## ⚡ ALS Activity 1 — Guided Construction: Fill the Blank Live (19–25 min)
 
-**Format:** Fill the Blank Live · **Exposes:** that students can recognise correct code but can't yet produce it.
+**ALS format:** Cold-Call Construction — the instructor is a literal typist, students supply every token out loud one at a time. Chosen over a pair activity because the entire point is the gap between recognising code and producing it, which only shows up when one voice has to commit to an exact answer with nobody to lean on.
 
 **Setup line:**
 > *"I'm typing exactly what you say. Not what you mean — what you say. Character for character."*
@@ -138,7 +142,7 @@ _____(_____)          →  print("###")
 
 ---
 
-## Walkthrough Block B (28–42 min) — *Three Hashes*, students driving
+## Walkthrough Block B (25–36 min) — *Three Hashes*, students driving
 
 **You are at the keyboard. Students give the instructions.** You type nothing they don't say.
 
@@ -149,7 +153,7 @@ Run the same four steps, but ask instead of tell:
 3. **Write** — *"What do I type first?"* Type exactly what's said.
 4. **Run** — *"What do we expect? Say it before I hit run."*
 
-**Expect these wrong turns.** They're useful — run each one rather than blocking it:
+**Expect these wrong turns.** They're useful — run each one rather than blocking it. Cap it at two wrong turns, then land the answer:
 
 | What they say | What happens | Your one-line nudge |
 |---|---|---|
@@ -161,15 +165,15 @@ The `#`-is-a-comment collision is worth 90 seconds — it's the first time they 
 
 **Answer:** `print("###")`
 
-**Checkpoint (at 42 min):**
+**Checkpoint (at 36 min)** — 10 s silent think, then cold-call:
 > *"Why did `print(###)` print nothing instead of erroring?"*
 > **Answer:** `#` starts a comment, so Python ignored everything after it — there was nothing left to print.
 
 ---
 
-## ⚡ Activity 2 — Human Compiler (42–50 min)
+## ⚡ ALS Activity 2 — Round-Robin Trace: Human Compiler (36–44 min)
 
-**Format:** Human Compiler · **Exposes:** that students read code as a whole instead of line by line, top to bottom.
+**ALS format:** Round-Robin Structured Cold-Call — a different student takes each line, in order, no pairing or discussion. Chosen instead of a repeat of Activity 1's format because the skill here is different: reading code top-to-bottom as a sequence, not constructing it token by token. A chain of individual answers, where one wrong line visibly breaks the next student's line, makes that sequencing tangible in a way pair discussion wouldn't.
 
 **Setup line:**
 > *"You are Python now. I point at a line, you tell me exactly what the machine does. Not what the program means — what that one line does."*
@@ -202,45 +206,40 @@ print(10 / 5)
 
 ---
 
-## ⚡ Activity 3 — Rapid Fire Board Race (50–57 min)
+## Exit Ticket + Quiz Push (44–48 min)
 
-**Format:** Rapid Fire Board Race · **Exposes:** nothing new — this is a deliberate energy reset before the hour ends, and it rehearses the four-step method under mild pressure.
-
-**Setup line:**
-> *"Two volunteers at the board. Five prompts. Class judges. No laptops."*
-
-Prompts — read one at a time, both write simultaneously:
-
-1. Print the word `Python` → `print("Python")`
-2. Print the number 12 → `print(12)`
-3. Print the result of 6 times 7 → `print(6 * 7)`
-4. Print the characters `6 * 7` → `print("6 * 7")`
-5. Fix this: `Print("done")` → `print("done")`
-
-Class calls the winner per prompt. Keep it fast and light.
-
-**Debrief line:**
-> *"Prompts three and four are the same characters and completely different programs. Quotes are the difference. That's the one thing from this week you cannot afford to forget."*
-
-**Cut rule:** Prompts 3, 4 and 5 only.
-
----
-
-## Exit Ticket + Homework (57–60 min)
-
-**Exit ticket** — before anyone leaves:
+**Exit ticket** (~30 s) — before anyone leaves:
 
 > Write the four steps from the board, from memory.
 > **Answer:** Read · Restate · Write · Run.
 
-**Homework**
+**Quiz Push — start it now, not tonight (2 min):** phones/laptops out, right now, still in the room.
+> *"Whoever hasn't finished MCQ Practice — open it now, this room. Attempt at least 3 more questions before you leave your seat."*
+
+Circulate while they do it. Target is 80% platform attempt rate, currently ~33% — starting it in the room is what closes that gap, a homework reminder alone hasn't.
+> *"I'll show completion numbers at the start of Session 3's warm-up."*
+
+**Remaining homework**
 
 > *"Both Session 1 problems, submitted on the platform tonight — even if you already did them. Do them again using the four steps. And read Session 1's material if you haven't."*
 
 | Task | Unit |
 |---|---|
 | Coding Practice — *Hello World*, *Three Hashes* | `81959e79-ceeb-448c-af0e-7e0e7f5447f0` |
-| MCQ Practice — 56 questions | `3c0cf49d-4c57-4468-83ca-63cb7c63b1dd` |
+| MCQ Practice — 56 questions *(started in class above — finish the rest)* | `3c0cf49d-4c57-4468-83ca-63cb7c63b1dd` |
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early. If you land here with 3+ minutes still going, and only then, run the optional Rapid Fire Board Race closer below — it's a bonus, never a scheduled block, and skipping it costs nothing.
+
+**Optional closer — Rapid Fire Board Race** (not one of the two ALS activities; use only if the buffer allows):
+Two volunteers at the board, prompts read one at a time, both write simultaneously, class calls the winner per prompt.
+1. Print the result of 6 times 7 → `print(6 * 7)`
+2. Print the characters `6 * 7` → `print("6 * 7")`
+3. Fix this: `Print("done")` → `print("done")`
+> *Debrief if you run it:* *"Prompts one and two are the same characters and completely different programs. Quotes are the difference. That's the one thing from this week you cannot afford to forget."*
 
 ---
 
@@ -250,17 +249,21 @@ Class calls the winner per prompt. Keep it fast and light.
 |---|---|---|
 | "I should know how to start without thinking" | Nobody has shown them a method, so they assume competent people just *know* | Naming the four steps and running them visibly, twice |
 | Errors mean you failed | School conditioning | Deliberately breaking your own code in Block A and fixing it calmly |
-| Python reads the whole program at once | Reading habits from prose | Activity 2 — the `Print` on line 4 stops line 5 from ever running |
+| Python reads the whole program at once | Reading habits from prose | ALS Activity 2 — the `Print` on line 4 stops line 5 from ever running |
 | `#` is just a symbol | No reason to know otherwise yet | Running `print(###)` and asking why nothing printed |
-| Recognising correct code = being able to write it | Recognition feels like knowledge | Activity 1 — typing literally what's said exposes the gap |
+| Recognising correct code = being able to write it | Recognition feels like knowledge | ALS Activity 1 — typing literally what's said exposes the gap |
 
 ---
 
 ## Instructor Notes
 
-- **No deck for this session.** Screen share is the entire delivery. Editor open, font ≥18pt, platform logged in, before the room fills.
+- **Quiz Push (in Exit Ticket block) + the warm-up completion check-in are a pair** — one closes last session's loop, the other opens this session's. Target is 80% platform MCQ attempt rate, currently ~33%. Don't skip either half even under time pressure.
+- **No deck for this session, and no classroom quiz** — this is a walkthrough/support session by design, not a concept lecture. Don't try to add a quiz block here; there's no question pool attached to it on the platform.
+- **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex). Screen share is the entire delivery. Editor open, font ≥18pt, platform logged in, before the room fills.
+- **Two ALS activities this session, deliberately different from each other and from Session 1's:** Activity 1 is Cold-Call Construction (one voice builds the code token by token), Activity 2 is Round-Robin Structured Cold-Call (a chain of individual line-reads). Neither is Think-Pair-Share or a poll — pick the format the content actually needs.
 - **This session's job is behavioural, not conceptual.** Nothing new is taught. The goal is that students leave with a repeatable first move so they stop closing the tab. Judge it by whether attempt rates rise, not by whether anyone learned a new function.
 - **Do not react to the show of hands in the hook.** If three people attempted, that's information, not a discipline problem. Reacting badly guarantees an honest answer never comes again.
 - **You will be tempted to type ahead in Block B.** Don't. The whole point is that students supply every instruction. Silence while waiting is productive.
-- **Pacing risk:** Block B can overrun badly if you take every wrong turn. Cap it — take at most two wrong turns, then land the answer.
-- **Data note:** this session has no reading material, no classroom quiz, and no MCQ pool on the platform. Nothing to assign from it directly — homework points back at Session 1.
+- **Pacing risk:** Block B can overrun badly if you take every wrong turn. Cap it at two wrong turns, then land the answer — the window is 11 minutes, not 14, in this format.
+- **The original plan had a third activity (Rapid Fire Board Race).** It's kept as an optional buffer-only closer at the very end, not a scheduled block — the 50-min budget only has room for two ALS activities, and Fill-the-Blank/Human Compiler carry more unique diagnostic value than the board race does.
+- **Data note:** this session has no reading material, no classroom quiz, and no MCQ pool of its own on the platform. Nothing to assign from it directly — homework points back at Session 1.

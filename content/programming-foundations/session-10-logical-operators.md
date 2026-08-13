@@ -1,7 +1,7 @@
 # Session 10 — Logical Operators
 
-**Duration** 60 min · **Topic** Operators · **Prerequisite** Session 9
-**Session type** Concept lecture · ⚠️ **No video and no slide deck exist for this session** — see Instructor Notes.
+**Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Operators · **Prerequisite** Session 9
+**Session type** Concept lecture · ⚠️ **No video and no slide deck exist for this session** — see Instructor Notes. · **Format** 50-min recalibrated, 2 ALS activities, Classroom Quiz mandatory (never cut, runs last)
 
 **Platform units**
 
@@ -14,7 +14,7 @@
 | MCQ Practice (98 q) | `bea78a11-7247-4662-8be4-68da6dda4251` |
 | Coding Practice (15 q) | `2352eee0-7db2-4189-b245-bd0246d141ed` |
 
-> ⚠️ **You have no deck.** The two "Slide Block" sections are **Teaching Blocks** — board work and live typing, built from the reading material. Everything you need is written out below.
+> ⚠️ **You have no deck.** The two "Teaching Block" sections replace Slide Blocks — board work and live typing, built from the reading material.
 
 ---
 
@@ -30,9 +30,17 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Prior Knowledge Activation (0–7 min)
+## Classroom Settling (0–3 min) · Buffer — not instructional
 
-7 questions on **Session 9**. Newly authored. ~45 s each, project the distribution, never name individuals.
+Board cleared and ready, students seated. Don't reclaim this time for content if your room settles faster — hold it as extra flex at the end.
+
+---
+
+## Warm-Up Poll — Prior Knowledge Activation (3–7 min) · ALS: Polling
+
+**Completion check-in (~15 s, before Q1):** state the MCQ Practice completion number since last session. Target is 80%.
+
+5 questions on **Session 9**. ~45 s each, project the distribution, never name individuals.
 
 **Q1.** What does `print(7 > 3)` output?
 `A` `4` · `B` `True` · `C` `7` · `D` SyntaxError
@@ -42,29 +50,23 @@ By the end of this session, students will be able to:
 `A` `=` · `B` `==` · `C` `!=` · `D` `>=`
 → **B.** *Targets:* `=` vs `==`.
 
-**Q3.** What does `print(3 = 3)` produce?
-`A` `True` · `B` `False` · `C` SyntaxError · `D` `3`
-→ **C.** *Targets:* Assignment can't compare.
-
-**Q4.** What does `print(10 == "10")` output?
+**Q3.** What does `print(10 == "10")` output?
 `A` `True` · `B` `False` · `C` TypeError · `D` `10`
 → **B.** *Targets:* Number never equals string. *If >40% wrong:* re-run it live — today's combined expressions will hide this error completely.
 
-**Q5.** What does `print(12 == 12.0)` output?
-`A` `True` · `B` `False` · `C` TypeError · `D` `12`
-→ **A.** *Targets:* Int and float can be equal.
-
-**Q6.** Which are True? *(MSQ — select all)*
+**Q4.** Which are True? *(MSQ — select all)*
 `A` `5 != 5` · `B` `4 >= 4` · `C` `"a" < "b"` · `D` `"A" == "a"`
 → **B and C.** *Targets:* `!=`, `>=`, string ordering, case sensitivity.
 
-**Q7.** How many values can a comparison result be?
+**Q5.** How many values can a comparison result be?
 `A` Any number · `B` Two — True or False · `C` Three · `D` Depends
 → **B.** *Targets:* Booleans are binary. **Today's foundation** — logical operators take Booleans in and give Booleans out.
 
+**Running it** — poll tool, ~45 s per question. Total ~3.75 min for the 5 questions.
+
 ---
 
-## Hook (7–10 min)
+## Hook (7–11 min)
 
 Say it before writing anything:
 
@@ -90,7 +92,7 @@ print(True or False)      # True
 
 ---
 
-## Teaching Block A (10–22 min) — BOARD + LIVE TYPING
+## Teaching Block A (11–18 min) — BOARD + LIVE TYPING
 
 <!-- no deck exists; content built from RM `35dfbabb-e989-46fd-8a1f-12f1a158cf84` -->
 
@@ -102,7 +104,7 @@ print(True or False)      # True
 | `or` | **at least one** side is True |
 | `not` | flips it — True becomes False |
 
-**Then build the truth tables on the board with the class.** Ask before you write each answer:
+**Then build the truth tables on the board with the class.** Ask before you write each answer — build `and` fully, then move faster through `or` and `not` once the pattern's established:
 
 **`and`**
 
@@ -140,41 +142,20 @@ print(not(False))         # True
 - **These are English words, not symbols.** No `&&` or `||` here — Python uses the actual words. Students coming from other languages trip on this.
 - **`not` needs something to flip.** It works on one value, not two.
 
-**Checkpoint (at 22 min)** — cold-call two students:
+**Checkpoint (at 18 min)** — 10 s silent think, cold-call two students:
 > *"`True and False` — what and why? Then `True or False`."*
 > **Answer:** `False`, because `and` needs both. `True`, because `or` needs only one.
 
 ---
 
-## ⚡ Activity 1 — Human Compiler (22–27 min)
+## ⚡ ALS Activity 1 — Staged Expression Reduction: Human Compiler (18–23 min)
 
-### What this activity is
+**ALS format:** Round-Robin Staged Reduction — students become the interpreter, but instead of tracing separate lines of a program (as in earlier sessions' Human Compiler activities), each student resolves just *one bracket* of a single expression, and the board rewrites one step smaller each time. Chosen because combined expressions like `(2 < 3) and (1 < 2)` are almost always answered in one wrong leap — this format makes the leap impossible.
 
-Students **become** the Python interpreter. You point at one piece of an expression at a time and the student you pick says what that piece evaluates to — never the whole expression at once. You build up the answer in visible stages on the board.
-
-### Why it's here
-
-Students look at `(2 < 3) and (1 < 2)` and try to answer it in one leap. The RM shows the step-by-step reduction explicitly, and this activity makes the class perform it.
-
-### Before class
-
-Board space to write three lines under each other.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:30 | Setup line, write the expression | Look |
-| 0:30–3:30 | Point at one bracket, take an answer, rewrite the line below | One piece each |
-| 3:30–5:00 | Repeat with the second expression | Same |
-
-### Say this
-
+**Setup line:**
 > *"You are Python. I point at one piece — one bracket, not the whole thing. You tell me what that piece becomes. We'll rewrite the line each time until there's nothing left to work out."*
 
-### Expression 1
-
-Write it, then reduce a step at a time, taking each step from a different student:
+**Expression 1** — write it, then reduce a step at a time, taking each step from a different student:
 
 ```
 (2 < 3) and (1 < 2)
@@ -185,7 +166,7 @@ True
 
 Point at `(2 < 3)` first: *"What does this piece become?"* → `True`. Rewrite the whole line. Then `(1 < 2)`. Then the final `and`.
 
-### Expression 2
+**Expression 2** (if time allows):
 
 ```
 (2 < 3) or (2 < 1)
@@ -197,24 +178,18 @@ True
 **Press here:** *"The right side is False. Why is the answer still True?"*
 **Answer:** `or` only needs one side to be True.
 
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| Student answers the whole expression at once | *"Too fast — just this bracket. What does this one become?"* The staging is the activity. |
-| Someone says `(2 < 3)` is `2` | They're computing instead of comparing. *"It's a question. What's the answer — yes or no?"* |
-| Room finds it trivially easy | Give them `(5 > 2) and (3 > 7) or (1 < 2)` and let them argue about order. Don't formalise precedence — just show that brackets settle it. |
-| Nobody volunteers | Point at specific rows. Each answer is one word, so the risk is low — say that. |
-
-**Common instructor mistake:** writing the reduction yourself while talking. Students must supply each step, or they're watching a demo.
+**Debrief line:**
+> *"Every combined expression reduces the same way — smallest piece first, one step at a time. Never guess the whole thing in your head."*
 
 **Cut rule:** Expression 1 only.
 
 ---
 
-## Classroom Quiz (27–34 min)
+## Classroom Quiz (23–30 min) · ALS: Individual Answer → Reveal
 
-5 MCQs from the platform pools — one from each of A, B and C, plus two combined. ~80 s each.
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** This session has three quiz pools — A (`and`), B (`or`), C (`not`) — the only session in the first fifteen with three. The five questions below deliberately take one from each plus two combined; don't substitute all five from one pool.
+
+Every question below is run ALS-style: **individual silent answer first, then explanation.**
 
 **Q1** — `a06873fa-d2e1-49a0-b976-8fd30595a43f` *(Quiz A · REMEMBERING)*
 What is the output of `print(True and False)`?
@@ -264,7 +239,7 @@ What will be the output of `print((5 == 5) or (3 > 6))`?
 
 ---
 
-## Teaching Block B (34–44 min) — BOARD + LIVE TYPING
+## Teaching Block B (30–38 min) — BOARD + LIVE TYPING
 
 <!-- no deck exists; content built from RM `35dfbabb-e989-46fd-8a1f-12f1a158cf84` -->
 
@@ -291,7 +266,7 @@ print(not(2 < 3))     # False
 print(not(5 == 6))    # True
 ```
 
-Reduce on the board, as in Activity 1:
+Reduce on the board, as in ALS Activity 1:
 ```
 not(2 < 3)
 not(True)
@@ -311,39 +286,20 @@ False
 - **Say it in English first, always.** Students who translate word by word get it right; students who guess at symbols don't.
 - **Each side of `and`/`or` must be a complete comparison.** `age > 18 and < 60` is a SyntaxError — you can't abbreviate. Show it failing; it's the most common mistake in tonight's homework.
 
-**Checkpoint (at 44 min)** — show hands:
+**Checkpoint (at 38 min)** — show hands:
 > *"Write the condition for 'marks are above 40 and attendance is above 75'."*
 > **Answer:** `marks > 40 and attendance > 75`. Both sides complete.
 
 ---
 
-## ⚡ Activity 2 — Predict the Output (44–50 min)
+## ⚡ ALS Activity 2 — Choral Prediction → Reveal (38–45 min)
 
-### What this activity is
+**ALS format:** Choral Prediction — the whole room answers out loud together before each run. Chosen because `and`/`or` feel obvious in isolation; a shared, confident wrong guess on the type-mismatch snippet is more memorable corrected as a group than picked apart from one student.
 
-You reveal a snippet, **the whole class commits to an answer out loud before you run it**, then you run it. The public commitment is the mechanism — it converts a passive watch into an active prediction that students remember being right or wrong about.
-
-### Why it's here
-
-`and`/`or` feel obvious until they're combined with comparisons and a type mismatch. This finds the students who are pattern-matching rather than evaluating.
-
-### Before class
-
-Snippets in a file, revealed one at a time.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:20 | Setup line | Listen |
-| 0:20–4:30 | Reveal, take a chorus answer, **then** run | Predict aloud |
-| 4:30–6:00 | Debrief on #4 | Listen |
-
-### Say this
-
+**Setup line:**
 > *"Everyone answers out loud together before I run it. True or False. Say it with confidence even if you're guessing — a wrong guess out loud is worth ten right answers in your head."*
 
-### The snippets
+Reveal one snippet at a time:
 
 ```python
 print((10 > 5) and (5 > 10))       # 1
@@ -359,8 +315,6 @@ age = input()                       # 4 — type 20
 print(age > 18)
 ```
 
-### Answers
-
 | # | Output | Why |
 |---|---|---|
 | 1 | `False` | `and` needs both; the right side is False |
@@ -369,110 +323,46 @@ print(age > 18)
 | 4 | **TypeError** | `input()` gave a string; you can't compare a string to a number with `>` |
 
 **Snippet 4 is the point.** It looks like the most natural thing a beginner would write — *"is the age over 18?"* — and it crashes.
-
 > *"That's the program you were about to write tonight. What's missing?"*
 > **Answer:** `age = int(input())`.
 
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| Room gets 1–3 instantly | Good, that's expected. Move fast to #4. |
-| Someone predicts `False` for #4 | Very common — they assume it compares somehow. Run it, let the TypeError land. |
-| They fix #4 immediately | Excellent. Ask *why* `==` on a string wouldn't crash but `>` does. (Equality can compare any two things; ordering can't.) |
-| Nobody will call out together | Do a hands vote instead: *"Hands for True. Hands for False."* |
-
-**Common instructor mistake:** running snippet 4 before taking a prediction. The wrong prediction is the entire value.
+**Debrief line:**
+> *"Equality can compare any two things and just says False. Ordering — `>`, `<` — refuses outright when the types don't match. That's why this one crashes and `10 == "10"` doesn't."*
 
 **Cut rule:** Snippets 1 and 4.
 
 ---
 
-## ⚡ Activity 3 — Write the Question (50–57 min)
+## Exit Ticket + Quiz Push (45–48 min)
 
-### What this activity is
-
-Students write their own condition — one line of Python — designed to be genuinely tricky for a classmate. You collect a few, put them on screen anonymously, and the class evaluates them. Writing a question forces a different kind of thinking than answering one: to build a trap, you have to understand where the traps are.
-
-### Why it's here
-
-It's the session's assessment in disguise. A student who can construct a tricky `and`/`or` expression has understood the operators; one who can only answer them may not have.
-
-### Before class
-
-Nothing. Students need paper or the chat.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:40 | Setup line, give the constraints | Listen |
-| 0:40–3:00 | Circulate quietly, look for good ones | Write one expression |
-| 3:00–6:00 | Put 3 on screen, class evaluates each | Answer, argue |
-| 6:00–7:00 | Debrief | Listen |
-
-### Say this
-
-> *"Everyone writes one line — a `print()` with a condition inside it, using `and`, `or` or `not`. The rule: you must know the answer, and it must be something a classmate could get wrong. Two minutes."*
-
-**Give the constraints explicitly** or you'll get unusable submissions:
-
-- Must use at least one of `and`, `or`, `not`
-- Must use only numbers, strings and comparisons — nothing we haven't covered
-- Must fit on one line
-- **You must know the answer**
-
-### Worked example to show them first
-
-Put one up so they know the shape:
-
-```python
-print((5 > 3) and not(2 > 1))
-```
-
-Reduce it with the class: `True and not(True)` → `True and False` → **`False`**
-
-### Running the reports
-
-Collect three by walking round. Put each on screen without naming the author. For each:
-
-1. Class votes True or False.
-2. Ask the author to reduce it step by step on the board.
-3. Run it. Confirm.
-
-**If an author's own answer is wrong** — treat it as the best moment of the session: *"They wrote it and even they got it wrong. That's how easy these are to misread. Let's reduce it properly."*
-
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| Submissions are all trivial (`True and False`) | Show the worked example again and ask for one with real comparisons in it. |
-| Someone uses something not yet taught | Fine — say it's beyond today and pick another. Don't make it a correction. |
-| Nobody writes anything | Drop to pairs: *"Write one between two of you."* |
-| Two minutes isn't enough | Give three. The writing is the learning; the reporting is the bonus. |
-
-**Common instructor mistake:** picking only the cleverest submissions. A simple one that half the room gets wrong teaches more than an elaborate one nobody follows.
-
-**Cut rule:** Collect two, skip the author's board reduction.
-
----
-
-## Exit Ticket + Homework (57–60 min)
-
-**Exit ticket** — before anyone leaves:
+**Exit ticket** (~30 s) — before anyone leaves:
 
 > Write True or False: `(4 > 2) and (2 > 4)` · `(4 > 2) or (2 > 4)` · `not(3 == 3)`
 > **Answers:** False · True · False
 
-**Homework**
+**Quiz Push — start it now, not tonight (2 min):** phones/laptops out, right now, still in the room.
+> *"Open MCQ Practice. Everyone, this room, right now — attempt the first 3 questions before you leave your seat. 98 questions in this pool."*
+
+Circulate while they do it. Target is 80% platform attempt rate, currently ~33%.
+> *"I'll show completion numbers at the start of Session 11's warm-up."*
+
+**Remaining homework**
 
 | Task | Unit |
 |---|---|
 | Coding Practice — 15 problems | `2352eee0-7db2-4189-b245-bd0246d141ed` |
-| MCQ Practice — 98 questions | `bea78a11-7247-4662-8be4-68da6dda4251` |
+| MCQ Practice — 98 questions *(started in class above — finish the rest)* | `bea78a11-7247-4662-8be4-68da6dda4251` |
 | RM — Logical Operators | `35dfbabb-e989-46fd-8a1f-12f1a158cf84` |
 
 > *"Two rules for tonight. Both sides of `and`/`or` must be complete comparisons — `age > 18 and < 60` is not valid. And if you're comparing something the user typed, convert it first."*
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock and want a closer instead of ending early, run the optional Write the Question round below:
+
+**Optional closer — Write the Question:** everyone writes one `print()` condition using `and`/`or`/`not` that they know the answer to and think could trick a classmate. Collect one or two, put on screen anonymously, class votes True/False, author reduces it on the board. Worked example if needed: `print((5 > 3) and not(2 > 1))` → `True and not(True)` → `True and False` → **`False`**. Never required — the schedule doesn't depend on it.
 
 ---
 
@@ -480,22 +370,24 @@ Collect three by walking round. Put each on screen without naming the author. Fo
 
 | Misconception | Why students hold it | Correct it live by |
 |---|---|---|
-| `age > 18 and < 60` is valid | It reads fine in English | Block B — run it, SyntaxError |
+| `age > 18 and < 60` is valid | It reads fine in English | Teaching Block B — run it, SyntaxError |
 | `or` means "one or the other, not both" | Everyday English usage | The `or` truth table — True and True gives True |
-| `and`/`or` are `&&` and `\|\|` | Other languages | Block A — Python uses the English words |
-| A comparison can produce a number | Everything before this did | Warm-up Q1 and Activity 1 |
-| `not` works on two values | The other two operators do | Block A — `not` flips one thing |
-| `input()` can be compared with `>` | It looks like a number | Activity 2 snippet 4 — TypeError |
-| Combined expressions must be answered in one leap | Nobody showed the reduction | Activity 1 — one bracket at a time |
+| `and`/`or` are `&&` and `\|\|` | Other languages | Teaching Block A — Python uses the English words |
+| A comparison can produce a number | Everything before this did | Warm-up Q1 and ALS Activity 1 |
+| `not` works on two values | The other two operators do | Teaching Block A — `not` flips one thing |
+| `input()` can be compared with `>` | It looks like a number | ALS Activity 2 snippet 4 — TypeError |
+| Combined expressions must be answered in one leap | Nobody showed the reduction | ALS Activity 1 — one bracket at a time |
 
 ---
 
 ## Instructor Notes
 
-- **⚠️ No video and no slide deck exist for this session in the platform export.** Both teaching blocks are written as board-and-live-typing sessions built from the reading material. If a deck appears later, the blocks map onto it directly and the activities slot between them unchanged.
-- **This session has three quiz pools — A (`and`), B (`or`), C (`not`)** — the only session in the first fifteen with three. The five questions above deliberately take one from each plus two combined. Don't draw all five from one pool or you'll assess a third of the content.
-- **Quiz Q4 and Q5 are the same expression with one word changed.** Run them side by side after the vote. That single contrast does more work than any explanation of the truth tables.
-- **Translating English to code (Block B, part 3) is the skill that actually transfers.** Conditionals in Sessions 11–12 are entirely built on it. If time is tight, cut Activity 3 rather than that.
-- **Pacing risk:** the truth tables in Block A can eat the whole block if you build all three exhaustively with the class. Build `and` fully with them, then do `or` and `not` faster — the pattern is established by then.
-- **Two sessions in a row with no deck** (9 and 10). Your board work carries both. Consider photographing your board at the end for students who want it.
-- **This is the last session before conditionals.** Students who can't reliably evaluate `and`/`or` will not survive Session 11. If the quiz results look weak, use the practice block for `and`/`or` drilling rather than the coding problems.
+- **⚠️ No video and no slide deck exist for this session in the platform export.** Both teaching blocks are written as board-and-live-typing sessions built from the reading material.
+- **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
+- **Two ALS activities this session:** Activity 1 is Round-Robin Staged Reduction (one bracket at a time, not a whole line), Activity 2 is Choral Prediction → Reveal (whole room together). The original third activity (Write the Question) is demoted to an optional buffer-only closer — the instructor notes for the original plan already flagged it as the first thing to cut under time pressure, so it's the one dropped from the scheduled 45 minutes rather than the translating-skill content in Teaching Block B.
+- **The Classroom Quiz runs last, right before the Exit Ticket** — never cut, never shortened. Draws one question from each of the three pools plus two combined, deliberately — don't pull all five from one pool.
+- **Quiz Push (in Exit Ticket block) + the warm-up completion check-in are a pair.** Target is 80% platform MCQ attempt rate, currently ~33%.
+- **Quiz Q4 and Q5 are the same expression with one word changed.** Run them side by side after the vote.
+- **Translating English to code (Teaching Block B, part 3) is the skill that actually transfers.** Conditionals in Sessions 11–12 are entirely built on it. If time is tight anywhere, protect this over everything except the mandatory quiz.
+- **Two sessions in a row with no deck** (9 and 10). Consider photographing your board at the end for students who want it.
+- **This is the last session before conditionals.** Students who can't reliably evaluate `and`/`or` will not survive Session 11. If the quiz results look weak, use the Quiz Push time for `and`/`or` drilling rather than the coding problems.

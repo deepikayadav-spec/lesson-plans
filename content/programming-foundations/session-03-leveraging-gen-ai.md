@@ -1,7 +1,7 @@
 # Session 3 — Leveraging Gen AI for Accelerated Learning
 
-**Duration** 60 min · **Topic** Introduction to Python · **Prerequisite** Sessions 1–2
-**Session type** Support session. No classroom quiz, no reading material, no MCQ pool.
+**Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Introduction to Python · **Prerequisite** Sessions 1–2
+**Session type** Support session. No classroom quiz, no reading material, no MCQ pool. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Platform units**
 
@@ -22,37 +22,41 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Prior Knowledge Activation (0–7 min)
+## Classroom Settling (0–3 min) · Buffer — not instructional
 
-7 questions on **Sessions 1–2**. Newly authored. Session 2 introduced no new syntax, so this poll recalls Session 1's concepts plus Session 2's four-step method.
+Live AI tool tested and open on the projector, fallback screenshot ready in case the network fails, students seated. Don't reclaim this time for content if your room settles faster — hold it as extra flex at the end.
+
+---
+
+## Warm-Up Poll — Prior Knowledge Activation (3–7 min) · ALS: Polling
+
+**Completion check-in (~15 s, before Q1):** project or state the MCQ Practice completion number since Session 1. No shaming, just visibility: *"X% completion, target is 80%. Anyone still not done finishes it in the room today."*
+
+5 questions on **Sessions 1–2**, the ones today's session leans on. ~45 s each, project the distribution, never name individuals.
 
 **Q1.** What are the four steps for attacking a coding problem?
 `A` Read, Restate, Write, Run · `B` Think, Type, Test, Submit · `C` Copy, Paste, Run, Fix · `D` Plan, Code, Debug, Deploy
 → **A.** *Targets:* Session 2's method. *Misconception:* C is a real answer some will pick honestly — it's your opening for today.
 
-**Q2.** What does `print(6 * 7)` output?
-`A` `6 * 7` · `B` `42` · `C` `"42"` · `D` Error
-→ **B.** *Targets:* Arithmetic without quotes.
-
-**Q3.** What does `print("6 * 7")` output?
+**Q2.** What does `print("6 * 7")` output?
 `A` `42` · `B` `6 * 7` · `C` `42.0` · `D` Error
 → **B.** *Targets:* Quotes vs arithmetic. *If >40% wrong:* this is the third session it's appeared. Stop and fix it now — two lines, live.
 
-**Q4.** `print(###)` prints nothing. Why?
-`A` `#` isn't a valid character · `B` `#` starts a comment, so Python ignores the rest of the line · `C` Hashes must be in quotes to exist · `D` It's a silent error
-→ **B.** *Targets:* Comments, from Session 2's walkthrough.
-
-**Q5.** Python hits an error on line 4 of a 6-line program. What happens to lines 5 and 6?
+**Q3.** Python hits an error on line 4 of a 6-line program. What happens to lines 5 and 6?
 `A` They run normally · `B` They never run · `C` They run with a warning · `D` Only line 6 runs
-→ **B.** *Targets:* Top-to-bottom execution, from Session 2's Human Compiler.
+→ **B.** *Targets:* Top-to-bottom execution, from Session 2's Human Compiler. Ties directly into today's hook.
 
-**Q6.** Which produces a `NameError`? *(MSQ — select all)*
+**Q4.** Which produces a `NameError`? *(MSQ — select all)*
 `A` `Print("Hi")` · `B` `prnt("Hi")` · `C` `print("Hi")` · `D` `print("Hi"`
 → **A and B.** *Targets:* Error-type discrimination. D is a SyntaxError, not a NameError — that distinction is the point. *Misconception:* selecting D means they still treat all errors as one category.
 
-**Q7.** Have you used ChatGPT or similar for coursework? *(No wrong answer)*
+**Q5.** Have you used ChatGPT or similar for coursework? *(No wrong answer)*
 `A` Never · `B` Once or twice · `C` Regularly · `D` Every day
 → *Read:* This calibrates the whole session. A room at C/D needs the guardrails emphasis; a room at A/B needs the capability demo first.
+
+**Running it** — poll tool, ~45 s per question. Total ~3.75 min for the 5 questions.
+
+**Explain-the-answer beat (~20 s):** *"Q3 is why today matters — if you can't trace what a line does, you can't tell when AI-written code is about to break on line 5."*
 
 ---
 
@@ -70,7 +74,7 @@ Take a volunteer. Most rooms cannot answer.
 
 ---
 
-## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
+## Slide Block A (10–20 min) — DELIVER SLIDES AS-IS
 
 **Verified against the deck.** Slides, in order:
 
@@ -88,19 +92,19 @@ Take a volunteer. Most rooms cannot answer.
 
 **Beats to emphasise**
 
-- **Slide 4 is a recap from Session 1.** Twenty seconds, no more — the room has seen it.
+- **Slide 4 is a recap from Session 1.** Ten seconds, no more — the room has seen it.
 - **Slides 6 and 9 carry the whole session.** "Shouldn't replace your understanding" and "use it as a tutor, not a vending machine" are the two sentences students should leave with. Everything else is mechanism.
-- **Slide 9's Think / Reason / Explore** is the frame for Activity 1 — name it there and refer back.
+- **Slide 9's Think / Reason / Explore** is the frame for ALS Activity 1 — name it there and refer back.
 
-**Checkpoint (at 22 min)** — cold-call:
+**Checkpoint (at 20 min)** — 10 s silent think, then cold-call:
 > *"Give me one question you could ask an AI that would make you smarter, and one that would make you weaker."*
 > **Model answer:** Smarter — *"explain why this line uses quotes."* Weaker — *"write the answer to problem 3."*
 
 ---
 
-## ⚡ Activity 1 — Think–Pair–Share (22–28 min)
+## ⚡ ALS Activity 1 — Think-Pair-Share (20–26 min)
 
-**Format:** Think–Pair–Share · **Exposes:** that students haven't distinguished between using a tool and outsourcing to it.
+**ALS format:** Think-Pair-Share. Chosen because the question has no single right answer — it's a judgment call about prompt quality, and judgment calls sharpen through comparing reasoning with a peer before committing.
 
 **Setup line:**
 > *"One minute alone, two minutes with the person next to you, then I take answers. Question: you're stuck on a coding problem for ten minutes. What is the best thing to type into an AI tool — and what's the worst?"*
@@ -122,7 +126,7 @@ Take a volunteer. Most rooms cannot answer.
 
 ---
 
-## Slide Block B (28–42 min) — DELIVER SLIDES AS-IS
+## Slide Block B (26–37 min) — DELIVER SLIDES AS-IS
 
 **Verified against the deck.** This is the practical half — it hands students **three reusable prompt templates.**
 
@@ -146,15 +150,19 @@ Take a volunteer. Most rooms cannot answer.
 
 > ⚠️ **Slide 13's code example is far beyond this session.** It uses a `while` loop, `int(input())` and a counter — content from Sessions 8 and 13. At Session 3 students have only seen `print()`. **Do not walk the class through that code.** Show the *prompt*, say the code is a preview of week three, and move on. If you trace it line by line you will lose the room for ten minutes.
 
-**Checkpoint (at 42 min)** — show hands:
+**Verification reality-check (90 s, before the checkpoint):** the deck never mentions AI being confidently wrong — this beat is the counterweight, kept short instead of a full activity.
+> *"Quick one — shout out a time an AI tool gave you something confidently wrong. Any subject, not just code."* Take 3 callouts, list on the board. Push once: *"How did you find out it was wrong?"* Answer is almost always *"I checked."*
+> *"That's the whole point. In this course your verification is the run button. If you didn't run it, you don't know it works — no matter how confident it sounded."*
+
+**Checkpoint (at 37 min)** — show hands:
 > *"AI gives you five lines of code and it runs correctly. Are you done?"*
 > **Answer:** No. Not until you can say what each line does.
 
 ---
 
-## ⚡ Activity 2 — Write the Question (42–50 min)
+## ⚡ ALS Activity 2 — Student-Generated Prompt Design: Write the Question (37–44 min)
 
-**Format:** Write the Question · **Exposes:** whether students can construct a prompt that teaches them something, rather than one that hands them an answer.
+**ALS format:** Student-Generated Task Design. Chosen instead of a repeat of Think-Pair-Share because the skill here is production, not discussion — students have to construct and own a real artifact (a working prompt) rather than compare opinions on one.
 
 > **Use the deck's own templates.** Slides 13, 17 and 18 hand students working prompts. Adapting a real template beats inventing one from scratch — and it means what they write today is something they'll actually reuse.
 
@@ -165,7 +173,7 @@ Leave slide 18 projected the whole time.
 
 **What students do:** Fill in `[current concept/topic]` and `[List of previous concepts/topics]` on paper or in chat.
 
-**How it surfaces:** Collect four. Read them out anonymously. For each ask: *"Would the problem this generates be solvable with what we know today?"*
+**How it surfaces:** Collect three. Read them out anonymously. For each ask: *"Would the problem this generates be solvable with what we know today?"*
 
 That question is the whole activity. Students routinely write *"loops"* or *"functions"* into the blank because it sounds impressive, then get a problem they cannot attempt — which is exactly how they end up pasting an AI answer they don't understand.
 
@@ -174,45 +182,37 @@ Then **run the best one live** and read the generated problem together. Ask: *ca
 **Debrief line:**
 > *"The template did the hard part. The skill is being honest about what you've actually learned. Overstate it and the AI hands you something you can only copy."*
 
-**Cut rule:** Collect two instead of four; skip the live run.
+**Cut rule:** Collect two instead of three; skip the live run.
 
 ---
 
-## ⚡ Activity 3 — Real-World Callout (50–57 min)
+## Exit Ticket + Quiz Push (44–48 min)
 
-**Format:** Real-World Callout · **Exposes:** the assumption that AI is a general-purpose oracle rather than a tool with specific failure modes.
-
-> ⚠️ **This activity is instructor-added, not deck-supported.** The deck covers what AI is *good* for and never mentions that it produces confident wrong answers. That's a real gap — students will meet hallucinated code within a week. Keep this activity; it is the only verification content in the session.
-
-**Setup line:**
-> *"Shout out one time an AI tool gave you something confidently wrong. Any subject, not just code."*
-
-**What students do:** Call out examples. You list them on the board — cap at six.
-
-**How it surfaces:** For two of them, push: *"How did you find out it was wrong?"* The answer is almost always *"I checked"* or *"someone told me."*
-
-**Debrief line:**
-> *"Every one of those was caught by verification. In this course your verification is the run button. If you didn't run it, you don't know it works — no matter how confident the answer looked."*
-
-**Cut rule:** Three callouts, one push, keep the debrief.
-
----
-
-## Exit Ticket + Homework (57–60 min)
-
-**Exit ticket:**
+**Exit ticket** (~30 s):
 
 > Write one prompt you will actually use this week, and the rule you're going to follow about pasting code.
 > **Expected rule:** don't paste anything you can't explain line by line.
 
-**Homework**
+**Quiz Push — start it now, not tonight (2 min):** phones/laptops out, right now, still in the room.
+> *"Anyone not yet at 100% on MCQ Practice — open it now. At least 3 more questions before you leave your seat. Try asking the AI to explain a question you get wrong, not just give you the answer — that's today's whole lesson, applied immediately."*
+
+Circulate while they do it. Target is 80% platform attempt rate, currently ~33%.
+> *"I'll show completion numbers at the start of Session 4's warm-up."*
+
+**Remaining homework**
 
 > *"Same two problems from Session 1, if you still haven't submitted them. And this week, every time you use an AI tool for this course, ask it to explain — not to solve. You'll know within a week whether it's working."*
 
 | Task | Unit |
 |---|---|
 | Coding Practice — Session 1 set | `81959e79-ceeb-448c-af0e-7e0e7f5447f0` |
-| MCQ Practice — Session 1 set, 56 questions | `3c0cf49d-4c57-4468-83ca-63cb7c63b1dd` |
+| MCQ Practice — Session 1 set, 56 questions *(started in class above — finish the rest)* | `3c0cf49d-4c57-4468-83ca-63cb7c63b1dd` |
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 
@@ -221,21 +221,24 @@ Then **run the best one live** and read the generated problem together. Ask: *ca
 | Misconception | Why students hold it | Correct it live by |
 |---|---|---|
 | Working code means understood code | Output looks the same either way | The hook — nobody can explain line three |
-| AI answers are reliable | They're fluent and confident | Demoing a confidently wrong answer in Slide Block B |
+| AI answers are reliable | They're fluent and confident | The verification reality-check beat in Slide Block B |
 | Using AI is cheating, full stop | Framed that way elsewhere | Reframing entirely as self-interest, not honesty |
-| Prompting is just asking | No exposure to a better version | Activity 2 — comparing prompts side by side |
+| Prompting is just asking | No exposure to a better version | ALS Activity 1 — comparing prompts side by side |
 | I'll understand it later | Deferred effort feels free | Naming the interview scenario, concretely |
 
 ---
 
 ## Instructor Notes
 
+- **Quiz Push (in Exit Ticket block) + the warm-up completion check-in are a pair** — closes last session's loop, opens this one's. Target is 80% platform MCQ attempt rate, currently ~33%. Don't skip either half even under time pressure.
 - **You need a live AI tool on the projector.** Test it before class. Have a fallback screenshot ready if the network fails — the hook does not work without a live demo.
+- **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex). No classroom quiz, no reading material, no MCQ pool for this session — it's a support session by design.
+- **Two ALS activities this session, both different from Sessions 1 and 2:** Activity 1 is Think-Pair-Share, Activity 2 is Student-Generated Task Design (students produce a real artifact, not a discussed opinion). The original third activity (Real-World Callout, on AI's confident wrong answers) is folded into a 90-second beat inside Slide Block B instead of running as its own block — the content survives, it just isn't a scheduled activity anymore.
 - **Tone is everything in this session.** Moralising loses the room in the first two minutes. Every argument here is self-interest: *this is how you avoid looking stupid in an interview.* That lands; "don't cheat" does not.
-- **Warm-up Q7 changes your emphasis.** A room that already uses these tools daily needs the guardrails and the wrong-answer demo. A room that's barely used them needs the capability side first, or the warnings are abstract.
+- **Warm-up Q5 changes your emphasis.** A room that already uses these tools daily needs the guardrails and the wrong-answer demo. A room that's barely used them needs the capability side first, or the warnings are abstract.
 - ✅ **Verified against the real deck** (*"Copy of Session 1 — Leveraging Gen AI for Accelerated learning"*, 40 animation steps, ~19 slides). Slide Blocks A and B list the actual slides in order.
 - **The deck's real value is three prompt templates** (slides 13, 17, 18). Tell students to copy them. Most of this session's long-term benefit is those templates being reused across the next fourteen sessions.
-- ⚠️ **Deck gap: nothing about AI being wrong.** There is no slide on hallucination, verification, or checking output. The deck is entirely about what these tools are good for. Activity 3 is the only counterweight — don't cut it. **Worth raising with the content team.**
+- ⚠️ **Deck gap: nothing about AI being wrong.** There is no slide on hallucination, verification, or checking output. The deck is entirely about what these tools are good for. The verification reality-check beat in Slide Block B is the only counterweight — don't cut it. **Worth raising with the content team.**
 - ⚠️ **Deck gap: slide 13's code example is three sessions ahead** (`while`, `int(input())`, counter). Show the prompt, not the code. Flagged in Slide Block B.
-- **Pacing risk:** Activity 2's live run can rabbit-hole. Cap it at 3 minutes and move.
+- **Pacing risk:** Activity 2's live run can rabbit-hole. Cap it at 2 minutes and move — the window is 7 minutes, not 8, in this format.
 - **Data note:** no reading material, no classroom quiz, no MCQ pool exists for this session on the platform. Homework points back to Session 1.

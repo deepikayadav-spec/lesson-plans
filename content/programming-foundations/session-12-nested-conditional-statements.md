@@ -1,7 +1,7 @@
 # Session 12 — Nested Conditional Statements
 
-**Duration** 60 min · **Topic** Conditional Statements · **Prerequisite** Session 11
-**Session type** Concept lecture
+**Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Conditional Statements · **Prerequisite** Session 11
+**Session type** Concept lecture · **Format** 50-min recalibrated, 2 ALS activities, Classroom Quiz mandatory (never cut, runs last)
 
 **Platform units**
 
@@ -28,41 +28,43 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Prior Knowledge Activation (0–7 min)
+## Classroom Settling (0–3 min) · Buffer — not instructional
 
-7 questions on **Session 11**. Newly authored. ~45 s each, project the distribution, never name individuals.
+Projector on, deck loaded, editor with indent guides turned on, students seated. Don't reclaim this time for content if your room settles faster — hold it as extra flex at the end.
+
+---
+
+## Warm-Up Poll — Prior Knowledge Activation (3–7 min) · ALS: Polling
+
+**Completion check-in (~15 s, before Q1):** state the MCQ Practice completion number since last session. Target is 80%.
+
+5 questions on **Session 11**. ~45 s each, project the distribution, never name individuals.
 
 **Q1.** What does an `if` statement need at the end of its condition line?
 `A` A semicolon · `B` A colon · `C` Nothing · `D` Brackets
 → **B.** *Targets:* Colon.
 
-**Q2.** `if True:` followed by an un-indented `print("Hi")` gives what?
-`A` Prints `Hi` · `B` IndentationError · `C` SyntaxError · `D` Nothing
-→ **B.** *Targets:* Indentation defines the block.
-
-**Q3.** In an if-else, how many blocks run?
+**Q2.** In an if-else, how many blocks run?
 `A` Both · `B` Exactly one · `C` Neither · `D` Depends
 → **B.** *Targets:* Exactly one branch.
 
-**Q4.** `marks = 40`. What does `if marks >= 40:` do?
+**Q3.** `marks = 40`. What does `if marks >= 40:` do?
 `A` Runs the if block · `B` Runs the else block · `C` Error · `D` Nothing
 → **A.** *Targets:* `>=` includes the boundary. *Misconception:* B means the boundary case from last session didn't stick.
 
-**Q5.** Can code sit between an `if` block and its `else`?
+**Q4.** Can code sit between an `if` block and its `else`?
 `A` Yes · `B` No — SyntaxError · `C` Only comments · `D` Only prints
 → **B.** *Targets:* `else` must immediately follow.
 
-**Q6.** Which are valid? *(MSQ — select all)*
-`A` `if x > 5:` · `B` `if x > 5` · `C` `else:` · `D` `else x < 5:`
-→ **A and C.** *Targets:* Colons, and `else` takes no condition.
-
-**Q7.** What decides whether a line is inside an `if` block?
+**Q5.** What decides whether a line is inside an `if` block?
 `A` Its position in the file · `B` Its indentation · `C` The colon · `D` The condition
 → **B.** *Targets:* Indentation. **Today's whole session** — nesting is just indentation at two levels. Note the number.
 
+**Running it** — poll tool, ~45 s per question. Total ~3.75 min for the 5 questions.
+
 ---
 
-## Hook (7–10 min)
+## Hook (7–11 min)
 
 > *"Last session your programs could answer one question. But some decisions need a second question — and the second one only makes sense if the first was yes."*
 
@@ -91,11 +93,11 @@ Then `5` and `30` → nothing at all.
 
 > *"Three different outputs from the same program. Look at the indentation — it's the only thing telling Python which question sits inside which."*
 
-Tie back to **Q7** — *"You said indentation decides what's inside a block. Today that goes two levels deep, and it's the entire mechanism."*
+Tie back to **Q5** — *"You said indentation decides what's inside a block. Today that goes two levels deep, and it's the entire mechanism."*
 
 ---
 
-## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
+## Slide Block A (11–18 min) — DELIVER SLIDES AS-IS
 
 **Verified against the deck** (*"Copy of 4.3 Nested Conditional Statements"*). Slides, in order:
 
@@ -109,91 +111,79 @@ Tie back to **Q7** — *"You said indentation decides what's inside a block. Tod
 
 **Beats to emphasise**
 
-- **Slide 5 is a better teaching device than any code.** It's an abstract diagram with dashed boxes showing which block belongs to which condition, and green ticks / red crosses showing what runs. **Use its vocabulary — Block 1, Block 2, Block 3, Block 4 — then map your code onto it.** Students who can read this diagram can read any nesting.
-- **"Block 4 will always execute"** is called out explicitly on the slide. That is the `print("Winner")` idea from the reading material, stated more clearly. Point at it.
-- **Slide 7's `NameError` is subtle and worth real time.** `is_b_greatest` is defined *inside* the `else` block, then used by an `if` at the outer level — so when the `else` doesn't run, the variable never exists. This combines Session 5's NameError with today's indentation. It is the best slide in the deck for showing that indentation has consequences beyond syntax.
+- **Slide 5 is a better teaching device than any code.** It's an abstract diagram with dashed boxes showing which block belongs to which condition, and green ticks / red crosses showing what runs. **Use its vocabulary — Block 1, Block 2, Block 3, Block 4.**
+- **"Block 4 will always execute"** is called out explicitly on the slide. Point at it.
+- **Slide 7's `NameError`** — a variable defined *inside* the `else` block, used by an `if` at the outer level, so when `else` doesn't run the variable never exists. Combines Session 5's NameError with today's indentation. Worth real time.
 
-**Checkpoint (at 22 min)** — cold-call two students, using the slide's own labels:
-> *"On the diagram — if condition A is True and condition B is False, which blocks run?"*
-> **Answer:** Block 1, Block 3 and Block 4. Block 2 is skipped.
+**Checkpoint + Quick Trace (at 18 min, ~2 min)** — 10 s silent think, cold-call two students for the checkpoint, then a compressed line-by-line trace (folded in here to protect the schedule):
+> *Checkpoint (using the slide's own labels):* *"If condition A is True and condition B is False, which blocks run?"* Answer: Block 1, Block 3 and Block 4. Block 2 is skipped.
+> *Quick trace:* re-run the hook's program with `matches_won = 5` — *"how many lines does Python just skip in one go?"* Answer: three, because they were all inside one false block.
 
 ---
 
-## ⚡ Activity 1 — Human Compiler (22–27 min)
+## ⚡ ALS Activity 1 — Silent Diagnose, Named Reveal: Spot the Bug (18–24 min)
 
-### What this activity is
+**ALS format:** Silent Individual Diagnose, then Named Reveal — everyone diagnoses all four snippets alone before any answer is taken from a specific student. Chosen because every trap here is either an indentation slip or an ordering mistake, and the ordering one produces *no error at all* — the only way to catch it is to have actually looked, alone, not to have heard someone else catch it first.
 
-Students **become** the Python interpreter. You point at one line at a time; the student you pick says whether that line runs and why — never the whole program at once. Nobody is allowed to jump ahead or describe what the program "is for".
-
-### Why it's here
-
-Nested conditions are read by eye and guessed at. Forcing a line-by-line walk exposes exactly which students are tracking indentation levels and which are pattern-matching.
-
-### Before class
-
-Have the program on screen with visible indentation. If your editor shows indent guides, turn them on.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:30 | Setup line, state the input values | Look |
-| 0:30–3:30 | Point at each line, one student each | Say runs / skipped, and why |
-| 3:30–4:30 | Re-run with the second input set | Same |
-| 4:30–5:00 | Debrief | Listen |
-
-### Say this
-
-> *"You are Python. I point at a line, you tell me two things: does it run, and why. Not what the program is for. One line."*
-
-### The program
-
-State the values before you start: **`matches_won = 10`, `goals = 18`.**
+**Setup line:**
+> *"Four snippets. Tell me what's wrong and what it's called. One of these does not crash. Ninety seconds, silent."*
 
 ```python
-matches_won = 10
-goals = 18
-if matches_won > 8:
-    if goals > 20:
-        print("Hurray")
-    print("Winner")
-print("Done")
+# 1
+if True:
+if False:
+    print("Inner")
+```
+```python
+# 2
+x = 5
+if x > 10:
+    print("Big")
+elif:
+    print("Small")
+```
+```python
+# 3
+if False:
+    print("If")
+else:
+    print("Else")
+elif True:
+    print("Elif")
+```
+```python
+# 4
+marks = 95
+if marks > 30:
+    print("Pass")
+elif marks > 90:
+    print("Distinction")
 ```
 
-### Line by line
+**Answers**
 
-| Line | Runs? | Why |
+| # | Diagnosis | Fix |
 |---|---|---|
-| `if matches_won > 8:` | — | `10 > 8` is True, so enter the block |
-| `if goals > 20:` | — | `18 > 20` is False, so **skip its block** |
-| `print("Hurray")` | **No** | Inside the false inner block |
-| `print("Winner")` | **Yes** | Level 4 — inside the outer block only |
-| `print("Done")` | **Yes** | Level 0 — outside everything |
+| 1 | `IndentationError` — inner `if` not indented, so the outer block is empty | Indent the inner `if` by four spaces |
+| 2 | `SyntaxError` — `elif` has no condition | `elif x > 3:` or use `else:` |
+| 3 | `SyntaxError` — `elif` cannot come after `else` | Move the `elif` above the `else` |
+| 4 | **No error.** Prints `Pass`. A 95-mark student never gets `Distinction` | Put `marks > 90` first |
 
-**Output:** `Winner` then `Done`.
+**Snippet 4 is the session.** Ask directly:
+> *"A student scores 95 and the program says Pass. Nothing crashed. Nobody gets an error email. How long does that bug live in production?"*
 
-### Second pass
+**Debrief line:**
+> *"Three of these crash and tell you where. The fourth just quietly gives the wrong answer to a top student. That's the one worth losing sleep over."*
 
-Change to **`matches_won = 5`** and walk it again. Now the outer condition is False, so lines 2–4 are all skipped and only `Done` prints. Ask: *"How many lines did Python just skip in one go?"* — three, because they were all inside one false block.
-
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| Student answers for the whole program | *"Too fast — this line only. Does it run?"* The staging is the activity. |
-| Nobody sees why `Winner` runs | Point at the left edge. *"Count the spaces. Which block is it in?"* |
-| Room finds it easy | Ask what would change if `print("Winner")` were indented to level 8. (It'd only print with `Hurray`.) |
-| Someone argues about the second pass | Run it. Let the terminal settle it. |
-
-**Common instructor mistake:** narrating the trace yourself while pointing. Students must supply each answer or it's a demo.
-
-**Cut rule:** First pass only.
+**Cut rule:** Do 1 and 4. Snippet 4 is non-negotiable.
 
 ---
 
-## Classroom Quiz (27–34 min)
+## Classroom Quiz (24–31 min) · ALS: Individual Answer → Reveal
 
-5 MCQs from the platform pools — two on nesting, three on `elif`. ~80 s each.
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Two questions on nesting, three on `elif`. Protect these 7 minutes by using the cut rules everywhere else first.
+
+Every question below is run ALS-style: **individual silent answer first, then explanation.**
 
 **Q1** — `04cc638e-9810-4985-8ee6-1246569c31c6` *(Quiz A · APPLYING)*
 What will be the output of:
@@ -272,7 +262,7 @@ If multiple `elif` conditions evaluate to true, which block executes?
 
 ---
 
-## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
+## Slide Block B (31–38 min) — DELIVER SLIDES AS-IS
 
 **Verified against the deck.** Slides, in order:
 
@@ -284,139 +274,29 @@ If multiple `elif` conditions evaluate to true, which block executes?
 
 **Beats to emphasise**
 
-- **Slide 8 mirrors slide 5 deliberately** — same diagram grammar, same ticks and crosses. Say so: *"Same picture, different construct. Nesting goes inwards; elif goes downwards."* That contrast is the clearest way to explain when to use which.
+- **Slide 8 mirrors slide 5 deliberately** — same diagram grammar, same ticks and crosses. Say so: *"Same picture, different construct. Nesting goes inwards; elif goes downwards."*
 - **Exactly one block runs in an `if`/`elif`/`else` chain.** The diagram shows it — two crosses and one tick.
-- **`%` appears in the deck's elif examples** (divisible by 10, divisible by 5). Students met `%` only as a passing mention in Session 11's exit ticket. **Give it one sentence before slide 9:** `%` gives the remainder, `n % 10 == 0` means divisible by 10.
+- **`%` appears in the deck's elif examples.** Students met `%` only as a passing mention in Session 11's exit ticket. **Give it one sentence before slide 9:** `%` gives the remainder, `n % 10 == 0` means divisible by 10.
 
-> ⚠️ **Two things the deck does not show, both tested:**
-> - **`elif` ordering going wrong.** No slide demonstrates that a badly ordered chain silently gives the wrong answer. That's **Quiz Q5 and Activity 3's core idea** — the most important thing in the session. Type it live:
->   ```python
->   x = 100
->   if x > 3:      print("Above 3")     # this wins
->   elif x > 50:   print("Above 50")    # never checked
->   ```
-> - **`elif` after `else` being a SyntaxError** (Activity 2 snippet 3). Run it.
+> ⚠️ **The deck never shows a mis-ordered `elif` chain going silently wrong.** That's **Quiz Q5 and ALS Activity 2's core idea** — the most important thing in the session. Type it live:
+> ```python
+> x = 100
+> if x > 3:      print("Above 3")     # this wins
+> elif x > 50:   print("Above 50")    # never checked
+> ```
 
-**Checkpoint (at 44 min)** — show hands:
+**Checkpoint (at 38 min)** — show hands:
 > *"Three `elif` conditions are all true. How many blocks run?"*
 > **Answer:** One. The first.
 
 ---
 
-## ⚡ Activity 2 — Spot the Bug (44–50 min)
+## ⚡ ALS Activity 2 — Choral Prediction → Reveal (38–45 min)
 
-### What this activity is
+**ALS format:** Choral Prediction — the whole room predicts out loud together before each run. Chosen for the closing activity because the pairing of snippets 1 and 2 (same values, order swapped) lands hardest as a shared "we were all wrong together" moment, not an individual correction.
 
-Broken snippets on screen. Students find each problem **and name the error** before offering a fix. One snippet doesn't crash at all — it runs and gives a wrong answer, and finding that one is the point.
-
-### Why it's here
-
-Every trap in this session is either an indentation slip or an ordering mistake. The ordering one produces no error, which makes it the most dangerous thing students learn today.
-
-### Before class
-
-All four snippets ready to run.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:30 | Setup line | Listen |
-| 0:30–1:30 | Show all four, silence | Diagnose on paper |
-| 1:30–5:00 | Take one at a time, run each live | Name error + fix |
-| 5:00–6:00 | Debrief on #4 | Listen |
-
-### Say this
-
-> *"Four snippets. Tell me what's wrong and what it's called. One of these does not crash. Ninety seconds, silent."*
-
-### The snippets
-
-```python
-# 1
-if True:
-if False:
-    print("Inner")
-```
-```python
-# 2
-x = 5
-if x > 10:
-    print("Big")
-elif:
-    print("Small")
-```
-```python
-# 3
-if False:
-    print("If")
-else:
-    print("Else")
-elif True:
-    print("Elif")
-```
-```python
-# 4
-marks = 95
-if marks > 30:
-    print("Pass")
-elif marks > 90:
-    print("Distinction")
-```
-
-### Answers
-
-| # | Diagnosis | Fix |
-|---|---|---|
-| 1 | `IndentationError` — inner `if` not indented, so the outer block is empty | Indent the inner `if` by four spaces |
-| 2 | `SyntaxError` — `elif` has no condition | `elif x > 3:` or use `else:` |
-| 3 | `SyntaxError` — `elif` cannot come after `else` | Move the `elif` above the `else` |
-| 4 | **No error.** Prints `Pass`. A 95-mark student never gets `Distinction` | Put `marks > 90` first |
-
-**Snippet 4 is the session.** Ask directly:
-
-> *"A student scores 95 and the program says Pass. Nothing crashed. Nobody gets an error email. How long does that bug live in production?"*
-
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| They spot 1–3 but not 4 | Expected. Run it, let `Pass` sit on screen in silence for a few seconds. |
-| Someone says #4 is correct behaviour | Ask what result a 95-mark student should get. That settles it. |
-| Nobody can fix #4 | Give it: swap the two conditions. Then ask *why* that works. |
-| Running long | Do 1 and 4. Snippet 4 is non-negotiable. |
-
-**Common instructor mistake:** rushing #4 because it's last. Reverse the order if you're short on time — it deserves the most.
-
----
-
-## ⚡ Activity 3 — Predict the Output (50–57 min)
-
-### What this activity is
-
-You reveal a snippet, **the whole class commits to an answer out loud before you run it**, then you run it. The public commitment is the mechanism — a student who has said `Above 50` aloud remembers the correction; one who watched does not.
-
-### Why it's here
-
-`elif` ordering feels obvious until it isn't. This finds students who are reading the conditions rather than tracing the order.
-
-### Before class
-
-Snippets in a file, revealed one at a time.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:20 | Setup line | Listen |
-| 0:20–5:30 | Reveal, take a chorus answer, **then** run | Predict aloud |
-| 5:30–7:00 | Debrief | Listen |
-
-### Say this
-
+**Setup line:**
 > *"Everyone answers out loud together before I hit run. Say it with confidence even if you're guessing — a wrong guess out loud is worth ten right answers in your head."*
-
-### The snippets
 
 ```python
 x = 100                     # 1
@@ -433,64 +313,58 @@ elif x > 3:
     print("Above 3")
 ```
 ```python
-age = 25                    # 3
-if age > 18:
-    if age > 60:
-        print("Senior")
-    print("Adult")
-```
-```python
-n = 7                       # 4
+n = 7                       # 3
 if n > 5:
     print("A")
 if n > 3:
     print("B")
 ```
 
-### Answers
-
 | # | Output | Why |
 |---|---|---|
 | 1 | `Above 3` | First true condition wins — the `elif` is never checked |
 | 2 | `Above 50` | Same values, order reversed, different answer |
-| 3 | `Adult` | Inner condition false; `Adult` is at the outer level |
-| 4 | `A` then `B` | **Two separate `if`s** — both run. Not a chain. |
+| 3 | `A` then `B` | **Two separate `if`s** — both run. Not a chain. |
 
 **Snippets 1 and 2 are the pair that matters** — run them back to back and let the contrast land without commentary first.
 
-**Snippet 4 is the sting.** Students expect one output because it looks like a chain. Two separate `if` statements are independent; only `elif` makes them exclusive.
+**Snippet 3 is the sting.** Students expect one output because it looks like a chain. Two separate `if` statements are independent; only `elif` makes them exclusive.
 
-### When it goes wrong
+**Debrief line:**
+> *"Same numbers, different order, different answer — with no error to warn you. That's the single most important thing you'll take from this session."*
 
-| If… | Do this |
-|---|---|
-| Room gets 1 and 2 instantly | Good. Spend the time on 4, which almost nobody gets. |
-| Someone predicts one line for #4 | Very common. Run it, then ask what would make it exclusive. (Change the second `if` to `elif`.) |
-| Nobody will call out together | Hands vote instead: *"Hands for A only. Hands for A and B."* |
-| Running late | Snippets 1, 2 and 4. |
-
-**Common instructor mistake:** running before the prediction. Once output is on screen it's a demo, not an activity.
-
-**Cut rule:** Snippets 1, 2 and 4.
+**Cut rule:** Snippets 1 and 2 are non-negotiable — they're the pair. Drop 3 first if running late.
 
 ---
 
-## Exit Ticket + Homework (57–60 min)
+## Exit Ticket + Quiz Push (45–48 min)
 
-**Exit ticket** — before anyone leaves:
+**Exit ticket** (~30 s) — before anyone leaves:
 
 > `score = 95`. Write an `if`/`elif`/`else` chain that prints `Distinction` above 90, `Pass` above 40, and `Fail` otherwise — **in the correct order.**
 > **Answer:** `if score > 90:` → `Distinction`, `elif score > 40:` → `Pass`, `else:` → `Fail`. Any chain with `> 40` first is wrong.
 
-**Homework**
+**Quiz Push — start it now, not tonight (2 min):** phones/laptops out, right now, still in the room.
+> *"Open MCQ Practice. Everyone, this room, right now — attempt the first 3 questions before you leave your seat."*
+
+Circulate while they do it. Target is 80% platform attempt rate, currently ~33%.
+> *"I'll show completion numbers at the start of Session 13's warm-up."*
+
+**Remaining homework**
 
 | Task | Unit |
 |---|---|
 | Coding Practice — 12 problems | `d2c22172-d19f-4eb4-a7b1-198d2a2faae3` |
-| MCQ Practice — 93 questions | `2932ccef-5438-4cf3-b05b-677c8fcce424` |
+| MCQ Practice — 93 questions *(started in class above — finish the rest)* | `2932ccef-5438-4cf3-b05b-677c8fcce424` |
 | RM — Nested Conditional Statements | `5bf28868-119e-4d0b-beb2-f3eb5a2f29f4` |
 
 > *"Two rules. Count your indentation — every nesting level is four more spaces. And put your most specific condition first, or your chain will quietly give the wrong answer."*
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early.
 
 ---
 
@@ -498,27 +372,28 @@ if n > 3:
 
 | Misconception | Why students hold it | Correct it live by |
 |---|---|---|
-| All true branches run | Reading it as a list of checks | Quiz Q5 and Activity 3 snippet 1 |
-| `elif` order doesn't matter | The conditions look independent | Activity 3 snippets 1 and 2, back to back |
-| Consecutive `if`s behave like `if`/`elif` | They look the same on the page | Activity 3 snippet 4 — both run |
-| `elif` can go after `else` | `else` feels like a divider | Activity 2 snippet 3 — SyntaxError |
-| Nesting needs new syntax | It looks like a new construct | Block A — it's the same `if`, indented further |
-| A line inside an outer block is inside the inner one too | Indentation levels blur | Activity 1 — `print("Winner")` at level 4 |
-| A wrong `elif` order will error | Errors are their feedback | Activity 2 snippet 4 — runs fine, wrong result |
+| All true branches run | Reading it as a list of checks | Quiz Q5 and ALS Activity 2 snippet 1 |
+| `elif` order doesn't matter | The conditions look independent | ALS Activity 2 snippets 1 and 2, back to back |
+| Consecutive `if`s behave like `if`/`elif` | They look the same on the page | ALS Activity 2 snippet 3 — both run |
+| `elif` can go after `else` | `else` feels like a divider | ALS Activity 1 snippet 3 — SyntaxError |
+| Nesting needs new syntax | It looks like a new construct | Slide Block A — it's the same `if`, indented further |
+| A line inside an outer block is inside the inner one too | Indentation levels blur | The quick-trace beat — `print("Winner")` at the outer level |
+| A wrong `elif` order will error | Errors are their feedback | ALS Activity 1 snippet 4 — runs fine, wrong result |
 
 ---
 
 ## Instructor Notes
 
 - ✅ **Verified against the real deck** (*"Copy of 4.3 Nested Conditional Statements"*). Slide Blocks A and B list the actual slides in order.
-- **The deck's two structure diagrams (slides 5 and 8) are its strongest assets.** Both use the same tick/cross grammar, so nesting and `elif` can be contrasted picture-to-picture. Teach from the diagrams and map code onto them, rather than the reverse.
-- **Slide 7's `NameError`** — a variable defined inside an `else` block and used outside it — is the deck's best argument that indentation has real consequences. Don't rush it.
-- ⚠️ **The deck never shows a mis-ordered `elif` chain**, which is Quiz Q5 and the point of Activity 3. Live-typing script is in Slide Block B. **Worth raising with the content team** — it's the highest-value idea in the session and it's absent.
-- **`%` shows up in the deck's elif examples** but has never been formally taught. One sentence before slide 9.
-- **This session is two topics** — nesting (Block A, Activity 1) and `elif` (Block B, Activities 2–3). They solve the same problem, and `elif` is usually the better answer. Say that explicitly; students otherwise nest three levels deep in the homework.
-- **Turn on indent guides in your editor** before this session. Nesting is invisible without them on a projector at the back of the room.
-- **The single most valuable moment is Activity 3 snippets 1 and 2.** Same values, order swapped, different output, no error. If you cut anything, don't cut that pair.
-- **Four questions in this session's quiz have empty `answer_explanation` fields on the platform** — `04cc638e`, `d15e25f4`, `e88f6d5e`, and Session 13's set has more. The explanations above are authored and labelled. **Running total across the first 15 sessions is now 10 empty explanations** — worth a systematic audit rather than a one-off fix.
-- **Pacing risk:** the RM's three-way-largest example in Block A (`is_a_greatest` / `is_b_greatest`) is dense and `elif` supersedes it ten minutes later. Show it briefly, don't trace it fully.
-- **Note the RM has a formatting bug** in that same example — one line uses a tab where the rest use spaces. If you copy code from the RM, retype the indentation rather than pasting.
-- **Sessions 13–15 are loops.** Students who still can't count indentation levels will not cope. If Activity 1 goes badly, use the practice block for indentation drilling rather than the coding set.
+- **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
+- **The deck's two structure diagrams (slides 5 and 8) are its strongest assets.** Both use the same tick/cross grammar. Teach from the diagrams and map code onto them.
+- **Two ALS activities this session:** Activity 1 is Silent Diagnose → Named Reveal, Activity 2 is Choral Prediction → Reveal, saved for the session's single most important contrast (snippets 1 and 2). The original Human Compiler activity is folded into a 2-minute quick-trace beat at the end of Slide Block A's checkpoint.
+- **The Classroom Quiz runs last, right before the Exit Ticket** — never cut, never shortened.
+- **Quiz Push (in Exit Ticket block) + the warm-up completion check-in are a pair.** Target is 80% platform MCQ attempt rate, currently ~33%.
+- ⚠️ **The deck never shows a mis-ordered `elif` chain**, which is Quiz Q5 and ALS Activity 2's point. Live-typing script is in Slide Block B. **Worth raising with the content team.**
+- **This session is two topics** — nesting (Block A, ALS Activity 1) and `elif` (Block B, ALS Activity 2). `elif` is usually the better answer. Say that explicitly; students otherwise nest three levels deep in the homework.
+- **Turn on indent guides in your editor** before this session.
+- **The single most valuable moment is ALS Activity 2 snippets 1 and 2.** Same values, order swapped, different output, no error. Never cut that pair.
+- **Four questions in this session's quiz have empty `answer_explanation` fields on the platform.** The explanations above are authored and labelled.
+- **Note the RM has a formatting bug** — one line in its three-way example uses a tab where the rest use spaces. If you copy code from the RM, retype the indentation rather than pasting.
+- **Sessions 13–15 are loops.** Students who still can't count indentation levels will not cope. If ALS Activity 1 goes badly, use the Quiz Push time for indentation drilling rather than the coding set.

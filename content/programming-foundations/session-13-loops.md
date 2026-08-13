@@ -1,7 +1,7 @@
 # Session 13 — Loops
 
-**Duration** 60 min · **Topic** Loops · **Prerequisite** Sessions 11–12
-**Session type** Concept lecture
+**Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Loops · **Prerequisite** Sessions 11–12
+**Session type** Concept lecture · **Format** 50-min recalibrated, 2 ALS activities, Classroom Quiz mandatory (never cut, runs last)
 
 **Platform units**
 
@@ -28,9 +28,17 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Prior Knowledge Activation (0–7 min)
+## Classroom Settling (0–3 min) · Buffer — not instructional
 
-7 questions on **Session 12**. Newly authored. ~45 s each, project the distribution, never name individuals.
+Projector on, deck loaded, editor open, students seated. Don't reclaim this time for content if your room settles faster — hold it as extra flex at the end.
+
+---
+
+## Warm-Up Poll — Prior Knowledge Activation (3–7 min) · ALS: Polling
+
+**Completion check-in (~15 s, before Q1):** state the MCQ Practice completion number since last session. Target is 80%.
+
+5 questions on **Session 12**. ~45 s each, project the distribution, never name individuals.
 
 **Q1.** Three `elif` conditions are all true. How many blocks run?
 `A` All three · `B` One — the first · `C` One — the last · `D` None
@@ -46,15 +54,11 @@ elif x > 50:
 `A` `Above 3` · `B` `Above 50` · `C` Both · `D` Error
 → **A.** *Targets:* Order matters. *Misconception:* B means the ordering lesson didn't land.
 
-**Q3.** Can `elif` come after `else`?
-`A` Yes · `B` No — SyntaxError · `C` Only one · `D` Sometimes
-→ **B.** *Targets:* `else` is last.
-
-**Q4.** How many spaces per nesting level, by convention?
+**Q3.** How many spaces per nesting level, by convention?
 `A` 1 · `B` 2 · `C` 4 · `D` Any
-→ **C.** *Targets:* Four-space standard.
+→ **C.** *Targets:* Four-space standard. Same rule that governs today's loop bodies.
 
-**Q5.** `n = 7`. What prints?
+**Q4.** `n = 7`. What prints?
 ```python
 if n > 5:
     print("A")
@@ -64,17 +68,15 @@ if n > 3:
 `A` `A` · `B` `B` · `C` `A` and `B` · `D` Nothing
 → **C.** *Targets:* Separate `if`s both run.
 
-**Q6.** Which are valid? *(MSQ — select all)*
-`A` `elif x > 5:` · `B` `elif:` · `C` `else:` · `D` `else x > 5:`
-→ **A and C.** *Targets:* `elif` needs a condition, `else` takes none.
-
-**Q7.** How many times does a block inside an `if` run when the condition is True?
+**Q5.** How many times does a block inside an `if` run when the condition is True?
 `A` Once · `B` Twice · `C` Until it's false · `D` Forever
 → **A.** *Targets:* Conditionals run a block **once**. **This is today's hook** — loops break exactly this assumption. Note the number.
 
+**Running it** — poll tool, ~45 s per question. Total ~3.75 min for the 5 questions.
+
 ---
 
-## Hook (7–10 min)
+## Hook (7–11 min)
 
 > *"Print the numbers 1 to 5."*
 
@@ -94,7 +96,7 @@ Wait for the groan.
 
 > *"Right. And that's not laziness — that's a real limit. Everything you've written so far runs each line exactly once."*
 
-Reference **Q7** — *"You all said an `if` block runs once. Correct. Today you get the thing that runs a block again, and again, and again — as long as a condition stays true."*
+Reference **Q5** — *"You all said an `if` block runs once. Correct. Today you get the thing that runs a block again, and again, and again — as long as a condition stays true."*
 
 Type and run:
 
@@ -111,7 +113,7 @@ Then change `5` to `1000`, run it, let it scroll.
 
 ---
 
-## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
+## Slide Block A (11–17 min) — DELIVER SLIDES AS-IS
 
 **Verified against the deck** (*"Copy of 5.1 Loops"*). Slides, in order:
 
@@ -125,10 +127,10 @@ Then change `5` to `1000`, run it, let it scroll.
 
 **Beats to emphasise**
 
-- **Slide 4 is the setup for your hook.** "Each block is executed *once*" is exactly the assumption loops break. One line, then move.
-- **Slide 5 is the manual version** — the same three lines copy-pasted. Ask *"and if I wanted a thousand?"* before advancing. That's the whole motivation.
-- **Slide 6 leaves the condition blank and asks the room.** Take answers before revealing. The dashed control-flow arrow is worth pointing at explicitly — it shows the jump back, which is the thing students can't see in flat code.
-- **Slides 7+ animate two boxes** — `a` and `counter` — updating each pass, beside the output. This is the deck's version of Activity 1's trace table. Ask *"what's in each box now?"* before each click.
+- **Slide 4 is the setup for your hook.** "Each block is executed *once*" is exactly the assumption loops break.
+- **Slide 5 is the manual version.** Ask *"and if I wanted a thousand?"* before advancing.
+- **Slide 6 leaves the condition blank and asks the room.** Take answers before revealing. The dashed control-flow arrow shows the jump back — point at it explicitly.
+- **Slides 7+ animate two boxes** — `a` and `counter`. This is the deck's version of ALS Activity 1's trace table. Ask *"what's in each box now?"* before each click.
 - **Three parts, and name them every time.** Write them on the board and leave them up:
   ```
   1. INITIALISE   counter = 0        (before the loop)
@@ -137,7 +139,6 @@ Then change `5` to `1000`, run it, let it scroll.
   ```
   Missing any one of the three is a bug, and each produces a different failure. This framing carries the whole session.
 - **The condition is checked *before* every pass**, including the first. If it's false at the start, the body never runs at all.
-- **`while` reuses everything they know** — a condition from Session 9, a colon and indentation from Session 11. Say so; it's less new than it looks.
 
 Walk the RM's example line by line with input `4`:
 
@@ -152,40 +153,18 @@ while counter < 3:
 
 Output: `5`, `6`, `7`.
 
-**Checkpoint (at 22 min)** — cold-call two students:
+**Checkpoint (at 17 min)** — 10 s silent think, cold-call two students:
 > *"Name the three parts of a while loop and where each one goes."*
 > **Answer:** Initialise before the loop, condition on the `while` line, update inside the body.
 
 ---
 
-## ⚡ Activity 1 — Trace the Table (22–28 min)
+## ⚡ ALS Activity 1 — Structured Solo Loop-Tracing: Trace the Table (17–24 min)
 
-### What this activity is
+**ALS format:** Guided Individual Tracing — everyone fills their own table silently, one row per pass, as you dictate. **This is the highest-value activity in the entire session** — a student who can trace a loop can debug one; a student who can't will guess all term. Chosen as fully solo (no pairing) because the skill has to become automatic in each student's own head before Session 14 asks them to debug loops unaided.
 
-Students draw a table on paper and fill in one row per loop pass, tracking every variable and the condition's value. No laptops. It is deliberately slow — the point is to see the loop as a sequence of distinct passes rather than a single blurry repetition.
-
-### Why it's here
-
-This is the highest-value activity in the session. Students cannot debug a loop they cannot trace, and every loop failure in Block B is diagnosed by tracing.
-
-### Before class
-
-Nothing. Students need paper and a pen. Draw the empty table on the board first so they copy the right columns.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:40 | Setup line, dictate the four column headers | Draw the table |
-| 0:40–4:00 | Walk one pass at a time, pause after each | Fill a row |
-| 4:00–5:30 | Take rows from different students | Report |
-| 5:30–6:00 | Debrief on the final check | Listen |
-
-### Say this
-
+**Setup line:**
 > *"Paper out, laptops shut. Four columns: `counter`, `condition`, `a`, and `printed`. One row per trip through the loop. I'll walk it; you write."*
-
-### The program
 
 On screen, with input `4`:
 
@@ -198,7 +177,7 @@ while counter < 3:
     counter = counter + 1
 ```
 
-### The completed table
+**The completed table**
 
 | Pass | `counter` at check | `counter < 3` | `a` after | printed |
 |---|---|---|---|---|
@@ -207,34 +186,27 @@ while counter < 3:
 | 3 | 2 | **True** | 7 | `7` |
 | 4 | 3 | **False** | 7 | — loop ends |
 
-### The key moment
-
 **Row 4 is the one to press on.** Ask before revealing:
-
 > *"Counter is 3. Does the loop run again?"*
 
 Rooms split. Then: *"The condition is checked one final time, it comes back False, and Python leaves. That fourth check happens — it just doesn't produce a pass."*
 
 Then ask: *"How many times did `print` run?"* — three. *"And what's the highest value counter reached?"* — three. Those two numbers being different is what confuses students all term.
 
-### When it goes wrong
+**Debrief line:**
+> *"You just watched a loop stop without being told to. That's the whole mechanism — a condition checked one time too many, quietly, every single loop."*
 
-| If… | Do this |
-|---|---|
-| Students skip row 4 | That's the whole point. *"The loop stopped. Why? Something must have been checked."* |
-| Someone loses track mid-trace | Slow down. Do a pass entirely out loud yourself, then hand back. |
-| Room finds it easy | Ask: *"What if I deleted `counter = counter + 1`?"* Don't answer — Block B does. |
-| It's dragging | Do passes 1 and 4. Row 4 is non-negotiable. |
-
-**Common instructor mistake:** walking the passes too fast. Pause five full seconds after each — students are writing.
-
-**Cut rule:** Passes 1 and 4.
+**Cut rule:** Passes 1 and 4. Row 4 is non-negotiable.
 
 ---
 
-## Classroom Quiz (28–35 min)
+## Classroom Quiz (24–31 min) · ALS: Individual Answer → Reveal
 
-5 MCQs from the platform pools. ~80 s each including discussion.
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Protect these 7 minutes by using the cut rules everywhere else first.
+
+Every question below is run ALS-style: **individual silent answer first, then explanation.**
+
+5 MCQs from the platform pools. ~85 s each.
 
 **Q1** — `062a16e4-25bd-4231-a7bc-3bdccb582277` *(Quiz A · REMEMBERING)*
 What is the primary purpose of using loops in programming?
@@ -259,7 +231,7 @@ while i < 3:
 - `0 1`
 
 > *Explanation:* **[authored — the platform record has an empty explanation field]** `i` starts at 0 and the loop runs while `i < 3`. It prints 0, 1 and 2. When `i` becomes 3 the condition is False and the loop ends, so 3 is never printed.
-> **If they pick `0 1 2 3`:** they're forgetting the condition is checked *before* the body. Point back to Activity 1's row 4.
+> **If they pick `0 1 2 3`:** they're forgetting the condition is checked *before* the body. Point back to ALS Activity 1's row 4.
 
 **Q3** — `ef4a1245-91f4-41f2-a74b-54a716771534` *(Quiz A · APPLYING)*
 What is the error in:
@@ -307,17 +279,17 @@ while counter < 3:
 - Error
 
 > *Explanation:* **[authored — the platform record has an empty explanation field]** The counter is never updated inside the loop, so `counter < 3` stays True forever and the loop never ends. The program prints continuously until it is stopped manually.
-> **This is failure #3 and the most disorienting one.** No error message ever appears. The program simply never stops. **Tell them now how to stop it: Ctrl+C in the terminal, or the stop button on the platform.** They will need this within the hour.
+> **This is failure #3 and the most disorienting one.** No error message ever appears. **Tell them now how to stop it: Ctrl+C in the terminal, or the stop button on the platform.** They will need this within the hour.
 
 ---
 
-## Slide Block B (35–45 min) — DELIVER SLIDES AS-IS
+## Slide Block B (31–38 min) — DELIVER SLIDES AS-IS
 
 **Verified against the deck.** Remaining slides cover **Common Mistakes and Errors** then a **Code Walkthrough**, closing on a Key Takeaways slide that names the session's structure explicitly:
 
 > Loops · While Loop (**Syntax · Initialization · Termination Condition · Updation**) · Common Mistakes and Errors · Code Walkthrough
 
-**Use the deck's own four words** — Syntax, Initialization, Termination Condition, Updation. They match the three-parts framing from Block A with syntax added, and they're what the Key Takeaways slide will show at the end.
+**Use the deck's own four words** — Syntax, Initialization, Termination Condition, Updation.
 
 **Beats to emphasise**
 
@@ -338,48 +310,35 @@ while condition:
 ```
 `condition` was computed **once, before the loop**, and holds `True` forever. Updating `counter` changes nothing. This is subtle and worth real time.
 
-**Failure 3 — no update (part 3 missing)**
+**Failure 3 — no update, and its cousin, the wrong-direction update (part 3 missing or broken)**
 ```python
 counter = 0
 while counter < 3:
     print("Hi")         # counter never changes → infinite
 ```
+Run it live and **stop it with Ctrl+C in front of them.** Say: *"This will happen to you tonight. Now you know it isn't broken — it's just waiting, and you know how to stop it."*
 
-**Run failure 3 live and stop it with Ctrl+C in front of them.** Say: *"This will happen to you tonight. Now you know it isn't broken — it's just waiting, and you know how to stop it."*
+Then show the sneakier cousin — an update that exists but moves the wrong way:
+```python
+n = 5
+while n > 0:
+    print(n)
+    n = n + 1        # should be n - 1
+```
+Let it run three seconds, Ctrl+C again. *"Which part is wrong here? Not missing — wrong. An update that moves away from making the condition false is the same as no update at all."*
 
-**Checkpoint (at 45 min)** — show hands:
-> *"Which of the three parts is missing in an infinite loop like failure 3?"*
-> **Answer:** The update. The counter never changes, so the condition never becomes False.
+**Checkpoint (at 38 min)** — show hands:
+> *"Which of the three parts was broken in both versions we just stopped?"*
+> **Answer:** The update — missing in one, pointed the wrong way in the other.
 
 ---
 
-## ⚡ Activity 2 — Predict the Output (45–51 min)
+## ⚡ ALS Activity 2 — Choral Prediction → Reveal (38–45 min)
 
-### What this activity is
+**ALS format:** Choral Prediction — the whole room predicts out loud together before each run. Chosen for the closing activity because it's the safest way to get everyone to commit to a prediction on the one snippet that won't stop on its own — group confidence, followed by a calm live Ctrl+C, defuses what would otherwise be an alarming moment for a student hitting it alone at home.
 
-You reveal a snippet, **the class commits to an answer out loud before you run it**, then you run it. The public commitment converts passive watching into an active prediction students remember being right or wrong about.
-
-### Why it's here
-
-Off-by-one errors and infinite loops are the two things students will hit tonight. This makes both happen in a controlled setting first.
-
-### Before class
-
-Snippets in a file, revealed one at a time. **Be ready to Ctrl+C** — snippet 4 does not stop on its own.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:20 | Setup line | Listen |
-| 0:20–4:30 | Reveal, take a chorus answer, **then** run | Predict aloud |
-| 4:30–6:00 | Debrief | Listen |
-
-### Say this
-
+**Setup line:**
 > *"Everyone answers out loud together before I run it. How many lines print, and what are they? One of these doesn't stop — I'll deal with that."*
-
-### The snippets
 
 ```python
 i = 1                   # 1
@@ -405,8 +364,6 @@ while i <= 3:
     print(i)
 ```
 
-### Answers
-
 | # | Output | Why |
 |---|---|---|
 | 1 | `1 2 3` | Runs while `i` is 1, 2, 3; stops at 4 |
@@ -415,100 +372,18 @@ while i <= 3:
 | 4 | `1` forever | No update — infinite |
 
 **Snippet 2 surprises most rooms** — a loop that runs zero times is valid, not an error.
-**Snippet 3** shows the counter doesn't have to go up by one.
 **Snippet 4** — take the prediction, run it, let it scroll for three seconds, then Ctrl+C in full view.
 
-### When it goes wrong
+**Debrief line:**
+> *"Zero passes is valid. Counting down by two is valid. Never stopping is a bug you now know how to interrupt. Loops are more flexible — and more dangerous — than anything you've written so far."*
 
-| If… | Do this |
-|---|---|
-| Room says snippet 2 errors | Run it. Nothing happens. *"Zero times is a valid number of times."* |
-| Someone gets snippet 3 wrong | Trace it on the board — 5, 3, 1, then −1 fails the check. |
-| The room panics at snippet 4 | Good. Then show Ctrl+C calmly. That calm is what you're teaching. |
-| Running late | Snippets 2 and 4. |
-
-**Common instructor mistake:** skipping snippet 4 to avoid the infinite loop. It's the most valuable one — students must see it stopped, or they'll assume they broke the computer.
-
-**Cut rule:** Snippets 2 and 4.
+**Cut rule:** Snippets 2 and 4. Never skip 4 — students must see it stopped, or they'll assume they broke the computer.
 
 ---
 
-## ⚡ Activity 3 — Live Coding: Countdown (51–57 min)
+## Exit Ticket + Quiz Push (45–48 min)
 
-### What this activity is
-
-You're at the keyboard on the projector; students dictate every line. You type only what they say, and you deliberately produce one broken version for the class to diagnose.
-
-### Why it's here
-
-It assembles all three loop parts into one program while students still have the trace table fresh, and it is the shape of tonight's homework.
-
-### Before class
-
-Empty file, font ≥18pt. Ctrl+C ready.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:30 | Setup line, state the goal | Listen |
-| 0:30–3:00 | Type what they dictate, run | Dictate |
-| 3:00–5:00 | Introduce the bug, let them find it | Diagnose |
-| 5:00–6:00 | Fix, run, debrief | Confirm |
-
-### Say this
-
-> *"You're writing this, I'm the keyboard. Goal: count down from 5 to 1, then print `Liftoff`. Tell me the three parts before you tell me any code."*
-
-Make them name initialise / condition / update **before** dictating. That's the habit being built.
-
-### Target program
-
-```python
-n = 5
-while n > 0:
-    print(n)
-    n = n - 1
-print("Liftoff")
-```
-
-### The deliberate bug
-
-Type this version instead and run it:
-
-```python
-n = 5
-while n > 0:
-    print(n)
-    n = n + 1
-```
-
-It counts *up* forever. Let it run three seconds, Ctrl+C.
-
-> *"Which of the three parts is wrong? Not missing — wrong."*
-
-**Answer:** the update. It exists, but it moves the counter *away* from making the condition false.
-
-> *"An update that goes the wrong direction is the same as no update at all."*
-
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| They dictate it perfectly first time | Say *"too good"*, then type the `n + 1` version yourself and ask what happens. |
-| Nobody names the three parts | Point at the board. They're still written up from Block A. |
-| They put `print("Liftoff")` indented | Run it. It prints five times. *"Which block is it in?"* |
-| Someone asks about `for` loops | Say Session 15, two sessions away. Don't teach it. |
-
-**Common instructor mistake:** typing ahead when the room hesitates. Wait.
-
-**Cut rule:** Skip the correct version, go straight to the bug and fix it.
-
----
-
-## Exit Ticket + Homework (57–60 min)
-
-**Exit ticket** — before anyone leaves:
+**Exit ticket** (~30 s) — before anyone leaves:
 
 > Name the three parts of a while loop. Then say how many times this prints:
 > ```python
@@ -519,15 +394,27 @@ It counts *up* forever. Let it run three seconds, Ctrl+C.
 > ```
 > **Answers:** Initialise, condition, update. Four times — `i` is 0, 1, 2, 3.
 
-**Homework**
+**Quiz Push — start it now, not tonight (2 min):** phones/laptops out, right now, still in the room.
+> *"Open MCQ Practice. Everyone, this room, right now — attempt the first 3 questions before you leave your seat. 112 questions here."*
+
+Circulate while they do it. Target is 80% platform attempt rate, currently ~33%.
+> *"I'll show completion numbers at the start of Session 14's warm-up."*
+
+**Remaining homework**
 
 | Task | Unit |
 |---|---|
 | Coding Practice — 11 problems | `e13a266e-9a81-4716-b44f-893002bc30c0` |
-| MCQ Practice — 112 questions | `fe6b0aae-e9a6-46f0-bb21-247678eddffb` |
+| MCQ Practice — 112 questions *(started in class above — finish the rest)* | `fe6b0aae-e9a6-46f0-bb21-247678eddffb` |
 | RM — Loops | `44c34a16-eeb9-4a98-8ddc-d06f2eb8db56` |
 
-> *"When a loop misbehaves tonight, check the three parts in order: is the counter initialised, does the condition ever become false, does the update run every pass. And if it never stops — Ctrl+C. You didn't break anything."*
+> *"When a loop misbehaves tonight, check the three parts in order: is the counter initialised, does the condition ever become false, does the update run every pass — and in the right direction. And if it never stops — Ctrl+C. You didn't break anything."*
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock, let the session end early — don't stretch content to fill it.
 
 ---
 
@@ -535,28 +422,26 @@ It counts *up* forever. Let it run three seconds, Ctrl+C.
 
 | Misconception | Why students hold it | Correct it live by |
 |---|---|---|
-| The loop stops the instant the counter hits the limit | The final check is invisible | Activity 1 row 4 — the check happens, then it exits |
+| The loop stops the instant the counter hits the limit | The final check is invisible | ALS Activity 1 row 4 — the check happens, then it exits |
 | `while i < 3` prints 0,1,2,3 | Off-by-one | Quiz Q2, traced against the table |
-| A loop always runs at least once | It's a loop, surely it loops | Activity 2 snippet 2 — zero passes |
-| An infinite loop is a crash | The program stops responding | Block B failure 3 — run it, Ctrl+C, stay calm |
-| The counter must go up by one | Every example so far did | Activity 2 snippet 3 — counting down by 2 |
-| Storing a condition in a variable keeps it live | It reads like a rule | Block B failure 2 — computed once, frozen |
-| Any update ends the loop | Update feels like progress | Activity 3's bug — `n + 1` on a `n > 0` condition |
+| A loop always runs at least once | It's a loop, surely it loops | ALS Activity 2 snippet 2 — zero passes |
+| An infinite loop is a crash | The program stops responding | Slide Block B failure 3 — run it, Ctrl+C, stay calm |
+| The counter must go up by one | Every example so far did | ALS Activity 2 snippet 3 — counting down by 2 |
+| Storing a condition in a variable keeps it live | It reads like a rule | Slide Block B failure 2 — computed once, frozen |
+| Any update ends the loop | Update feels like progress | Slide Block B's wrong-direction demo — `n + 1` on a `n > 0` condition |
 
 ---
 
 ## Instructor Notes
 
 - ✅ **Verified against the real deck** (*"Copy of 5.1 Loops"*). Slide Blocks A and B list the actual slides in order.
-- **The deck's own vocabulary is Syntax / Initialization / Termination Condition / Updation** — it appears on the closing Key Takeaways slide. Use those four words rather than inventing your own; they map onto the three-parts framing with syntax added.
-- **Slide 6 blanks out the loop condition and asks the class** — take answers before revealing. Its dashed arrow showing control jumping back to the `while` line is the single clearest visual in the deck for what a loop actually does.
-- **Slides 7+ animate `a` and `counter` as coloured boxes.** That is Activity 1's trace table, pre-built. Ask what's in each box before each click, then have students do it unaided in the activity.
-- ⚠️ **The deck does not demonstrate an infinite loop running**, and nothing shows how to stop one. **Ctrl+C is entirely instructor-supplied** — and it's the single most important practical thing in this session. Don't skip it.
-- **This is the hardest session in the first fifteen.** Loops are where beginner attrition happens. Everything before this ran once, top to bottom; this breaks that model. Expect the quiz results to be worse than usual and don't read it as failure.
-- **Activity 1 is the load-bearing activity.** A student who can trace a loop can debug one; a student who can't will guess all term. If you're short on time, cut Activity 3 rather than shortening the trace.
-- **You must demonstrate Ctrl+C.** Students who hit an infinite loop at home and don't know how to stop it conclude they've broken something and stop working. Do it live, twice, calmly.
-- **Name the three parts constantly.** Initialise / condition / update, in Block A, in every failure in Block B, and again in Activity 3. The vocabulary is what makes the debugging procedure usable.
-- **Two questions in this quiz have empty `answer_explanation` fields** — `e70489bb` and `80733d77`. Authored and labelled above. **Running total is now 12 across the first fifteen sessions.**
-- **Pacing note:** the quiz starts at 28 rather than 27 because Activity 1 needs the extra minute. The timeline still totals 60.
-- **Don't teach `for` loops.** Session 15. Students who've read ahead will ask; tell them `while` is the general case and `for` is the convenient one, and that seeing `while` first is deliberate.
+- **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
+- **This is the hardest session in the first fifteen.** Loops are where beginner attrition happens. Expect the quiz results to be worse than usual and don't read it as failure.
+- **Two ALS activities this session:** Activity 1 is Guided Individual Tracing — **the load-bearing activity of the session, protect it above everything except the mandatory quiz.** Activity 2 is Choral Prediction → Reveal, chosen specifically so the infinite-loop snippet is faced as a group. The original third activity (Live Coding: Countdown) is folded into Slide Block B as the wrong-direction-update demo instead of running as its own block — its unique insight (a bug that isn't "missing," just pointed the wrong way) survives.
+- **The Classroom Quiz runs last, right before the Exit Ticket** — never cut, never shortened.
+- **Quiz Push (in Exit Ticket block) + the warm-up completion check-in are a pair.** Target is 80% platform MCQ attempt rate, currently ~33%.
+- **You must demonstrate Ctrl+C, twice, calmly.** Students who hit an infinite loop at home and don't know how to stop it conclude they've broken something and stop working. ⚠️ The deck never demonstrates this — it's entirely instructor-supplied.
+- **Name the three parts constantly.** Initialise / condition / update — in Slide Block A, in every failure in Slide Block B, and again in the Exit Ticket. The vocabulary is what makes the debugging procedure usable.
+- **Two questions in this quiz have empty `answer_explanation` fields** — `e70489bb` and `80733d77`. Authored and labelled above.
+- **Don't teach `for` loops.** Session 15. Tell curious students `while` is the general case and `for` is the convenient one, and that seeing `while` first is deliberate.
 - **Session 14 is a lighter, support session** before `for` loops arrive. If this session goes badly, Session 14's practice block is your recovery window.

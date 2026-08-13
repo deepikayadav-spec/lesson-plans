@@ -1,7 +1,7 @@
 # Session 9 — Relational Operators
 
-**Duration** 60 min · **Topic** Operators · **Prerequisite** Session 8
-**Session type** Concept lecture · ⚠️ **No video and no slide deck exist for this session** — see Instructor Notes.
+**Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Operators · **Prerequisite** Session 8
+**Session type** Concept lecture · ⚠️ **No video and no slide deck exist for this session** — see Instructor Notes. · **Format** 50-min recalibrated, 2 ALS activities, Classroom Quiz mandatory (never cut, runs last)
 
 **Platform units**
 
@@ -13,7 +13,7 @@
 | MCQ Practice (40 q) | `176ab7ce-6e44-4ff5-9ac9-4bff2bb71f4d` |
 | Coding Practice (10 q) | `9935f186-744c-4b1d-b775-b45056daa899` |
 
-> ⚠️ **You have no deck.** The two "Slide Block" sections below are **Teaching Blocks** instead — board work and live typing, built from the reading material. Everything you need is written out; you supply the whiteboard.
+> ⚠️ **You have no deck.** The two "Teaching Block" sections below replace Slide Blocks — board work and live typing, built from the reading material. Everything you need is written out; you supply the whiteboard.
 
 ---
 
@@ -29,41 +29,43 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Prior Knowledge Activation (0–7 min)
+## Classroom Settling (0–3 min) · Buffer — not instructional
 
-7 questions on **Session 8**. Newly authored. ~45 s each, project the distribution, never name individuals.
-
-**Q1.** What does `int(9.99)` give?
-`A` `10` · `B` `9` · `C` `9.99` · `D` ValueError
-→ **B.** *Targets:* `int()` chops, it doesn't round.
-
-**Q2.** What does `int("nine")` give?
-`A` `9` · `B` `0` · `C` ValueError · `D` TypeError
-→ **C.** *Targets:* Invalid conversion raises ValueError.
-
-**Q3.** `s = "Python"`. What is `s[0:3]`?
-`A` `Pyth` · `B` `Pyt` · `C` `yth` · `D` `Pytho`
-→ **B.** *Targets:* End index excluded. *Misconception:* A is the classic off-by-one.
-
-**Q4.** Which converts a number to text?
-`A` `int()` · `B` `float()` · `C` `str()` · `D` `type()`
-→ **C.** *Targets:* Conversion function names.
-
-**Q5.** `a = int(input())` and the user types `5`. What is `a`?
-`A` The string `"5"` · `B` The number `5` · `C` `5.0` · `D` Error
-→ **B.** *Targets:* The `int(input())` pattern.
-
-**Q6.** Which raise an error? *(MSQ — select all)*
-`A` `int("7")` · `B` `int("7.0")` · `C` `int(7.0)` · `D` `int("seven")`
-→ **B and D.** *Targets:* The `"7.0"` trap. *Misconception:* missing B means Session 8's hardest idea didn't land.
-
-**Q7.** What is `type("10")`?
-`A` int · `B` str · `C` float · `D` bool
-→ **B.** *Targets:* Quotes decide type. **Today's gateway** — `10 == "10"` depends entirely on this. Note the number.
+Board cleared and ready, students seated. Don't reclaim this time for content if your room settles faster — hold it as extra flex at the end.
 
 ---
 
-## Hook (7–10 min)
+## Warm-Up Poll — Prior Knowledge Activation (3–7 min) · ALS: Polling
+
+**Completion check-in (~15 s, before Q1):** state the MCQ Practice completion number since last session. Target is 80%.
+
+5 questions on **Session 8**. ~45 s each, project the distribution, never name individuals.
+
+**Q1.** What does `int("nine")` give?
+`A` `9` · `B` `0` · `C` ValueError · `D` TypeError
+→ **C.** *Targets:* Invalid conversion raises ValueError.
+
+**Q2.** Which converts a number to text?
+`A` `int()` · `B` `float()` · `C` `str()` · `D` `type()`
+→ **C.** *Targets:* Conversion function names.
+
+**Q3.** `a = int(input())` and the user types `5`. What is `a`?
+`A` The string `"5"` · `B` The number `5` · `C` `5.0` · `D` Error
+→ **B.** *Targets:* The `int(input())` pattern — reused in today's Activity 1.
+
+**Q4.** Which raise an error? *(MSQ — select all)*
+`A` `int("7")` · `B` `int("7.0")` · `C` `int(7.0)` · `D` `int("seven")`
+→ **B and D.** *Targets:* The `"7.0"` trap — same "looks right but isn't" family as today's `10 == "10"`.
+
+**Q5.** What is `type("10")`?
+`A` int · `B` str · `C` float · `D` bool
+→ **B.** *Targets:* Quotes decide type. **Today's gateway** — `10 == "10"` depends entirely on this. Note the number.
+
+**Running it** — poll tool, ~45 s per question. Total ~3.75 min for the 5 questions.
+
+---
+
+## Hook (7–11 min)
 
 Write on the board, nothing else:
 
@@ -89,7 +91,7 @@ Output: `True`
 
 ---
 
-## Teaching Block A (10–22 min) — BOARD + LIVE TYPING
+## Teaching Block A (11–18 min) — BOARD + LIVE TYPING
 
 <!-- no deck exists; content built from RM `e03da18b-8523-445e-81e9-8519b1c16a61` -->
 
@@ -120,69 +122,65 @@ print(5 != 5)     # False
 - **`==` is two characters, and it is not `=`.** Write both on the board side by side with labels: `=` puts a value in a box, `==` asks a question. This is the single most expensive confusion in the session.
 - **`!=` reads as "not equal".** The `!` means "not" — that carries into next session's `not` operator.
 
-**Checkpoint (at 22 min)** — cold-call two students:
-> *"What does `x = 5` do, and what does `x == 5` do?"*
-> **Answer:** The first puts 5 into `x`. The second asks whether `x` holds 5, and answers `True` or `False`.
+**Checkpoint + Fix-It Fire (at 18 min, ~2 min)** — 10 s silent think, cold-call two students for the checkpoint, then one quick fix-it prompt (compressed from a full board race — folded in here to protect the schedule):
+> *Checkpoint:* *"What does `x = 5` do, and what does `x == 5` do?"* Answer: The first puts 5 into `x`. The second asks whether `x` holds 5, and answers `True` or `False`.
+> *Fix-it:* put `print(3 = 3)` on screen — *"fix this, ten seconds."* Answer: `print(3 == 3)`. This is the single trap the quiz tests hardest — don't skip it.
 
 ---
 
-## ⚡ Activity 1 — Rapid Fire Board Race (22–27 min)
+## ⚡ ALS Activity 1 — Individual Diagnose, Cold-Call Reveal: Spot the Bug (18–24 min)
 
-### What this activity is
+**ALS format:** Individual Diagnose → Cold-Call Reveal — everyone diagnoses all four snippets alone, silently, before any answer is taken. No pairing this time — chosen because every trap here (`=` vs `==`, the space in `< =`, comparing a string to a number) is exactly the kind of typo-level mistake students make alone at 11pm tonight, with nobody next to them to catch it.
 
-Two students at the whiteboard. You read prompts aloud; both write their answer simultaneously; the class judges who's right. It's fast, loud, and deliberately low-stakes — the purpose is energy and repetition, not assessment.
+**Setup line:**
+> *"Four snippets. Tell me what's wrong and what it's called. Then the fix. Ninety seconds, silent, on your own."*
 
-### Why it's here
+```python
+# 1
+age = 18
+print(age = 18)
+```
+```python
+# 2
+print(5 > = 3)
+```
+```python
+# 3
+password = "Python123"
+print(password == "python123")
+```
+```python
+# 4
+user_age = input()
+print(user_age == 18)
+```
 
-Relational operators need drilling, not discussion. Six operators become automatic through rapid repetition, and this is minute 22 of a lecture — the room needs a lift.
+**Answers**
 
-### Before class
-
-Clear a section of whiteboard, two markers ready.
-
-### Run it
-
-| Time | You do | Students do |
+| # | Diagnosis | Fix |
 |---|---|---|
-| 0:00–0:30 | Call two volunteers up, explain the rules | Two go to the board |
-| 0:30–4:00 | Read prompts one at a time, class judges each | Write; class calls the winner |
-| 4:00–5:00 | Debrief | Listen |
+| 1 | `SyntaxError` — `=` assigns, doesn't compare | `print(age == 18)` |
+| 2 | `SyntaxError` — space inside `>=` | `print(5 >= 3)` |
+| 3 | **No error.** Prints `False` — capital `P` vs lowercase `p` | Match the case, or accept that it's genuinely different |
+| 4 | **No error.** Always prints `False` — `input()` gives a string, and a string never equals a number | `int(user_age) == 18` |
 
-### Say this
+**Snippet 4 is the one that matters.** It runs fine, produces `False` no matter what the user types, and combines Sessions 6, 8 and today. Ask directly:
+> *"The user types 18. It prints False. Nothing crashed. How long would it take you to find that bug tonight?"*
 
-> *"Two volunteers to the board. I read, you both write, the class decides. No laptops, no notes. This is not a test — it's a warm-up for your fingers."*
+**Debrief line:**
+> *"Three of these are typos with a name. The fourth is silent and correct-looking. That's the one that actually costs you time."*
 
-### The prompts
-
-Read one at a time. Give ~15 seconds each.
-
-| # | Prompt | Answer |
-|---|---|---|
-| 1 | Write code that checks if 8 is bigger than 3 | `print(8 > 3)` |
-| 2 | Write code that checks if `a` equals 10 | `print(a == 10)` |
-| 3 | Write code that checks if `x` is **not** 5 | `print(x != 5)` |
-| 4 | What does `print(4 >= 4)` show? | `True` |
-| 5 | Fix this: `print(3 = 3)` | `print(3 == 3)` |
-
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| No volunteers | Name two people directly, lightly: *"Front row — you two, up."* Once it's been done once, volunteers come easily. |
-| Both write the same wrong answer | Perfect teaching moment. *"You both agree, and you're both wrong. Class?"* |
-| Class won't judge | Ask a specific person: *"Fourth row — which one's right?"* |
-| It gets competitive or unkind | Cut it short and move on. The energy is the point; humiliation isn't. |
-| Prompt 5 stumps them | This is the key one. If both miss it, spend a minute — `=` vs `==` recurs in the quiz. |
-
-**Common instructor mistake:** letting it run long because it's fun. Five minutes, hard stop.
-
-**Cut rule:** Prompts 1, 3 and 5.
+**Cut rule:** Do 1 and 4. Snippet 4 is non-negotiable.
 
 ---
 
-## Classroom Quiz (27–34 min)
+## Classroom Quiz (24–31 min) · ALS: Individual Answer → Reveal
 
-5 MCQs from the platform pools. ~80 s each including discussion.
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Protect these 7 minutes by using the cut rules everywhere else first.
+
+Every question below is run ALS-style: **individual silent answer first, then explanation.**
+
+5 MCQs from the platform pools. ~85 s each.
 
 **Q1** — `dae6dcf7-175e-436f-a917-e4150c4f1c09` *(Quiz A · REMEMBERING)*
 Which relational operator in Python checks for equality between two values?
@@ -211,7 +209,7 @@ Identify the error in `print(3 = 3)`.
 - The numbers being compared are not valid
 
 > *Explanation (platform):* The '=' operator is used for assignment, not for comparison. The correct operator for checking equality is '=='.
-> **If >40% miss this:** stop and re-run the board comparison of `=` versus `==`. It costs a minute now and saves a session later.
+> **If >40% miss this:** stop and re-run the board comparison of `=` versus `==`.
 
 **Q4** — `5275c12c-f77f-4b89-b003-0343aee3ed01` *(Quiz A · APPLYING)*
 How do you fix the error in `print(2 < = 3)`?
@@ -231,11 +229,11 @@ What will be the output of `print(10 == '10')`?
 - TypeError
 
 > *Explanation (platform):* The output will be False because the integer 10 is not equal to the string '10'.
-> **This is the session's hardest question and its most important.** If they expected `True`, they're comparing what things *look like* rather than what they *are*. Note that Python doesn't error here — it just says False, which makes this a silent bug. Ties directly to Session 7's crash-vs-bug distinction.
+> **This is the session's hardest question and its most important.** If they expected `True`, they're comparing what things *look like* rather than what they *are*. Python doesn't error here — it just says False, which makes this a silent bug. Ties directly to Session 7's crash-vs-bug distinction.
 
 ---
 
-## Teaching Block B (34–44 min) — BOARD + LIVE TYPING
+## Teaching Block B (31–39 min) — BOARD + LIVE TYPING
 
 <!-- no deck exists; content built from RM `e03da18b-8523-445e-81e9-8519b1c16a61` -->
 
@@ -273,115 +271,18 @@ print(10 == "10")              # False
 - **Strings compare alphabetically.** `"abc" < "abd"` is `True` because `c` comes before `d`.
 - **A number is never equal to a string**, even when they look identical.
 
-**Checkpoint (at 44 min)** — show hands:
+**Checkpoint (at 39 min)** — show hands:
 > *"`print(12 == 12.0)` — True or False? And `print(12 == "12")`?"*
 > **Answer:** `True`, then `False`. Both numbers versus a number and a string.
 
 ---
 
-## ⚡ Activity 2 — Spot the Bug (44–50 min)
+## ⚡ ALS Activity 2 — Structured Solo Tracing: Trace the Table (39–45 min)
 
-### What this activity is
+**ALS format:** Structured Solo Tracing — everyone fills in their own table, silently, as you read code aloud, no pairing or discussion. Chosen because next session combines comparisons with `and`/`or`, which is impossible for students who can't reliably evaluate a single comparison alone yet — the skill has to be individual and automatic before it's combined with anything else.
 
-Broken snippets on screen. Students find each problem **and name the error type** before offering a fix. One snippet doesn't crash at all — it just gives the wrong answer, and finding that one is the point.
-
-### Why it's here
-
-Every trap in this session — `=` vs `==`, the space in `< =`, the number-vs-string comparison — is a typo-level mistake that students will make tonight. This rehearses all three.
-
-### Before class
-
-All four snippets ready to run.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:30 | Setup line | Listen |
-| 0:30–1:30 | Show all four, silence | Diagnose on paper |
-| 1:30–5:00 | Take one at a time, run each live | Name error + fix |
-| 5:00–6:00 | Debrief on #4 | Listen |
-
-### Say this
-
-> *"Four snippets. Tell me what's wrong and what it's called. Then the fix. Ninety seconds, silent."*
-
-### The snippets
-
-```python
-# 1
-age = 18
-print(age = 18)
-```
-```python
-# 2
-print(5 > = 3)
-```
-```python
-# 3
-password = "Python123"
-print(password == "python123")
-```
-```python
-# 4
-user_age = input()
-print(user_age == 18)
-```
-
-### Answers
-
-| # | Diagnosis | Fix |
-|---|---|---|
-| 1 | `SyntaxError` — `=` assigns, doesn't compare | `print(age == 18)` |
-| 2 | `SyntaxError` — space inside `>=` | `print(5 >= 3)` |
-| 3 | **No error.** Prints `False` — capital `P` vs lowercase `p` | Match the case, or accept that it's genuinely different |
-| 4 | **No error.** Always prints `False` — `input()` gives a string, and a string never equals a number | `int(user_age) == 18` |
-
-**Snippet 4 is the one that matters.** It runs fine, produces `False` no matter what the user types, and combines Session 6, Session 8 and today. Ask directly:
-
-> *"The user types 18. It prints False. Nothing crashed. How long would it take you to find that bug tonight?"*
-
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| They spot 1–3 but not 4 | Expected and fine. Run it, type `18`, let `False` sit on screen in silence. |
-| Someone says #3 is a bug | Push back gently — it depends on intent. If passwords should be case-sensitive, it's correct behaviour. Good nuance. |
-| Nobody can fix #4 | Give it. The diagnosis matters more than the fix here. |
-| Running long | Do 1 and 4. Snippet 4 is non-negotiable. |
-
-**Common instructor mistake:** rushing snippet 4 because it's last. Reverse the order if you're worried about time — it deserves the most.
-
----
-
-## ⚡ Activity 3 — Trace the Table (50–57 min)
-
-### What this activity is
-
-Students write a small table on paper and fill it in row by row as you read code aloud, tracking what each variable holds and what each comparison evaluates to. No laptops. It's slow, deliberate, and builds the mental habit of stepping through code.
-
-### Why it's here
-
-Next session combines comparisons with `and`/`or`. That is impossible for students who can't yet evaluate a single comparison reliably. This is the rehearsal.
-
-### Before class
-
-Nothing. Students need paper and a pen.
-
-### Run it
-
-| Time | You do | Students do |
-|---|---|---|
-| 0:00–0:30 | Setup line, dictate the column headers | Draw the table |
-| 0:30–4:30 | Read one line at a time, pause after each | Fill in a row |
-| 4:30–6:00 | Take answers row by row from different students | Report |
-| 6:00–7:00 | Debrief | Listen |
-
-### Say this
-
+**Setup line:**
 > *"Paper out, laptops shut. Three columns: `a`, `b`, and `result`. I read a line, you write what's in each after that line. If a line is a comparison, `result` is True or False."*
-
-### The program
 
 ```python
 a = 5
@@ -392,7 +293,7 @@ result = a == b
 result = a != b
 ```
 
-### The completed table
+**The completed table**
 
 | After line | `a` | `b` | `result` |
 |---|---|---|---|
@@ -403,49 +304,52 @@ result = a != b
 | `result = a == b` | `"5"` | `5.0` | **False** |
 | `result = a != b` | `"5"` | `5.0` | **True** |
 
-### The key moment
-
-Row 3 gives `True` and row 5 gives `False` — **same comparison, same-looking values.** Ask:
-
+**The key moment:** row 3 gives `True` and row 5 gives `False` — **same comparison, same-looking values.** Ask:
 > *"Nothing about the comparison changed. Why did the answer flip?"*
-
 **Answer:** `a` stopped being a number and became a string. The types changed, so the answer changed.
 
 Then row 6: `!=` on the same values gives `True`, because they genuinely are not equal.
 
-### When it goes wrong
-
-| If… | Do this |
-|---|---|
-| Students don't update `result` on the unchanged row | Good catch to make: *"Line 4 didn't touch `result`. It still holds what it held."* Variables persist. |
-| Row 3 is contested | Run it live. `5 == 5.0` really is `True` — both are numbers. |
-| Somebody finishes instantly | Ask them to predict row 6 before you read it. |
-| It's dragging | Stop after row 5. That's where the lesson lives. |
-
-**Common instructor mistake:** reading the lines too fast. Pause a full five seconds after each — students are writing, not just listening.
+**Debrief line:**
+> *"You just tracked a bug you can't see with your eyes — only by knowing what type each variable actually holds. That's the whole session in one table."*
 
 **Cut rule:** Stop after row 5.
 
 ---
 
-## Exit Ticket + Homework (57–60 min)
+## Exit Ticket + Quiz Push (45–48 min)
 
-**Exit ticket** — before anyone leaves:
+**Exit ticket** (~30 s) — before anyone leaves:
 
 > Write True or False for each: `7 != 7` · `3 <= 3` · `10 == "10"` · `"a" < "b"`
 > **Answers:** False · True · False · True
 
 The third one is the one to scan for on the way out.
 
-**Homework**
+**Quiz Push — start it now, not tonight (2 min):** phones/laptops out, right now, still in the room.
+> *"Open MCQ Practice. Everyone, this room, right now — attempt the first 3 questions before you leave your seat."*
+
+Circulate while they do it. Target is 80% platform attempt rate, currently ~33%.
+> *"I'll show completion numbers at the start of Session 10's warm-up."*
+
+**Remaining homework**
 
 | Task | Unit |
 |---|---|
 | Coding Practice — 10 problems | `9935f186-744c-4b1d-b775-b45056daa899` |
-| MCQ Practice — 40 questions | `176ab7ce-6e44-4ff5-9ac9-4bff2bb71f4d` |
+| MCQ Practice — 40 questions *(started in class above — finish the rest)* | `176ab7ce-6e44-4ff5-9ac9-4bff2bb71f4d` |
 | RM — Relational Operators | `e03da18b-8523-445e-81e9-8519b1c16a61` |
 
 > *"If you compare something to `input()` and always get False, you already know why. Convert it first."*
+
+---
+
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. If you land here with time on the clock and want an energy-lift closer instead of ending early, run the optional Rapid Fire Board Race below — two volunteers at the board, class judges:
+1. Write code that checks if 8 is bigger than 3 → `print(8 > 3)`
+2. Write code that checks if `x` is **not** 5 → `print(x != 5)`
+> Never required — the schedule doesn't depend on it.
 
 ---
 
@@ -453,21 +357,24 @@ The third one is the one to scan for on the way out.
 
 | Misconception | Why students hold it | Correct it live by |
 |---|---|---|
-| `=` compares two things | Ten years of maths | Board comparison in Block A, then Quiz Q3 |
+| `=` compares two things | Ten years of maths | Board comparison in Teaching Block A, then Quiz Q3 |
 | `< =` with a space is fine | Spaces are usually harmless | Running it — SyntaxError |
-| `10 == "10"` is True | They look identical | Quiz Q5 and Activity 3 row 5 |
+| `10 == "10"` is True | They look identical | Quiz Q5 and ALS Activity 2 row 5 |
 | Comparisons produce numbers | Everything so far did | Quiz Q2 — the answer is `True`, not `4` |
-| `12 == 12.0` is False | Different types must differ | Block B — both are numbers, same value |
-| String comparison ignores case | Human reading does | Block B — `"Python" == "python"` is False |
-| A wrong comparison will crash | Errors are their feedback | Activity 2 snippet 4 — runs fine, always False |
+| `12 == 12.0` is False | Different types must differ | Teaching Block B — both are numbers, same value |
+| String comparison ignores case | Human reading does | Teaching Block B — `"Python" == "python"` is False |
+| A wrong comparison will crash | Errors are their feedback | ALS Activity 1 snippet 4 — runs fine, always False |
 
 ---
 
 ## Instructor Notes
 
-- **⚠️ No video and no slide deck exist for this session in the platform export.** Both teaching blocks above are written as board-and-live-typing sessions built directly from the reading material, and everything you need is spelled out. If a deck does turn up, the two blocks map onto it directly and the activities slot between them unchanged.
-- **This session is the runway for Sessions 10–12.** Conditionals are unusable without solid comparisons. If something has to be cut, cut Activity 1 (the board race is energy, not content) — never Quiz Q5 or Activity 3.
-- **`=` versus `==` will keep coming back all term.** Write both on the board with their labels at the start and refuse to erase them. The visual reference does more than repetition.
-- **Session 4 planted this.** When you taught the assignment operator, you flagged that comparison uses `==` and would arrive later. Call that back explicitly — students remember the promise.
-- **Pacing risk:** the string-comparison part of Block B invites tangents about how Python orders letters. Keep it to alphabetical order and move on; the mechanism isn't needed yet.
-- **Smallest MCQ pool since Session 4** — 40 questions. If the practice block runs long, Session 8's 130-question pool makes good revision.
+- **⚠️ No video and no slide deck exist for this session in the platform export.** Both teaching blocks above are written as board-and-live-typing sessions built directly from the reading material.
+- **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
+- **Two ALS activities this session:** Activity 1 is Individual Diagnose → Cold-Call Reveal (fully solo, no pairing), Activity 2 is Structured Solo Tracing (also solo — deliberately, since both skills need to be individually automatic before next session combines them with `and`/`or`). The original Rapid Fire Board Race is demoted to an optional buffer-only closer — it was flagged in the original plan as "energy, not content," the first thing to cut under time pressure, so it's the one dropped from the scheduled 45 minutes. Its highest-value prompt (fixing `3 = 3`) is folded into Teaching Block A's checkpoint instead.
+- **The Classroom Quiz runs last, right before the Exit Ticket** — never cut, never shortened.
+- **Quiz Push (in Exit Ticket block) + the warm-up completion check-in are a pair.** Target is 80% platform MCQ attempt rate, currently ~33%.
+- **This session is the runway for Sessions 10–12.** Conditionals are unusable without solid comparisons. If something has to be cut beyond the board race, cut minutes from Teaching Block A's number-type examples before touching Quiz Q5 or ALS Activity 2.
+- **`=` versus `==` will keep coming back all term.** Write both on the board with their labels at the start and refuse to erase them.
+- **Session 4 planted this.** When you taught the assignment operator, you flagged that comparison uses `==` and would arrive later. Call that back explicitly.
+- **Smallest MCQ pool since Session 4** — 40 questions. If the Quiz Push or practice block runs long, Session 8's 130-question pool makes good backup revision.
