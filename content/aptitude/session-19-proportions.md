@@ -1,14 +1,14 @@
 # Session 19 — Proportions: Problems on Ratio, Variation
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Proportions — Problems on Ratio, Variation · **Prerequisite** Session 18 (Ratios)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities (this session already had exactly 2)
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities (this session already had exactly 2)
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Proportions.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Write this on the board, with `x` boxed and nothing else around it:
 
@@ -78,7 +78,7 @@ Tie back to the poll: *"Proportion is going to do, in one step, what you just di
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–16 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — the deck interleaves a "Recap | Ratios" title card, an agenda slide, four Problems-on-Ratio slides, a Quiz Time marker, then the Proportion and Continued Proportion definition slides. This block groups the ratio-recap problems with the proportion definitions for teaching flow; confirm the live slide order and adjust if it differs. -->
 
@@ -90,13 +90,13 @@ Covers: recap problems on ratio → Proportion (equality of two ratios, `a:b::c:
 - **Proportion is the equality of two ratios.** `a:b :: c:d` means `a/b = c/d`. Shortcut: `ad = bc` — the product of the outer pair (**extremes**) equals the product of the inner pair (**means**).
 - **Continued proportion has only three terms.** `a:b :: b:c` — the middle term `b` is shared. State explicitly this is *not* a four-term proportion in disguise.
 
-**Checkpoint (at 19 min)** — closing the Hook loop:
+**Checkpoint (at 16 min)** — closing the Hook loop:
 > *"Board puzzle time. `0.75 : x :: 5 : 8`. Extremes times extremes, means times means — go."*
 > **Answer:** `0.75 × 8 = 5 × x` → `6 = 5x` → **`x = 1.2`**.
 
 ---
 
-## ⚡ ALS Activity 1 — Think-Pair-Share: Two Ratio Problems (19–26 min)
+## ⚡ ALS Activity 1 — Think-Pair-Share: Two Ratio Problems (16–23 min)
 
 **ALS format:** Think-Pair-Share. Chosen right after Slide Block A because it just modelled the "make-the-relationship-explicit, then solve" method — this hands the method to students immediately, while it's fresh, on two problems they haven't seen solved yet.
 
@@ -128,7 +128,7 @@ Covers: recap problems on ratio → Proportion (equality of two ratios, `a:b::c:
 
 ---
 
-## Slide Block B (26–35 min) — DELIVER SLIDES AS-IS
+## Slide Block B (23–30 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — deck order is Variation intro → a proportion problem (already pulled forward into Block A's checkpoint) → the race problem → the diesel/engine problem → the programmers problem. This block delivers Variation plus the diesel problem, holds the race problem back as the checkpoint, and hands the programmers problem to ALS Activity 2. -->
 
@@ -140,13 +140,13 @@ Covers: Variation (direct variation: engine capacity ↔ fuel capacity, distance
 - **Direct variation problem, worked live:** 60 litres of diesel is needed to travel 600 km using an 800 cc engine. Diesel required varies directly with both distance *and* engine capacity. For 800 km with a 1200 cc engine, diesel required = **120 litres**.
 - **Say explicitly:** the deck's speaker notes flag Direct, Indirect, and Joint variation as the three types, but only direct-variation examples are captured in this deck's text — flag that inverse variation exists but isn't worked content today.
 
-**Checkpoint (at 35 min)** — cold-call, deliberately testing a misconception the deck itself calls out:
+**Checkpoint (at 30 min)** — cold-call, deliberately testing a misconception the deck itself calls out:
 > *"In a 1000 m race, A beats B by 200 m and A beats C by 300 m. By how many metres will B beat C?"*
 > **Wrong-but-tempting answer:** `300 − 200 = 100 m`. **Correct answer: 125 m.** Method: A:B = `1000:800`, A:C = `1000:700`, so B:C = `800:700 = 8:7`. When B covers 1000 m, C covers `875` m → B beats C by **125 m**. State the deck's own rule: *"Addition and subtraction are not acceptable for manipulating ratios — prefer multiplication and division."*
 
 ---
 
-## ⚡ ALS Activity 2 — Trace the Table: The Programmers Problem (35–45 min)
+## ⚡ ALS Activity 2 — Trace the Table: The Programmers Problem (30–40 min)
 
 **ALS format:** Guided Table Build — one dense joint-variation word problem, solved by building a four-row table on the board together, one row at a time; nobody states the final number until the table is filled. Chosen as the closing activity because this is the session's hardest problem — it varies directly with the amount of work *and* inversely with the time available, at once — and students who can quote "direct" and "inverse" variation separately usually freeze the first time both show up together.
 
@@ -179,6 +179,12 @@ Covers: Variation (direct variation: engine capacity ↔ fuel capacity, distance
 > *"Direct and inverse variation almost never show up alone in a real problem. The table is what keeps them from blurring into one wrong shortcut."*
 
 **Cut rule:** Supply Row 1, have the class do Rows 2–4, keep the trap question and skip the open debrief.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, use it for an instructor-led review of today's toughest problem — re-run the race-problem checkpoint one more time, cold-calling a different student for each step of the B:C ratio — or fold the slot into Buffer and end early.
 
 ---
 

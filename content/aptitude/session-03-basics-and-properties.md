@@ -1,14 +1,14 @@
 # Session 3 — Basics and Properties (Multiples, Factors & LCM/HCF)
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Multiples, Factors & LCM/HCF — Basics and Properties · **Prerequisite** Session 2 (Number Systems 1)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT Basics and Properties.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–11 min)
+## Hook (7–10 min)
 
 Write these three lines on the board, nothing else:
 
@@ -85,7 +85,7 @@ Ask: *"So if 2 is a factor of 10, is 10 a multiple of 2?"* — Yes. *"A multiple
 
 ---
 
-## Slide Block A (11–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (10–16 min) — DELIVER SLIDES AS-IS
 
 Covers: Multiples → Factors → Methods of finding LCM & HCF (prime factorisation) → the Properties slide (previewed here because ALS Activity 1 needs it immediately).
 
@@ -97,15 +97,15 @@ Covers: Multiples → Factors → Methods of finding LCM & HCF (prime factorisat
   - LCM & HCF of **24, 36 & 48** → **HCF = 12**, **LCM = 144**. <!-- placement: inferred — reconstructed from the deck's own prime-factorisation method and cross-checked. Confirm against the live slide before teaching. -->
 - **Beat 3 — Properties preview.** <!-- placement: inferred --> State, without yet drilling: *"If the ratio of two numbers is `a:b`, and their HCF is `H`, then LCM `= H × a × b`."* Also flag that **Product of two numbers = LCM × HCF** — you'll verify this properly in Slide Block B.
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call two students:
 > *"Using prime factorisation, what's the HCF of 18 and 30?"*
 > **Answer:** 6 (common prime factors 2 and 3).
 
 ---
 
-## ⚡ ALS Activity 1 — Rapid Fire Board Race (19–29 min)
+## ⚡ ALS Activity 1 — Rapid Fire Board Race (16–26 min)
 
-**ALS format:** Board Race — four real problems from the deck, revealed one at a time, increasing in difficulty. Students solve individually or in pairs and race to the board; the instructor takes the first *correct method*, not the first shout. This slot deliberately absorbs the time a classroom quiz would occupy in other sessions — there's no question bank for this topic yet, so four genuine worked-problem patterns fill it instead.
+**ALS format:** Board Race — four real problems from the deck, revealed one at a time, increasing in difficulty. Students solve individually or in pairs and race to the board; the instructor takes the first *correct method*, not the first shout.
 
 **Setup line:**
 > *"Four problems, one at a time. First person to the board with the **right method**, not just a number, wins the round. Method beats speed."*
@@ -135,7 +135,7 @@ Covers: Multiples → Factors → Methods of finding LCM & HCF (prime factorisat
 
 ---
 
-## Slide Block B (29–38 min) — DELIVER SLIDES AS-IS
+## Slide Block B (26–33 min) — DELIVER SLIDES AS-IS
 
 Covers: Product of two numbers = LCM × HCF (verified) → LCM/HCF of fractions → the harder worked fraction example.
 
@@ -147,15 +147,13 @@ Covers: Product of two numbers = LCM × HCF (verified) → LCM/HCF of fractions 
   - Numerators 20, 16, 20 → LCM = 80. Denominators 16, 15, 21 → HCF = 1. → **LCM of fractions = 80/1 = 80.**
   - Numerators 20, 16, 20 → HCF = 4. Denominators 16, 15, 21 → LCM = 1680. → **HCF of fractions = 4/1680 = 1/420.**
 
-**Quick re-verify beat (2 min):** *"One more pair to check the property against — 10 and 15, from the board race. Predict the product before I show LCM×HCF."* Reveal: `30 × 5 = 150`, and `10 × 15 = 150`. ✅ *"Two for two now — that's not coincidence, it's a rule."* (Compressed from a full activity to protect the schedule.)
-
-**Checkpoint (at 38 min)** — show hands:
+**Checkpoint (at 33 min)** — show hands:
 > *"Why is the HCF of those three fractions `1/420` and not a whole number, when none of them looks like it shares an obvious common factor?"*
 > **Answer:** Because HCF of fractions isn't found by inspection — it's `HCF(numerators) ÷ LCM(denominators)`. The formula still gives a clean answer even when nothing is "directly" common.
 
 ---
 
-## ⚡ ALS Activity 2 — Student-Generated Task Design: Write the Question (38–44 min)
+## ⚡ ALS Activity 2 — Student-Generated Task Design: Write the Question (33–39 min)
 
 **ALS format:** Student-Generated Task Design — students write their own ratio-based LCM/HCF question using today's exact template, swap with a partner, and solve each other's question. Chosen as the closing activity because it's a generative check, not a recognition one: to build a valid question, a student has to actually understand where the traps are (the same simplification trap the board race just demonstrated), not just apply a formula to given numbers.
 
@@ -185,6 +183,12 @@ HCF of the two numbers = H
 > *"Every question up here was built by someone in this room using the same template you now own. That's the actual test of whether you understood the shortcut — not solving it, building it."*
 
 **Cut rule:** Skip the swap-and-solve step; have 2 students share their question and solve it as a class instead.
+
+---
+
+## Classroom Quiz (39–44 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped re-verify beat here instead — pick one more pair from the board race (e.g. 10 and 15) and have the class predict the product before revealing `LCM × HCF` — or fold the slot into Buffer and end early.
 
 ---
 

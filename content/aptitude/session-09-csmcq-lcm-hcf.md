@@ -1,14 +1,14 @@
 # Session 9 — Company-Specific MCQs: LCM & HCF
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Company-Specific MCQs — LCM & HCF · **Prerequisite** Session 3 (Basics and Properties — LCM/HCF), reinforced across Sessions 4–8
-**Session type** Consolidation / review lecture — a set of fully solved Company-Specific MCQs. No new concept is taught. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. The warm-up poll deliberately reaches back to **Session 3** rather than Session 8 — Session 8 was a Numbers consolidation session and did not cover LCM/HCF. See Instructor Notes. · **Format** 50-min recalibrated, 2 ALS activities (this session already had exactly 2)
+**Session type** Consolidation / review lecture — a set of fully solved Company-Specific MCQs. No new concept is taught. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. The warm-up poll deliberately reaches back to **Session 3** rather than Session 8 — Session 8 was a Numbers consolidation session and did not cover LCM/HCF. See Instructor Notes. · **Format** 50-min recalibrated, 2 ALS activities (this session already had exactly 2)
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `2) NIAT_CSMCQ'S_LCM & HCF.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -62,7 +62,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–11 min)
+## Hook (7–10 min)
 
 Put this on the board, **numbers only, no options yet**:
 
@@ -78,7 +78,7 @@ Tie back to the poll: *"That's the same relationship you just used on 18 and 30 
 
 ---
 
-## Slide Block A (11–21 min) — DELIVER AS-IS
+## Slide Block A (10–18 min) — DELIVER AS-IS
 
 Covers the deck's first five Company-Specific Questions (Q1–Q5), in order, with real worked solutions.
 
@@ -111,13 +111,13 @@ Covers the deck's first five Company-Specific Questions (Q1–Q5), in order, wit
 - **Beat 2 (Q2):** *Product of two numbers = LCM × HCF* turns a "find the missing number" question into one line of algebra. Flag that this is the single most reused property across today's deck.
 - **Beat 3 (Q3–Q5):** Whenever the question says "smallest number divisible by," "leaves a remainder," or "meet again at the start," the fastest route is *always* prime-factorisation LCM first.
 
-**Checkpoint (at 21 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 18 min)** — 10 s silent think, cold-call two students:
 > *"What's the one-line shortcut that connects LCM, HCF, and the product of two numbers?"*
 > **Answer:** Product of the two numbers = LCM × HCF.
 
 ---
 
-## ⚡ ALS Activity 1 — Timed Silent Solve → Reveal (21–29 min)
+## ⚡ ALS Activity 1 — Timed Silent Solve → Reveal (18–26 min)
 
 **ALS format:** Timed Silent Solve → Reveal — three real deck questions, one at a time, 90 seconds silent individual solving on paper, then a student narrates the solution before the real one is revealed. Chosen right after Slide Block A because this tests whether the properties transfer to new numbers without the instructor's voice walking them through it — the real test of a consolidation session.
 
@@ -151,7 +151,7 @@ Covers the deck's first five Company-Specific Questions (Q1–Q5), in order, wit
 
 ---
 
-## Slide Block B (29–38 min) — DELIVER AS-IS
+## Slide Block B (26–33 min) — DELIVER AS-IS
 
 Covers the deck's remaining two Company-Specific Questions (Q9–Q10) — the two most conceptually dense in the set.
 
@@ -169,13 +169,13 @@ Covers the deck's remaining two Company-Specific Questions (Q9–Q10) — the tw
 - **Beat 1 (Q9):** When a middle term is shared between two given products and the numbers are pairwise co-prime, that shared term *is* the HCF of the two products.
 - **Beat 2 (Q10):** Writing the two unknowns as HCF×a and HCF×b, with a and b forced co-prime, is the standard move whenever a question gives HCF *and* a sum but not the actual numbers.
 
-**Checkpoint (at 38 min)** — show hands:
+**Checkpoint (at 33 min)** — show hands:
 > *"In Q10, why must a and b be co-prime, and not just any pair of numbers that adds to 6?"*
 > **Answer:** Because if a and b shared a common factor, that factor would multiply with 29 to give a *larger* common factor of the two numbers — contradicting that 29 is their HCF.
 
 ---
 
-## ⚡ ALS Activity 2 — Fastest-Method Match (38–45 min)
+## ⚡ ALS Activity 2 — Fastest-Method Match (33–40 min)
 
 **ALS format:** Matching Exercise (methods to questions) — reuses today's own already-solved questions; no new problems introduced. Chosen as the closing activity because it tests whether students can identify *which* property applies before they start calculating — the EVALUATING-level skill this whole session builds toward.
 
@@ -207,6 +207,12 @@ Covers the deck's remaining two Company-Specific Questions (Q9–Q10) — the tw
 > *"The calculation was already done earlier in the session — this is about recognition, not re-solving."*
 
 **Cut rule:** If short on time, use only rows 1, 2, 4, and 5 — they span the four most distinct method families in the deck.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, use it for an instructor-led review of today's toughest problem — re-run Q10's "write both numbers as HCF×a, HCF×b, co-prime" move one more time — or fold the slot into Buffer and end early.
 
 ---
 

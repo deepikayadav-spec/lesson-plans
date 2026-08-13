@@ -1,12 +1,12 @@
 # Session 5 — Factors
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Factors (deep dive) — counting/summing/multiplying factors, then HCF-style applications · **Prerequisite** Session 4 (Multiples)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT Factors.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -58,7 +58,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Write this on the board, exactly as it appeared in Session 4:
 
@@ -82,7 +82,7 @@ Take a few shouted guesses. Reveal:
 
 ---
 
-## Slide Block A (10–20 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–17 min) — DELIVER SLIDES AS-IS
 
 Covers: Recap → Agenda ("Factors") → the core formula slide → worked examples (sum of factors of 240, product of factors of 60, number of factors of 1200, even-factor-count of 3-digit numbers, a remainder problem).
 
@@ -105,13 +105,13 @@ For N = aˣ × bʸ × cᶻ (prime factorization):
   - **Number of factors of 1200:** 1200 = 2⁴ × 3¹ × 5². Count = 5×2×3 = **30**.
 - **The 3-digit even-factor-count problem is the odd one out — hold it back as the checkpoint below.**
 
-**Checkpoint (at 20 min)** — 10 s silent think, cold-call:
+**Checkpoint (at 17 min)** — 10 s silent think, cold-call:
 > *"How many 3-digit numbers have an even number of factors? And in one sentence, why isn't the answer just 900?"*
 > **Answer:** 878. There are 900 three-digit numbers total (100–999). Only perfect squares have an *odd* number of factors — every other factor pairs up with a partner, while a perfect square's square-root factor pairs with itself. The 3-digit perfect squares run from 10² to 31², which is 22 numbers. 900 − 22 = 878.
 
 ---
 
-## ⚡ ALS Activity 1 — Individual Table Build → Cold-Call Check: Trace the Table (20–27 min)
+## ⚡ ALS Activity 1 — Individual Table Build → Cold-Call Check: Trace the Table (17–24 min)
 
 **ALS format:** Individual Table Build, then Cold-Call Check — students trace the prime-factorization-to-formula pipeline step by step, on paper, for the deck's own numbers, building a small table (prime, power, +1) each time, then reading the formula output straight off it. Chosen right after Slide Block A because the pipeline was just *shown* — this makes every student run it with their own hand, on numbers they haven't pre-memorised the answer to, before the session moves to a different problem family (HCF).
 
@@ -136,7 +136,7 @@ Have both numbers ready with a blank three-column table underneath: **Prime | Po
 
 ---
 
-## Slide Block B (27–37 min) — DELIVER SLIDES AS-IS
+## Slide Block B (24–32 min) — DELIVER SLIDES AS-IS
 
 Covers: perfect-square HCF problem → HCF-with-remainders (two variants) → HCF-and-co-prime-pairs → smallest number with a given divisor count → decimal HCF → HCF-and-co-prime-pairs (second instance) → longest-common-measure ("tape") problem.
 
@@ -154,15 +154,13 @@ Covers: perfect-square HCF problem → HCF-with-remainders (two variants) → HC
 - **The reverse-direction problem is today's formula run backward:** smallest number with 15 divisors. 15 = 5×3, so exponents are 4 and 2; assign the larger exponent to the smaller prime: 2⁴ × 3² = **144**. Say explicitly: *"This is literally this morning's formula, (x+1)(y+1), solved for x and y instead of for the answer."*
 - **The "longest tape" problem is a unit-conversion trap before it's an HCF problem:** 8m 25cm, 6m 75cm, 4m 50cm → convert everything to cm (825, 675, 450) → HCF = **75** (cm).
 
-**Quick trap-check beat (2 min):** put these two on screen — *"Product of two numbers is 6845, HCF is 37 — find the greater number"* (10 s silent, then reveal: ab=6845/37²=5 → only co-prime pair (1,5) → numbers 37, 185 → **185**, not 5), and *"GCD of 0.36, 0.48, 1.36"* (×100 → HCF(36,48,136)=4 → ÷100 → **0.04**, not 4). *"Both traps are the same trap — the formula gets you 90% there, then the question asks one more small step. Always re-read the question after you get a number."* (Compressed from a full activity to protect the schedule.)
-
-**Checkpoint (at 37 min)** — show hands:
+**Checkpoint (at 32 min)** — show hands:
 > *"144 has exactly 15 divisors. Using this morning's formula, why? Give me the two numbers that multiply to 15."*
 > **Answer:** 144 = 2⁴ × 3², so number of divisors = (4+1)(2+1) = 5 × 3 = 15.
 
 ---
 
-## ⚡ ALS Activity 2 — Rapid Fire Board Race: Pattern Recognition + Live Solve (37–45 min)
+## ⚡ ALS Activity 2 — Rapid Fire Board Race: Pattern Recognition + Live Solve (32–40 min)
 
 **ALS format:** Board Race — the instructor reads just the *phrasing* of a problem stem, no numbers yet, and the first team to correctly shout the technique it calls for scores a point; two of the stems are then solved live with real numbers. Chosen as the closing activity because it tests whether students caught the pattern (highest/greatest/longest → HCF, plus which remainder variant) at speed, before they leave the room — the fastest possible check across the whole session's vocabulary.
 
@@ -189,6 +187,12 @@ Write the five stems on cards or a slide, shuffled, phrasing only.
 > *"Five different sentences, one operation underneath every one of them. The words that gave it away: highest, greatest, longest. Say those three words in your head from now on and HCF, not LCM, should be the reflex."*
 
 **Cut rule:** Drop stems 1 and 5 from the race and go straight to live-solving 2 and 3 — those two carry the block's hardest distinction.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped trap-check pair here instead — "product 6845, HCF 37, find the greater number" and "GCD of 0.36, 0.48, 1.36" — or fold the slot into Buffer and end early.
 
 ---
 

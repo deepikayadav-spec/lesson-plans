@@ -1,14 +1,14 @@
 # Session 18 — Ratios
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Ratios · **Prerequisite** Session 17 (Compound Interest)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Ratios.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Write on the board: **"This class has 40 students."** Nothing else yet.
 
@@ -76,7 +76,7 @@ Say: *"That's it. That's the entire idea for today. Notice what I never told you
 
 ---
 
-## Slide Block A (10–21 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–18 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — the deck itself has no timing metadata; this block covers the definition slide plus the first two worked examples that follow it -->
 
@@ -88,15 +88,13 @@ Covers: the definition of a ratio → combining two ratios that share a term (`x
 - **Combining two ratios that share a term.** If `x:y = 2:3` and `y:z = 5:7`, you cannot just line them up — the `y` in each ratio is a different scale. Scale each ratio so the shared term (`y`) matches: `x:y` → `10:15`; `y:z` → `15:21`. Now `x:y:z = 10:15:21`.
 - **Direct division in a given ratio.** Two quantities in ratio `3:4`; if the first is Rs.810, one "part" is `810 ÷ 3 = 270`, so the second is `4 × 270 = 1080`. This single per-part move underlies almost every problem today.
 
-**Fractions and denominations beat (2 min, compressed from a full activity):** *"351 bananas split in ratio 1/2 : 1/3 : 1/4 — what's the first hidden step, before you touch the ratio?"* 10 s silent, reveal: LCM(2,3,4)=12 → ratio becomes 6:4:3 → first monkey = `351 × 6/13 = **162**`. *"Every ratio problem with fractions or mixed units has this one hidden step — get everything into the same kind of number first."* (Compressed to protect the schedule; the coin-denomination extension is available as an optional buffer closer.)
-
-**Checkpoint (at 21 min)** — 10 s silent think, cold-call:
+**Checkpoint (at 18 min)** — 10 s silent think, cold-call:
 > *"What's the actual trick for combining `x:y = 2:3` with `y:z = 5:7` into one ratio?"*
 > **Answer:** Scale each ratio so the shared term matches — `x:y:z = 10:15:21`.
 
 ---
 
-## Slide Block B (21–30 min) — DELIVER SLIDES AS-IS
+## Slide Block B (18–25 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — covers the remaining three worked examples in NIAT_Ratios.pptx that precede the deck's second "Quiz Time" marker -->
 
@@ -108,13 +106,13 @@ Covers: a three-way partnership split defined by fractions of the others' sum �
 - **Equal-quotient division.** "Half of the first part = one-third of the second = one-fifth of the third," total Rs.1,800. Set that common value to `k`: first `= 2k`, second `= 3k`, third `= 5k`. Sum `= 10k = 1800 → k = 180`. First part `= Rs.360`.
 - **Adjusting a mixture.** Water:milk `= 7:3` in 30 L → water `= 21` L, milk `= 9` L fixed. To reach water:milk `= 6:1`, milk stays at 9 L, so water must become `6 × 9 = 54` L. Water to add `= 33` L.
 
-**Checkpoint (at 30 min)** — show hands:
+**Checkpoint (at 25 min)** — show hands:
 > *"Water:milk is 7:3 in a 30-litre mixture. How many litres of water is that right now, and how many litres do we add to make it 6:1?"*
 > **Answer:** 21 L present now; add 33 L to reach 6:1.
 
 ---
 
-## ⚡ ALS Activity 1 — Trace the Table: Three Containers (30–38 min)
+## ⚡ ALS Activity 1 — Trace the Table: Three Containers (25–33 min)
 
 **ALS format:** Guided Table Build — a harder mixture problem, solved by building a table on the board, one row per container, filled in by different students. Chosen right after Slide Block B because this is the deck's hardest problem and the one place students will try to shortcut by adding the three ratios directly — the table forces the correct order: convert each container to actual quantities first, *then* combine.
 
@@ -152,7 +150,7 @@ Draw an empty table: **Container | Capacity | Milk:Water | Milk amount | Water a
 
 ---
 
-## ⚡ ALS Activity 2 — Fill the Blank Live: The Ages Problem (38–45 min)
+## ⚡ ALS Activity 2 — Fill the Blank Live: The Ages Problem (33–40 min)
 
 **ALS format:** Cold-Call Fill-the-Blank — a skeleton equation on the board with blanks, filled one at a time, in sequence. Chosen as the closing activity because this is the one genuine "ratio changes over time" problem in the set — a distinct skill from splitting a fixed total — and closes the session on algebra, not arithmetic.
 
@@ -189,6 +187,12 @@ Sai Kiran's present age = 4x = ___
 > *"Same ratio skeleton you've used all session, just moving through time now instead of splitting a fixed total."*
 
 **Cut rule:** If short on time, skip the first two blanks and start directly from "Three years later" — the graded skill is the cross-multiply and solve, not the initial `5x/4x` setup.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped fractions-ratio drill here instead — "351 bananas split in ratio 1/2 : 1/3 : 1/4, what's the hidden first step?" — or fold the slot into Buffer and end early.
 
 ---
 

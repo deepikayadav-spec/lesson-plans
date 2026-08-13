@@ -1,14 +1,14 @@
 # Session 17 — Compound Interest
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Compound Interest — Terms and Formulas, Types of CI, Relation between SI & CI, Pascal's Triangle · **Prerequisite** Session 16 (Simple Interest)
-**Session type** Concept lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Concept lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Compound interest.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Put this on the board, nothing else:
 
@@ -90,7 +90,7 @@ Tie back to **Q4** of the poll: *"Some of you flagged 'compounding' as a way to 
 
 ---
 
-## Slide Block A (10–20 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–17 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — the deck's Terms and Formulas slide names P, R, T and labels "CI = Compound Interest" but the actual equation appears to render as a graphic/equation object. Confirm the on-slide rendering matches before class. -->
 
@@ -103,13 +103,13 @@ Covers: Terms and Formulas → Types of CI (Compounded Per Annum, Compounded Sem
 - **Types of CI — C.P.A, C.S.A, C.Q.** Same nominal annual rate, different compounding frequency. State the deck's own ranking: **C.Q > C.S.A > C.P.A.**
 - Don't over-derive *why* C.Q wins yet — ALS Activity 1's problem 4 will make it concrete with numbers.
 
-**Checkpoint (at 20 min)** — 10 s silent think, cold-call:
+**Checkpoint (at 17 min)** — 10 s silent think, cold-call:
 > *"For the same nominal annual rate, which compounding frequency gives the most interest?"*
 > **Answer:** Compounded Quarterly (C.Q). C.Q > C.S.A > C.P.A.
 
 ---
 
-## ⚡ ALS Activity 1 — Rapid Fire Board Race (20–27 min)
+## ⚡ ALS Activity 1 — Rapid Fire Board Race (17–24 min)
 
 **ALS format:** Board Race — four real worked problems, split across the room, teams race to post a full solution not just a final number. Chosen as the first activity because students have just seen the formula once, on a slide, and this is the first time they apply it with their own hands, under mild time pressure, before the material goes stale.
 
@@ -147,7 +147,7 @@ Covers: Terms and Formulas → Types of CI (Compounded Per Annum, Compounded Sem
 
 ---
 
-## Slide Block B (27–38 min) — DELIVER SLIDES AS-IS
+## Slide Block B (24–33 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred from deck order — Relation between SI & CI slide is immediately followed by the Pascal's Triangle slide, both reuse the identical example (P = 1000, R = 10% p.a.), confirming they are meant to be taught back-to-back. -->
 
@@ -159,15 +159,13 @@ Covers: Relation between SI & CI (the year-by-year P = 1000, R = 10% p.a. table)
 - **Pascal's Triangle is not a separate topic — it's a shortcut for the same exponent.** `(1 + R/100)^T` expands using the binomial coefficients in row T of Pascal's Triangle (1; 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1; 1 5 10 10 5 1).
 - **Prove it with the number they already trust.** Row "1 3 3 1" (T=3): `(1.1)³ = 1 + 0.3 + 0.03 + 0.001 = 1.331`. × 1000 → 1331 — exactly the Hook's total CI amount.
 
-**Verify-it-yourself beat (2 min, compressed from a full activity):** *"Row 1-4-6-4-1 is T=4. Compute Year 4's amount from the triangle, and check it against 1331 × 1.10 directly."* `(1.1)^4 = 1+0.4+0.06+0.004+0.0001 = 1.4641` → **1464.1**, matching 1331×1.10=1464.1. *"Row index equals the exponent — that's the whole rule."* (Compressed to protect the schedule; full extension available as an optional buffer closer.)
-
-**Checkpoint (at 38 min)** — show hands:
+**Checkpoint (at 33 min)** — show hands:
 > *"In the Compound Interest amount for Year 1, is the interest the same as Simple Interest, or different?"*
 > **Answer:** The same — Rs. 100 either way. They diverge starting Year 2.
 
 ---
 
-## ⚡ ALS Activity 2 — Think-Pair-Share: Quiz Time (38–45 min)
+## ⚡ ALS Activity 2 — Think-Pair-Share: Quiz Time (33–40 min)
 
 **ALS format:** Jigsaw Think-Pair-Share — four real "Quiz Time" problems, one per pair, each pair thinks alone, discusses, then shares with the room. Chosen as the closing activity because these four problems are harder and more varied than ALS Activity 1's — a fractional-time CI problem, a CI−SI difference problem, a cross-formula problem, and an equal-installments loan problem — running all four as one group would rush the harder logic.
 
@@ -202,6 +200,12 @@ Covers: Relation between SI & CI (the year-by-year P = 1000, R = 10% p.a. table)
 > *"Problems 2 and 3 are solved by rereading exactly what changed between the CI part and the SI part — that's the skill, not formula recall."*
 
 **Cut rule:** Problems 1 and 4 only if short on time — a fractional-time CI problem and the installments problem are the formats students are least likely to have met before.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped Pascal's-Triangle verify beat here instead — compute Year 4's amount from row 1-4-6-4-1 and check it against 1331 × 1.10 — or fold the slot into Buffer and end early.
 
 ---
 

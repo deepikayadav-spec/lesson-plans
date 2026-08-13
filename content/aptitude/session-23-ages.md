@@ -1,14 +1,14 @@
 # Session 23 — Problems on Ages
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Problems on Ages · **Prerequisite** Session 22 — Partnerships
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist for this course yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist for this course yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Ages.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–11 min)
+## Hook (7–10 min)
 
 Say nothing yet — write this on the board:
 
@@ -83,7 +83,7 @@ Close the hook:
 
 ---
 
-## Slide Block A (11–20 min) — DELIVER SLIDES AS-IS
+## Slide Block A (10–17 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — the deck has no explicit section headers; block boundaries are inferred from the deck's own two "Quiz Time" slides, which naturally split the content into two halves -->
 
@@ -99,15 +99,13 @@ Covers: *Ages* title slide → **P1** (father 3x-more-than son Ronit) → **P2**
 - **P2:** *"The sum of ages of 5 children born at intervals of 3 years each is 50. What is the age of the youngest child?"* `x + (x+3) + (x+6) + (x+9) + (x+12) = 50` → **x = 4**.
 - **P4:** *"The sum of the present ages of a father and his son is 60. Six years ago, father's age was five times the son's. After 6 years, son's age will be?"* `f+s=60`, `f−6=5(s−6)`. Solving: s=14. After 6 years: **20**.
 
-**Quick equation-check beat (2 min, compressed from a full activity):** *"P1's equation — was it 3x+8=2.5(x+8) or 4x+8=2.5(x+8)? Which, and why?"* 10 s silent, reveal: **4x** — "three times more than" adds three times his age *on top of* his own. *"Same trap, every phrasing variant of it — say it back to yourself before writing any equation today."*
-
-**Checkpoint (at 20 min)** — cold-call one student:
+**Checkpoint (at 17 min)** — cold-call one student:
 > *"For P4 — write me the second equation, the one from 'six years ago.' Don't solve it, just write it."*
 > **Answer:** `f − 6 = 5(s − 6)`. (If a student writes `f = 5(s−6)−6` or `f−6=5s−6`, that's the sign/distribution trap ALS Activity 2 is built around — flag it now, resolve it later.)
 
 ---
 
-## Slide Block B (20–30 min) — DELIVER SLIDES AS-IS
+## Slide Block B (17–25 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — second half of the deck, bounded by the deck's second "Quiz Time" slide -->
 
@@ -123,13 +121,13 @@ Covers: **P5** (person is 2/5 of mother's age) → **P6** (Sam, Rita, father rat
 - **P7:** *"The average age of boys in a class of 30 is 15 years. If 10 more boys join, the average of the whole class reduces by a year. What is the average age of the newcomers?"* Original total = 30×15=450. New average=14, new count=40 → new total=560. Newcomers' total = 110. Newcomers' average = **11**.
 - *"This is the same weighted-average logic from Mixtures & Alligations — you never average two averages directly. You go back to totals every time."*
 
-**Checkpoint (at 30 min)** — show hands:
+**Checkpoint (at 25 min)** — show hands:
 > *"For P7 — can I just average 15 and the newcomers' average directly to get the class's new average? Yes or no, and why?"*
 > **Answer:** No — the two groups are different sizes, so a simple average of averages is wrong. Work with total sums.
 
 ---
 
-## ⚡ ALS Activity 1 — Trace the Table (30–37 min)
+## ⚡ ALS Activity 1 — Trace the Table (25–32 min)
 
 **ALS format:** Guided Table Build — built from P6 (Sam, Rita, father). Chosen right after Slide Block B because three-person ratio problems are exactly where students skip the anchor variable and try to juggle two fractions in their head at once — a table forces the anchor.
 
@@ -161,7 +159,7 @@ Final ratio: **2 : 3 : 8**.
 
 ---
 
-## ⚡ ALS Activity 2 — Spot the Bug (37–45 min)
+## ⚡ ALS Activity 2 — Spot the Bug (32–40 min)
 
 **ALS format:** Silent Diagnose, Named Reveal — built from P4's "six years ago" condition, plus a Predict round on P5 as the closer. Chosen as the closing activity because this is the exact misconception flagged for this session: setting up "X years ago" with the wrong sign or without distributing it to both people. P4 was solved correctly in Slide Block A, but students rarely notice *why* their own first attempt tends to go wrong — showing competing wrong setups side-by-side against the correct one makes the trap visible.
 
@@ -194,6 +192,12 @@ Then run a Predict round on **P5** (*"present age is two-fifths of mother's; aft
 **Common instructor mistake:** explaining (c)'s distribution error using only algebra vocabulary — students who are shaky on algebra need the sentence, not the jargon, to catch it.
 
 **Cut rule:** Drop the Predict round on P5 and go straight to the exit ticket — the sign-trap diagnosis (a)/(b)/(c) is the non-negotiable part.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped equation-check drill here instead — "P1's equation: 3x+8=2.5(x+8) or 4x+8=2.5(x+8)? Which, and why?" — or fold the slot into Buffer and end early.
 
 ---
 

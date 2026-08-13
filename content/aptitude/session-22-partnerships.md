@@ -1,14 +1,14 @@
 # Session 22 — Partnerships
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Partnerships (profit-sharing ratios based on capital and time invested) · **Prerequisite** Session 21 — Mixtures and Alligations (builds on the Ratios and Proportions concept)
-**Session type** Concept lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no dedicated quiz block for that reason (see the Quiz Time walkthrough below, which substitutes the deck's own MCQs). · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Concept lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason (see the Quiz Time walkthrough below for the deck's own MCQs, and the reserved Classroom Quiz block at the end for the future platform slot). · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Partnerships.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Say this, writing the numbers on the board as you go:
 
@@ -72,7 +72,7 @@ Let hands go up. Take one "yes" and one "no" reason out loud.
 
 ---
 
-## Slide Block A (10–18 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–15 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — the deck's slide-by-slide timing isn't tagged in the text extraction; boundary chosen so Block A ends on the capital×time concept before students practise it themselves -->
 
@@ -87,13 +87,13 @@ Covers: Partnerships title/agenda slide → Example 1 (two partners, equal time)
   - B's share = `1,20,000 × 15,00,000/36,00,000 = `**Rs.50,000.**
   - *"Profit share depends on capital **and** time invested — not capital alone."*
 
-**Checkpoint + Quick Split (at 18 min, ~2 min)** — 10 s silent think, cold-call for the checkpoint, then a compressed fresh-numbers check (folded in here to protect the schedule):
-> *Checkpoint:* *"A friend says: 'B put in double A's capital at some point, so B should always get double A's share.' True here?"* Answer: No — B's effective capital×time (15,00,000) isn't double A's (12,00,000), so the share isn't double either.
-> *Quick split:* *"Three partners A, B, C invest Rs.2,100, Rs.2,400, Rs.2,700. Annual profit Rs.2,520. A's share?"* 10 s silent, reveal: ratio 7:8:9, unit=105, A=**Rs.735**.
+**Checkpoint (at 15 min)** — 10 s silent think, cold-call:
+> *"A friend says: 'B put in double A's capital at some point, so B should always get double A's share.' True here?"*
+> **Answer:** No — B's effective capital×time (15,00,000) isn't double A's (12,00,000), so the share isn't double either.
 
 ---
 
-## Quiz Time Walkthrough (18–25 min) — deck's own MCQs, live vote-then-reveal
+## Quiz Time Walkthrough (15–22 min) — deck's own MCQs, live vote-then-reveal
 
 > **Classroom Quiz: not yet available.** This block substitutes a live walkthrough of the deck's own "Quiz Time" MCQs — cold-call, poll for A/B/C/D, then reveal and explain. Not a platform bank, but the closest grounded substitute.
 
@@ -114,7 +114,7 @@ Covers: Partnerships title/agenda slide → Example 1 (two partners, equal time)
 
 ---
 
-## Slide Block B (25–33 min) — DELIVER SLIDES AS-IS
+## Slide Block B (22–28 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — this is the last substantive teaching slide before the deck's closing "Quiz Time" divider, feedback, and thank-you slides -->
 
@@ -127,13 +127,13 @@ Covers: the reverse problem — given the **profit ratio** and each partner's **
   - A: 20 · B: 49 · C: 64 → **Investment ratio = 20:49:64.**
 - **Verify it live:** multiply back — 20×14=280, 49×8=392, 64×7=448 — divide through by 56, land back on 5:7:8. *"That check is what tells you the answer is right — always run it if you have the time."*
 
-**Checkpoint (at 33 min)** — show hands:
+**Checkpoint (at 28 min)** — show hands:
 > *"If I'd multiplied the profit ratio by the time instead of dividing, would I get a bigger or smaller number for A compared to 20?"*
 > **Answer:** Bigger — multiplying instead of dividing by the time ratio inflates every term.
 
 ---
 
-## ⚡ ALS Activity 1 — Spot the Bug (33–39 min)
+## ⚡ ALS Activity 1 — Spot the Bug (28–34 min)
 
 **ALS format:** Silent Diagnose, Named Reveal — a worked solution with a deliberate, realistic error goes on the board, and students must find *what's wrong with the method*, not just disagree with the number. Chosen because this is the session's single most important misconception, and the deck itself flags it directly.
 
@@ -161,7 +161,7 @@ Covers: the reverse problem — given the **profit ratio** and each partner's **
 
 ---
 
-## ⚡ ALS Activity 2 — Trace the Table (39–46 min)
+## ⚡ ALS Activity 2 — Trace the Table (34–41 min)
 
 **ALS format:** Guided Table Build — the class rebuilds, row by row on the board, the profit→investment reverse-calculation from Slide Block B, but this time *they* call out each cell. Chosen as the closing activity because Slide Block B was delivered as a worked example — this is the only chance to run the reverse-ratio method with their own hands.
 
@@ -189,6 +189,12 @@ Draw an empty table: Partner | Profit ratio | Time (months) | Profit ÷ Time | �
 > *"Rotate who calls out each row — the whole room stays accountable, not just one confident voice."*
 
 **Cut rule:** Do only the Profit ÷ Time column live and state the final ×56 ratio yourself.
+
+---
+
+## Classroom Quiz (41–46 min) · Reserved — not yet available
+
+No platform quiz bank exists yet for this Aptitude course (see Resources table) — the Quiz Time Walkthrough earlier in this session substitutes the deck's own MCQs, but this slot is the platform-quiz analogue and is reserved separately, at the end of the session, so the plan doesn't need restructuring once a real bank is added. Until then, use it for an instructor-led review of today's toughest problem — re-run the reverse profit→investment table one more time, cold-calling a different student for each cell — or fold the slot into Buffer and end early.
 
 ---
 

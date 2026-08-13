@@ -1,14 +1,14 @@
 # Session 7 — Remainder Cycles
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Remainder Cycles · **Prerequisite** Session 6 (Power Cycles)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities (this session already had exactly 2 — see Instructor Notes)
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities (this session already had exactly 2 — see Instructor Notes)
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT Remainder Cycles.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–11 min)
+## Hook (7–10 min)
 
 The deck's own opening two slides are the bridge — use them exactly:
 
@@ -80,7 +80,7 @@ Say: *"Same exact idea as Power Cycles — the remainders of a growing power rep
 
 ---
 
-## Slide Block A (11–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (10–16 min) — DELIVER SLIDES AS-IS
 
 Covers: basic remainder → the prime-and-6 property → remainder of a product.
 
@@ -90,13 +90,13 @@ Covers: basic remainder → the prime-and-6 property → remainder of a product.
 - **Slide: "Find the remainder when a prime number greater than 3 is divided by 6?"** Answer: **5, 1**. The deck's own side question — *"What is a Prime number?"* — is your cue to get a quick definition from the class first. Then show why: a prime greater than 3 can't be divisible by 2 or by 3, and the only remainders mod 6 that avoid both are 1 and 5.
 - **Slide: "Find the remainder when (13 × 15) is divided by 7?"** Options A) 6 B) 1 C) 5 D) 0 → Answer **A) 6**. This is the pivot slide. Don't just confirm 13 × 15 = 195 and 195 ÷ 7 = 6 remainder. Show the shortcut: 13 mod 7 = 6, 15 mod 7 = 1, and 6 × 1 mod 7 = 6 — same answer, without ever forming 195. Say explicitly: *"A power is nothing but repeated multiplication. If this shortcut works for one multiplication, it works for a hundred of them in a row — that's the entire idea behind today's cycles."*
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call:
 > *"Using the shortcut, not long multiplication — what's the remainder when (13 × 15) is divided by 7, and why does taking the remainders first even work?"*
 > **Answer:** 6. Because the remainder of a product equals the product of the remainders, taken mod the divisor.
 
 ---
 
-## ⚡ ALS Activity 1 — Predict the Remainder (19–27 min)
+## ⚡ ALS Activity 1 — Predict the Remainder (16–24 min)
 
 **ALS format:** Predict, then Verify — two real problems run as guided discovery instead of straight lecture, because this is the session's central new idea. First problem has a small enough exponent that students can out-compute the shortcut, which builds trust in the method. Second problem has an exponent large enough that direct computation is impossible — forcing them to actually use the cycle.
 
@@ -125,7 +125,7 @@ Covers: basic remainder → the prime-and-6 property → remainder of a product.
 
 ---
 
-## Slide Block B (27–36 min) — DELIVER SLIDES AS-IS
+## Slide Block B (24–31 min) — DELIVER SLIDES AS-IS
 
 Covers: the deck's "Quiz Time" problem set — two remainder-cycle problems with different cycle lengths under the *same* divisor.
 
@@ -140,13 +140,13 @@ Say, bridging in: *"The deck calls this next stretch Quiz Time — we're going t
   <!-- placement: inferred — reconstructed as 13^856. 13 mod 7 = 6. Remainder cycle of 6 mod 7: {6,1}, length 2. 856 mod 2 = 0 → 2nd (last) position → remainder 1. Matches the deck's stated answer B) 1. Verify against the real slide. -->
   Same divisor as the slide above (7), but a length-2 cycle instead of length-6 — deliberately placed back to back. The variable is the base's *own* remainder (13 mod 7 = 6), not the divisor.
 
-**Checkpoint (at 36 min)** — cold-call:
+**Checkpoint (at 31 min)** — cold-call:
 > *"5¹⁸⁷ ÷ 7 needed a length-6 cycle. 13⁸⁵⁶ ÷ 7 needed only length 2. Same divisor — why the different length?"*
 > **Answer:** Cycle length is determined by the base's remainder mod the divisor, not the divisor alone.
 
 ---
 
-## ⚡ ALS Activity 2 — Shortcut or Cycle? (36–44 min)
+## ⚡ ALS Activity 2 — Shortcut or Cycle? (31–39 min)
 
 **ALS format:** Board Race with a Method-Naming Requirement — two teams race to answer the same two deck problems, but the real task is naming *which* method applies before computing anything: full remainder cycle, or an instant shortcut. Chosen as the closing activity because left untaught, students default to building a cycle every time — slow and error-prone under aptitude-test time pressure — even when the base already tells you the answer directly.
 
@@ -172,6 +172,12 @@ Say, bridging in: *"The deck calls this next stretch Quiz Time — we're going t
 > *"Both of these would have worked with a full cycle too — but you'd have burned two minutes proving what one divisibility check told you in five seconds. Before you build a cycle, always check: is the base already 0 or 1 mod the divisor? If yes, you're done before you started."*
 
 **Cut rule:** If short on time, run Problem B only — the same-number-as-its-own-exponent trick is the more memorable takeaway.
+
+---
+
+## Classroom Quiz (39–44 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, use it for an instructor-led review of today's toughest problem — re-run "is the base already 0 or 1 mod the divisor" on one more example before any cycle-building starts — or fold the slot into Buffer and end early.
 
 ---
 

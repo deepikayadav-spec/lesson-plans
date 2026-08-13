@@ -1,14 +1,14 @@
 # Session 13 — Profit & Loss: Terms and Relations, Representation
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Profit & Loss — Terms and Relations, Representation · **Prerequisite** Session 12 (Percentages 2 — Important Question Types)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Profit and loss.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Write on the board, nothing else:
 
@@ -80,7 +80,7 @@ Tie back to the warm-up: *"You just spent five minutes turning percentages of to
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–16 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — extracted deck groups these on one slide ("Terms and Relation"); confirm the live deck's exact slide split before class -->
 Covers: Cost Price (C.P), Selling Price (S.P), Marked Price (M.P), Profit (P), Loss (L), Discount (D), Profit Percentage (P%), Loss Percentage (L%), Discount Percentage (D%), and the relations between them.
@@ -92,13 +92,13 @@ Covers: Cost Price (C.P), Selling Price (S.P), Marked Price (M.P), Profit (P), L
 - **The relation that decides today's misconception:** `Profit% = (Profit / CP) × 100` and `Loss% = (Loss / CP) × 100`. Say it twice, slowly: *"Always Cost Price on the bottom. Never Selling Price."*
 - Discount (D) and Discount% (D%) are named here but **no worked example in this deck exercises Discount.** State the standard relation (`D = MP − SP`, `D% = D/MP × 100`) briefly and move on.
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call two students:
 > *"If Profit = SP − CP, what do you divide by to get Profit% — CP or SP?"*
 > **Answer:** CP. This is deliberately not SP — hold that thought, it comes back hard in ALS Activity 2.
 
 ---
 
-## ⚡ ALS Activity 1 — Predict-Then-Solve (19–26 min)
+## ⚡ ALS Activity 1 — Predict-Then-Solve (16–23 min)
 
 **ALS format:** Predict-Then-Solve — students commit out loud to a prediction (profit, loss, or no change) *before* any arithmetic happens, then the class solves the real numbers together. Chosen as the first activity because this deck's centerpiece problem is built specifically to break the instinct that "10% profit and 10% loss on equal-priced sales cancel out" — predicting first, then solving, makes the surprise land as a lesson instead of a correction.
 
@@ -134,7 +134,7 @@ Take the show of hands. Expect a strong showing for "no gain no loss" — that's
 
 ---
 
-## Slide Block B (26–35 min) — DELIVER SLIDES AS-IS
+## Slide Block B (23–30 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — extracted deck presents this as one "Representation (In short format)" slide; confirm slide boundaries against the live deck -->
 Covers: the short-format representation of profit/loss as a single multiplier on CP.
@@ -157,13 +157,13 @@ Covers: the short-format representation of profit/loss as a single multiplier on
 
 - Name the pattern out loud: *"Profit adds to 1. Loss subtracts from 1. That's it — that's the entire representation."*
 
-**Checkpoint (at 35 min)** — show hands:
+**Checkpoint (at 30 min)** — show hands:
 > *"Convert 30% Loss into the `SP = ___ CP` form."*
 > **Answer:** `SP = 0.7 CP`.
 
 ---
 
-## ⚡ ALS Activity 2 — Trace the Table (35–44 min)
+## ⚡ ALS Activity 2 — Trace the Table (30–39 min)
 
 **ALS format:** Predict-First + Guided Table Build — a centerpiece problem solved by prediction-first, then a problem built entirely by tracing values through a table on the board. Chosen as the closing activity because this is where the CP-vs-SP misconception from Slide Block A gets tested directly, and where students meet a profit/loss problem that requires weighting by quantity rather than averaging percentages — the exact bridge skill flagged in the Warm-Up Poll.
 
@@ -203,6 +203,12 @@ Gain = 460 − 400 = 60. Gain% = `60 / 400 × 100` = **15%**.
 > *"Both problems today had the same shape as Warm-Up Q5 — a percentage sitting on the wrong base, or an average that should have been weighted."*
 
 **Cut rule:** If short on time, run the table problem only — it's the harder and more distinct of the two.
+
+---
+
+## Classroom Quiz (39–44 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, use it for an instructor-led review of today's toughest problem — re-run "profit on SP is 20%, what's the actual profit% on CP" one more time — or fold the slot into Buffer and end early.
 
 ---
 

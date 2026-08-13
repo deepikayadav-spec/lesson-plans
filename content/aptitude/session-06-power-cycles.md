@@ -1,7 +1,7 @@
 # Session 6 — Power Cycles
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Power Cycles (unit-digit patterns of powers) · **Prerequisite** Session 5 (Factors)
-**Session type** Concept lecture. No classroom quiz bank, MCQ/coding-practice pool, or platform unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Concept lecture. No classroom quiz bank, MCQ/coding-practice pool, or platform unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 > **Sequencing flag (read before you teach this):** this deck's own "Recap" slide cites only *Number Systems* — unlike every other deck in this course, which cumulatively recaps everything covered so far. Power Cycles has been placed at position 6, immediately after Factors, by instructor judgment — see Instructor Notes for the full reasoning and the alternative sequencing option.
 
@@ -10,7 +10,7 @@
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT Power Cycles.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -62,7 +62,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Put this on the projector, exactly as the deck's own opening slide poses it, and say nothing else first:
 
@@ -79,7 +79,7 @@ Let a few guesses land (they'll be scattered and mostly wrong — that's fine, d
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–18 min) — DELIVER SLIDES AS-IS
 
 Covers: the power-cycle concept (blank cycle table → filled cycle table) and the first two applied questions.
 
@@ -94,13 +94,13 @@ Covers: the power-cycle concept (blank cycle table → filled cycle table) and t
   - `232^329` → last digit of base is 2, cycle `{2,4,8,6}`, `329 mod 4 = 1` → 1st entry → **2**.
   - `234^329` → last digit of base is 4, cycle `{4,6}`, `329` is odd → 1st entry → **4**.
 
-**Checkpoint (at 19 min)** — return to the Hook:
+**Checkpoint (at 18 min)** — return to the Hook:
 > *"Back to `256489^248647662`. Last digit of the base?"* (9) *"Cycle for 9?"* (`{9,1}`) *"Is the exponent odd or even?"* (even) *"So?"*
 > **Answer: 1 — option B.** Reveal it and let the earlier guesses stand or fall.
 
 ---
 
-## ⚡ ALS Activity 1 — Rapid Fire Board Race (19–26 min)
+## ⚡ ALS Activity 1 — Rapid Fire Board Race (18–25 min)
 
 **ALS format:** Board Race — two teams race to solve the same problem on the board, showing their remainder step and cycle-lookup step, first team to the correct final digit with both steps visible wins the round. Chosen right after Slide Block A because this is the first time students run the method start to finish themselves, with a small amount of competitive pressure, on the two problems the deck itself flags as the immediate next step.
 
@@ -129,7 +129,7 @@ Covers: the power-cycle concept (blank cycle table → filled cycle table) and t
 
 ---
 
-## Slide Block B (26–38 min) — DELIVER SLIDES AS-IS
+## Slide Block B (25–33 min) — DELIVER SLIDES AS-IS
 
 Covers: the two harder patterns the deck introduces after "Quiz Time" — a **sum** of two power terms, a **nested (tower) power**, and trailing zeros.
 
@@ -140,13 +140,13 @@ Covers: the two harder patterns the deck introduces after "Quiz Time" — a **su
 - Flag explicitly: *"Two different combining rules today — sum of powers: reduce then add. Nested power: multiply the exponents first, then reduce once."*
 - **Beat 3 — trailing zeros, a separate sub-skill (not unit-digit cycles).** *"Find the number of zeros in `57 × 45 × 30 × 12`?"* Trailing zeros come from *pairs* of 2s and 5s, not from any digit that "looks like a zero." Factors of 5 available: `45` contributes one, `30` contributes one → 2 fives. Factors of 2: `30` contributes one, `12` contributes two → 3 twos. Zeros = `min(2,3)` = **2**.
 
-**Checkpoint (at 38 min)** — cold-call:
+**Checkpoint (at 33 min)** — cold-call:
 > *"Tell me the one move that makes a nested power like `(a^b)^c` solvable in one step."*
 > **Answer:** Multiply the exponents — `(a^b)^c = a^(b×c)` — then apply the cycle to that single combined exponent.
 
 ---
 
-## ⚡ ALS Activity 2 — Predict the Output (38–45 min)
+## ⚡ ALS Activity 2 — Predict the Output (33–40 min)
 
 **ALS format:** Staged Prediction — one problem revealed in three stages, students committing out loud before each reveal. Chosen as the closing activity because a *product* of two power terms looks identical to Slide Block B's sum on the surface, and mixing up "add the reduced digits" with "multiply the reduced digits" is the exact next mistake waiting to happen — this catches it in the room instead of on a test.
 
@@ -178,6 +178,12 @@ Combine by **multiplying**, not adding: `4 × 3 = 12` → last digit **2**. **An
 > *"Sum, product, or tower — three different combining rules, and the operator symbol in the original question tells you which one every time."*
 
 **Cut rule:** If running short, skip the three-stage reveal and just do one combined prediction, then the full board working.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, use it for an instructor-led review of today's toughest problem — re-run the nested-power collapse `(888^644)^596` one more time, cold-calling a different student for each step — or fold the slot into Buffer and end early.
 
 ---
 

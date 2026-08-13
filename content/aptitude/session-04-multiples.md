@@ -1,12 +1,12 @@
 # Session 4 — Multiples
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Multiples (deep dive) · **Prerequisite** Session 3 — Basics and Properties
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT Multiples.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -58,7 +58,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–11 min)
+## Hook (7–10 min)
 
 Write on the board, nothing else:
 
@@ -76,7 +76,7 @@ Tell them: *"By the time we reach the bells problem for real, it'll take you twe
 
 ---
 
-## Slide Block A (11–21 min) — DELIVER SLIDES AS-IS
+## Slide Block A (10–18 min) — DELIVER SLIDES AS-IS
 
 Covers: Multiples definition → three worked "least number satisfying a remainder condition" problems.
 
@@ -86,13 +86,13 @@ Covers: Multiples definition → three worked "least number satisfying a remaind
 - **The second problem is a ready-made live poll.** The deck presents it as an MCQ (A) 128 (B) 518 (C) 538 (D) 48 — run a show-of-hands vote before revealing the answer instead of just solving it at the board.
 - **The third problem runs the template backwards.** "Least number to add" is the same LCM template, just read as "find the next multiple of the LCM above this number, then subtract."
 
-**Checkpoint + Quick Race (at 21 min, ~2 min)** — 10 s silent think, cold-call for the checkpoint, then a compressed drill (folded in here to protect the schedule):
+**Checkpoint + Quick Race (at 18 min, ~2 min)** — 10 s silent think, cold-call for the checkpoint, then a compressed drill (folded in here to protect the schedule):
 > *Checkpoint:* *"The least number which should be added to 2502 so that the sum is exactly divisible by 5, 6, 7 and 8 — what is it, and what's the first thing you compute?"* Answer: 18. First compute LCM(5,6,7,8) = 840; the next multiple of 840 above 2502 is 2520; 2520 − 2502 = 18.
 > *Quick race:* *"A number when divided by 3, 5 and 11 gives a remainder of 2. Least 3-digit number satisfying this — go, on paper, 30 seconds."* Answer: **167** (LCM(3,5,11)=165; 165×1+2=167).
 
 ---
 
-## ⚡ ALS Activity 1 — Silent Diagnose, Named Reveal: Spot the Bug (21–28 min)
+## ⚡ ALS Activity 1 — Silent Diagnose, Named Reveal: Spot the Bug (18–25 min)
 
 **ALS format:** Silent Individual Diagnose, then Named Reveal — two flawed "solutions" are shown, each stopping one step short of correct, both realistic shortcuts a student takes under time pressure. Students diagnose alone before any answer is taken. Chosen right after Slide Block A because both problems have a second condition that's easy to forget the moment the first LCM is found — this puts the exact failure mode in front of the class before it happens on their own paper.
 
@@ -121,7 +121,7 @@ Covers: Multiples definition → three worked "least number satisfying a remaind
 
 ---
 
-## Slide Block B (28–37 min) — DELIVER SLIDES AS-IS
+## Slide Block B (25–32 min) — DELIVER SLIDES AS-IS
 
 Covers: the deck's own "Quiz Time" problem set — a mixed remainder-and-divisibility problem, a least-perfect-square problem, the bells (LCM real-world) problem, and the highest-power-in-a-factorial problem.
 
@@ -134,13 +134,13 @@ Covers: the deck's own "Quiz Time" problem set — a mixed remainder-and-divisib
 - **Pay off the Hook here.** When you reach the bells problem, say: *"Here they are — the bells from the start of class."* LCM(120,240,300) = 1200 seconds = 20 minutes.
 - **Problem 4 needs a prime split first.** n! = 1×2×3×...×n. 12 isn't prime, so break it into 2²×3, find the highest power of 2 in 100! and the highest power of 3 in 100! separately, then combine.
 
-**Checkpoint (at 37 min)** — cold-call:
+**Checkpoint (at 32 min)** — cold-call:
 > *"Bells ring every 120, 240 and 300 seconds. After how many minutes do all three ring together, and what's the one number you had to compute to get there?"*
 > **Answer:** 20 minutes. The number needed is LCM(120, 240, 300) = 1200 seconds.
 
 ---
 
-## ⚡ ALS Activity 2 — Round-Robin Table Build: Trace the Table (37–46 min)
+## ⚡ ALS Activity 2 — Round-Robin Table Build: Trace the Table (32–41 min)
 
 **ALS format:** Round-Robin Table Build — the class builds, row by row, the two power-tables needed to find the highest power of 12 in 100!, one student per row, nobody skipping ahead to the final answer. **This is the newest and hardest technique in the session** — splitting a composite number into primes before hunting for its power in a factorial — and it only sticks if the class builds the table themselves rather than watching it filled in.
 
@@ -186,6 +186,12 @@ Running total: 33+11+3+1 = **48** — the highest power of 3 in 100!.
 **Common instructor mistake:** filling in the tables yourself "to save time." The row-by-row cold call is the entire mechanism that makes this technique stick.
 
 **Cut rule:** build the powers-of-2 table together; state the powers-of-3 total (48) and the combining step directly.
+
+---
+
+## Classroom Quiz (41–46 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, use it for an instructor-led review of today's toughest problem — re-run the highest-power-of-12-in-100! combine step one more time, cold-calling a different student to narrate each row — or fold it into Buffer and end early.
 
 ---
 

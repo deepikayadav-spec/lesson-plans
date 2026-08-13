@@ -1,7 +1,7 @@
 # Session 10 — Basics Percentages
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Percentages — Basic Calculations & Decimal/Fraction Conversion · **Prerequisite** Session 9 (Company-Specific MCQs — LCM & HCF)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 > **Style flag (read before you teach this):** this deck is genuinely light on solved "Ans:" problems compared to others in the course. Its real content is (a) the 10%/1% mental building-block method for computing a% of a number, and (b) a fraction↔percentage equivalents table (1/2 through 8/9, plus a "Magic Circle of 1/7" trick for sevenths) meant to be memorised for speed. This plan builds around **fluency and speed with the method and the table**, not manufactured word problems the deck doesn't contain. See Instructor Notes.
 
@@ -10,7 +10,7 @@
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_ Basics Percentages.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -62,7 +62,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Put this on the board, exactly as the deck's own opening example, and nothing else:
 
@@ -80,7 +80,7 @@ Tie it to yesterday:
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–16 min) — DELIVER SLIDES AS-IS
 
 Covers: the percentage formula, the Level 1 set of "clean" percent-of-number examples, and the Level 2 worked example (`51% of 82`) plus its harder companion (`98% of 82`).
 
@@ -93,13 +93,13 @@ Covers: the percentage formula, the Level 1 set of "clean" percent-of-number exa
   - `98% of 82`: `1% of 82 = 0.82` → `2% of 82 = 1.64` → `100% − 2% = 82 − 1.64 = 80.36`.
   - Say explicitly: *"Subtracting from 100% is exactly as valid as adding to 50% — pick whichever side of the number line is fewer steps away."*
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call:
 > *"98% of 82 — go."*
 > **Answer:** `80.36`.
 
 ---
 
-## ⚡ ALS Activity 1 — Rapid Fire Board Race (19–26 min)
+## ⚡ ALS Activity 1 — Rapid Fire Board Race (16–23 min)
 
 **ALS format:** Board Race — teams race to compute four numbers using **only** the 10%/1% building-block method, no fraction shortcuts yet. Chosen as the first activity because this is the deck's own sequencing: this exact "Find" set is deliberately painful with only the current tool, and that pain is what makes Slide Block B's fraction shortcuts land as relief rather than an arbitrary extra thing to memorise.
 
@@ -131,7 +131,7 @@ Covers: the percentage formula, the Level 1 set of "clean" percent-of-number exa
 
 ---
 
-## Slide Block B (26–38 min) — DELIVER SLIDES AS-IS
+## Slide Block B (23–33 min) — DELIVER SLIDES AS-IS
 
 Covers: the decimal-to-fraction conversion table (the fraction↔percentage master table, 1/2 through 8/9) and the Magic Circle of 1/7 trick, followed by the deck's own confirmation of `28.5714% of 280 = 80`.
 
@@ -175,15 +175,13 @@ Covers: the decimal-to-fraction conversion table (the fraction↔percentage mast
 - **1/7 is deliberately missing from that table** — sevenths repeat over six digits, so the deck gives them a separate trick: the **Magic Circle of 1/7**. `1/7 = 14.2857%`, and `2/7 = 28.5714%` — the same six digits, just starting from a different point in the cycle. <!-- placement: inferred --> The exact circular diagram's layout could not be recovered from text extraction; confirm the real slide's arrangement before drawing it live. The underlying fact — `2/7 = 28.5714%` — is confirmed by the deck's own next slide.
 - **Close the loop on ALS Activity 1, problem 4:** `28.5714% of 280` — the deck confirms this directly: **Ans: 80** (`2/7 × 280 = 80`).
 
-**Oral drill beat (2 min, compressed from a full activity):** *"I say a fraction, you say its percentage — instantly."* Call 4-5 from the table (`1/2, 2/3, 3/8, 5/6`), take instant answers from different students. *"Same for the reverse — 22.22%?"* → `2/9`. *"That's the whole game — known, not calculated."* (Compressed to protect the schedule; full drill available as an optional buffer closer.)
-
-**Checkpoint (at 38 min)** — show hands:
+**Checkpoint (at 33 min)** — show hands:
 > *"Using the Magic Circle, what is 2/7 as a percentage?"*
 > **Answer:** `28.5714%`.
 
 ---
 
-## ⚡ ALS Activity 2 — Fill the Blank Live (38–45 min)
+## ⚡ ALS Activity 2 — Fill the Blank Live (33–40 min)
 
 **ALS format:** Cold-Call Fill-the-Blank — the master table goes up with several cells blanked out, students fill them live, then the session closes by re-solving Activity 1's four numbers one more time, now completely from memory. Chosen as the closing activity because it tests recall in the table's actual written form and immediately spends that recall on a real calculation, closing the loop the session opened in ALS Activity 1.
 
@@ -213,6 +211,12 @@ Covers: the decimal-to-fraction conversion table (the fraction↔percentage mast
 **Common instructor mistake:** rushing straight to the payoff set without genuinely blanking and cold-calling the table first.
 
 **Cut rule:** If running short, blank only 3 cells instead of 5, and go straight to the payoff set — problems 1 and 4 only.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped oral drill here instead — call fractions from the master table, take instant percentage answers, then reverse it — or fold the slot into Buffer and end early.
 
 ---
 

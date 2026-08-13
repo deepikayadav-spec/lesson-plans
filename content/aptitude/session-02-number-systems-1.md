@@ -1,12 +1,12 @@
 # Session 2 — Number Systems: Basic Classification of Numbers & Divisibility Rules
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Number Systems — classification of numbers (real/imaginary, rational/irrational, integers, fractions) and divisibility rules for 2–12, co-primes, remainder/quotient word problems · **Prerequisite** Session 1 — Introduction to Quantitative Aptitude
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet for this content — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet for this content — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT Numbers System 1_.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Say: *"Five quick ones on last session before we start today's topic. Nobody is 
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Say, in your own words (this is close to how the deck's own speaker notes open the session):
 
@@ -76,7 +76,7 @@ Bridge in:
 
 ---
 
-## Slide Block A (10–20 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–17 min) — DELIVER SLIDES AS-IS
 
 Covers: Basic Classifications of Numbers → Real vs. Imaginary Numbers (Complex Number = a + ib) → Rational vs. Irrational → the Integers/Fractions tree (N, W, I) → Proper/Improper/Mixed fractions → the imaginary-number consecutive-power question → Rational-or-Irrational number list → converting a repeating decimal to a fraction.
 
@@ -89,7 +89,7 @@ Covers: Basic Classifications of Numbers → Real vs. Imaginary Numbers (Complex
 - **Irrational = cannot be written as p/q.** Non-terminating *and* non-repeating. This is the one-sentence test students will apply for the rest of the session (and in ALS Activity 1 right after this block).
 - **Repeating decimal → fraction.** Walk the deck's own worked example: 1.323232... → 131/99. Show the mechanics — ALS Activity 1 depends on students being able to reproduce this reasoning on their own.
 
-**Checkpoint (at 20 min)** — 10 s silent think, cold-call:
+**Checkpoint (at 17 min)** — 10 s silent think, cold-call:
 > *"Find i¹²³ + i¹²⁴ + i¹²⁵ + i¹²⁶."*
 > <!-- placement: inferred — the source text extraction lost the caret and rendered this as "i | 123 | + i | 124 | + i | 125 | + i | 126," reconstructed here as four consecutive integer powers of i. Verify exponent sets against the real slide before class. -->
 > **Answer:** Any four *consecutive* powers of i sum to 0, because iⁿ(1 + i + i² + i³) = iⁿ(1 + i − 1 − i) = 0. So it equals **0**.
@@ -97,7 +97,7 @@ Covers: Basic Classifications of Numbers → Real vs. Imaginary Numbers (Complex
 
 ---
 
-## ⚡ ALS Activity 1 — Think-Pair-Share: Rational or Irrational? (20–26 min)
+## ⚡ ALS Activity 1 — Think-Pair-Share: Rational or Irrational? (17–23 min)
 
 **ALS format:** Think-Pair-Share. Chosen right after Slide Block A because the classification rule (p/q test) was just taught in the abstract — the deck's own six-number list is deliberately built to trap two common misconceptions at once, and pairing lets students argue out the ones they disagree on before the room sees it.
 
@@ -134,7 +134,7 @@ Write or project the six numbers in one line: `123 · 3.14 · 22/7 · π · 1.11
 
 ---
 
-## Slide Block B (26–37 min) — DELIVER SLIDES AS-IS
+## Slide Block B (23–32 min) — DELIVER SLIDES AS-IS
 
 Covers: Divisibility Rules for 2, 4, 8 → 3, 9 → 5, 10 → 6, 12 → Divisibility Rule of 7 (the 5-step algorithm, worked on 343) → Divisibility Rule of 11 (worked on 3546, and stated for 2122356512) → Concept of Co-Primes.
 
@@ -145,15 +145,13 @@ Covers: Divisibility Rules for 2, 4, 8 → 3, 9 → 5, 10 → 6, 12 → Divisibi
 - **Rule of 11 — the alternating-sum difference.** Worked example: for 3546, odd-place digit sum = 3+4 = 7, even-place digit sum = 5+6 = 11, difference = 11−7 = 4. Since 4 is neither 0 nor a multiple of 11, **3546 is not divisible by 11**. State the deck's answer for the second number without re-deriving it live: **2122356512 is not divisible by 11.**
 - **Co-primes.** Two numbers are co-prime if their GCD is 1 and, equivalently, their LCM is the product of the two numbers. Worked example: 2 and 3 → GCD = 1, LCM = 6.
 
-**Timed drill (2 min, compressed from a full activity):** *"Two numbers, both rules, on your own — 30 seconds each."* Put **343** (rule of 7) and **3546** (rule of 11) on screen one at a time; 10 s silent, then a student walks the steps at the board. This is the repetition rep, kept short to protect the schedule — the full board-race version is available as an optional buffer closer if time allows.
-
-**Checkpoint (at 37 min)** — show hands:
+**Checkpoint (at 32 min)** — show hands:
 > *"Using the combo rule, is 3546 divisible by 6?"*
 > **Answer:** Yes. 3546 is even (passes rule of 2), and its digit sum 3+5+4+6 = 18 is divisible by 3 (passes rule of 3) — so it's divisible by 6.
 
 ---
 
-## ⚡ ALS Activity 2 — Full-Chain Dictation: Co-Primes & Remainder Word Problems (37–45 min)
+## ⚡ ALS Activity 2 — Full-Chain Dictation: Co-Primes & Remainder Word Problems (32–40 min)
 
 **ALS format:** Full-Chain Dictation (Human Calculator) — the instructor writes *only* what a student dictates, one step at a time, nothing filled in or assumed. Chosen as the closing activity because these word problems chain several steps together, and students can usually follow a worked example on a slide but stumble reconstructing that same chain unprompted — narrating the whole chain out loud, with nothing hidden, is what actually tests it.
 
@@ -179,6 +177,12 @@ Build it live with the class: N = 7q₁+6, where q₁ = 11q₂+7, where q₂ = 1
 > *"Every step you just said out loud was already in your head. Writing nothing yourself just proved you didn't need me to."*
 
 **Cut rule:** Run Problem 1 only if short on time.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped rule-of-7/rule-of-11 timed drill here instead — put **343** and **3546** on screen one at a time, 10 s silent, then a student walks the steps at the board — or fold the slot into Buffer and end early.
 
 ---
 
@@ -226,12 +230,12 @@ Unscheduled on purpose. If you land here with time on the clock and want an extr
 
 ## Instructor Notes
 
-- **Data note:** this plan is grounded entirely in a local text-extraction of the source `.pptx` — no platform export exists for this Aptitude course yet (no unit IDs, no classroom quiz pool, no MCQ/coding practice bank). That's also why this session has no quiz block.
+- **Data note:** this plan is grounded entirely in a local text-extraction of the source `.pptx` — no platform export exists for this Aptitude course yet (no unit IDs, no classroom quiz pool, no MCQ/coding practice bank). That's also why the Classroom Quiz block below is a reserved, empty slot rather than real questions.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
-- **Two ALS activities this session:** Activity 1 is Think-Pair-Share (classification, right after Slide Block A), Activity 2 is Full-Chain Dictation (word-problem synthesis, closing the session). The original Rapid Fire Board Race drilling activity is compressed into a 2-minute timed drill inside Slide Block B, with the full board-race version demoted to an optional buffer-only closer.
+- **Two ALS activities this session:** Activity 1 is Think-Pair-Share (classification, right after Slide Block A), Activity 2 is Full-Chain Dictation (word-problem synthesis). The original Rapid Fire Board Race drilling activity is dropped from Slide Block B entirely — its 2 minutes now fund the reserved Classroom Quiz slot at the end of the session, where it can be run as a fallback instructor-led drill.
 - **Exponent notation was lost in extraction on the imaginary-number question (slide 8).** Reconstructed as i¹²³+i¹²⁴+i¹²⁵+i¹²⁶ from separated tokens. Confirm which option is actually marked correct on the real slide before class.
 - **Slide 4's speaker notes contain a factual error** ("i² is always +1") that directly contradicts the derivation one line above it. Deliver the correct statement (i² = −1) in your own words.
 - **1.23486524......... is classified as irrational only because no repeating block is visible in the digits the extraction captured.** Check the real slide directly before running ALS Activity 1.
 - **Slide 2's Agenda line lists "Ranking" twice** — a leftover template artifact. Do not attempt to teach a "Ranking" topic today.
 - **Slides 19 and 25 ("Quiz Time") are markers for a live quiz the platform doesn't yet support.**
-- **Protect Slide Block B's full time.** It's the densest block in the session (nine divisibility rules, two multi-step algorithms, and co-primes) — if the session runs behind, cut from the buffer-only board race or ALS Activity 2's cut rule first, never from Slide Block B itself.
+- **Protect Slide Block B's full time.** It's the densest block in the session (nine divisibility rules, two multi-step algorithms, and co-primes) — if the session runs behind, cut from ALS Activity 2's cut rule or skip the reserved Classroom Quiz's fallback drill first, never from Slide Block B itself.

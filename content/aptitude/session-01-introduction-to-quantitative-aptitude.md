@@ -1,12 +1,12 @@
 # Session 1 — Introduction to Quantitative Aptitude
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Introduction to Quantitative Aptitude — what aptitude is, why it matters, course overview · **Prerequisite** None — this is day one
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet for this content — this session has no quiz block for that reason, not by design choice. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet for this content — a 5-min quiz slot is reserved but empty for that reason, not by design choice. · **Format** 50-min recalibrated, 2 ALS activities
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT Introduction - Quantitative Aptitude .pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Say: *"Five quick questions. Nobody is graded, nobody is named. I need to know w
 
 ---
 
-## Hook (7–11 min)
+## Hook (7–10 min)
 
 Say: *"Before I show you the next slide — guess. Out of the top IT recruiters in India, how many do you think run an aptitude round before they even look at your resume?"*
 
@@ -74,7 +74,7 @@ Tie back to **Q4** of the poll: *"Some of you already recognised half this list.
 
 ---
 
-## Slide Block A (11–22 min) — DELIVER SLIDES AS-IS
+## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred grouping — deck has no explicit section breaks between slides 2–8, grouping by content is the instructor's call -->
 Covers: Agenda → What is Aptitude? → Aptitude — Importance → Extent of Aptitude (Recruitment drives → Qualifying Tests → Government Exams → Applications).
@@ -85,13 +85,13 @@ Covers: Agenda → What is Aptitude? → Aptitude — Importance → Extent of A
 - **Importance.** Don't over-explain — this slide exists to set up the "Extent" slides that follow. One line is enough: *"Here's why it matters. Now watch how far it reaches."*
 - **Extent of Aptitude — four lists, four different worlds.** Walk through in order: Recruitment drives (25 companies) → Qualifying Tests (GRE, GATE, IELTS, CAT, SAT, GMAT, CMAT, MHCET, LSAT, NET) → Government Exams (UPSC, SSC, SBI, RRB, AFCAT, Defence, IBPS, ISRO, NTPC, ONGC, NPCIL) → Applications (Financial Services, Technology and Engineering, Research and Development, Personal Development). You don't need to read every name aloud — point at 3–4 recognisable ones per list and let the density speak for itself.
 
-**Checkpoint (at 22 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 19 min)** — 10 s silent think, cold-call two students:
 > *"Name one company or exam from the lists we just saw."*
 > **Answer:** Any item from the four lists is correct — e.g. TCS, Infosys, CAT, UPSC, SSC, GATE.
 
 ---
 
-## ⚡ ALS Activity 1 — Real-World Callout (22–28 min)
+## ⚡ ALS Activity 1 — Real-World Callout (19–25 min)
 
 **ALS format:** Open-Floor Callout — students shout out any company, exam, or government test they personally know someone who has taken an aptitude round for, not restricted to the deck's lists. Chosen as the first activity because the poll and hook already established that aptitude testing is widespread in the abstract; this makes it personal before the session moves into course logistics.
 
@@ -109,7 +109,7 @@ Have the "Extent of Aptitude" lists visible on screen or written as headers on t
 
 ---
 
-## Slide Block B (28–37 min) — DELIVER SLIDES AS-IS
+## Slide Block B (25–32 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred grouping — same caveat as Slide Block A -->
 Covers: Aptitude Course (section) → the four course components → Course Consists → Achievements → What is Quantitative Aptitude? → the goats-and-hens riddle (posed, not yet solved — the solve is ALS Activity 2).
@@ -121,15 +121,13 @@ Covers: Aptitude Course (section) → the four course components → Course Cons
 - **Achievements.** Read it as a promise, not a bullet list: *complete understanding of aptitude concepts, methodologies and approaches to solve problems, ability to solve recruitment assessments.* Emphasise "methodologies & approaches" — it previews that this course teaches *techniques*, not just answers.
 - **What is Quantitative Aptitude?** transitions straight into the riddle. Pose the riddle exactly as the slide states it — *"A farmer has some goats and some hens. In total, there are 43 heads and 126 legs. How many goats does the farmer have?"* — with options A) 26, B) 32, C) 20, D) 23. **Stop here.** Do not advance into the slide's own reveal yet — that reveal is ALS Activity 2.
 
-**Quick self-placement beat (2 min, before the checkpoint):** *"30 seconds with the person next to you — of the four components on screen, which do you expect to be toughest for you?"* Take two or three call-outs. *"Whatever you said — that's exactly what this course is for, and today we're inside Quantitative Aptitude specifically, one way or another."* (Compressed from a full activity to protect the schedule — the self-assessment value survives in this shorter form.)
-
-**Checkpoint (at 37 min)** — cold-call:
+**Checkpoint (at 32 min)** — cold-call:
 > *"Name the four components of this Aptitude course."*
 > **Answer:** Quantitative Aptitude, Logical Reasoning, Advanced Aptitude, Numerical Ability.
 
 ---
 
-## ⚡ ALS Activity 2 — Silent Solve → Vote-Lock → Reveal: The Goats-and-Hens Riddle (37–45 min)
+## ⚡ ALS Activity 2 — Silent Solve → Vote-Lock → Reveal: The Goats-and-Hens Riddle (32–40 min)
 
 **ALS format:** Silent Solve, Vote-Lock, Then Reveal — students commit to an answer letter before anything is explained, locking in a public guess before the technique is shown. **This is the deck's only worked problem and the session's one genuine problem-solving moment — protect this slot above everything else if the session runs behind.**
 
@@ -153,6 +151,12 @@ After the vote:
 > *"No algebra, no equations — just 'assume the simple case, then measure the gap.' That's the kind of technique this course is built on. You'll use some version of this trick constantly."*
 
 **Cut rule:** If running short, skip the show-of-hands vote and go straight to the reveal, but keep the "assume all hens" framing intact — that framing *is* the technique being taught.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, use it for an instructor-led review of today's toughest problem — for this session, re-run the goats-and-hens "assume all hens" reveal one more time, cold-calling a different student to narrate each step — or fold it into Buffer and end early.
 
 ---
 
@@ -196,9 +200,9 @@ Unscheduled on purpose. If you land here with time on the clock, let the session
 
 ## Instructor Notes
 
-- **Data note:** this plan is grounded entirely in a local text-extraction of the source `.pptx` — there is no platform export for this Aptitude course yet (no unit IDs, no classroom quiz pool, no MCQ/coding practice bank exist to cite). That's also why this session has no quiz block, unlike the Programming Foundations sessions — there's genuinely nothing to quiz from yet.
+- **Data note:** this plan is grounded entirely in a local text-extraction of the source `.pptx` — there is no platform export for this Aptitude course yet (no unit IDs, no classroom quiz pool, no MCQ/coding practice bank exist to cite). That's also why the Classroom Quiz block below is a reserved, empty slot rather than real questions, unlike the Programming Foundations sessions — there's genuinely nothing to quiz from yet.
 - **50-min format: 45 min instruction + 5 min buffer** (3 min settling, 2 min flex).
-- **Two ALS activities this session:** Activity 1 is Open-Floor Callout, Activity 2 is Silent Solve → Vote-Lock → Reveal — deliberately different registers (loose/fast vs. focused/committed). The original Think-Pair-Share course self-assessment activity is folded into a 2-minute quick beat inside Slide Block B instead of running as its own block.
+- **Two ALS activities this session:** Activity 1 is Open-Floor Callout, Activity 2 is Silent Solve → Vote-Lock → Reveal — deliberately different registers (loose/fast vs. focused/committed). The original Think-Pair-Share course self-assessment activity (a 2-minute quick beat previously inside Slide Block B) is dropped entirely — its slot now funds the reserved Classroom Quiz slot at the end of the session.
 - **Aptitude-vs-Mathematics distinction is instructor-supplied wording.** <!-- placement: inferred --> The deck's speaker notes on slides 3 and 4 flag "Difference between Aptitude and Mathematics" as the talking point but do not contain the deck's own explanatory sentence. The phrasing used in Slide Block A is authored for this plan — deliver it, but feel free to substitute your own framing.
 - **Company/exam list counts are exact from the extracted text:** 25 recruitment-drive companies (slide 5), 10 qualifying tests (slide 6), 11 government exams (slide 7), 4 application domains (slide 8). Don't add names beyond what's listed.
 - **The goats-and-hens riddle is the deck's only worked problem.** <!-- placement: inferred --> Protect ALS Activity 2's time slot even if the session runs behind; if a cut is unavoidable, cut from Slide Block B's self-placement beat first, never from Activity 2.

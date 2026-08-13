@@ -1,14 +1,14 @@
 # Session 12 — Percentages: Important Question Types
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Percentages — Important Question Types · **Prerequisite** Session 11 (Percentage Change & Successive Increment/Decrement)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Percentages 2.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–11 min)
+## Hook (7–10 min)
 
 Say: *"Percentages 1 gave you the tools. Today gives you no new formula at all — not one. Today is nine real exam-style questions, back to back, and the only skill being tested is: which tool do you reach for, and how fast."*
 
@@ -78,7 +78,7 @@ Tie back to **Q4** of the poll — *"That Pavan/Prudhvi question a minute ago wa
 
 ---
 
-## Slide Block A (11–20 min) — DELIVER SLIDES AS-IS
+## Slide Block A (10–17 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred from deck order (slides 4–6); confirm against live deck -->
 Covers: the X/Y marks problem → the pass-mark shortfall problem → Dheeraj's multi-stage expenditure problem.
@@ -89,13 +89,13 @@ Covers: the X/Y marks problem → the pass-mark shortfall problem → Dheeraj's 
 - **Beat 2 — Pass-mark shortfall (slide 5).** *"A student gets 198 marks and is declared failed by 36 marks"* means the passing mark itself is 198 + 36 = 234. Passing mark is 36% of the maximum, so 0.36 × Max = 234 → Max = 650. The phrase "failed by N" always means *add back*, never subtract.
 - **Beat 3 — Dheeraj's expenditure (slide 6).** 30% of income goes to petrol; petrol = 300, so income = 300 ÷ 0.30 = 1000. The **25% on rent is 25% of the remaining balance (700), not of the original 1000.** Rent = 0.25 × 700 = 175.
 
-**Checkpoint (at 20 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 17 min)** — 10 s silent think, cold-call two students:
 > *"In the Dheeraj problem: what was his income, and what balance was rent calculated on?"*
 > **Answer:** Income = Rs. 1000. Petrol takes 300, leaving 700. Rent = 25% of 700 = Rs. 175 — **not** 25% of 1000.
 
 ---
 
-## ⚡ ALS Activity 1 — Think-Pair-Share (20–26 min)
+## ⚡ ALS Activity 1 — Think-Pair-Share (17–23 min)
 
 **ALS format:** Think-Pair-Share. Chosen right after Slide Block A because both real deck problems punish "plug into a formula" thinking and reward setting up **one clean equation** from the words — this checks whether that skill transferred, not whether the answer alone was found.
 
@@ -129,7 +129,7 @@ Covers: the X/Y marks problem → the pass-mark shortfall problem → Dheeraj's 
 
 ---
 
-## ⚡ ALS Activity 2 — Spot the Bug (26–34 min)
+## ⚡ ALS Activity 2 — Spot the Bug (23–31 min)
 
 **ALS format:** Silent Diagnose, Named Reveal — two real deck problems, each paired with an **instructor-authored wrong solution** that students must diagnose and correct before reaching the deck's real answer. Chosen as the session's central activity because both source problems hide a base-switching trap — the strongest misconception in the whole session, and the same family as Warm-Up Q4.
 
@@ -167,7 +167,7 @@ Covers: the X/Y marks problem → the pass-mark shortfall problem → Dheeraj's 
 
 ---
 
-## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
+## Slide Block B (31–39 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred from deck order (slides 12–13); confirm against live deck -->
 Covers: the rows/columns algebra problem → the acoustics-class engineering-pass-rate problem.
@@ -177,11 +177,15 @@ Covers: the rows/columns algebra problem → the acoustics-class engineering-pas
 - **Beat 1 — Rows and columns (slide 12).** *"12.5% more"* is the same as a ratio of 9:8 (12.5% = 1/8, so 12.5% more = ×9/8). Let columns-count = C, rows-count = R = 1.125C. `R × C = 72` and `R = 1.125C` → `C² = 64` → `C = 8, R = 9`. **Children per row = 9.**
 - **Beat 2 — Acoustics class (slide 13).** Two sub-groups, don't average their percentages — find each sub-group's *count* first. Male engineering = 25% of 120 = 30. Female engineering = 20% of 100 = 20. Male eng. passed = 20% of 30 = 6. Female eng. passed = 25% of 20 = 5. Total passed = 11 of 50 → **22%**.
 
-**Race-the-setup beat (2 min, compressed from a full activity):** put both problems back on screen — *"Just the setup equation, not the answer, on paper, thirty seconds each."* Rows/columns: `R = 1.125C, R×C=72`. Acoustics: `0.20(0.25×120) + 0.25(0.20×100), over 50`. Cold-call one student per equation. *"The setup is the whole skill — once it's right, the arithmetic is just arithmetic."* (Compressed to protect the schedule; full board-race version available as an optional buffer closer.)
-
-**Checkpoint (at 44 min)** — show hands:
+**Checkpoint (at 39 min)** — show hands:
 > *"In the acoustics problem — how many total engineering students were there, and how many of them passed?"*
 > **Answer:** 50 engineering students (30 male + 20 female); 11 passed = 22%.
+
+---
+
+## Classroom Quiz (39–44 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped race-the-setup drill here instead — just the setup equation, not the answer, for the rows/columns and acoustics problems — or fold the slot into Buffer and end early.
 
 ---
 

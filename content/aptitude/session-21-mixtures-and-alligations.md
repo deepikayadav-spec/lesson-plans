@@ -1,12 +1,12 @@
 # Session 21 — Mixtures and Alligations
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Mixtures and Alligations · **Prerequisite** Session 20 (SI & CI / Ratios & Proportions consolidation), building directly on the Ratios concept from Session 18
-**Session type** Concept lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Concept lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Mixtures and Alligations.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -58,7 +58,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Say, right after the poll closes on Q3:
 
@@ -74,7 +74,7 @@ Point at the agenda framing from the deck itself:
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–16 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — deck has no explicit slide-block labels; grouping follows the deck's own agenda slide and the run of examples before the first "Quiz Time" divider -->
 Covers: Concept of quantity and ratio → Mixtures & Alligations → the Alligation Cross → the pulses-mixing example → the water-and-milk example.
@@ -85,13 +85,13 @@ Covers: Concept of quantity and ratio → Mixtures & Alligations → the Alligat
 - **Worked example 1 (pulses):** mix pulses at Rs. 15/kg and Rs. 20/kg to get a mixture worth Rs. 16.50/kg. Cross gives (20−16.50):(16.50−15) = **7:3**.
 - **Worked example 2 (water + milk):** water is a real ingredient worth **Rs. 0/litre**. Milk at Rs. 12/litre, target mixture Rs. 8/litre. Cross gives (12−8):(8−0) = **1:2** (water:milk). Flag this explicitly — "free" or "zero-value" components are the first place students go wrong.
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call two students:
 > *"State the alligation rule in one sentence. Then use it: pulses at Rs. 15/kg and Rs. 20/kg, mixture worth Rs. 16.50/kg — what ratio?"*
 > **Answer:** Rule — the ratio of quantities equals the ratio of the distances of the *other* price from the mean, cross-wise. Ratio: **7:3**.
 
 ---
 
-## ⚡ ALS Activity 1 — Trace the Table (19–26 min)
+## ⚡ ALS Activity 1 — Trace the Table (16–23 min)
 
 **ALS format:** Guided Table Build — three worked problems solved on the board as a shared table, built up row by row with the class. Chosen right after Slide Block A because it only ever mixed **two** things by **price** — this stretches the same one rule across three fresh situations (profit percentage, three ingredients, an unknown ingredient value) before students see it done any other way.
 
@@ -122,7 +122,7 @@ Weighted mean: (9+3x)/4 = 12 → **x = Rs. 13/kg**.
 
 ---
 
-## Slide Block B (26–37 min) — DELIVER SLIDES AS-IS
+## Slide Block B (23–32 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — the deck's first "Quiz Time" divider slide has no content of its own; the two problems immediately after it read as a direct continuation of the same worked-example format -->
 Covers: mixing at a target *selling* price when a profit % is involved → solving for an actual quantity when one component's amount is already known.
@@ -132,15 +132,13 @@ Covers: mixing at a target *selling* price when a profit % is involved → solvi
 - **When the target is a selling price with a profit %, alligation still runs on cost price — you have to convert first.** Sugar varieties at Rs. 30/kg and Rs. 40/kg are sold as a mixture at Rs. 36/kg for a 10% gain. Mean cost price = 36÷1.10 = Rs. 32.73/kg. Alligation on cost prices: **8:3**. *"Alligation always compares like with like — cost with cost, or selling price with selling price. Never mix the two."*
 - **A ratio becomes a quantity the moment you're told one real amount.** How many kg of rice at Rs. 20/kg must mix with 30 kg of rice at Rs. 30/kg to get a Rs. 26/kg mixture? Cross: (30−26):(26−20) = 2:3. The "3" part of the ratio *is* the known 30 kg, so 1 part = 10 kg, unknown rice = **20 kg**. This is the first time a ratio turns into a real number — flag it as a distinct extra step.
 
-**Trap-drill beat (2 min, compressed from a full activity):** *"In a can, milk:water = 4:5. Add 8 litres of milk, ratio becomes 6:5. Find the can's capacity."* 10 s silent, reveal: milk=4x, water=5x; (4x+8):5x=6:5 → x=4 → capacity=**44 litres**. *"The trap is forgetting water stays fixed at 5x while only milk changes — same 'what's fixed, what's changing' question as every mixture problem today."* (Compressed to protect the schedule; the withdraw-and-replace extension is available as an optional buffer closer.)
-
-**Checkpoint (at 37 min)** — cold-call:
+**Checkpoint (at 32 min)** — cold-call:
 > *"In the rice problem, why did we get a number of kilograms instead of just a ratio?"*
 > **Answer:** Because we were told one component's actual amount (30 kg), pinning down what one "part" of the 2:3 ratio is worth.
 
 ---
 
-## ⚡ ALS Activity 2 — Think-Pair-Share (37–45 min)
+## ⚡ ALS Activity 2 — Think-Pair-Share (32–40 min)
 
 **ALS format:** Think-Pair-Share. Chosen as the closing activity because this problem needs an extra conversion step — percentage to fraction — layered on top of the mixing itself. It's the most analytical problem in the deck, so it earns a slower, paired format rather than a race.
 
@@ -164,6 +162,12 @@ Alcohol from P = 2×0.625=1.25L. Alcohol from Q = 4×0.875=3.5L. Total alcohol=4
 > *"The pair-comparison step is where the percentage-to-decimal error actually gets caught — that's why this one is slow, not raced."*
 
 **Cut rule:** Drop the individual silent phase, go straight to pairs; keep the hint reveal and final run-through.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped trap-drill here instead — "milk:water = 4:5, add 8 litres of milk, ratio becomes 6:5, find the can's capacity" — or fold the slot into Buffer and end early.
 
 ---
 

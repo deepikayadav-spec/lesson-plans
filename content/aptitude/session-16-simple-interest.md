@@ -1,12 +1,12 @@
 # Session 16 — Simple Interest: Terms and Formulas
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Simple Interest — Terms and Formulas · **Prerequisite** Session 15 (Discount)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Simple interest.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -58,7 +58,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Put the deck's own recap line on the board, exactly as it opens:
 
@@ -72,7 +72,7 @@ Let them answer "no."
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–16 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred from deck slide order (Slides 4–6). Slide 4 lists the symbols P, R, T, I and "Amount = P + I" but the text-extraction did not capture an explicit "SI = PRT/100" line — likely an equation graphic. Confirm exact on-screen wording before class. -->
 
@@ -87,13 +87,13 @@ Covers: Terms and Formulas → Worked Example (find Principal) → Worked Exampl
   - 169 = 650 × 6.5 × T / 100 → T = **4 years.**
 - **Beat:** name it explicitly — both problems used the exact same formula, just solving for a different letter.
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call two students:
 > *"In Example 1, the man borrowed Rs 20,000 and paid Rs 8,400 in interest. What Amount did he actually hand back to the bank?"*
 > **Answer:** Amount = P + I = **Rs 28,400.**
 
 ---
 
-## ⚡ ALS Activity 1 — Think-Pair-Share (19–26 min)
+## ⚡ ALS Activity 1 — Think-Pair-Share (16–23 min)
 
 **ALS format:** Think-Pair-Share. Chosen right after Slide Block A because both real deck problems hide a classic wording misreading — "rate increased by 3%" as ×1.03 instead of +3, and "doubling" reasoned about the way you'd reason about compound interest — and both need individual attempt before comparison exposes the error.
 
@@ -127,7 +127,7 @@ Take the vote, then run it: Doubling means SI = P (since Amount = 2P). SI = PRT/
 
 ---
 
-## Slide Block B (26–37 min) — DELIVER SLIDES AS-IS
+## Slide Block B (23–32 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred from deck slide order (Slides 9, 11, 12). Slide 9's time value renders as "3 �" — read here as 3½ years, confirmed by arithmetic matching the deck's stated answer. -->
 
@@ -140,15 +140,13 @@ Covers: Worked Example (find the Sum from two Amounts at two different times) �
 - **Quiz-Time Problem** *(Slide 11)* — "Pragna deposited Rs 8000. After one year, she withdraws Rs 2000. At 3 years, she received Rs 7800, never having collected interest. Find the rate." Deck's hint: *"Divide the simple interest into 2 parts."*
   - Total interest = (8000×R×1)/100 + (6000×R×2)/100 = 200R. 6000 + 200R = 7800 → **R = 9%.**
 
-**Assume-a-value beat (2 min, compressed from a full activity):** *"A sum becomes 5 times in 20 years at simple interest. Find the rate."* Deck's own hint: *"Assume a simple value like 100 when nothing is given."* Assume P=100, Amount=500, SI=400. R = 400×100/(100×20) = **20%**. *"Try P=200 after class — you'll still land on 20%. The number you assume gets thrown away; only the ratio survives."*
-
-**Checkpoint (at 37 min)** — cold-call:
+**Checkpoint (at 32 min)** — cold-call:
 > *"State the 'divide into parts' technique in one sentence — when do you use it?"*
 > **Answer:** Whenever the principal changes partway through the time period, split the timeline at that point and calculate interest on each amount for its own duration.
 
 ---
 
-## ⚡ ALS Activity 2 — Trace the Table (37–45 min)
+## ⚡ ALS Activity 2 — Trace the Table (32–40 min)
 
 **ALS format:** Guided Table Build — before anyone calculates anything, build a table together; no equation gets written until every cell fillable from the question is filled. Chosen as the closing activity because the jump straight to "some formula" is the failure mode on two-part / comparison SI problems, and this forces the structuring step first.
 
@@ -188,6 +186,12 @@ Extra interest = 2P/100 = 24 → **P = 1200 → B.** Point out: R cancels out co
 > *"The table did the hard part before you touched algebra. If you can't fill a cell, that's the exact quantity the question is testing — not a sign you're stuck."*
 
 **Cut rule:** Run Problem 2 alone if under 4 minutes remain.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped assume-a-value drill here instead — "a sum becomes 5 times in 20 years, find the rate," assuming P=100 — or fold the slot into Buffer and end early.
 
 ---
 

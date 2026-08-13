@@ -1,12 +1,12 @@
 # Session 11 — Percentages: Percentage Change & Successive Increment/Decrement
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Percentage Change & Successive Increment/Decrement · **Prerequisite** Session 10 (Basics Percentages)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Percentages 1.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -58,7 +58,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Write this on the board, nothing else:
 
@@ -84,7 +84,7 @@ Tie back to the poll: *"You just spent five minutes doing 51% of 82 in building 
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–16 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — slide 4's "Percentage Change | %" is a title/formula slide; the text extraction did not capture a worked numeric example on it, only the header. Confirm the live slide's content before presenting the formula below as its content. -->
 
@@ -96,13 +96,13 @@ Covers (slides 4–7): Percentage Change → Successive increment/decrement (con
 - **The successive-change rule from the deck's own speaker notes:** a (1/n) increase requires a (1/n+1) decrease to undo it, and a (1/n) decrease requires a (1/n−1) increase to undo it. Walk the class back through the hook's 40→60 (a 1/2 increase, n=2) and 60→40 (a 1/3 decrease, n+1=3).
 - **Sai's example (slide 7):** initial salary Rs. 20000, 10% annual hike for two years. Show **both** columns — conventional (20000 → 22000 → 24200, year by year) and shortcut (10 + 10 + (10×10/100) = 21%). Land the point hard: *"Ten percent plus ten percent is not twenty percent. It's twenty-one, because the second hike lands on a bigger number."* Final answer: **Rs. 24200, a 21% change.**
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call:
 > *"Using a + b + ab/100 — why isn't two 10% hikes just 20%?"*
 > **Answer:** The second 10% is calculated on the already-increased salary, not the original.
 
 ---
 
-## ⚡ ALS Activity 1 — Think-Pair-Share: Lohitha's Salary (19–26 min)
+## ⚡ ALS Activity 1 — Think-Pair-Share: Lohitha's Salary (16–23 min)
 
 **ALS format:** Think-Pair-Share. Chosen right after Slide Block A because the shortcut formula only sticks if students use it once under their own effort, with a mixed-sign case (one increase, one decrease) — Sai's example was watched, this one is attempted.
 
@@ -133,7 +133,7 @@ Conventional check: 30000 → 36000 → 32400, which is 2400 more than 30000 →
 
 ---
 
-## Slide Block B (26–37 min) — DELIVER SLIDES AS-IS
+## Slide Block B (23–32 min) — DELIVER SLIDES AS-IS
 
 Covers (slides 9–11): the fraction problem → the dal price/consumption problem → the Pavan/Prudhvi salary-comparison problem.
 
@@ -143,15 +143,13 @@ Covers (slides 9–11): the fraction problem → the dal price/consumption probl
 - **Dal problem (slide 10):** price rises 10%; by how much must consumption fall to keep expenditure unchanged? Deck's answer: **9 1/11%**, not 10%. Formula: %decrease = (x / (100 + x)) × 100 = (10/110) × 100 = 9 1/11%. Say explicitly: *"The decrease needed is always smaller than the increase that caused it — because it's calculated on the new, bigger price."*
 - **Pavan/Prudhvi problem (slide 11):** Pavan's salary is 40% more than Prudhvi's. By what % is Prudhvi's less than Pavan's? Deck's answer: **28.5714%**, not 40%. The two percentages are measured against **different bases**.
 
-**Chained-remainder beat (2 min, compressed from a full activity):** *"A vendor sells 70% of his oranges, throws away 20% of what's left. Next day sells 50% of what's still left, throws away the rest. What % total gets thrown away?"* 10 s silent, then reveal: sells 70%, 30% remains; throws 20% of 30% = 6% (24% remains); day 2 sells 50% of 24% = 12%, throws the rest = 12%. Total thrown = **18%**. *"20% and 50% here are of two different remaining amounts, not the original total — that's the same base-switching trap as Pavan and Prudhvi."*
-
-**Checkpoint (at 37 min)** — cold-call:
+**Checkpoint (at 32 min)** — cold-call:
 > *"If A is 40% more than B, is B automatically 40% less than A? What's the real number, and why?"*
 > **Answer:** No — 28.5714% less. The base is different each way.
 
 ---
 
-## ⚡ ALS Activity 2 — Trace the Table: Varshith, Ayush & Tarun (37–45 min)
+## ⚡ ALS Activity 2 — Trace the Table: Varshith, Ayush & Tarun (32–40 min)
 
 **ALS format:** Guided Table Build — a multi-person ratio-and-percentage word problem, solved by building a variable table together as a class before any arithmetic starts. Chosen as the closing activity because these "three people, two relationships, one average" problems are where students give up — not because the maths is hard, but because they never structure the unknowns first.
 
@@ -180,6 +178,12 @@ Average: (x + 1.2x + 3.6x) / 3 = 116 → 5.8x = 348 → x = 60. Varshith = 3.6 �
 > *"The table-building was the actual work. Once the columns were right, the equation solved itself."*
 
 **Cut rule:** if running short, skip the bonus % error problem entirely — the ratio-table problem alone carries the session's content.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped vendor/oranges base-switching problem here instead — "sells 70%, throws away 20% of what's left, sells 50% next day..." — or fold the slot into Buffer and end early.
 
 ---
 

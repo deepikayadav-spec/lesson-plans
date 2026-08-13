@@ -1,14 +1,14 @@
 # Session 8 — Company-Specific MCQs: Numbers
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Company-Specific MCQs — Numbers (solved-problem consolidation) · **Prerequisite** Sessions 2–7 (Number Systems through Remainder Cycles)
-**Session type** Consolidation / review lecture. No new concept is introduced. No classroom quiz bank, MCQ pool, or coding-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Consolidation / review lecture. No new concept is introduced. No classroom quiz bank, MCQ pool, or coding-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `1) NIAT_CSMCQ'S_Numbers.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -62,7 +62,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–11 min)
+## Hook (7–10 min)
 
 Put this on screen, nothing else, no context, no hint column:
 
@@ -79,7 +79,7 @@ Move straight into Slide Block A, which opens by resolving this exact question.
 
 ---
 
-## Slide Block A (11–20 min) — DELIVER AS-IS
+## Slide Block A (10–17 min) — DELIVER AS-IS
 
 Covers Company-Specific Questions 1–5 from the deck, each with its real worked solution. For each: state the question, reveal the real answer, then give the fastest method.
 
@@ -110,13 +110,13 @@ Options: 2 · 0 · 1 · 3 → **Answer: 2**
 
 - Fastest method: find the remainder first (1056 ÷ 23 leaves remainder 21), then subtract from the divisor: 23 − 21 = 2. Deck's own edge-case Note: *"If the remainder is 0, the smallest number to add would be 0"* — not the divisor itself.
 
-**Checkpoint (at 20 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 17 min)** — 10 s silent think, cold-call two students:
 > *"Why is X minus the sum of its digits always divisible by 9, for any 5-digit number at all — not just 43,269?"*
 > **Answer:** Every digit's place value is a power of 10, and every power of 10 leaves remainder 1 when divided by 9. So the number always has the same remainder mod 9 as its digit sum — subtracting them cancels that remainder.
 
 ---
 
-## ⚡ ALS Activity 1 — 60-Second Solve, Then I Reveal (20–27 min)
+## ⚡ ALS Activity 1 — 60-Second Solve, Then I Reveal (17–24 min)
 
 **ALS format:** Timed Individual Solve → Show-of-Hands → Reveal — two more real deck questions, one at a time, 60 seconds silent individual solving, then committing to an answer before the real worked answer is revealed. Chosen right after Slide Block A because students need to solve cold themselves before the next block of solutions, mirroring the pressure of the Hook.
 
@@ -145,7 +145,7 @@ Options: 1 · 3 · 4 · 2
 
 ---
 
-## Slide Block B (27–37 min) — DELIVER AS-IS
+## Slide Block B (24–32 min) — DELIVER AS-IS
 
 Covers Company-Specific Questions 7, 9, and 10 from the deck, with their real worked solutions.
 
@@ -166,15 +166,13 @@ Options: 1023/1000 · 1013/990 · 1023/99 · 1013/99 → **Answer: 1013/990**
 
 - Identify the repeating block ("23") and the one non-repeating digit ("0"). x = 1.0232323…, 10x = 10.2323…, 1000x = 1023.2323…. Subtract: 1000x − 10x = 1013 → 990x = 1013 → x = 1013/990.
 
-**Method-race beat (2 min, compressed from a full activity):** *"Two ways to solve Q9 — test only the three given pairs, or fully factorise all three numbers first. Which is faster, and why does it stay faster even with five options instead of three?"* Take 2-3 answers. *"Verification degrades much faster than factorisation as the option count grows — that's why the deck's own hint says option verification."* (Compressed to protect the schedule.)
-
-**Checkpoint (at 37 min)** — show hands:
+**Checkpoint (at 32 min)** — show hands:
 > *"6 raised to any positive power — what's the units digit, always?"*
 > **Answer:** 6. Every power of 6 ends in 6 — no cycle to track, unlike 3 or 9.
 
 ---
 
-## ⚡ ALS Activity 2 — Fill the Blank Live: Power Cycle Shortcut (37–45 min)
+## ⚡ ALS Activity 2 — Fill the Blank Live: Power Cycle Shortcut (32–40 min)
 
 **ALS format:** Cold-Call Fill-the-Blank — the real worked solution to Q7 (units digit of (3^65)(6^53)(9^5)) goes on screen with the key numbers blanked out, and students call out the missing values live, one at a time, rebuilding the shortcut method as a class. Chosen as the closing activity because Q7 is the session's densest multi-step shortcut — reproducing it themselves, out loud, is the real test of whether it landed, not just watching it solved a second time.
 
@@ -201,6 +199,12 @@ Options: 1023/1000 · 1013/990 · 1023/99 · 1013/99 → **Answer: 1013/990**
 **Common instructor mistake:** filling in a blank yourself when the class is slow to answer. Wait the full silence out.
 
 **Cut rule:** Run only the 3^65 portion (skip 6^53 and 9^5 detail) and jump straight to "multiply the three units digits" using 3, 6, and 9 as givens.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped Q9 method-race here instead — verification vs. full factorisation, and why verification wins as the option count grows — or fold the slot into Buffer and end early.
 
 ---
 

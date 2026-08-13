@@ -1,7 +1,7 @@
 # Session 15 — Discount
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Discount (Marked Price, Discount%, relation to Profit & Loss) · **Prerequisite** Session 13/14 (Profit & Loss)
-**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Sequencing note (flagged — see Instructor Notes):** this deck's own "Recap" slide cites only "Profit & Loss," not Percentages 1/2 or the CSMCQ consolidation session. Resequence if your actual delivery order differs.
 
@@ -10,7 +10,7 @@
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `NIAT_Discount.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -61,7 +61,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Write this on the board, nothing else:
 
@@ -77,7 +77,7 @@ Flip to the deck's Recap slide (Profit & Loss) for 15 seconds only: *"Quick remi
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER AS-IS
+## Slide Block A (9–16 min) — DELIVER AS-IS
 
 <!-- placement: inferred — see Instructor Notes -->
 Covers: Recap → Agenda → the four opening worked problems: the "buy 3 get 1 free" discount%, the successive-discount-to-single-discount conversion, the successive-vs-flat shopkeeper comparison, and the combined markup/discount/profit-loss problem.
@@ -93,13 +93,13 @@ Covers: Recap → Agenda → the four opening worked problems: the "buy 3 get 1 
 - **Two shopkeepers — successive 15% & 10% vs. flat 25%:** compute successive as 0.85 × 0.90 = 0.765 → effective discount ≈ 23.5%, which is *less* than a flat 25%. **Flat 25% is the better deal.** The single most important beat in the block.
 - **CP = X, marked 20% above CP, sold at 30% discount off MP:** MP = 1.2X; SP = 1.2X × 0.7 = 0.84X. Since SP < CP, that's a **loss of 16%**.
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call two students:
 > *"In the shopkeeper comparison, why isn't a 15% discount followed by a 10% discount the same as one flat 25% discount — and which one should you actually buy from?"*
 > **Answer:** The second discount applies to the already-reduced price, not the original — 0.85 × 0.90 = 0.765, an effective 23.5% discount, less than a flat 25%. Buy from the flat-25% shop.
 
 ---
 
-## ⚡ ALS Activity 1 — Think-Pair-Share: Which Deal Wins? (19–26 min)
+## ⚡ ALS Activity 1 — Think-Pair-Share: Which Deal Wins? (16–23 min)
 
 **ALS format:** Think-Pair-Share. Chosen right after Slide Block A because the "successive discounts just add up" misconception needs to be attempted individually before it's compared with a partner — the deck's own two comparison problems, back to back.
 
@@ -126,7 +126,7 @@ Covers: Recap → Agenda → the four opening worked problems: the "buy 3 get 1 
 
 ---
 
-## Slide Block B (26–36 min) — DELIVER AS-IS
+## Slide Block B (23–31 min) — DELIVER AS-IS
 
 <!-- placement: inferred — see Instructor Notes -->
 Covers: the deck's "Quiz Time" problem set — the chair reverse-discount problem, the tiered photocopy-discount problem, the required-markup-for-target-profit problem, and the "double discount" final-price problem.
@@ -138,13 +138,13 @@ Covers: the deck's "Quiz Time" problem set — the chair reverse-discount proble
 - **Required markup for target profit despite a discount:** wants 20% profit on CP even after a 40% discount on MP. With CP = 100: need SP = 120; MP × 0.6 = 120 → MP = 200 → **CP must be marked up by 100%.** "Cost price should be increased by X%" here actually means "marked *above* cost price by X%" — the CP itself never changes.
 - **"Double discount" final price:** MP = Rs 2,000, successive discounts of 20% and 15%. 2000 × 0.80 = 1,600; 1,600 × 0.85 = **Rs 1,360.** Same multiplicative rule as ALS Activity 1, different wording.
 
-**Checkpoint (at 36 min)** — show hands:
+**Checkpoint (at 31 min)** — show hands:
 > *"In the chair problem, why can't you just subtract 20% + 10% = 30% straight off Rs 12,800?"*
 > **Answer:** The second discount is taken on the price *after* the first discount, not the original — subtracting a combined 30% would wrongly give Rs 8,960 instead of the correct Rs 9,216.
 
 ---
 
-## ⚡ ALS Activity 2 — Trace the Table: Solve the Chair Problem Backwards (36–45 min)
+## ⚡ ALS Activity 2 — Trace the Table: Solve the Chair Problem Backwards (31–40 min)
 
 **ALS format:** Guided Table Build — rebuild the chair problem on the board, one row at a time, with the unknown discount left as a letter until the last row. Chosen as the closing activity because the instinct to solve reverse-discount problems by subtracting instead of dividing out the known step is the strongest misconception left in the session.
 
@@ -178,6 +178,12 @@ Ask the class to close the table: *"Set row 3 equal to row 4. Solve for d."*
 | Room finishes early | Repeat the same table structure but swap in the "double discount" numbers from Slide Block B (MP 2,000, discounts 20% & 15%) as a forward check. |
 
 **Cut rule:** If short on time, build only rows 1–3 as a class and solve row 4 yourself out loud.
+
+---
+
+## Classroom Quiz (40–45 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, use it for an instructor-led review of today's toughest problem — swap in the "double discount" numbers (MP 2,000, discounts 20% & 15%) as a forward check on the same table structure — or fold the slot into Buffer and end early.
 
 ---
 

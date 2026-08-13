@@ -1,14 +1,14 @@
 # Session 14 — Company-Specific MCQs: Percentages & Profit/Loss
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Company-Specific MCQs — Percentages & Profit/Loss (solved-problem consolidation) · **Prerequisite** Sessions 10–13 (Basics of Percentages through Profit & Loss)
-**Session type** Consolidation / review lecture. No new concept is introduced. No classroom quiz bank, MCQ pool, or coding-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Consolidation / review lecture. No new concept is introduced. No classroom quiz bank, MCQ pool, or coding-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `3) NIAT_CSMCQ'S_Percentages_Profit & Loss.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 Put this on screen, nothing else, no context, no hint column:
 
@@ -77,7 +77,7 @@ Move straight into Slide Block A, which opens by resolving this exact question.
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER AS-IS
+## Slide Block A (9–16 min) — DELIVER AS-IS
 
 Covers Company-Specific Questions 1–5 from the deck, each with its real worked solution.
 
@@ -101,13 +101,13 @@ Options: 1037 · 1178 · 1054 · None of the above → **Answer: 1054**
 Options: Increased by 20% · Increased by 10% · Decreased by 10% · Decreased by 20% → **Answer: Decreased by 10%**
 - Net % change = a+b+(ab/100): −25+20+(−5)=**−10%**. Never simply add the two percentages.
 
-**Checkpoint (at 19 min)** — 10 s silent think, cold-call two students:
+**Checkpoint (at 16 min)** — 10 s silent think, cold-call two students:
 > *"Using Q4's 'value of 1%' shortcut: if 19% of a number is 323, what's 1% of it — and what's 62%?"*
 > **Answer:** 1% = 17. 62% = 1054.
 
 ---
 
-## ⚡ ALS Activity 1 — 60-Second Solve, Then I Reveal (19–26 min)
+## ⚡ ALS Activity 1 — 60-Second Solve, Then I Reveal (16–23 min)
 
 **ALS format:** Timed Individual Solve → Show-of-Hands → Reveal — two more real deck questions, mirroring the pressure of the Hook. Chosen right after Slide Block A because after watching 9 minutes of solving, students need to solve cold themselves before the next block lands.
 
@@ -137,7 +137,7 @@ Options: Gain 2400 · Loss 2400 · Loss 1200 · Gain 2500
 
 ---
 
-## Slide Block B (26–37 min) — DELIVER AS-IS
+## Slide Block B (23–32 min) — DELIVER AS-IS
 
 Covers Company-Specific Questions 7, 9, and 10 from the deck, with their real worked solutions.
 
@@ -152,15 +152,13 @@ Options: 30% · 25% · 20% · 35% → **Answer: 20%**
 Options: Rs. 8000 · Rs. 12000 · Rs. 10000 · Rs. 6000 → **Answer: Rs. 8000**
 - Difference-of-discounts: (25%−20%)×MRP=500 → MRP=10,000. Price paid=0.8×10,000=**8,000**.
 
-**Build-your-reference beat (2 min):** *"Ten questions, ten methods. I'll demo two rows of a reference table you'll finish for homework — Question, Fastest Method, under ten words."* Fill Q9 (*"peel off known % first, solve unknown last"*) and Q10 (*"difference of discount % × MRP = difference in savings"*) live as the model, then hand the remaining 8 rows to homework. (Compressed from a full activity to protect the schedule.)
-
-**Checkpoint (at 37 min)** — cold-call:
+**Checkpoint (at 32 min)** — cold-call:
 > *"In Q9, why do we peel off the 12.5% discount before solving for x, instead of the other way round?"*
 > **Answer:** 12.5% is known and fixed — reversing it is one clean division. x is the unknown, solved last.
 
 ---
 
-## ⚡ ALS Activity 2 — Think-Pair-Share: Why Equal-SP Twins Always Lose (37–44 min)
+## ⚡ ALS Activity 2 — Think-Pair-Share: Why Equal-SP Twins Always Lose (32–39 min)
 
 **ALS format:** Think-Pair-Share. Chosen as the closing activity because students have now seen the "equal SP, equal ±% profit and loss" shape twice (Warm-Up Poll Q2's houses, today's Q8's fridges) and both times it produced a loss, not a breakeven — this turns two isolated results into one transferable rule.
 
@@ -185,6 +183,12 @@ Have both problems' real numbers visible: Houses (X=10%, result=1% loss), Fridge
 > *"This isn't a formula to memorize by name — it's a derived shortcut for spotting the shape fast. The two real cases you just checked are the proof."*
 
 **Cut rule:** Run the share-out and confirm the pattern verbally only; skip writing the general X²/100 form on the board.
+
+---
+
+## Classroom Quiz (39–44 min) · Reserved — not yet available
+
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped reference-table beat here instead — demo Q9 and Q10's one-line "Question → Fastest Method" rows, then send the rest to homework as originally planned — or fold the slot into Buffer and end early.
 
 ---
 

@@ -1,14 +1,14 @@
 # Session 20 — Company-Specific MCQs: SI & CI, Ratios & Proportions
 
 **Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Consolidation — SI & CI + Ratios & Proportions (Company-Specific MCQs) · **Prerequisite** Sessions 16–19 (Simple Interest through Proportions)
-**Session type** Lecture — consolidation/review session spanning two topic blocks. No new concept. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — no quiz block for that reason. · **Format** 50-min recalibrated, 2 ALS activities
+**Session type** Lecture — consolidation/review session spanning two topic blocks. No new concept. No classroom quiz bank, MCQ pool, or coding/problem-practice unit IDs exist yet — a 5-min quiz slot is reserved but empty for that reason. · **Format** 50-min recalibrated, 2 ALS activities
 
 **Resources**
 
 | Resource | Status |
 |---|---|
 | Source deck (local file) | `4) NIAT_CSMCQ'S_SI & CI_Ratios & Proportions.pptx` |
-| Classroom Quiz | not yet available — add once question bank exists for this topic |
+| Classroom Quiz | not yet available — 5-min slot reserved at end of session, add once question bank exists for this topic |
 | MCQ / Coding Practice | not yet available — add once problem bank exists for this topic |
 
 ---
@@ -60,7 +60,7 @@ Board cleared and ready, students seated. Don't reclaim this time for content if
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–9 min)
 
 **Framing:**
 
@@ -81,7 +81,7 @@ Move straight into Slide Block A, which opens by solving this exact question.
 
 ---
 
-## Slide Block A (10–19 min) — DELIVER SLIDES AS-IS
+## Slide Block A (9–17 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — this block groups the deck's Q1–Q4 (its first four questions), which appear consecutively in the source deck. Q8 (CI−SI difference) is also SI & CI content but sits later in the deck; it is deliberately held for ALS Activity 1. See Instructor Notes. -->
 
@@ -95,13 +95,13 @@ Covers, in this order: the deferred hook question (reveal) → rate-from-SI ques
 
 **Beat 4 — the shortcut for "amounted to" pairs.** Sum amounts to Rs. 815 in 3 years and Rs. 854 in 4 years. Deck's hint: *"Sum is nothing but principal amount."* SI for 1 year = `854−815=39`. SI for 3 years = `117`. Principal = `815−117=`**Rs. 698**. Never solve for R first — the year-over-year difference IS one year's SI.
 
-**Checkpoint (at 19 min)** — cold-call:
+**Checkpoint (at 17 min)** — cold-call:
 > *"Same trick as Beat 4 — if I gave you the amount after 5 years and after 6 years instead, what's your very first calculation?"*
 > **Answer:** Subtract the two amounts to get one year's SI.
 
 ---
 
-## ⚡ ALS Activity 1 — Timed Silent Solve → Reveal (19–26 min)
+## ⚡ ALS Activity 1 — Timed Silent Solve → Reveal (17–24 min)
 
 **ALS format:** Timed Silent Solve → Reveal — three of the deck's remaining SI & CI questions, delivered one at a time, cold, 90 seconds silent solving before each reveal. Chosen right after Slide Block A because it removes the narration and checks whether the method actually transferred — the real placement-test condition.
 
@@ -134,7 +134,7 @@ Options: `Rs. 9000` · `Rs. 6250` · `Rs. 8530.80` · `Rs. 8780.80`
 
 ---
 
-## Slide Block B (26–36 min) — DELIVER SLIDES AS-IS
+## Slide Block B (24–32 min) — DELIVER SLIDES AS-IS
 
 <!-- placement: inferred — this block groups the deck's three Ratios & Proportions questions. See Instructor Notes for the regrouping rationale. -->
 
@@ -146,13 +146,13 @@ Covers: salary-ratio question → partnership profit-sharing question → rectan
 
 **Beat 3 — introduce the scale variable before the perimeter equation.** Length:breadth = 7:6, perimeter = 260 m. `L=7x, B=6x`: `26x=260 → x=10`. `L=70, B=60`, **Area = 4,200 sq. m.** Solve for `x` first, then compute in that order.
 
-**Checkpoint (at 36 min)** — cold-call:
+**Checkpoint (at 32 min)** — cold-call:
 > *"Length:breadth ratio 7:6, perimeter 260 m — what's the area, and what was your very first line of working?"*
 > **Answer:** 4,200 sq. m, and the first line must be `L=7x, B=6x` before anything else.
 
 ---
 
-## ⚡ ALS Activity 2 — Trace the Table (36–44 min)
+## ⚡ ALS Activity 2 — Trace the Table (32–40 min)
 
 **ALS format:** Guided Table Build — students are given only the raw numbers from Q9 (Anil Rs. 3,000, Biswas Rs. 4,000, Anil doubles his capital after 6 months), table erased, no ratio shown, and must build the capital × months table themselves. Chosen as the closing activity because it checks whether students can *generate* the table from scratch — the actual skill, not just recognition of an answer already narrated.
 
@@ -184,9 +184,13 @@ Covers: salary-ratio question → partnership profit-sharing question → rectan
 
 ---
 
-## Exit Ticket + Homework (44–48 min)
+## Classroom Quiz (40–45 min) · Reserved — not yet available
 
-**Quick method-compare beat (1 min, compressed from a full activity):** *"Ravi/Sumit's salary ratio and the rectangle's length/breadth ratio — same trick underneath. Name it in one line."* Take 1-2 answers. *"Write the ratio as `ax` and `bx` before touching any other number — that's the pattern today drilled."*
+No quiz bank exists yet for this Aptitude course (see Resources table). This 5-minute slot is reserved here, at the end of the session and right before the Exit Ticket, so the plan doesn't need restructuring once a quiz bank is added. Until then, run the dropped method-compare beat here instead — Ravi/Sumit's salary ratio and the rectangle's length/breadth ratio are "the same trick underneath," ask students to name it in one line — or fold the slot into Buffer and end early.
+
+---
+
+## Exit Ticket + Homework (45–48 min)
 
 **Exit ticket** (~1 min) — before anyone leaves:
 
