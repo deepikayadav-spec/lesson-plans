@@ -1,7 +1,7 @@
 # Session 1 — Programming with Python
 
-**Duration** 60 min · **Topic** Introduction to Python · **Prerequisite** None — this is day one
-**Session type** Concept lecture
+**Duration** 50 min total — **45 min instruction + 5 min buffer** (3 min settling at the start, 2 min flex at the end) · **Topic** Introduction to Python · **Prerequisite** None — this is day one
+**Session type** Concept lecture · **Format** 50-min recalibrated, 2 ALS activities, Classroom Quiz mandatory (never cut)
 
 **Platform units**
 
@@ -30,11 +30,17 @@ By the end of this session, students will be able to:
 
 ---
 
-## Warm-Up Poll — Diagnostic (0–7 min)
+## Classroom Settling (0–3 min) · Buffer — not instructional
+
+Projector on, previous class cleared out, attendance done, students actually seated before you start the clock on anything below. **This is real, planned time — don't try to teach through it.** If your room is usually settled faster, don't reclaim the minutes for content; hold them as extra flex at the end instead.
+
+---
+
+## Warm-Up Poll — Diagnostic (3–7 min) · ALS: Polling
 
 > **This session is the exception.** There is no previous session to recall, so the poll is a *diagnostic*, not retrieval practice. No wrong answers. Purpose is to calibrate pace and to establish, on minute one, that this classroom expects everyone to answer.
 
-Say: *"Seven quick questions. Nobody is graded, nobody is named. I need to know who I'm teaching."*
+Say: *"Five quick questions. Nobody is graded, nobody is named. I need to know who I'm teaching."*
 
 **Q1.** Have you written a computer program before — any language?
 `A` Never · `B` Tried once or twice · `C` A few small programs · `D` Yes, comfortably
@@ -53,23 +59,18 @@ Say: *"Seven quick questions. Nobody is graded, nobody is named. I need to know 
 
 **Q5.** In your own guess — what does `print("Hello")` do?
 `A` Prints on paper · `B` Shows `Hello` on screen · `C` Shows `"Hello"` with quotes · `D` No idea
-→ *Read:* C is the quotes misconception showing up early. Note the number; you'll revisit it in Activity 3.
+→ *Read:* C is the quotes misconception showing up early. Note the number; you'll revisit it in ALS Activity 2.
 
-**Q6.** Which of these do you most want out of this course? *(MSQ — pick up to 2)*
-`A` A job / placement · `B` Build my own projects · `C` Clear college coursework · `D` Curiosity
+**Running it** — poll tool, ~40 s per question, project the distribution after each. Never name individuals. Total 3.5 min for the 5 questions.
 
-**Q7.** How do you prefer to learn code?
-`A` Watch first, then try · `B` Try first, ask later · `C` Read the material · `D` Work with a partner
-→ *Read:* If B+D is high, lean harder on the activities and shorten your talk-through.
-
-**Running it** — poll tool, ~45 s per question, project the distribution after each. Never name individuals. Total 7 min including your reads.
+**Explain-the-answer beat (~20 s):** don't just move on — say out loud: *"Most of you landed on [C] for Q4/Q5 or not — either way, that's exactly what today fixes."* One line, keep moving — this is the one line that tells the room the session is already teaching, not just polling.
 
 ---
 
-## Hook (7–10 min)
+## Hook (7–11 min)
 
 > **Do not use the Java-vs-Python comparison here.** It is slide 16 of your own deck
-> ("Easy to Learn"), about fifteen minutes away. Showing it twice kills it.
+> ("Easy to Learn"), further along. Showing it twice kills it.
 
 Stand at the board with a marker. Ask for one volunteer to stay seated and give you
 instructions.
@@ -88,15 +89,17 @@ Then stop and land it:
 > the entire job. A computer is fast, obedient, and completely stupid — it does what you
 > said, not what you meant. Today you start learning how to say things precisely."*
 
+**Real-life anchor (30 s, folded into the hook — not a separate activity):** *"Quick one — name one app you used in the last hour. [take 2–3 shouted answers] Every single feature in that app is somebody having this exact conversation with a computer. That's all software is."*
+
 Tie back to **Q4** of the poll — *"Most of you said software is the apps on your phone.
 In two minutes you'll have a sharper answer than that."*
 
-This sets up the Software slide directly, and it sets up Activities 1 and 3, where you
+This sets up the Software slide directly, and it sets up both ALS activities, where you
 type literally what students say.
 
 ---
 
-## Slide Block A (10–22 min) — DELIVER SLIDES AS-IS
+## Slide Block A (11–19 min) — DELIVER SLIDES AS-IS
 
 **Verified against the deck.** Slides, in order:
 
@@ -116,39 +119,121 @@ type literally what students say.
 **Beats to emphasise**
 
 - **Slide 9 is the payoff of your hook.** Land it in one line: software is instructions, and instructions have to be exact — which they just watched fail at the board.
-- **Slides 12–15 are four consecutive motivation slides.** That is a lot of momentum-free time. Move briskly: Versatile and Opportunities get ~1 min each, Salaries and Demand ~30 s each. Don't let this stretch — the energy of this session is in Activities 2 and 3.
+- **Slides 12–15 are four consecutive motivation slides — tightest squeeze in the 50-min version.** Cap the whole block at **2 minutes total**: one breath on Versatile + Opportunities together, one breath on Salaries + Demand together. Do not narrate each bullet — point and move. The session's time budget is in the two ALS activities, not here.
 - **Slide 16 (Java vs Python) is the one to slow down on.** Ask *"show of hands — who wants to learn the top one?"* here, not earlier.
 
 > ⚠️ **The deck has no slide for *Code* or *Syntax*** — those terms appear only in the Reading Material. But **Classroom Quiz Q2 asks for the definition of syntax**, and Quiz A contains several more syntax questions. **You must teach both verbally**, or students will be assessed on something they were never shown. Thirty seconds on slide 10 is enough:
 > *"The instructions you write are called **code**. Every language has rules for writing that code — like grammar — and those rules are called **syntax**. Get the syntax wrong and the computer rejects the whole thing."*
 
-**Checkpoint (at 22 min)** — cold-call two students:
+**Checkpoint (at 19 min)** — 10 s silent think, then cold-call two students:
 > *"What is software, and what is syntax?"*
 > **Answer:** Software is a set of instructions to the hardware. Syntax is the set of rules those instructions must follow.
 
 ---
 
-## ⚡ Activity 1 — Real-World Callout (22–27 min)
+## ⚡ ALS Activity 1 — Error-Spotting Pairs (19–25 min)
 
-**Format:** Real-World Callout · **Exposes:** the belief that programming is abstract and disconnected from the software students actually use.
+**ALS format:** Individual → Pair → Share (error-analysis variant). Snippets are taken verbatim from the RM's *Possible Mistakes* section — nothing new. Chosen over a straight Think-Pair-Share because the payoff here is a real error message, not just a discussed opinion.
 
 **Setup line (say this):**
-> *"Thirty seconds. Think of one app or website you used in the last 24 hours. I want you to shout out the app, and then guess out loud what a programmer had to *tell* the computer to make that one feature work."*
+> *"Four broken lines. 30 seconds, silent, on your own — find the error and predict what Python will say back. Then 30 seconds with the person next to you — compare and agree on one answer per line."*
 
-**What students do:** Call out app names. You write them on the board in a fast list — no more than 8.
+Put all four on screen at once:
 
-**How it surfaces:** For 3 of the apps, push once: *"What instruction? Say it like a command."* Accept plain English. e.g. Instagram → *"when the user double-taps, add a like."*
+```python
+prnt("Hello World!")        # 1
+Print("Hello World!")       # 2
+print(Hello World!)         # 3
+print("Hello World!"        # 4
+```
+
+**What students do:** 30 s silent individual attempt → 30 s pair comparison → one pair per snippet shares out.
+
+**Answers**
+
+| # | Error | What Python says |
+|---|---|---|
+| 1 | `print` misspelled as `prnt` | `NameError` — Python has no function by that name |
+| 2 | Capital `P` | `NameError` — Python is case-sensitive, `Print` ≠ `print` |
+| 3 | Missing quotes | `SyntaxError` — without quotes Python reads `Hello World!` as code, not text |
+| 4 | Missing closing parenthesis | `SyntaxError` — Python is still waiting for you to finish the line |
+
+**How it surfaces:** After each pair shares, type the broken line live and run it so the class sees the real error message. This is the point of the activity — students must learn error messages are readable, not scary.
 
 **Debrief line:**
-> *"Every one of those is a set of instructions. That's all software is. You've been surrounded by it — today you start writing it."*
+> *"Three of these four are just typing. That's the job. You will not be stuck because you can't think — you'll be stuck because of a capital letter. Read the error message, it tells you which line."*
 
-**Cut rule:** If running late, take 3 callouts instead of 8 and skip the push-for-instruction step. Do not cut the debrief line.
+**Cut rule:** If running late, skip the pair-compare step and go straight from individual guess to share on snippets 2 and 3 only — they carry case-sensitivity and the quotes rule, which are the two that recur all course.
 
 ---
 
-## Classroom Quiz (27–34 min)
+## Slide Block B (25–32 min) — DELIVER SLIDES AS-IS
 
-5 MCQs from the platform pools. Run at ~80 s each including discussion.
+**Verified against the deck.** Slides, in order:
+
+| # | Slide | Content |
+|---|---|---|
+| 17 | **Your First Program** | `print("Hello World!")` with its output shown |
+| 18 | **Possible Mistakes** | Table of four: `prnt(…)`, `Print(…)`, missing quotes, missing parenthesis |
+| 19 | **Addition** | `2 + 5` → `print(2 + 5)` → `7` |
+| 20 | **Printing the Result** | `print(2 + 5)` → `7` **beside** `print("2 + 5")` → `2 + 5` |
+| 21 | **Subtraction** | `print(5 - 2)` → `3` |
+| 22 | **Multiplication** | `print(2 * 5)` → `10` |
+| 23 | **Division** | `print(6 / 3)` → `2.0` |
+| 24 | All The Best | Closing card |
+
+**Beats to emphasise**
+
+- **Slide 18 (Possible Mistakes) is exactly ALS Activity 1, already run.** Deliver the table in one breath as a recap — *"you already broke every one of these"* — don't re-teach it.
+- **Slide 20 is the most important slide in the deck.** The quotes contrast is already side by side. Pause here, take a show of hands on each output before revealing, then move straight into ALS Activity 2 — it drills exactly this.
+- **Slide 23 (Division):** the deck's example is `print(6 / 3)` giving **`2.0`**, not `2`. Flag it: *"remember this, it comes back in Type Conversions."* Don't explain floats yet.
+
+**Checkpoint (at 32 min)** — 10 s silent think, then show hands:
+> *"`print(6 / 3)` — who says `2`? Who says `2.0`?"*
+> **Answer:** `2.0`. Python's `/` always gives a decimal result.
+
+---
+
+## ⚡ ALS Activity 2 — Predict & Verify (32–38 min)
+
+**ALS format:** Individual predict → instructor-run verification (live-coding variant of Polling). Chosen instead of another Think-Pair-Share so students commit to an answer *before* seeing it run, rather than discussing an opinion — this is the session's single highest-stakes misconception and needs individual accountability, not group averaging.
+
+> Slide 20 already showed `print(2 + 5)` beside `print("2 + 5")`. The value here is that students commit to an answer *before* each run, and watch it typed live rather than pre-rendered. Say so: *"You've seen this on a slide. Now you get to be wrong about it out loud, which is how it sticks."*
+
+**Setup line (say this):**
+> *"Editor is open, I'm typing, you're predicting. Before I hit run, everyone commits to an answer out loud or on the poll. If you're wrong, that's the useful part."*
+
+Type and run these **one at a time**, taking an individual prediction before each. Cut down to the four lines that carry the whole point (per cut rule below):
+
+```python
+print("Hello World!")    # → Hello World!
+print(2 + 5)             # → 7
+print("2 + 5")           # → 2 + 5
+print(6 / 3)             # → 2.0
+```
+
+**The deliberate bug** — after the four above, type this and run it:
+
+```python
+Print("I can code")
+```
+
+Let the `NameError` appear. Ask: *"30 seconds with your neighbour — agree on the fix."* Take the instruction from one pair and type exactly what they say.
+
+**Debrief line:**
+> *"Quotes mean 'print these exact characters.' No quotes means 'work it out, then print the answer.' That one rule explains half the confusion in your first week."*
+
+**Cut rule:** If running late, drop `print("Hello World!")` from the predict list (already established) and go straight from `print(2 + 5)` → `print("2 + 5")` → deliberate bug. Never drop the quotes-pair or the deliberate bug — those are the whole point.
+
+---
+
+## Classroom Quiz (38–45 min) · ALS: Individual Answer → Reveal
+
+> 🔒 **Mandatory block — do not cut, do not shorten, do not skip under time pressure.** Runs **last, right before the Exit Ticket** — a cumulative check across both slide blocks and both ALS activities, not a mid-session interruption. This is the only hard data you get on whether the class actually followed the session. If you're running behind by the time you reach it, that's what the cut rules on the Hook, both Slide Blocks, and both ALS activities are for — protect these 7 minutes first, and if you're still short, dip into the 2-min end buffer or shorten the homework read-out, not this block.
+
+Every question below is run ALS-style, not read-and-reveal: **individual silent answer first (poll or show of fingers), then explanation.** No question goes straight to the answer key.
+
+5 MCQs from the platform pools. Run at ~85 s each including the individual-answer beat and discussion.
 
 **Q1** — `7918cf2f-e55d-411b-b16e-501709630ca2` *(Quiz A · REMEMBERING)*
 Which of the following is referred as software in computer programming?
@@ -199,109 +284,11 @@ What will be the output of `print("2 + 5")`?
 - `7`
 
 > *Explanation:* **[authored — the platform record for this question has an empty explanation field]** The quotes make `2 + 5` a text message, not a calculation. Python prints the characters exactly as written. Remove the quotes and Python does the arithmetic instead, giving `7`.
-> **If they pick `7`:** the single most common misconception of this session. Do not fix it here — you are about to run Activity 3 on exactly this.
+> **If they pick `7`:** the single most common misconception of this session — this is the confirmation check. It was already drilled live in ALS Activity 2; if it's still failing here, that's your signal to reopen it at the start of Session 2, not something to re-teach in the seconds you have left now.
 
 ---
 
-## Slide Block B (34–44 min) — DELIVER SLIDES AS-IS
-
-**Verified against the deck.** Slides, in order:
-
-| # | Slide | Content |
-|---|---|---|
-| 17 | **Your First Program** | `print("Hello World!")` with its output shown |
-| 18 | **Possible Mistakes** | Table of four: `prnt(…)`, `Print(…)`, missing quotes, missing parenthesis |
-| 19 | **Addition** | `2 + 5` → `print(2 + 5)` → `7` |
-| 20 | **Printing the Result** | `print(2 + 5)` → `7` **beside** `print("2 + 5")` → `2 + 5` |
-| 21 | **Subtraction** | `print(5 - 2)` → `3` |
-| 22 | **Multiplication** | `print(2 * 5)` → `10` |
-| 23 | **Division** | `print(6 / 3)` → `2.0` |
-| 24 | All The Best | Closing card |
-
-**Beats to emphasise**
-
-- **Slide 18 (Possible Mistakes) is exactly Activity 2.** Deliver the table briskly — read the four rows, don't explain them. The activity ten minutes later is where they get run and broken. Over-explaining here spends the activity in advance.
-- **Slide 20 is the most important slide in the deck.** The quotes contrast is already side by side. Pause here, take a show of hands on each output before revealing, then move on — Activity 3 drills it properly.
-- **Slide 23 (Division):** the deck's example is `print(6 / 3)` giving **`2.0`**, not `2`. Flag it: *"remember this, it comes back in Type Conversions."* Don't explain floats yet.
-
-**Checkpoint (at 44 min)** — show hands:
-> *"`print(6 / 3)` — who says `2`? Who says `2.0`?"*
-> **Answer:** `2.0`. Python's `/` always gives a decimal result.
-
----
-
-## ⚡ Activity 2 — Spot the Bug (44–50 min)
-
-**Format:** Spot the Bug · **Exposes:** that students read code for meaning instead of for exact characters. Every snippet is taken verbatim from the RM's *Possible Mistakes* section — nothing new.
-
-**Setup line (say this):**
-> *"Four broken lines. Each one is a real mistake I have seen students make in week one. Find the error AND tell me what Python will say back to you. First correct **explanation** wins — not the first shout."*
-
-Put all four on screen at once:
-
-```python
-prnt("Hello World!")        # 1
-Print("Hello World!")       # 2
-print(Hello World!)         # 3
-print("Hello World!"        # 4
-```
-
-**What students do:** 60 seconds silent, then hands up. Take one student per snippet.
-
-**Answers**
-
-| # | Error | What Python says |
-|---|---|---|
-| 1 | `print` misspelled as `prnt` | `NameError` — Python has no function by that name |
-| 2 | Capital `P` | `NameError` — Python is case-sensitive, `Print` ≠ `print` |
-| 3 | Missing quotes | `SyntaxError` — without quotes Python reads `Hello World!` as code, not text |
-| 4 | Missing closing parenthesis | `SyntaxError` — Python is still waiting for you to finish the line |
-
-**How it surfaces:** After each answer, type the broken line live and run it so the class sees the real error message. This is the point of the activity — students must learn error messages are readable, not scary.
-
-**Debrief line:**
-> *"Three of these four are just typing. That's the job. You will not be stuck because you can't think — you'll be stuck because of a capital letter. Read the error message, it tells you which line."*
-
-**Cut rule:** If running late, do snippets 2 and 3 only — they carry case-sensitivity and the quotes rule, which are the two that recur all course.
-
----
-
-## ⚡ Activity 3 — Live Coding: Quotes or No Quotes (50–57 min)
-
-**Format:** Live Coding · **Exposes:** the quotes-vs-arithmetic misconception flagged in poll Q5 and quiz Q5.
-
-> **This is a drill, not a reveal.** Slide 20 already showed `print(2 + 5)` beside `print("2 + 5")`. The value here is that students commit to an answer *before* each run, and watch it typed live rather than pre-rendered. Say so: *"You've seen this on a slide. Now you get to be wrong about it out loud, which is how it sticks."*
-
-**Setup line (say this):**
-> *"Editor is open, I'm typing, you're predicting. Before I hit run, everyone commits to an answer out loud. If you're wrong, that's the useful part."*
-
-Type and run these **one at a time**, taking a prediction before each. Values match the deck's own examples:
-
-```python
-print("Hello World!")    # → Hello World!
-print(2 + 5)             # → 7
-print("2 + 5")           # → 2 + 5
-print(5 - 2)             # → 3
-print(2 * 5)             # → 10
-print(6 / 3)             # → 2.0
-```
-
-**The deliberate bug** — after the six above, type this and run it:
-
-```python
-Print("I can code")
-```
-
-Let the `NameError` appear. Ask: *"Who can fix it without me touching the keyboard?"* Take the instruction from a student and type exactly what they say.
-
-**Debrief line:**
-> *"Quotes mean 'print these exact characters.' No quotes means 'work it out, then print the answer.' That one rule explains half the confusion in your first week."*
-
-**Cut rule:** Drop lines 4 and 5 (`5 - 2`, `5 * 0.5`). Keep the `"2 + 5"` vs `2 + 5` pair and keep the deliberate bug — those are the whole point.
-
----
-
-## Exit Ticket + Homework (57–60 min)
+## Exit Ticket + Homework (45–48 min)
 
 **Exit ticket** — on paper or in chat before anyone leaves:
 
@@ -310,7 +297,7 @@ Let the `NameError` appear. Ask: *"Who can fix it without me touching the keyboa
 
 Scan the responses on the way out. Missing quotes is the signal to open Session 2 with a quick recap.
 
-**Homework**
+**Homework** (read the list, don't walk through it — time's up):
 
 | Task | Unit |
 |---|---|
@@ -324,27 +311,36 @@ Tell them: *"Next session is a walkthrough of these exact coding problems. Attem
 
 ---
 
+## Buffer (48–50 min) · Flex — not instructional
+
+Unscheduled on purpose. Use it for: a slow exit ticket, dismissal, or absorbing a small overrun from any block above. **If you reach here with time still on the clock, let the session end early** — don't stretch content to fill it. If a block overran and you're here with none left, this is why the Classroom Quiz was never touched — everything else had cut rules built in for exactly this moment.
+
+---
+
 ## Common Misconceptions
 
 | Misconception | Why students hold it | Correct it live by |
 |---|---|---|
-| `print("2 + 5")` outputs `7` | They read for meaning; quotes look decorative | Running both lines back-to-back in Activity 3 |
+| `print("2 + 5")` outputs `7` | They read for meaning; quotes look decorative | Running both lines back-to-back in ALS Activity 2 |
 | `Print` and `print` are the same | Every other written language they know is case-forgiving | Showing the raw `NameError`, then writing "Python is case-sensitive" on the board and leaving it up |
 | `print(10 / 5)` outputs `2` | Whole-number division from school maths | Running it; flag that `2.0` returns in Type Conversions |
-| Error messages mean "you failed" | School conditioning | Deliberately breaking your own code in Activity 3 and reading the message aloud calmly |
-| Software = the apps on my phone | Only consumer-facing software is visible | Slide Block A, reinforced by Activity 1's callouts |
+| Error messages mean "you failed" | School conditioning | Deliberately breaking your own code in ALS Activity 2 and reading the message aloud calmly |
+| Software = the apps on my phone | Only consumer-facing software is visible | Slide Block A, reinforced by the hook's real-life anchor |
 
 ---
 
 ## Instructor Notes
 
 - ✅ **Verified against the real deck** (*"Copy of 1.1 Programming with Python"*, 41 animation steps, ~20 distinct slides). Slide Blocks A and B list the actual slides in order — no longer inferred.
+- **50-min format, recalibrated from the original 60-min plan: 45 min instruction + 5 min buffer (3 min settling at the start, 2 min flex at the end).** Every section above has a tighter window than before — this is the actual delivery constraint, not a suggestion. If you overrun anywhere, use the cut rules given in each block first; the end buffer is the last resort, not the first one.
+- **The Classroom Quiz runs last, right before the Exit Ticket** — a deliberate cumulative check across everything taught, not a mid-session interruption. It's the one block that never moves: it still gets its full 7 minutes even if the session is running behind. Protect it by trimming earlier blocks (Hook, both Slide Blocks, both ALS activities all have cut rules for exactly this); if you're still short by the time you reach it, dip into the 2-min end buffer or shorten the homework read-out instead. It's the only point in the session where you get real signal on whether the room followed.
+- **Exactly two ALS (Active Learning Strategy) activities this session, deliberately different formats** — not the same strategy twice: Activity 1 is Individual→Pair→Share (error analysis), Activity 2 is Individual-Predict→Verify (a Polling variant). Pick the ALS format per session based on what the content needs — don't default to Think-Pair-Share every time.
+- **The Classroom Quiz is also run ALS-style** — individual answer first, then reveal — not read-question-then-answer. Any question on a slide gets the same treatment: think first, then check.
 - **The deck is heavily animated.** Many "slides" are builds — the agenda alone takes six clicks. Don't be surprised when a click reveals one more arrow rather than a new slide.
 - ⚠️ **Deck gap: no slide defines *code* or *syntax*,** yet Classroom Quiz A is full of syntax questions and this session's Quiz Q2 asks for the definition outright. The 30-second verbal fix is scripted in Slide Block A. **Worth raising with the content team** — every instructor who follows the deck alone will fail that question.
-- **Pacing risk:** slides 12–15 are four consecutive motivation slides (Versatile, Opportunities, Salaries, Demand). They're easy to over-talk and carry no skill. Cap the whole block at 12 minutes — the energy of this session lives in Activities 2 and 3.
-- **The 60 minutes is tight.** If you overrun, cut activity content per the cut rules. Do not cut slide content, and do not cut the Classroom Quiz — it's your only hard data on whether the class is following.
-- **Have the editor already open** with a blank file before the session starts. Setting up VS Code live burns 4 minutes you don't have.
-- **Day-one dynamic:** students will not volunteer yet. Activity 1 is deliberately the lowest-risk format in the bank (shout out an app name) to break that seal before Activity 2 asks them to reason in front of peers.
-- **Data note:** the poll here is diagnostic because there's no prior session. From Session 2 onward, warm-up polls are retrieval practice on the previous session.
+- **Pacing risk:** slides 12–15 are four consecutive motivation slides (Versatile, Opportunities, Salaries, Demand). In the 50-min version these get 2 minutes total, not 12 — cap it hard, they carry no skill.
+- **Have the editor already open** with a blank file before the session starts. Setting up VS Code live burns time you don't have.
+- **Day-one dynamic:** students will not volunteer yet. ALS Activity 1's individual-then-pair structure is deliberately the lowest-risk way to get a first answer out of a silent room before Activity 2 asks for a public prediction.
+- **Data note:** the poll here is diagnostic because there's no prior session, and is capped at 5 questions per the 50-min format. From Session 2 onward, warm-up polls are retrieval practice on the previous session, also capped at 4–5 questions.
 - **Quiz Q5 (`a51ca9ea`) has an empty `answer_explanation` on the platform.** The explanation above is authored — review it before use, and consider filing a content fix.
 - The two RMs on *Python Setup* and *Algorithms, Flowcharts, Pseudocode* are attached to this session but are **not** covered in the lecture. They are homework only. Say this explicitly or students will expect them in class.
