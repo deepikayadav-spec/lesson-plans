@@ -283,7 +283,7 @@ a.item .t{flex:1}
  padding:1px 5px;border-radius:3px;background:var(--rule2);color:var(--muted);
  align-self:center;flex:none}
 .badge.sup{background:var(--act-soft);color:var(--act)}
-.badge.nd{background:transparent;color:var(--warn);padding:0}
+.badge.nd{background:var(--rule2);color:var(--muted)}
 .main{flex:1;min-width:0}
 .topbar{position:sticky;top:0;z-index:20;background:var(--surface);
  border-bottom:1px solid var(--rule);padding:14px 32px 0}
@@ -417,7 +417,7 @@ function link(d){
   a.dataset.idx=DOCS.indexOf(d);
   a.innerHTML='<span class="n">'+(d.num||'·')+'</span><span class="t">'+d.title+'</span>'
     +(d.kind==='Support'?'<span class="badge sup">Support</span>':'')
-    +(d.noDeck?'<span class="badge nd" title="No slide deck">⚠</span>':'');
+    +(d.noDeck?'<span class="badge nd" title="No slide deck — teaching blocks provided instead">No deck</span>':'');
   return a;
 }
 function section(t){const h=document.createElement('div');h.className='navsec';
@@ -431,7 +431,7 @@ function show(idx){
   const bits=[];
   if(d.num)bits.push('60 min');
   if(d.kind!=='Guide')bits.push(d.kind+' session');
-  if(d.noDeck)bits.push('⚠ no slide deck — teaching blocks provided');
+  if(d.noDeck)bits.push('no slide deck — teaching blocks provided');
   document.getElementById('sub').textContent=bits.join(' · ');
   const tl=document.getElementById('tl');tl.innerHTML='';
   d.blocks.forEach(b=>{
