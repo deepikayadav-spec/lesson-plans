@@ -40,7 +40,7 @@ No other merges — every other GitBook topic keeps its own 50-min slot, includi
 | 4 | Longest Subarray with Sum K | 50 min | No deck — write from scratch |
 | 5 | Largest Subarray Sum | 50 min | No deck — write from scratch |
 | 6 | Two Sum Problem | 50 min | No deck — write from scratch |
-| 7 | Introduction to Linked List | 50 min | Merged (Intro-1 + Intro-2) — new session, no existing file |
+| 7 | Introduction to Linked List | 50 min | Existing: `session-38-singly-linked-list.md` (already covers construct/print/length/search — matches GitBook's Intro-1+Intro-2 scope directly) |
 | 8 | Insertion in Linked List | 50 min | Existing: `session-39-insertion-deletion.md` (insertion half) |
 | 9 | Deletion in Linked List | 50 min | Merged (Deletion-1 + Deletion-2) — existing: `session-39-insertion-deletion.md` (deletion half) |
 | 10 | Introduction to Doubly Linked List | 50 min | Existing: `session-40-doubly-linked-list-traversal-insertion-deletion.md` (intro/traversal part) |
